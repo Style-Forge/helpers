@@ -5,7 +5,7 @@ import pImport from 'postcss-import'
 import pAutoprefixer from 'autoprefixer'
 import pMinify from 'postcss-minify'
 
-const [from, to] = ['src/all.css', 'addition.css']
+const [from, to] = ['src/all.css', 'helpers.css']
 const css = fs.readFileSync(from, 'utf8')
 
 const packageFile = JSON.parse(fs.readFileSync('package.json', 'utf8'))

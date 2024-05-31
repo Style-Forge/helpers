@@ -30,4 +30,5 @@
 :where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .shrink\:5 { flex-shrink: 5 }
 
 :where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .basis\:0 { flex-basis: 0 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .basis\:1 { flex-basis: 100% }
+:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .basis\:100 { flex-basis: 100% }
+:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .basis\:auto { flex-basis: auto }
