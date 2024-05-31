@@ -1,0 +1,46 @@
+.ff\:sans { font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' }
+.ff\:serif { font-family: Times, 'Times New Roman', Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' }
+.ff\:monospace { font-family: 'Lucida Console', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' }
+.ff\:cursive { font-family: cursive }
+.ff\:fantasy { font-family: fantasy }
+.ff\:emoji { font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', emoji }
+.ff\:math { font-family: math }
+.ff\:fangsong { font-family: fangsong }
+
+.fw\:1 { font-weight: 100 }
+.fw\:2 { font-weight: 200 }
+.fw\:3 { font-weight: 300 }
+.fw\:4 { font-weight: 400 }
+.fw\:5 { font-weight: 500 }
+.fw\:6 { font-weight: 600 }
+.fw\:7 { font-weight: 700 }
+.fw\:8 { font-weight: 800 }
+.fw\:9 { font-weight: 900 }
+
+.fw\:thin { font-weight: 100 }
+.fw\:light { font-weight: 300 }
+.fw\:normal { font-weight: 400 }
+.fw\:medium { font-weight: 500 }
+.fw\:bold { font-weight: 700 }
+
+.fw\:extra-light,
+.fw\:ultra-light
+{ font-weight: 200 }
+
+.fw\:semi-bold,
+.fw\:demi-bold
+{ font-weight: 600 }
+
+.fw\:extra-bold,
+.fw\:ultra-bold
+{ font-weight: 800 }
+
+.fw\:black,
+.fw\:heavy
+{ font-weight: 900 }
+
+.txt\:c { text-align: center }
+.txt\:l { text-align: left }
+.txt\:r { text-align: right }
+.txt\:s { text-align: start }
+.txt\:e { text-align: end }

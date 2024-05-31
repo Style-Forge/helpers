@@ -1,0 +1,28 @@
+.d\:g, .d\:g\:x, .d\:g\:y { display: grid }
+
+.d\:g\:x, .d\:g { grid-auto-flow: column }
+.d\:g\:y { grid-auto-flow: row }
+
+.d\:g {
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+}
+.d\:g\:x { grid-auto-columns: auto }
+.d\:g\:y { grid-auto-rows: auto }
+
+.auto.d\:g {
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+}
+.auto.d\:g\:x { grid-auto-columns: 1fr }
+.auto.d\:g\:y { grid-auto-rows: 1fr }
+
+.wrap.d\:g\:x, .wrap.d\:g { grid-auto-flow: dense column }
+.wrap.d\:g\:y { grid-auto-flow: dense row }
+
+.order\:0 { order: 0 }
+.order\:1 { order: 1 }
+.order\:2 { order: 2 }
+.order\:3 { order: 3 }
+.order\:4 { order: 4 }
+.order\:5 { order: 5 }

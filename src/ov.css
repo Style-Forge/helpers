@@ -1,0 +1,14 @@
+.ov { overflow: auto }
+.ov\:h { overflow: hidden }
+.ov\:s { overflow: scroll }
+.ov\:v { overflow: visible }
+
+.ov\:x { overflow-x: auto }
+.ov\:x\:h { overflow-x: hidden }
+.ov\:x\:s { overflow-x: scroll }
+.ov\:x\:v { overflow-x: visible }
+
+.ov\:y { overflow-y: auto }
+.ov\:y\:h { overflow-y: hidden }
+.ov\:y\:s { overflow-y: scroll }
+.ov\:y\:v { overflow-y: visible }

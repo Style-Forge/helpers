@@ -1,0 +1,17 @@
+.pos\:a { position: absolute }
+.pos\:f { position: fixed }
+.pos\:r { position: relative }
+.pos\:static { position: static }
+.pos\:s { position: sticky }
+
+.top:where(.pos\:a, .pos\:f, .pos\:r, .pos\:s) { top: 0 }
+.left:where(.pos\:a, .pos\:f, .pos\:r, .pos\:s) { left: 0 }
+.right:where(.pos\:a, .pos\:f, .pos\:r, .pos\:s) { right: 0 }
+.bottom:where(.pos\:a, .pos\:f, .pos\:r, .pos\:s) { bottom: 0 }
+
+.full:where(.pos\:a, .pos\:f) {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

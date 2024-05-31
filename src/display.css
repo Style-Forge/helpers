@@ -1,0 +1,27 @@
+.d\:b, .show { display: block }
+.d\:n, .hide { display: none }
+
+/* inline */
+.d\:i { display: inline }
+.d\:ib { display: inline-block }
+.d\:if { display: inline-flex }
+.d\:ig { display: inline-grid }
+
+.d\:li { display: list-item }
+.d\:ili { display: inline-list-item }
+
+/* table */
+.d\:t { display: table }
+.d\:it { display: inline-table }
+
+.d\:tc { display: table-cell }
+.d\:tr { display: table-row }
+
+.d\:tcl { display: table-column }
+
+.d\:trg { display: table-row-group }
+.d\:tcg { display: table-column-group }
+.d\:tfg { display: table-footer-group }
+.d\:thg { display: table-header-group }
+
+.d\:tcp { display: table-caption }

@@ -1,0 +1,5 @@
+.shift { margin: auto }
+.shift.top { margin-top: 0 }
+.shift.left { margin-left: 0 }
+.shift.right { margin-right: 0 }
+.shift.bottom { margin-bottom: 0 }

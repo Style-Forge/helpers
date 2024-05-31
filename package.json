@@ -1,0 +1,27 @@
+{
+  "name": "style-forge.helpers",
+  "version": "1.0.0",
+  "description": "Helpers CSS for style-forge",
+  "type": "module",
+  "main": "helpers.css",
+  "repository": "github:sarmaged/style-forge.helpers",
+  "author": "Sarmaged <sarmaged@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "style-forge.helpers",
+    "addition",
+    "helpers",
+    "html",
+    "css"
+  ],
+  "scripts": {
+    "build": "node builder.js",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-import": "^15.1.0",
+    "postcss-minify": "^1.1.0"
+  }
+}

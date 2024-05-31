@@ -1,0 +1,16 @@
+.d\:f,
+.d\:f\:x,
+.d\:f\:y,
+.d\:g,
+.d\:g\:x,
+.d\:g\:y
+{ gap: var(--sf-gap) }
+
+.gap\:0:where(
+  .d\:f,
+  .d\:f\:x,
+  .d\:f\:y,
+  .d\:g,
+  .d\:g\:x,
+  .d\:g\:y
+) { gap: 0 }
