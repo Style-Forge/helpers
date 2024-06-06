@@ -50,7 +50,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           commit-message: "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
-          branch: auto-update-v${GITHUB_REF#refs/tags/v}
+          branch: auto-update-v${NEW_VERSION}
           base: main
           title: "Update version to ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
@@ -59,6 +59,11 @@ jobs:
 
       - name: Build the package
         run: yarn build
+
+      - name: Delete existing tag
+        run: |
+          git tag -d v${GITHUB_REF#refs/tags/v} || true
+          git push origin :refs/tags/v${GITHUB_REF#refs/tags/v} || true
 
       - name: Publish to npm
         env:
