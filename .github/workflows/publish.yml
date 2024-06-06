@@ -39,10 +39,6 @@ jobs:
       - name: Build the package
         run: yarn build
 
-      - name: Update helpers.css
-        run: |
-          cp ./helpers.css ./your/repository/path/helpers.css
-
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
