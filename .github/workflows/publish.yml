@@ -33,13 +33,18 @@ jobs:
           git config --global user.email "sarmaged@gmail.com"
           git config --global user.name "Sarmaged"
 
+      - name: Checkout current branch
+        run: |
+          BRANCH=$(git symbolic-ref --short HEAD)
+          git checkout $BRANCH
+
       - name: Commit and push version change
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git add package.json yarn.lock
           git commit -m "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
-          git push origin HEAD
+          git push origin $BRANCH
 
       - name: Build the package
         run: yarn build
