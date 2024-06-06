@@ -1,0 +1,23 @@
+name: Notify main repo on new tag
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send webhook to main repo
+        run: |
+          curl -X POST ${{ secrets.MAIN_REPO_WEBHOOK_URL }} \
+            -H "Content-Type: application/json" \
+            -d '{
+                  "event_type": "dependency_update",
+                  "client_payload": {
+                    "repository": "'"${GITHUB_REPOSITORY}"'",
+                    "ref": "'"${GITHUB_REF}"'"
+                  }
+                }'
