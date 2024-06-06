@@ -28,6 +28,11 @@ jobs:
           git config --global user.email "sarmaged@gmail.com"
           git config --global user.name "Sarmaged"
 
+      - name: Create new branch
+        run: |
+          BRANCH_NAME=auto-update-${GITHUB_REF#refs/tags/v}
+          git checkout -b $BRANCH_NAME
+
       - name: Update version in package.json
         run: |
           NEW_VERSION=${GITHUB_REF#refs/tags/v}
@@ -45,14 +50,6 @@ jobs:
         run: |
           echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
           yarn publish --non-interactive --new-version ${GITHUB_REF#refs/tags/v}
-
-      - name: Create and push new branch
-        run: |
-          BRANCH_NAME=auto-update-${GITHUB_REF#refs/tags/v}
-          git checkout -b $BRANCH_NAME
-          git add package.json yarn.lock
-          git commit -m "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
-          git push origin $BRANCH_NAME
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
