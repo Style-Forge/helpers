@@ -58,26 +58,23 @@ jobs:
           base: main
           title: "Update version to ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
-          auto-merge: true
-          merge-method: squash
 
-      - name: Merge Pull Request
-        uses: actions/github-script@v5
-        with:
-          script: |
-            const pull = await github.pulls.list({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              head: `refs/heads/auto-update-v${GITHUB_REF#refs/tags/v}`
-            });
-            if (pull.data.length > 0) {
-              await github.pulls.merge({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: pull.data[0].number
-              });
-            }
+      - name: Install GitHub CLI
+        run: |
+          sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+          sudo apt-add-repository https://cli.github.com/packages
+          sudo apt-get update
+          sudo apt-get install gh
+          echo "${{ secrets.GH_TOKEN }}" | gh auth login --with-token
+
+      - name: Merge Pull Request using CLI
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          PR_NUMBER=$(gh pr list --state open --head auto-update-v${GITHUB_REF#refs/tags/v} --json number --jq '.[0].number')
+          if [ -n "$PR_NUMBER" ]; then
+            gh pr merge $PR_NUMBER --squash --delete-branch --repo $GITHUB_REPOSITORY --admin
+          fi
 
       - name: Delete existing tag
         run: |
