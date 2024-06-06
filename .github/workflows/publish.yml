@@ -51,7 +51,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           commit-message: "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
-          branch: auto-update-v${GITHUB_REF#refs/tags/v}
+          branch: auto-update-v${{ github.ref_name }}
           base: main
           title: "Update version to ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
@@ -64,7 +64,7 @@ jobs:
             const pr = await github.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              head: `auto-update-v${{ GITHUB_REF#refs/tags/v }}`,
+              head: `auto-update-v${{ github.ref_name }}`,
               state: 'open',
             });
 
@@ -103,4 +103,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git push origin --delete auto-update-v${GITHUB_REF#refs/tags/v}
+          git push origin --delete auto-update-v${{ github.ref_name }}
