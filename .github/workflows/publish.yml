@@ -23,14 +23,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build the package
-        run: yarn build
-
-      - name: Configure Git
-        run: |
-          git config --local user.email "sarmaged@gmail.com"
-          git config --local user.name "Sarmaged"
-
       - name: Update version in package.json
         run: |
           NEW_VERSION=${GITHUB_REF#refs/tags/v}
@@ -43,6 +35,14 @@ jobs:
           git add package.json
           git commit -m "Update version to ${GITHUB_REF#refs/tags/v}"
           git push origin HEAD
+
+      - name: Build the package
+        run: yarn build
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "sarmaged@gmail.com"
+          git config --local user.name "Sarmaged"
 
       - name: Publish to npm
         env:
