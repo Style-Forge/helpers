@@ -1,26 +1,72 @@
-# style-forge.helpers
-This is styling of all input fields
 
-[![npm](https://img.shields.io/npm/v/style-forge.helpers)][npm-link]
-[![npm](https://img.shields.io/npm/dm/style-forge.helpers)][npm-link]
+# Style Forge Helpers
 
-Form CSS for [style-forge](https://www.npmjs.com/package/style-forge)
+![npm](https://img.shields.io/npm/v/style-forge.helpers)
+![license](https://img.shields.io/npm/l/style-forge.helpers)
+![build](https://github.com/Sarmaged/style-forge.helpers/actions/workflows/publish.yml/badge.svg)
 
-<hr />
+## Description
+
+Style Forge Helpers is a collection of CSS helpers for the Style Forge project. This package provides various CSS utilities that simplify the styling of your web applications.
 
 ## Installation
+
+You can install this package using npm:
+
 ```bash
 npm install style-forge.helpers
 ```
+
+Or using yarn:
+
 ```bash
 yarn add style-forge.helpers
 ```
 
-<hr />
+## Usage
 
-## License [![NPM](https://img.shields.io/npm/l/style-forge.helpers)](https://github.com/Sarmaged/style-forge.helpers/blob/main/LICENSE)
+After installation, you can import the CSS file into your project:
 
-Distributed under the MIT License. See `LICENSE` for more information.
+```css
+@import "style-forge.helpers/helpers.css";
+```
 
-[npm-link]: https://www.npmjs.com/package/style-forge.helpers
-[github-link]: https://github.com/Sarmaged/style-forge.helpers
+Or, if you are using Webpack or another module bundler:
+
+```js
+import 'style-forge.helpers/helpers.css';
+```
+
+## Contributing
+
+We welcome contributions from the community! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/branch-name`.
+3. Make your changes and commit them: `git commit -am 'Add some feature'`.
+4. Push your changes to the forked repository: `git push origin feature/branch-name`.
+5. Create a pull request in the original repository.
+
+For more detailed information, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Links
+
+- [style-forge](https://github.com/Sarmaged/style-forge)
+- [style-forge.helpers](https://github.com/Sarmaged/style-forge.helpers)
+- [style-forge.colors](https://github.com/Sarmaged/style-forge.colors)
+- [style-forge.form](https://github.com/Sarmaged/style-forge.form)
+- [style-forge.base](https://github.com/Sarmaged/style-forge.base)
+- [style-forge.patterns](https://github.com/Sarmaged/style-forge.patterns)
+- [style-forge.themes](https://github.com/Sarmaged/style-forge.themes)
+
+## Authors
+
+- **Dmitrii Sagalov** - *Lead Developer* - [Sarmaged](https://github.com/Sarmaged)
+
+## Contact
+
+If you have any questions or suggestions, please open an issue in [Issues](https://github.com/Sarmaged/style-forge.helpers/issues).
