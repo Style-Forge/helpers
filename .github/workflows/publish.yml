@@ -65,7 +65,7 @@ jobs:
             const pr = await github.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              head: `auto-update-v${GITHUB_REF#refs/tags/v}`,
+              head: `auto-update-v${{github.ref.replace('refs/tags/', '')}}`,
               state: 'open',
             });
 
