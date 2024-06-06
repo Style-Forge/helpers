@@ -1,0 +1,14 @@
+# Owners for everything in the repo
+* @Sarmaged
+
+# Owners for specific directories
+/src/ @Sarmaged
+
+# Owners for specific files
+LICENSE @Sarmaged
+README.md @Sarmaged
+CONTRIBUTING.md @Sarmaged
+builder.js @Sarmaged
+helpers.css @Sarmaged
+package.json @Sarmaged
+yarn.lock @Sarmaged
