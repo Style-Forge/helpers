@@ -41,6 +41,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git add package.json
+          git add helpers.css
           git commit -m "Update version to ${GITHUB_REF#refs/tags/v}"
           git pull --rebase origin main
           git push origin auto-update-v${GITHUB_REF#refs/tags/v}
@@ -59,13 +60,6 @@ jobs:
 
       - name: Build the package
         run: yarn build
-
-      - name: Update helpers.css
-        run: |
-          cp helpers.css ./path/to/your/repository/helpers.css
-          git add ./path/to/your/repository/helpers.css
-          git commit -m "Update helpers.css to ${GITHUB_REF#refs/tags/v}"
-          git push origin auto-update-v${GITHUB_REF#refs/tags/v}
 
       - name: Delete existing tag
         run: |
