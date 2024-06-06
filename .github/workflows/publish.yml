@@ -17,18 +17,25 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
-          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build the package
-        run: npm run build
+        run: yarn build
 
-      - name: Publish to npm
-        run: npm publish
+      - name: Bump version and publish to npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          yarn version --new-version ${GITHUB_REF#refs/tags/v}
+          yarn publish --new-version ${GITHUB_REF#refs/tags/v}
+
+      - name: Push changes back to GitHub
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push --follow-tags
 
       - name: Create GitHub Release
         uses: actions/create-release@v1
