@@ -29,6 +29,7 @@ jobs:
           git config --global user.name "Sarmaged"
 
       - name: Create new branch
+        id: create_branch
         run: |
           BRANCH_NAME=auto-update-${GITHUB_REF#refs/tags/v}
           git checkout -b $BRANCH_NAME
@@ -39,13 +40,7 @@ jobs:
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
           git add package.json yarn.lock
           git commit -m "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
-
-      - name: Push changes to the new branch
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          BRANCH_NAME=auto-update-${GITHUB_REF#refs/tags/v}
-          git push origin $BRANCH_NAME
+          git push origin HEAD:$BRANCH_NAME
 
       - name: Build the package
         run: yarn build
@@ -62,8 +57,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           commit-message: Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies
-          branch: auto-update-${GITHUB_REF#refs/tags/v}
-          base: main
+          branch: ${{ steps.create_branch.outputs.BRANCH_NAME }}
           title: Update version to ${GITHUB_REF#refs/tags/v}
           body: This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies.
 
