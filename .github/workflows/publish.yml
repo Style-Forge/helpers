@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Use Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
@@ -46,16 +46,6 @@ jobs:
           git commit -m "Update version to ${GITHUB_REF#refs/tags/v}"
           git push origin auto-update-v${GITHUB_REF#refs/tags/v}
 
-      - name: Build the package
-        run: yarn build
-
-      - name: Publish to npm
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          yarn publish --new-version ${GITHUB_REF#refs/tags/v}
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
@@ -65,6 +55,38 @@ jobs:
           base: main
           title: "Update version to ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
+
+      - name: Merge Pull Request
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          script: |
+            const pr = await github.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: `auto-update-v${GITHUB_REF#refs/tags/v}`,
+              state: 'open',
+            });
+
+            if (pr.data.length > 0) {
+              const pr_number = pr.data[0].number;
+              await github.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr_number,
+                merge_method: 'squash',
+              });
+            }
+
+      - name: Build the package
+        run: yarn build
+
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
+          yarn publish --new-version ${GITHUB_REF#refs/tags/v}
 
       - name: Create GitHub Release
         uses: actions/create-release@v1
@@ -76,3 +98,9 @@ jobs:
             - Describe your changes here
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Delete branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git push origin --delete auto-update-v${GITHUB_REF#refs/tags/v}
