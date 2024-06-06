@@ -36,10 +36,7 @@ jobs:
           NEW_VERSION=${GITHUB_REF#refs/tags/v}
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
 
-      - name: Build the package
-        run: yarn build
-
-      - name: Commit and push changes
+      - name: Commit version change
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
@@ -58,23 +55,23 @@ jobs:
           base: main
           title: "Update version to ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
+          auto-merge: true
+          merge-method: squash
+
+      - name: Build the package
+        run: yarn build
+
+      - name: Install Homebrew
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential curl file git
+          sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.profile
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
       - name: Install GitHub CLI
         run: |
-          sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
-          sudo apt-add-repository https://cli.github.com/packages
-          sudo apt-get update
-          sudo apt-get install gh
-          echo "${{ secrets.GH_TOKEN }}" | gh auth login --with-token
-
-      - name: Merge Pull Request using CLI
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          PR_NUMBER=$(gh pr list --state open --head auto-update-v${GITHUB_REF#refs/tags/v} --json number --jq '.[0].number')
-          if [ -n "$PR_NUMBER" ]; then
-            gh pr merge $PR_NUMBER --squash --delete-branch --repo $GITHUB_REPOSITORY --admin
-          fi
+          brew install gh
 
       - name: Delete existing tag
         run: |
@@ -90,6 +87,7 @@ jobs:
           yarn publish --new-version $NEW_VERSION
 
       - name: Delete branch
+        if: github.ref == 'refs/heads/main'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
