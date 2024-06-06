@@ -33,11 +33,14 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          # Удаляем существующий тег, если он есть
-          git tag -d ${GITHUB_REF#refs/tags/} || true
-          git push origin :refs/tags/${GITHUB_REF#refs/tags/} || true
-          # Устанавливаем новую версию и публикуем пакет
+          # Проверка существования тега и его удаление
+          if git rev-parse ${GITHUB_REF#refs/tags/} >/dev/null 2>&1; then
+            git tag -d ${GITHUB_REF#refs/tags/}
+            git push --delete origin ${GITHUB_REF#refs/tags/}
+          fi
+          # Установка новой версии и публикация пакета
           yarn version --new-version ${GITHUB_REF#refs/tags/v}
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
           yarn publish --new-version ${GITHUB_REF#refs/tags/v}
 
       - name: Push changes back to GitHub
