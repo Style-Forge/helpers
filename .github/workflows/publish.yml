@@ -54,7 +54,6 @@ jobs:
           git checkout -b temp-branch
           git push origin temp-branch --force-with-lease
           gh pr create --title "Auto-update version to ${GITHUB_REF#refs/tags/v}" --body "This PR was automatically created by GitHub Actions to update the version to ${GITHUB_REF#refs/tags/v}." --base main --head temp-branch
-          gh pr merge --auto --squash temp-branch
 
       - name: Create GitHub Release
         uses: actions/create-release@v1
