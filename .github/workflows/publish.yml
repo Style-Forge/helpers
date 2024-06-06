@@ -60,10 +60,13 @@ jobs:
       - name: Build the package
         run: yarn build
 
+      - name: Debug - List files after build
+        run: ls -R
+
       - name: Update helpers.css
         run: |
-          cp path/to/generated/helpers.css path/to/your/repository/helpers.css
-          git add path/to/your/repository/helpers.css
+          cp dist/helpers.css ./path/to/your/repository/helpers.css
+          git add ./path/to/your/repository/helpers.css
           git commit -m "Update helpers.css to ${GITHUB_REF#refs/tags/v}"
           git push origin auto-update-v${GITHUB_REF#refs/tags/v}
 
