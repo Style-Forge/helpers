@@ -1,18 +1,24 @@
 {
   "name": "style-forge.helpers",
   "version": "1.0.1",
-  "description": "Helpers CSS for style-forge",
+  "description": "CSS Helpers for Style Forge",
   "type": "module",
   "main": "helpers.css",
-  "repository": "github:sarmaged/style-forge.helpers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarmaged/style-forge.helpers.git"
+  },
   "author": "Sarmaged <sarmaged@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "style-forge.helpers",
-    "addition",
+    "style-forge",
     "helpers",
-    "html",
-    "css"
+    "CSS",
+    "HTML",
+    "utilities",
+    "styles",
+    "web development",
+    "frontend"
   ],
   "scripts": {
     "build": "node builder.js",
@@ -23,5 +29,12 @@
     "postcss": "^8.4.23",
     "postcss-import": "^15.1.0",
     "postcss-minify": "^1.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sarmaged/style-forge.helpers/issues"
+  },
+  "homepage": "https://github.com/sarmaged/style-forge.helpers#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
