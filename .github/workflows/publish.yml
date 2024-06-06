@@ -33,6 +33,10 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
+          # Удаляем существующий тег, если он есть
+          git tag -d ${GITHUB_REF#refs/tags/} || true
+          git push origin :refs/tags/${GITHUB_REF#refs/tags/} || true
+          # Устанавливаем новую версию и публикуем пакет
           yarn version --new-version ${GITHUB_REF#refs/tags/v}
           yarn publish --new-version ${GITHUB_REF#refs/tags/v}
 
