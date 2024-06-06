@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -66,7 +64,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
-              head: `refs/heads/auto-update-v${context.ref.replace('refs/tags/', '')}`,
+              head: `auto-update-v${context.ref.replace('refs/tags/v', '')}`,
             });
 
             if (pullRequests.length > 0) {
@@ -92,19 +90,9 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
           yarn publish --new-version ${GITHUB_REF#refs/tags/v}
 
-      - name: Create GitHub Release
-        uses: actions/create-release@v1
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: |
-            ## Changes
-            - Describe your changes here
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
       - name: Delete branch
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git push origin --delete auto-update-v${GITHUB_REF#refs/tags/v}
+          BRANCH_NAME=auto-update-v${GITHUB_REF#refs/tags/v}
+          git push origin --delete $BRANCH_NAME
