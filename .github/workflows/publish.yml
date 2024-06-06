@@ -61,17 +61,19 @@ jobs:
       - name: Build the package
         run: yarn build
 
-      - name: Install Homebrew
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential curl file git
-          sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.profile
-          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
       - name: Install GitHub CLI
         run: |
-          brew install gh
+          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+          sudo apt-key add /usr/share/keyrings/githubcli-archive-keyring.gpg
+          sudo apt-add-repository "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main"
+          sudo apt update
+          sudo apt install gh -y
+
+      - name: Merge Pull Request
+        run: |
+          gh pr merge auto-update-v${NEW_VERSION} --squash --delete-branch --repo ${{ github.repository }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Delete existing tag
         run: |
