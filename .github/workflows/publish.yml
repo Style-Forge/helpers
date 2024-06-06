@@ -52,7 +52,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git checkout -b temp-branch
+          git stash
           git pull origin temp-branch --rebase || true
+          git stash pop
           git push origin temp-branch --follow-tags
           gh pr create --title "Auto-update version to ${GITHUB_REF#refs/tags/v}" --body "This PR was automatically created by GitHub Actions to update the version to ${GITHUB_REF#refs/tags/v}." --base main --head temp-branch
           gh pr merge --auto --squash temp-branch
