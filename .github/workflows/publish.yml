@@ -29,6 +29,11 @@ jobs:
           git config --local user.email "sarmaged@gmail.com"
           git config --local user.name "Sarmaged"
 
+      - name: Delete existing tag
+        run: |
+          git tag -d ${GITHUB_REF#refs/tags/} || true
+          git push origin :refs/tags/${GITHUB_REF#refs/tags/} || true
+
       - name: Bump version and publish to npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
