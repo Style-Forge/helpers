@@ -49,7 +49,7 @@ jobs:
 
       - name: Check for existing PR and create/update PR
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           PR_URL=$(gh pr list --head temp-branch --json url --jq .[0].url)
           if [ -z "$PR_URL" ]; then
@@ -67,4 +67,4 @@ jobs:
             ## Changes
             - Describe your changes here
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
