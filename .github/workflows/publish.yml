@@ -61,7 +61,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           commit-message: "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
-          branch: $NEW_BRANCH
+          branch: auto-update-${GITHUB_REF#refs/tags/}
           base: main
           title: "Update version to ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
