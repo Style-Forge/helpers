@@ -1,4 +1,4 @@
-name: Rebuild and Publish
+name: Publish to npm
 
 on:
   push:
@@ -11,11 +11,11 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
-      - name: Set up Node.js
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
@@ -25,23 +25,26 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.email "sarmaged@gmail.com"
-          git config --global user.name "Sarmaged"
+          git config --local user.email "sarmaged@gmail.com"
+          git config --local user.name "Sarmaged"
 
       - name: Create new branch
-        id: create_branch
         run: |
-          BRANCH_NAME=auto-update-${GITHUB_REF#refs/tags/v}
-          echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
-          git checkout -b $BRANCH_NAME
+          NEW_BRANCH="auto-update-${GITHUB_REF#refs/tags/}"
+          git checkout -b $NEW_BRANCH
 
       - name: Update version in package.json
         run: |
           NEW_VERSION=${GITHUB_REF#refs/tags/v}
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
-          git add package.json yarn.lock
-          git commit -m "Update version to ${NEW_VERSION} and upgrade dependencies"
-          git push origin HEAD:${{ env.BRANCH_NAME }}
+
+      - name: Commit and push version change
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git add package.json
+          git commit -m "Update version to ${GITHUB_REF#refs/tags/v}"
+          git push origin $NEW_BRANCH
 
       - name: Build the package
         run: yarn build
@@ -51,16 +54,16 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          yarn publish --non-interactive --new-version ${GITHUB_REF#refs/tags/v}
+          yarn publish --new-version ${GITHUB_REF#refs/tags/v}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GH_TOKEN }}
-          commit-message: Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies
-          branch: ${{ env.BRANCH_NAME }}
-          title: Update version to ${GITHUB_REF#refs/tags/v}
-          body: This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies.
+          commit-message: "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
+          branch: $NEW_BRANCH
+          title: "Update version to ${GITHUB_REF#refs/tags/v}"
+          body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
 
       - name: Create GitHub Release
         uses: actions/create-release@v1
@@ -69,6 +72,6 @@ jobs:
           release_name: Release ${{ github.ref }}
           body: |
             ## Changes
-            - Updated to version ${{ github.ref }}
+            - Describe your changes here
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
