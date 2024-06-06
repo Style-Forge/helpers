@@ -36,6 +36,9 @@ jobs:
           git tag -d ${GITHUB_REF#refs/tags/} || true
           git push origin :refs/tags/${GITHUB_REF#refs/tags/} || true
 
+      - name: Install GitHub CLI
+        run: sudo apt-get install -y gh
+
       - name: Bump version and publish to npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -44,16 +47,14 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
           yarn publish --new-version ${GITHUB_REF#refs/tags/v}
 
-      - name: Push changes back to GitHub
+      - name: Push changes back to GitHub and create PR
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git checkout -b temp-branch
           git push origin temp-branch --follow-tags
-          git checkout main
-          git merge temp-branch
-          git push origin main
-          git branch -d temp-branch
+          gh pr create --title "Auto-update version to ${GITHUB_REF#refs/tags/v}" --body "This PR was automatically created by GitHub Actions to update the version to ${GITHUB_REF#refs/tags/v}." --base main --head temp-branch
+          gh pr merge --auto --squash temp-branch
 
       - name: Create GitHub Release
         uses: actions/create-release@v1
