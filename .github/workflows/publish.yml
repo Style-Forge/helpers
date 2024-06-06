@@ -36,6 +36,19 @@ jobs:
           git tag -d ${GITHUB_REF#refs/tags/} || true
           git push origin :refs/tags/${GITHUB_REF#refs/tags/} || true
 
+      - name: Update version in package.json
+        run: |
+          NEW_VERSION=${GITHUB_REF#refs/tags/v}
+          jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
+
+      - name: Commit and push version change
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git add package.json
+          git commit -m "Update version to ${GITHUB_REF#refs/tags/v}"
+          git push origin HEAD
+
       - name: Install GitHub CLI
         run: sudo apt-get install -y gh
 
@@ -43,7 +56,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          yarn version --new-version ${GITHUB_REF#refs/tags/v}
           echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
           yarn publish --new-version ${GITHUB_REF#refs/tags/v}
 

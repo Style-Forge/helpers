@@ -21,8 +21,7 @@
     "frontend"
   ],
   "scripts": {
-    "build": "node builder.js",
-    "prepublishOnly": "yarn build"
+    "build": "node builder.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
