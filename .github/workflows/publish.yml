@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -23,15 +23,28 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Update version in package.json
-        run: |
-          NEW_VERSION=${GITHUB_REF#refs/tags/v}
-          jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
-
       - name: Configure Git
         run: |
           git config --global user.email "sarmaged@gmail.com"
           git config --global user.name "Sarmaged"
+
+      - name: Update version in package.json
+        run: |
+          NEW_VERSION=${GITHUB_REF#refs/tags/v}
+          jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
+          git add package.json yarn.lock
+          git commit -m "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
+          git push origin HEAD
+
+      - name: Build the package
+        run: yarn build
+
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
+          yarn publish --non-interactive --new-version ${GITHUB_REF#refs/tags/v}
 
       - name: Create and push new branch
         run: |
@@ -50,19 +63,7 @@ jobs:
           title: Update version to ${GITHUB_REF#refs/tags/v}
           body: This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies.
 
-      - name: Build the package
-        run: yarn build
-
-      - name: Publish to npm
-        if: github.ref == 'refs/heads/main'
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          yarn publish --new-version ${GITHUB_REF#refs/tags/v}
-
       - name: Create GitHub Release
-        if: github.ref == 'refs/heads/main'
         uses: actions/create-release@v1
         with:
           tag_name: ${{ github.ref }}
