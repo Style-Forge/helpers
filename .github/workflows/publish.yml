@@ -28,22 +28,23 @@ jobs:
           git config --local user.email "sarmaged@gmail.com"
           git config --local user.name "Sarmaged"
 
-      - name: Switch to main branch
+      - name: Create new branch
         run: |
-          git checkout main
+          NEW_VERSION=${GITHUB_REF#refs/tags/v}
+          git checkout -b auto-update-v${NEW_VERSION}
 
       - name: Update version in package.json
         run: |
           NEW_VERSION=${GITHUB_REF#refs/tags/v}
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
 
-      - name: Commit and push version change
+      - name: Commit version change
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git add package.json
           git commit -m "Update version to ${GITHUB_REF#refs/tags/v}"
-          git push origin main
+          git push origin auto-update-v${GITHUB_REF#refs/tags/v}
 
       - name: Build the package
         run: yarn build
