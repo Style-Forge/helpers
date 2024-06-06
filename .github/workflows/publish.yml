@@ -54,36 +54,14 @@ jobs:
           base: main
           title: "Update version to ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
-
-      - name: Merge Pull Request
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{ secrets.GH_TOKEN }}
-          script: |
-            const { data: pullRequests } = await github.pulls.list({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              head: `auto-update-v${context.ref.replace('refs/tags/v', '')}`,
-            });
-
-            if (pullRequests.length > 0) {
-              const pullRequestNumber = pullRequests[0].number;
-              await github.pulls.merge({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: pullRequestNumber,
-                merge_method: 'squash',
-              });
-              console.log(`Merged PR #${pullRequestNumber}`);
-            } else {
-              console.log('No pull request found');
-            }
+          auto-merge: true
+          merge-method: squash
 
       - name: Build the package
         run: yarn build
 
       - name: Publish to npm
+        if: github.ref == 'refs/heads/main'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
@@ -91,6 +69,7 @@ jobs:
           yarn publish --new-version ${GITHUB_REF#refs/tags/v}
 
       - name: Delete branch
+        if: github.ref == 'refs/heads/main'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
