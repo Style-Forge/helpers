@@ -1,4 +1,4 @@
-name: Publish to npm
+name: Rebuild and Publish
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Use Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
@@ -28,21 +28,21 @@ jobs:
           NEW_VERSION=${GITHUB_REF#refs/tags/v}
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "sarmaged@gmail.com"
+          git config --global user.name "Sarmaged"
+
       - name: Commit and push version change
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git add package.json
-          git commit -m "Update version to ${GITHUB_REF#refs/tags/v}"
+          git add package.json yarn.lock
+          git commit -m "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
           git push origin HEAD
 
       - name: Build the package
         run: yarn build
-
-      - name: Configure Git
-        run: |
-          git config --local user.email "sarmaged@gmail.com"
-          git config --local user.name "Sarmaged"
 
       - name: Publish to npm
         env:
@@ -58,6 +58,6 @@ jobs:
           release_name: Release ${{ github.ref }}
           body: |
             ## Changes
-            - Describe your changes here
+            - Updated to version ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
