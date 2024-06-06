@@ -61,12 +61,12 @@ jobs:
         run: yarn build
 
       - name: Publish to npm
-        if: github.ref == 'refs/heads/main'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          yarn publish --new-version ${GITHUB_REF#refs/tags/v}
+          NEW_VERSION=${GITHUB_REF#refs/tags/v}
+          yarn publish --new-version $NEW_VERSION
 
       - name: Delete branch
         if: github.ref == 'refs/heads/main'
