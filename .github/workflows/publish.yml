@@ -58,15 +58,10 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create Pull Request
-        id: create_pull_request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "chore(release): update version to ${GITHUB_REF#refs/tags/v}"
-          branch: $NEW_BRANCH
-          base: main
-          title: "Release ${GITHUB_REF#refs/tags/v}"
-          body: "This PR updates the version to ${GITHUB_REF#refs/tags/v}"
+        run: |
+          gh pr create --base main --head $NEW_BRANCH --title "Release ${GITHUB_REF#refs/tags/v}" --body "This PR updates the version to ${GITHUB_REF#refs/tags/v}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Verify Pull Request creation
         run: echo "Verifying pull request creation..."
