@@ -1,4 +1,4 @@
-name: Build and Publish
+name: Build and Publish Vue Project
 
 on:
   push:
@@ -36,15 +36,25 @@ jobs:
       - name: Yarn build
         run: yarn build
 
-      - name: Commit and push updated files
+      - name: Create new branch, commit and push changes
         run: |
-          git checkout main  # Ensure we are on the main branch
-          git pull origin main  # Pull the latest changes
+          NEW_BRANCH="release-${GITHUB_REF#refs/tags/}"
+          git checkout -b $NEW_BRANCH
           git add .
           git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/v}"
-          git push origin main --force
+          git push origin $NEW_BRANCH
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(release): update version to ${GITHUB_REF#refs/tags/v}"
+          branch: $NEW_BRANCH
+          base: main
+          title: "Release ${GITHUB_REF#refs/tags/v}"
+          body: "This PR updates the version to ${GITHUB_REF#refs/tags/v}"
 
       - name: Set up NPM auth
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
@@ -53,3 +63,10 @@ jobs:
         run: yarn publish --non-interactive
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Delete temporary branch
+        if: github.event.pull_request.merged == true
+        run: |
+          git push origin --delete $NEW_BRANCH
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
