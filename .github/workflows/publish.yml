@@ -75,19 +75,27 @@ jobs:
           title: "Release ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v}"
 
-      - name: Check Pull Request
+      - name: Wait for PR to be created
         run: |
-          gh pr list --state open --head "$NEW_BRANCH"
+          echo "Waiting for pull request to be created..."
+          for i in {1..5}; do
+            PR_NUMBER=$(gh pr list --state open --head "$NEW_BRANCH" --json "number" --jq '.[0].number')
+            if [ -n "$PR_NUMBER" ]; then
+              echo "Pull request found: $PR_NUMBER"
+              break
+            fi
+            echo "Pull request not found, retrying in 10 seconds..."
+            sleep 10
+          done
+          if [ -z "$PR_NUMBER" ]; then
+            echo "No pull request found for branch $NEW_BRANCH after multiple attempts"
+            exit 1
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Merge Pull Request
         run: |
-          PR_NUMBER=$(gh pr list --state open --head "$NEW_BRANCH" --json "number" --jq '.[0].number')
-          if [ -z "$PR_NUMBER" ]; then
-            echo "No pull request found for branch $NEW_BRANCH"
-            exit 1
-          fi
           echo "Merging PR #${PR_NUMBER}"
           gh pr merge "$PR_NUMBER" --squash
         env:
