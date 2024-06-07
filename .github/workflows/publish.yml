@@ -69,13 +69,14 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            const pr_number = ${{ steps.create_pull_request.outputs.pull_request_number }}
-            github.pulls.merge({
+            const pr_number = parseInt('{{ steps.create_pull_request.outputs.pull_request_number }}', 10);
+            console.log(`Merging PR #${pr_number}`);
+            await github.pulls.merge({
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: pr_number,
               merge_method: 'squash'
-            })
+            });
 
       - name: Delete temporary branch
         if: success()
