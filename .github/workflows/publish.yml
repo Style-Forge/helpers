@@ -59,7 +59,9 @@ jobs:
 
       - name: Create Pull Request
         run: |
-          gh pr create --base main --head $NEW_BRANCH --title ${GITHUB_REF#refs/tags/v} --body ${GITHUB_REF#refs/tags/v}
+          PR_TITLE="Release ${GITHUB_REF#refs/tags/v}"
+          PR_BODY="This PR updates the version to ${GITHUB_REF#refs/tags/v}"
+          gh pr create --base main --head $NEW_BRANCH --title "$PR_TITLE" --body "$PR_BODY"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
