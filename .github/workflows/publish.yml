@@ -68,6 +68,10 @@ jobs:
           title: "Release ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v}"
 
+      - name: List Pull Requests for Debug
+        run: |
+          gh pr list --state open --head "$NEW_BRANCH"
+
       - name: Merge Pull Request
         run: |
           PR_NUMBER=$(gh pr list --state open --head "$NEW_BRANCH" --json "number" --jq '.[0].number')
