@@ -36,7 +36,7 @@ jobs:
         run: |
           git add .
           git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/v}"
-          git push origin HEAD --force
+          git push origin HEAD:${{ github.ref }} --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
