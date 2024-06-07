@@ -24,7 +24,7 @@ jobs:
 
       - name: Update version in package.json
         run: |
-          VERSION=${GITHUB_REF#refs/tags/}
+          VERSION=${GITHUB_REF#refs/tags/v}
           jq --arg new_version "$VERSION" '.version = $new_version' package.json > package.tmp.json && mv package.tmp.json package.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -42,9 +42,15 @@ jobs:
 
       - name: Commit and push updated files
         run: |
+          git checkout -B temp-branch
           git add .
-          git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/}"
-          git push origin HEAD:${{ github.ref }}
+          git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/v}"
+          git push origin temp-branch
+          git checkout ${{ github.ref }}
+          git merge temp-branch
+          git push origin ${{ github.ref }}
+          git branch -d temp-branch
+          git push origin --delete temp-branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
