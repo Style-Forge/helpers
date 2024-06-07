@@ -70,9 +70,9 @@ jobs:
 
       - name: Merge Pull Request
         run: |
-          PR_NUMBER=$(gh pr list --state open --head "$NEW_BRANCH" --json number --jq '.[0].number')
+          PR_NUMBER=$(gh pr list --state open --head $NEW_BRANCH --json number --jq '.[0].number')
           echo "Merging PR #${PR_NUMBER}"
-          gh pr merge $PR_NUMBER --squash --repo ${{ github.repository }}
+          gh pr merge $PR_NUMBER --squash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
