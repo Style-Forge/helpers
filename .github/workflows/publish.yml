@@ -71,6 +71,8 @@ jobs:
       - name: List Pull Requests for Debug
         run: |
           gh pr list --state open --head "$NEW_BRANCH"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Merge Pull Request
         run: |
