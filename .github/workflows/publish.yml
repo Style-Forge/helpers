@@ -59,7 +59,7 @@ jobs:
 
       - name: Create Pull Request
         run: |
-          gh pr create --base main --head $NEW_BRANCH --title "${GITHUB_REF#refs/tags/v}" --body "${GITHUB_REF#refs/tags/v}"
+          gh pr create --base main --head $NEW_BRANCH --title "Updated" --body "Updated"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
