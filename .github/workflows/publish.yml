@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install GitHub CLI
+        run: sudo apt-get install gh
+
       - name: Yarn install
         run: yarn install --frozen-lockfile
 
@@ -66,17 +69,12 @@ jobs:
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v}"
 
       - name: Merge Pull Request
-        uses: actions/github-script@v5
-        with:
-          script: |
-            const pr_number = parseInt(process.env.PULL_REQUEST_NUMBER, 10);
-            console.log(`Merging PR #${pr_number}`);
-            await github.pulls.merge({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: pr_number,
-              merge_method: 'squash'
-            });
+        run: |
+          PR_NUMBER=$(gh pr list --state open --head $NEW_BRANCH --json number --jq '.[0].number')
+          echo "Merging PR #${PR_NUMBER}"
+          gh pr merge $PR_NUMBER --squash --repo ${{ github.repository }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Delete temporary branch
         if: success()
