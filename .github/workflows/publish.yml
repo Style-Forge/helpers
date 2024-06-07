@@ -1,4 +1,4 @@
-name: Build and Publish Vue Project
+name: Build and Publish
 
 on:
   push:
@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main  # Ensure we are checking out the main branch
       - uses: actions/setup-node@v3
         with:
           node-version: 20
@@ -36,10 +38,11 @@ jobs:
 
       - name: Commit and push updated files
         run: |
+          git checkout main  # Ensure we are on the main branch
+          git pull origin main  # Pull the latest changes
           git add .
           git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/v}"
-          git show --stat
-          git push origin HEAD:${{ github.ref }} --force
+          git push origin main --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
