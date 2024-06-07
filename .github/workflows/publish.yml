@@ -1,4 +1,4 @@
-name: Publish to npm
+name: Build and Publish Vue Project
 
 on:
   push:
@@ -8,88 +8,39 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'
+          node-version: 20
 
-      - name: Install dependencies
-        run: yarn install
+      - name: Yarn install
+        run: yarn install --frozen-lockfile
 
       - name: Configure Git
         run: |
-          git config --local user.email "sarmaged@gmail.com"
-          git config --local user.name "Sarmaged"
-
-      - name: Create new branch
-        run: |
-          NEW_VERSION=${GITHUB_REF#refs/tags/v}
-          git checkout -b auto-update-v${NEW_VERSION}
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Update version in package.json
         run: |
-          NEW_VERSION=${GITHUB_REF#refs/tags/v}
-          jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
-
-      - name: Commit version change
+          VERSION=${GITHUB_REF#refs/tags/}
+          jq --arg new_version "$VERSION" '.version = $new_version' package.json > package.tmp.json && mv package.tmp.json package.json
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          git add package.json
-          git add helpers.css
-          git commit -m "Update version to ${GITHUB_REF#refs/tags/v}"
-          git pull --rebase origin main
-          git push origin auto-update-v${GITHUB_REF#refs/tags/v}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-          commit-message: "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
-          branch: auto-update-v${NEW_VERSION}
-          base: main
-          title: "Update version to ${GITHUB_REF#refs/tags/v}"
-          body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
-          auto-merge: true
-          merge-method: squash
-
-      - name: Build the package
+      - name: Yarn build
         run: yarn build
 
-      - name: Install GitHub CLI
+      - name: Commit and push updated files
         run: |
-          curl -sSL https://github.com/cli/cli/releases/download/v2.19.0/gh_2.19.0_linux_amd64.tar.gz -o ghcli.tar.gz
-          tar -xzf ghcli.tar.gz
-          sudo cp gh_2.19.0_linux_amd64/bin/gh /usr/local/bin/
-
-      - name: Merge Pull Request
-        run: |
-          gh pr merge auto-update-v${NEW_VERSION} --squash --delete-branch --repo ${{ github.repository }}
+          git add .
+          git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/}"
+          git push origin HEAD:${{ github.ref }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Delete existing tag
-        run: |
-          git tag -d v${GITHUB_REF#refs/tags/v} || true
-          git push origin :refs/tags/v${GITHUB_REF#refs/tags/v} || true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to npm
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          NEW_VERSION=${GITHUB_REF#refs/tags/v}
-          yarn publish --new-version $NEW_VERSION
-
-      - name: Delete branch
-        if: github.ref == 'refs/heads/main'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          BRANCH_NAME=auto-update-v${GITHUB_REF#refs/tags/v}
-          git push origin --delete $BRANCH_NAME
