@@ -75,6 +75,13 @@ jobs:
           title: "Release ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v}"
 
+      - name: Verify Pull Request creation
+        run: |
+          echo "Verifying pull request creation..."
+          gh pr list --state open --head "$NEW_BRANCH"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Wait for PR to be created
         run: |
           echo "Waiting for pull request to be created..."
