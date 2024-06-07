@@ -42,10 +42,16 @@ jobs:
       - name: Create new branch, commit and push changes
         run: |
           NEW_BRANCH="release-${GITHUB_REF#refs/tags/}"
+          echo "Creating new branch $NEW_BRANCH"
           git checkout -b $NEW_BRANCH
           git add .
           git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/v}"
           git push origin $NEW_BRANCH
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Debug branch creation
+        run: |
+          git branch -a
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -67,12 +73,6 @@ jobs:
           base: main
           title: "Release ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v}"
-
-      - name: List branches for debugging
-        run: |
-          git branch -a
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: List Pull Requests for Debug
         run: |
