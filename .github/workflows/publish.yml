@@ -32,11 +32,27 @@ jobs:
       - name: Yarn build
         run: yarn build
 
+      - name: Remove existing tag
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          git tag -d $TAG
+          git push origin :refs/tags/$TAG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit and push updated files
         run: |
           git add .
           git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/}"
           git push origin HEAD:${{ github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create and push tag
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          git tag $TAG
+          git push origin $TAG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
