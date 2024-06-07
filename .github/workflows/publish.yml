@@ -68,6 +68,12 @@ jobs:
           title: "Release ${GITHUB_REF#refs/tags/v}"
           body: "This PR updates the version to ${GITHUB_REF#refs/tags/v}"
 
+      - name: List branches for debugging
+        run: |
+          git branch -a
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: List Pull Requests for Debug
         run: |
           gh pr list --state open --head "$NEW_BRANCH"
