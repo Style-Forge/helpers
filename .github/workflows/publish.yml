@@ -57,9 +57,11 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Create Pull Request
+      - name: Create Pull Request using API
         run: |
-          gh pr create --base main --head $NEW_BRANCH --title "Updated" --body "Updated"
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -d '{"title":"Release '${GITHUB_REF#refs/tags/v}'","body":"This PR updates the version to '${GITHUB_REF#refs/tags/v}'","head":"'${NEW_BRANCH}'","base":"main"}' \
+          https://api.github.com/repos/sarmaged/style-forge.helpers/pulls
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
