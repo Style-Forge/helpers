@@ -41,19 +41,14 @@ jobs:
         run: |
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
 
-      - name: Commit and push changes
-        run: |
-          git status
-          git diff
-          git add .
-          git status
-          git commit -m "chore(release): update version to ${NEW_VERSION}"
-          git status
-          git push origin $NEW_BRANCH
-          git status
-
       - name: Build the package
         run: yarn build
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "chore(release): update version to ${NEW_VERSION}"
+          git push origin $NEW_BRANCH
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
