@@ -26,7 +26,7 @@ jobs:
           git config --local user.email "sarmaged@gmail.com"
           git config --local user.name "Sarmaged"
 
-      - name: Create new branch
+      - name: Create variables
         run: |
           NEW_VERSION=${GITHUB_REF#refs/tags/v}
           NEW_BRANCH=release-v${NEW_VERSION}
@@ -35,12 +35,7 @@ jobs:
 
       - name: Create new branch
         run: |
-          git branch
           git checkout -b ${NEW_BRANCH}
-
-      - name: LS
-        run: |
-          ls -la
 
       - name: Update version in package.json
         run: |
@@ -56,6 +51,11 @@ jobs:
           git add .
           git commit -m "chore(release): update version to ${NEW_VERSION}"
           git push origin $NEW_BRANCH
+
+      - name: Verify commit and push
+        run: |
+          git log -1
+          git show
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
