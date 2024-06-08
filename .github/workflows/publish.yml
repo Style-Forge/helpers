@@ -44,10 +44,11 @@ jobs:
         run: |
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
 
-      - name: Commit and push changes
+      - name: Create, commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git checkout -b ${NEW_BRANCH}
           git add .
           git commit -m "chore(release): update version to ${NEW_VERSION}"
           git push origin $NEW_BRANCH
