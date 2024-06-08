@@ -37,6 +37,12 @@ jobs:
         run: |
           git checkout -b ${NEW_BRANCH}
 
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "chore(release): update version to ${NEW_VERSION}"
+          git push origin $NEW_BRANCH
+
       - name: Update version in package.json
         run: |
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
