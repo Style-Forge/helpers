@@ -18,9 +18,6 @@ jobs:
         with:
           node-version: 'lts/*'
 
-      - name: Install GitHub CLI
-        run: sudo apt-get install gh
-
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
@@ -57,7 +54,9 @@ jobs:
 #          git pull --rebase origin main
 #          git push origin auto-update-v${GITHUB_REF#refs/tags/v}
 
-      - name: add, commit and push changes
+      - name: Commit and push changes
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git add .
           git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/v}"
@@ -78,12 +77,17 @@ jobs:
 #          auto-merge: true
 #          merge-method: squash
 
+      - name: Install GitHub CLI
+        run: sudo apt-get install gh
+
       - name: Check for existing PR and create/update PR
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          gh pr create --title "Release ${GITHUB_REF#refs/tags/v}" --body "This PR updates the version to ${GITHUB_REF#refs/tags/v}" --base main --head $NEW_BRANCH
+          gh auth login --with-token <<< "${{ secrets.PAT_TOKEN }}"
+          gh pr create --title "Release ${GITHUB_REF#refs/tags/v}" --body "This PR updates the version to ${GITHUB_REF#refs/tags/v}" --base main --head $NEW_BRANCH --label "release"
 #        env:
 #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 
 #      - name: Delete existing tag
 #        run: |
