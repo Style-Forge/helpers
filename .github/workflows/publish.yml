@@ -49,15 +49,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git checkout -b ${NEW_BRANCH}
-          git diff
           git add .
           git commit -m "chore(release): update version to ${NEW_VERSION}"
           git push origin $NEW_BRANCH
-
-      - name: Debug - List branches and show diff
-        run: |
-          git branch -a
-          git diff origin/main...${NEW_BRANCH}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
