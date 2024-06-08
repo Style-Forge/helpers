@@ -5,10 +5,6 @@ on:
     tags:
       - 'v*.*.*'
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -20,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'
+          node-version: 20
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
@@ -37,15 +33,16 @@ jobs:
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
           echo "NEW_BRANCH=$NEW_BRANCH" >> $GITHUB_ENV
 
+      - name: Create new branch
+        run: |
+          git checkout -b ${NEW_BRANCH}
+
       - name: Update version in package.json
         run: |
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
 
-      - name: Create, commit and push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and push changes
         run: |
-          git checkout -b ${NEW_BRANCH}
           git add .
           git commit -m "chore(release): update version to ${NEW_VERSION}"
           git push origin $NEW_BRANCH
@@ -57,9 +54,9 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update version to ${NEW_VERSION} and upgrade dependencies"
+          commit-message: "Update version to ${{ env.NEW_VERSION }} and upgrade dependencies"
           branch: ${{ env.NEW_BRANCH }}
           base: main
-          title: "Release ${NEW_VERSION}"
-          body: "This PR updates the version to ${NEW_VERSION} and upgrades dependencies."
+          title: "Release ${{ env.NEW_VERSION }}"
+          body: "This PR updates the version to ${{ env.NEW_VERSION }} and upgrades dependencies."
           labels: release
