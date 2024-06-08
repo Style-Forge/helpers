@@ -54,6 +54,11 @@ jobs:
           git commit -m "chore(release): update version to ${NEW_VERSION}"
           git push origin $NEW_BRANCH
 
+      - name: Debug - List branches and show diff
+        run: |
+          git branch -a
+          git diff origin/main...${NEW_BRANCH}
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
@@ -64,5 +69,3 @@ jobs:
           title: "Release ${NEW_VERSION}"
           body: "This PR updates the version to ${NEW_VERSION} and upgrades dependencies."
           labels: release
-          auto-merge: true
-          merge-method: squash
