@@ -5,6 +5,10 @@ on:
     tags:
       - 'v*.*.*'
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -32,92 +36,31 @@ jobs:
       - name: Create new branch
         run: |
           NEW_VERSION=${GITHUB_REF#refs/tags/v}
-          NEW_BRANCH=release-v${GITHUB_REF#refs/tags/}
-          git checkout -b ${NEW_BRANCH}
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEW_BRANCH=release-v${NEW_VERSION}
+          echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
+          echo "NEW_BRANCH=$NEW_BRANCH" >> $GITHUB_ENV
 
       - name: Update version in package.json
         run: |
-          NEW_VERSION=${GITHUB_REF#refs/tags/v}
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' package.json > temp.json && mv temp.json package.json
-      #        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-#      - name: Commit version change
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#        run: |
-#          git add package.json
-#          git add helpers.css
-#          git commit -m "Update version to ${GITHUB_REF#refs/tags/v}"
-#          git pull --rebase origin main
-#          git push origin auto-update-v${GITHUB_REF#refs/tags/v}
 
       - name: Commit and push changes
         env:
-          PAT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add .
-          git commit -m "chore(release): update version to ${GITHUB_REF#refs/tags/v}"
+          git commit -m "chore(release): update version to ${NEW_VERSION}"
           git push origin $NEW_BRANCH
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update version to ${NEW_VERSION} and upgrade dependencies"
-          branch: $NEW_BRANCH
+          branch: ${{ env.NEW_BRANCH }}
           base: main
           title: "Release ${NEW_VERSION}"
           body: "This PR updates the version to ${NEW_VERSION} and upgrades dependencies."
           labels: release
           auto-merge: true
           merge-method: squash
-
-      #      - name: Create Pull Request
-#        uses: peter-evans/create-pull-request@v3
-#        with:
-#          token: ${{ secrets.GITHUB_TOKEN }}
-#          commit-message: "Update version to ${GITHUB_REF#refs/tags/v} and upgrade dependencies"
-#          branch: auto-update-v${NEW_VERSION}
-#          base: main
-#          title: "Update version to ${GITHUB_REF#refs/tags/v}"
-#          body: "This PR updates the version to ${GITHUB_REF#refs/tags/v} and upgrades dependencies."
-#          auto-merge: true
-#          merge-method: squash
-
-#      - name: Install GitHub CLI
-#        run: sudo apt-get install gh
-#
-#      - name: Check for existing PR and create/update PR
-#        env:
-#          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-#        run: |
-#          gh auth login --with-token <<< "${{ secrets.PAT_TOKEN }}"
-#          gh pr create --title "Release ${GITHUB_REF#refs/tags/v}" --body "This PR updates the version to ${GITHUB_REF#refs/tags/v}" --base main --head $NEW_BRANCH --label "release"
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-#      - name: Delete existing tag
-#        run: |
-#          git tag -d v${GITHUB_REF#refs/tags/v} || true
-#          git push origin :refs/tags/v${GITHUB_REF#refs/tags/v} || true
-
-#      - name: Publish to npm
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-#        run: |
-#          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-#          NEW_VERSION=${GITHUB_REF#refs/tags/v}
-#          yarn publish --new-version $NEW_VERSION
-
-#      - name: Delete branch
-#        if: github.ref == 'refs/heads/main'
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#        run: |
-#          BRANCH_NAME=auto-update-v${GITHUB_REF#refs/tags/v}
-#          git push origin --delete $BRANCH_NAME
