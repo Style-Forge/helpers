@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: 20
 
+      - name: Set up NPM auth
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
       - name: Publish to npm
+        run: yarn publish --non-interactive
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          NEW_VERSION=${GITHUB_REF#refs/tags/v}
-          yarn publish --new-version $NEW_VERSION
