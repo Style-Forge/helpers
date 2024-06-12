@@ -12,8 +12,7 @@ jobs:
     steps:
       - name: Determine version update type
         id: determine_version
-        run: |
-          echo "::set-output name=update_type::patch"
+        run: echo "update_type=patch" >> $GITHUB_ENV
 
       - name: Send notification to style-forge
         run: |
@@ -21,4 +20,4 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: token ${{ secrets.PERSONAL_GITHUB_TOKEN }}" \
             https://api.github.com/repos/sarmaged/style-forge/dispatches \
-            -d '{"event_type":"update-style-forge", "client_payload": {"update_type": "${{ steps.determine_version.outputs.update_type }}"}}'
+            -d '{"event_type":"update-style-forge", "client_payload": {"update_type": "${{ env.update_type }}"}}'
