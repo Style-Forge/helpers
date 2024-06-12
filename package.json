@@ -1,6 +1,6 @@
 {
   "name": "style-forge.helpers",
-  "version": "1.0.144",
+  "version": "1.0.146",
   "description": "CSS Helpers for Style Forge",
   "type": "module",
   "main": "helpers.css",
