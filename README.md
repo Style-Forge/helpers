@@ -11,13 +11,11 @@ Style Forge Helpers is a collection of CSS helpers for the Style Forge project. 
 
 ## Installation
 
-You can install this package using npm:
+You can install the package via npm or yarn:
 
 ```bash
 npm install style-forge.helpers
 ```
-
-Or using yarn:
 
 ```bash
 yarn add style-forge.helpers
@@ -28,13 +26,13 @@ yarn add style-forge.helpers
 After installation, you can import the CSS file into your project:
 
 ```css
-@import "style-forge.helpers/helpers.css";
+@import "style-forge.helpers";
 ```
 
 Or, if you are using Webpack or another module bundler:
 
 ```js
-import 'style-forge.helpers/helpers.css';
+import 'style-forge.helpers';
 ```
 
 ## Contributing
@@ -65,7 +63,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Authors
 
-- **Dmitrii Sagalov** - *Lead Developer* - [Sarmaged](https://github.com/Sarmaged)
+- **Dmitrii Sagalov** - *Expert in interface development* - [Sarmaged](https://github.com/Sarmaged)
 
 ## Contact
 
