@@ -4,20 +4,21 @@ on:
   pull_request:
     types: [closed]
 
-permissions:
-  contents: read
-  actions: write
-
 jobs:
   notify:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
+      - name: Determine version update type
+        id: determine_version
+        run: |
+          echo "::set-output name=update_type::patch"
+
       - name: Send notification to style-forge
         run: |
           curl -X POST \
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: token ${{ secrets.PERSONAL_GITHUB_TOKEN }}" \
             https://api.github.com/repos/sarmaged/style-forge/dispatches \
-            -d '{"event_type":"update-style-forge"}'
+            -d '{"event_type":"update-style-forge", "client_payload": {"update_type": "${{ steps.determine_version.outputs.update_type }}"}}'
