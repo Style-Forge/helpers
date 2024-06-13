@@ -2,6 +2,7 @@
 # Style Forge Helpers
 
 ![npm](https://img.shields.io/npm/v/style-forge.helpers)
+![npm](https://img.shields.io/npm/dm/style-forge.helpers)
 ![license](https://img.shields.io/npm/l/style-forge.helpers)
 ![build](https://github.com/Sarmaged/style-forge.helpers/actions/workflows/publish.yml/badge.svg)
 
@@ -54,10 +55,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Links
 
 - [style-forge](https://github.com/Sarmaged/style-forge)
-- [style-forge.helpers](https://github.com/Sarmaged/style-forge.helpers)
+- [style-forge.base](https://github.com/Sarmaged/style-forge.base)
 - [style-forge.colors](https://github.com/Sarmaged/style-forge.colors)
 - [style-forge.form](https://github.com/Sarmaged/style-forge.form)
-- [style-forge.base](https://github.com/Sarmaged/style-forge.base)
+- [style-forge.helpers](https://github.com/Sarmaged/style-forge.helpers)
 - [style-forge.patterns](https://github.com/Sarmaged/style-forge.patterns)
 - [style-forge.themes](https://github.com/Sarmaged/style-forge.themes)
 
