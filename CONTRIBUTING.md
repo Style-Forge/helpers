@@ -1,5 +1,5 @@
 
-# Contributing to Style Forge Helpers
+# Contributing to style-forge.helpers
 
 Thank you for your interest in contributing to the Style Forge Helpers project! We welcome contributions from the community. Please follow these guidelines to ensure a smooth contribution process.
 

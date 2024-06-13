@@ -1,7 +1,7 @@
 {
   "name": "style-forge.helpers",
   "version": "1.0.153",
-  "description": "CSS Helpers for Style Forge",
+  "description": "style-forge.helpers is a utility library that provides a set of essential CSS helper classes to enhance and simplify your web development workflow. It includes various utilities for spacing, alignment, visibility, and more, ensuring a more efficient and maintainable codebase.",
   "type": "module",
   "main": "helpers.css",
   "repository": {
@@ -18,7 +18,14 @@
     "utilities",
     "styles",
     "web development",
-    "frontend"
+    "frontend",
+    "styling",
+    "design",
+    "responsive",
+    "lightweight",
+    "performance",
+    "modular",
+    "consistent"
   ],
   "scripts": {
     "build": "node builder.js"

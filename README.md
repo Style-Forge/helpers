@@ -1,5 +1,5 @@
 
-# Style Forge Helpers
+# Style-Forge.Helpers
 
 ![npm](https://img.shields.io/npm/v/style-forge.helpers)
 ![npm](https://img.shields.io/npm/dm/style-forge.helpers)
@@ -8,7 +8,7 @@
 
 ## Description
 
-Style Forge Helpers is a collection of CSS helpers for the Style Forge project. This package provides various CSS utilities that simplify the styling of your web applications.
+style-forge.helpers is a utility library that provides a set of essential CSS helper classes to enhance and simplify your web development workflow. It includes various utilities for spacing, alignment, visibility, and more, ensuring a more efficient and maintainable codebase.
 
 ## Installation
 
