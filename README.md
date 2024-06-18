@@ -6,35 +6,11 @@
 ![license](https://img.shields.io/npm/l/style-forge.helpers)
 ![build](https://github.com/Sarmaged/style-forge.helpers/actions/workflows/publish.yml/badge.svg)
 
-## Description
-
 `Style-Forge.Helpers` is a utility library that provides a set of essential CSS helper classes to enhance and simplify your web development workflow. It includes various utilities for spacing, alignment, visibility, and more, ensuring a more efficient and maintainable codebase.
 
-## Installation
+## Description
 
-You can install the package via npm or yarn:
-
-```bash
-npm install style-forge.helpers
-```
-
-```bash
-yarn add style-forge.helpers
-```
-
-## Usage
-
-After installation, you can import the CSS file into your project:
-
-```css
-@import "style-forge.helpers";
-```
-
-Or, if you are using Webpack or another module bundler:
-
-```js
-import 'style-forge.helpers';
-```
+To check out docs, visit [style-forge.dev](https://style-forge.dev/helpers/)
 
 ## Contributing
 
