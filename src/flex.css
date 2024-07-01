@@ -15,6 +15,9 @@
 .auto:where(.d\:f, .d\:f\:x, .d\:f\:y) > * { flex: auto }
 .none:where(.d\:f, .d\:f\:x, .d\:f\:y) > * { flex: none }
 
+:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .flex\:auto { flex: auto }
+:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .flex\:none { flex: none }
+
 :where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:0 { flex-grow: 0 }
 :where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:1 { flex-grow: 1 }
 :where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:2 { flex-grow: 2 }
