@@ -33,7 +33,7 @@ jobs:
 
       - name: List all tags
         run: |
-          echo "Listing all tags:"
+          git fetch --tags
           git tag --list
 
       - name: Extract version and previous tag
