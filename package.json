@@ -1,7 +1,7 @@
 {
   "name": "style-forge.helpers",
   "version": "1.0.157",
-  "description": "Style-Forge.Helpers is a utility library that provides a set of essential CSS helper classes to enhance and simplify your web development workflow. It includes various utilities for spacing, alignment, visibility, and more, ensuring a more efficient and maintainable codebase",
+  "description": "Style-Forge.Helpers: essential CSS helper classes for spacing, alignment, visibility, and more in web development.",
   "type": "module",
   "main": "helpers.css",
   "repository": {
