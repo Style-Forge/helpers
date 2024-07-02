@@ -31,18 +31,14 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
 
-      - name: List all tags
-        run: |
-          git fetch --tags
-          git tag --list
+      - name: Fetch all tags
+        run: git fetch --tags
 
       - name: Extract version and previous tag
         id: extract_info
         run: |
           VERSION=${GITHUB_REF#refs/tags/v}
           PREVIOUS_TAG=$(git describe --tags $(git rev-list --tags --skip=1 --max-count=1))
-          echo "${VERSION}"
-          echo "${PREVIOUS_TAG#v}"
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           echo "PREVIOUS_TAG=$PREVIOUS_TAG" >> $GITHUB_ENV
 
@@ -51,9 +47,6 @@ jobs:
         run: |
           IFS='.' read -r -a NEW_VERSION_PARTS <<< "${VERSION}"
           IFS='.' read -r -a OLD_VERSION_PARTS <<< "${PREVIOUS_TAG#v}"
-
-          echo "New version parts: ${NEW_VERSION_PARTS[@]}"
-          echo "Old version parts: ${OLD_VERSION_PARTS[@]}"
 
           if [ "${NEW_VERSION_PARTS[0]}" != "${OLD_VERSION_PARTS[0]}" ]; then
             UPDATE_TYPE=major
