@@ -19,10 +19,3 @@
 
 .wrap.d\:g\:x, .wrap.d\:g { grid-auto-flow: dense column }
 .wrap.d\:g\:y { grid-auto-flow: dense row }
-
-.order\:0 { order: 0 }
-.order\:1 { order: 1 }
-.order\:2 { order: 2 }
-.order\:3 { order: 3 }
-.order\:4 { order: 4 }
-.order\:5 { order: 5 }
