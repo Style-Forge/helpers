@@ -39,8 +39,20 @@
 .fw\:heavy
 { font-weight: 900 }
 
-.txt\:c { text-align: center }
-.txt\:l { text-align: left }
-.txt\:s { text-align: start }
-.txt\:r { text-align: right }
-.txt\:e { text-align: end }
+.fz\:h1 { font-size: var(--sf-h1) }
+.fz\:h2 { font-size: var(--sf-h2) }
+.fz\:h3 { font-size: var(--sf-h3) }
+.fz\:h4 { font-size: var(--sf-h4) }
+.fz\:h5 { font-size: var(--sf-h5) }
+.fz\:h6 { font-size: var(--sf-h6) }
+
+.fz\:i { font-size: inherit }
+.fz\:n { font-size: var(--sf-fz-normal) }
+.fz\:s { font-size: var(--sf-fz-small) }
+
+.ta\:c { text-align: center }
+.ta\:e { text-align: end }
+.ta\:j { text-align: justify }
+.ta\:l { text-align: left }
+.ta\:r { text-align: right }
+.ta\:s { text-align: start }
