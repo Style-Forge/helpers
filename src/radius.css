@@ -1,3 +1,15 @@
-.radius { border-radius: 50% }
+.radius { border-radius: var(--sf-radius) }
+
+.radius\:i { border-radius: inherit }
+
+.radius\:v1 { border-radius: var(--sf-radius-v1) }
+.radius\:v2 { border-radius: var(--sf-radius-v2) }
+.radius\:v3 { border-radius: var(--sf-radius-v3) }
+.radius\:v4 { border-radius: var(--sf-radius-v4) }
+.radius\:v5 { border-radius: var(--sf-radius-v5) }
+.radius\:v6 { border-radius: var(--sf-radius-v6) }
+
 .radius\:0 { border-radius: 0 }
-.radius\:normal { border-radius: var(--sf-radius) }
+.radius\:50 { border-radius: 50% }
+.radius\:75 { border-radius: 75% }
+.radius\:100 { border-radius: 100% }

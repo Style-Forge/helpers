@@ -56,3 +56,9 @@
 .ta\:l { text-align: left }
 .ta\:r { text-align: right }
 .ta\:s { text-align: start }
+
+.whs\:n { white-space: normal }
+.whs\:nw { white-space: nowrap }
+.whs\:p { white-space: pre }
+.whs\:pl { white-space: pre-line }
+.whs\:pw { white-space: pre-wrap }

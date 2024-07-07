@@ -1,5 +1,33 @@
 .shift { margin: auto }
-.shift.top { margin-top: 0 }
-.shift.left { margin-left: 0 }
-.shift.right { margin-right: 0 }
-.shift.bottom { margin-bottom: 0 }
+
+/* Top */
+.shift\:t { margin: 0 auto auto }
+.shift\:t\:l, .shift\:l\:t { margin: 0 auto auto 0 }
+.shift\:t\:r, .shift\:r\:t { margin: 0 0 auto auto }
+.shift\:t\:b, .shift\:b\:t { margin: 0 auto 0 auto }
+.shift\:t\:l\:r { margin: 0 0 auto }
+.shift\:t\:l\:b, .shift\:l\:t\:b, .shift\:b\:t\:l { margin: 0 auto 0 0 }
+.shift\:t\:r\:b, .shift\:r\:t\:b, .shift\:b\:t\:r { margin: 0 0 0 auto }
+
+/* Left */
+.shift\:l { margin: auto auto auto 0 }
+.shift\:l\:r, .shift\:r\:l { margin: auto 0 }
+.shift\:l\:b, .shift\:b\:l { margin: auto auto 0 0 }
+.shift\:l\:t\:r, .shift\:r\:t\:l { margin: 0 0 auto 0 }
+.shift\:l\:r\:b, .shift\:r\:l\:b, .shift\:b\:l\:r { margin: auto 0 0 0 }
+
+/* Right */
+.shift\:r { margin: auto 0 auto auto }
+.shift\:r\:b, .shift\:b\:r { margin: auto 0 0 auto }
+
+/* Bottom */
+.shift\:b { margin: auto auto 0 auto }
+.shift\:b\:t\:l, .shift\:b\:l\:t { margin: 0 auto 0 0 }
+.shift\:b\:t\:r, .shift\:b\:r\:t { margin: 0 0 0 auto }
+
+/* All */
+.shift\:t\:l\:r\:b, .shift\:t\:l\:b\:r, .shift\:t\:r\:l\:b, .shift\:t\:r\:b\:l, .shift\:t\:b\:l\:r, .shift\:t\:b\:r\:l,
+.shift\:l\:t\:r\:b, .shift\:l\:t\:b\:r, .shift\:l\:r\:t\:b, .shift\:l\:r\:b\:t, .shift\:l\:b\:t\:r, .shift\:l\:b\:r\:t,
+.shift\:r\:t\:l\:b, .shift\:r\:t\:b\:l, .shift\:r\:l\:t\:b, .shift\:r\:l\:b\:t, .shift\:r\:b\:t\:l, .shift\:r\:b\:l\:t,
+.shift\:b\:t\:l\:r, .shift\:b\:t\:r\:l, .shift\:b\:l\:t\:r, .shift\:b\:l\:r\:t, .shift\:b\:r\:t\:l, .shift\:b\:r\:l\:t
+{ margin: 0 }

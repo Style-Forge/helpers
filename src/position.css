@@ -4,10 +4,20 @@
 .pos\:static { position: static }
 .pos\:s { position: sticky }
 
-.top:where(.pos\:a, .pos\:f, .pos\:r, .pos\:s) { top: 0 }
-.left:where(.pos\:a, .pos\:f, .pos\:r, .pos\:s) { left: 0 }
-.right:where(.pos\:a, .pos\:f, .pos\:r, .pos\:s) { right: 0 }
-.bottom:where(.pos\:a, .pos\:f, .pos\:r, .pos\:s) { bottom: 0 }
+.t { top: 0 }
+.l { left: 0 }
+.r { right: 0 }
+.b { bottom: 0 }
+
+.t\:a { top: auto }
+.l\:a { left: auto }
+.r\:a { right: auto }
+.b\:a { bottom: auto }
+
+.t\:i { top: inherit }
+.l\:i { left: inherit }
+.r\:i { right: inherit }
+.b\:i { bottom: inherit }
 
 .full:where(.pos\:a, .pos\:f) {
   top: 0;
