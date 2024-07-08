@@ -13,10 +13,12 @@
 .reverse.wrap.d\:f\:y { flex-flow: wrap-reverse column-reverse }
 
 .auto:where(.d\:f, .d\:f\:x, .d\:f\:y) > * { flex: auto }
-.none:where(.d\:f, .d\:f\:x, .d\:f\:y) > * { flex: none }
+.even:where(.d\:f, .d\:f\:x, .d\:f\:y) > * { flex: 1 }
+.none:where(.d\:f, .d\:f\:x, .d\:f\:y) > * { flex: 0 }
 
 :where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .flex\:auto { flex: auto }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .flex\:none { flex: none }
+:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .flex\:even { flex: 1 }
+:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .flex\:none { flex: 0 }
 
 :where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:0 { flex-grow: 0 }
 :where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:1 { flex-grow: 1 }

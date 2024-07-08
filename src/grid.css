@@ -10,12 +10,12 @@
 .d\:g\:x { grid-auto-columns: auto }
 .d\:g\:y { grid-auto-rows: auto }
 
-.auto.d\:g {
+.even.d\:g {
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
 }
-.auto.d\:g\:x { grid-auto-columns: 1fr }
-.auto.d\:g\:y { grid-auto-rows: 1fr }
+.even.d\:g\:x { grid-auto-columns: 1fr }
+.even.d\:g\:y { grid-auto-rows: 1fr }
 
 .wrap.d\:g\:x, .wrap.d\:g { grid-auto-flow: dense column }
 .wrap.d\:g\:y { grid-auto-flow: dense row }
