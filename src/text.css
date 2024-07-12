@@ -39,6 +39,8 @@
 .fw\:heavy
 { font-weight: 900 }
 
+:where(.fz\:h1, .fz\:h2, .fz\:h3, .fz\:h4, .fz\:h5, .fz\:h6, .fz, .fz\:i, .fz\:s) { line-height: var(--sf-lh) }
+
 .fz\:h1 { font-size: var(--sf-h1) }
 .fz\:h2 { font-size: var(--sf-h2) }
 .fz\:h3 { font-size: var(--sf-h3) }
@@ -46,8 +48,8 @@
 .fz\:h5 { font-size: var(--sf-h5) }
 .fz\:h6 { font-size: var(--sf-h6) }
 
+.fz { font-size: var(--sf-fz) }
 .fz\:i { font-size: inherit }
-.fz\:n { font-size: var(--sf-fz-normal) }
 .fz\:s { font-size: var(--sf-fz-small) }
 
 .ta\:c { text-align: center }
@@ -62,3 +64,6 @@
 .whs\:p { white-space: pre }
 .whs\:pl { white-space: pre-line }
 .whs\:pw { white-space: pre-wrap }
+
+.lh { line-height: var(--sf-lh) }
+.lh\:n { line-height: normal }
