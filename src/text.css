@@ -84,3 +84,4 @@
 
 .lh { line-height: var(--sf-lh) }
 .lh\:n { line-height: normal }
+.lh\:t { line-height: var(--sf-lh-txt) }
