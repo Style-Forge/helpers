@@ -1,6 +1,6 @@
 {
   "name": "style-forge.helpers",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Style-Forge.Helpers: essential CSS helper classes for spacing, alignment, visibility, and more in web development.",
   "type": "module",
   "main": "helpers.css",
