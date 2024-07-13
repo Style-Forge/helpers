@@ -7,6 +7,9 @@
 .ff\:math { font-family: math }
 .ff\:fangsong { font-family: fangsong }
 
+.fw { font-weight: var(--sf-fw) }
+.fw\:i { font-weight: inherit }
+
 .fw\:1 { font-weight: 100 }
 .fw\:2 { font-weight: 200 }
 .fw\:3 { font-weight: 300 }
@@ -40,6 +43,12 @@
 { font-weight: 900 }
 
 :where(.fz\:h1, .fz\:h2, .fz\:h3, .fz\:h4, .fz\:h5, .fz\:h6, .fz, .fz\:i, .fz\:s) { line-height: var(--sf-lh) }
+
+:where(.fz\:h1, .fz\:h2) { font-weight: 700 }
+:where(.fz\:h3, .fz\:h4) { font-weight: 600 }
+:where(.fz\:h5, .fz\:h6) { font-weight: 500 }
+:where(.fz) { font-weight: 400 }
+:where(.fz\:s) { font-weight: 300 }
 
 .fz\:h1 { font-size: var(--sf-h1) }
 .fz\:h2 { font-size: var(--sf-h2) }
