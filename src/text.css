@@ -76,12 +76,15 @@
 .ta\:r { text-align: right }
 .ta\:s { text-align: start }
 
-.whs\:n { white-space: normal }
+.whs { white-space: normal }
+.whs\:i { white-space: inherit }
 .whs\:nw { white-space: nowrap }
 .whs\:p { white-space: pre }
 .whs\:pl { white-space: pre-line }
 .whs\:pw { white-space: pre-wrap }
 
 .lh { line-height: var(--sf-lh) }
+.lh\:1 { line-height: 1 }
+.lh\:i { line-height: inherit }
 .lh\:n { line-height: normal }
 .lh\:t { line-height: var(--sf-lh-txt) }
