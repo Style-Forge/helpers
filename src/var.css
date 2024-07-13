@@ -18,8 +18,18 @@
   --sf-h5: 1.25rem;
   --sf-h6: 1rem;
 
+  --sf-fw-h1: 700;
+  --sf-fw-h2: 700;
+  --sf-fw-h3: 700;
+  --sf-fw-h4: 600;
+  --sf-fw-h5: 600;
+  --sf-fw-h6: 600;
+
   --sf-fz: 1rem;
+  --sf-fz-bold: 1rem;
   --sf-fz-small: 0.75rem;
 
   --sf-fw: 400;
+  --sf-fw-bold: 600;
+  --sf-fw-small: 300;
 }
