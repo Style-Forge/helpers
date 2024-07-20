@@ -29,11 +29,11 @@ For more detailed information, please refer to [CONTRIBUTING.md](CONTRIBUTING.md
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Links
+## Modules
 
 <table>
   <tr>
-    <th>Modules</th>
+    <th>Module</th>
     <th>Version</th>
     <th>Description</th>
   </tr>
