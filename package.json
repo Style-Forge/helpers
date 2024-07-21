@@ -6,9 +6,9 @@
   "main": "helpers.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarmaged/style-forge.helpers.git"
+    "url": "git+https://github.com/Style-Forge/helpers.git"
   },
-  "author": "Sarmaged <sarmaged@gmail.com>",
+  "author": "Dmitrii Sagalov <sarmaged@gmail.com>",
   "license": "MIT",
   "keywords": [
     "style-forge",
@@ -37,9 +37,9 @@
     "postcss-minify": "^1.1.0"
   },
   "bugs": {
-    "url": "https://github.com/sarmaged/style-forge.helpers/issues"
+    "url": "https://github.com/Style-Forge/helpers/issues"
   },
-  "homepage": "https://github.com/sarmaged/style-forge.helpers#readme",
+  "homepage": "https://style-forge.dev/helpers/",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }
