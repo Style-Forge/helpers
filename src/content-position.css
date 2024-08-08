@@ -1,0 +1,46 @@
+.y\:c, .c\:y { align-content: stretch }
+.y\:c\:b, .c\:b\:y { align-content: baseline }
+.y\:c\:n, .c\:n\:y { align-content: normal }
+.y\:c\:c, .c\:c\:y { align-content: center }
+.y\:c\:e, .c\:e\:y { align-content: end }
+.y\:c\:s, .c\:s\:y { align-content: start }
+.y\:c\:sa, .c\:sa\:y { align-content: space-around }
+.y\:c\:sb, .c\:sb\:y { align-content: space-between }
+.y\:c\:se, .c\:se\:y { align-content: space-evenly }
+
+.y\:i, .i\:y { align-items: stretch }
+.y\:i\:b, .i\:b\:y { align-items: baseline }
+.y\:i\:c, .i\:c\:y { align-items: center }
+.y\:i\:e, .i\:e\:y { align-items: end }
+.y\:i\:s, .i\:s\:y { align-items: start }
+
+.y\:s, .s\:y { align-self: stretch }
+.y\:s\:a, .s\:a\:y { align-self: auto }
+.y\:s\:n, .s\:n\:y { align-self: normal }
+.y\:s\:b, .s\:b\:y { align-self: baseline }
+.y\:s\:c, .s\:c\:y { align-self: center }
+.y\:s\:e, .s\:e\:y { align-self: end }
+.y\:s\:s, .s\:s\:y { align-self: start }
+
+.x\:c, .c\:x { justify-content: stretch }
+.x\:c\:n, .c\:n\:x { justify-content: normal }
+.x\:c\:c, .c\:c\:x { justify-content: center }
+.x\:c\:e, .c\:e\:x { justify-content: end }
+.x\:c\:s, .c\:s\:x { justify-content: start }
+.x\:c\:sa, .c\:sa\:x { justify-content: space-around }
+.x\:c\:sb, .c\:sb\:x { justify-content: space-between }
+.x\:c\:se, .c\:se\:x { justify-content: space-evenly }
+
+.x\:i, .i\:x { justify-items: stretch }
+.x\:i\:b, .i\:b\:x { justify-items: baseline }
+.x\:i\:c, .i\:c\:x { justify-items: center }
+.x\:i\:e, .i\:e\:x { justify-items: end }
+.x\:i\:s, .i\:s\:x { justify-items: start }
+
+.x\:s, .s\:x { justify-self: stretch }
+.x\:s\:a, .s\:a\:x { justify-self: auto }
+.x\:s\:n, .s\:n\:x { justify-self: normal }
+.x\:s\:b, .s\:b\:x { justify-self: baseline }
+.x\:s\:c, .s\:c\:x { justify-self: center }
+.x\:s\:e, .s\:e\:x { justify-self: end }
+.x\:s\:s, .s\:s\:x { justify-self: start }

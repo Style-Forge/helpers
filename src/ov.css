@@ -4,11 +4,11 @@
 .ov\:v { overflow: visible }
 
 .ov\:x { overflow-x: auto }
-.ov\:x\:h { overflow-x: hidden }
-.ov\:x\:s { overflow-x: scroll }
-.ov\:x\:v { overflow-x: visible }
+.ov\:x\:h, .ov\:h\:x { overflow-x: hidden }
+.ov\:x\:s, .ov\:s\:x { overflow-x: scroll }
+.ov\:x\:v, .ov\:v\:x { overflow-x: visible }
 
 .ov\:y { overflow-y: auto }
-.ov\:y\:h { overflow-y: hidden }
-.ov\:y\:s { overflow-y: scroll }
-.ov\:y\:v { overflow-y: visible }
+.ov\:y\:h, .ov\:h\:y { overflow-y: hidden }
+.ov\:y\:s, .ov\:s\:y { overflow-y: scroll }
+.ov\:y\:v, .ov\:v\:y { overflow-y: visible }
