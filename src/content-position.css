@@ -4,6 +4,8 @@
 .y\:c\:c, .c\:c\:y { align-content: center }
 .y\:c\:e, .c\:e\:y { align-content: end }
 .y\:c\:s, .c\:s\:y { align-content: start }
+.y\:c\:fe, .c\:fe\:y { align-content: flex-end }
+.y\:c\:fs, .c\:fs\:y { align-content: flex-start }
 .y\:c\:sa, .c\:sa\:y { align-content: space-around }
 .y\:c\:sb, .c\:sb\:y { align-content: space-between }
 .y\:c\:se, .c\:se\:y { align-content: space-evenly }
@@ -13,6 +15,8 @@
 .y\:i\:c, .i\:c\:y { align-items: center }
 .y\:i\:e, .i\:e\:y { align-items: end }
 .y\:i\:s, .i\:s\:y { align-items: start }
+.y\:i\:fe, .i\:fe\:y { align-items: flex-end }
+.y\:i\:fs, .i\:fs\:y { align-items: flex-start }
 
 .y\:s, .s\:y { align-self: stretch }
 .y\:s\:a, .s\:a\:y { align-self: auto }
@@ -21,12 +25,16 @@
 .y\:s\:c, .s\:c\:y { align-self: center }
 .y\:s\:e, .s\:e\:y { align-self: end }
 .y\:s\:s, .s\:s\:y { align-self: start }
+.y\:s\:fe, .s\:fe\:y { align-self: flex-end }
+.y\:s\:fs, .s\:fs\:y { align-self: flex-start }
 
 .x\:c, .c\:x { justify-content: stretch }
 .x\:c\:n, .c\:n\:x { justify-content: normal }
 .x\:c\:c, .c\:c\:x { justify-content: center }
 .x\:c\:e, .c\:e\:x { justify-content: end }
 .x\:c\:s, .c\:s\:x { justify-content: start }
+.x\:c\:fe, .c\:fe\:x { justify-content: flex-end }
+.x\:c\:fs, .c\:fs\:x { justify-content: flex-start }
 .x\:c\:sa, .c\:sa\:x { justify-content: space-around }
 .x\:c\:sb, .c\:sb\:x { justify-content: space-between }
 .x\:c\:se, .c\:se\:x { justify-content: space-evenly }
@@ -36,6 +44,8 @@
 .x\:i\:c, .i\:c\:x { justify-items: center }
 .x\:i\:e, .i\:e\:x { justify-items: end }
 .x\:i\:s, .i\:s\:x { justify-items: start }
+.x\:i\:fe, .i\:fe\:x { justify-items: flex-end }
+.x\:i\:fs, .i\:fs\:x { justify-items: flex-start }
 
 .x\:s, .s\:x { justify-self: stretch }
 .x\:s\:a, .s\:a\:x { justify-self: auto }
@@ -44,3 +54,5 @@
 .x\:s\:c, .s\:c\:x { justify-self: center }
 .x\:s\:e, .s\:e\:x { justify-self: end }
 .x\:s\:s, .s\:s\:x { justify-self: start }
+.x\:s\:fe, .s\:fe\:x { justify-self: flex-end }
+.x\:s\:fs, .s\:fs\:x { justify-self: flex-start }
