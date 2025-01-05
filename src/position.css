@@ -9,15 +9,10 @@
 .r { right: 0 }
 .b { bottom: 0 }
 
-.t\:a { top: auto }
-.l\:a { left: auto }
-.r\:a { right: auto }
-.b\:a { bottom: auto }
-
-.t\:i { top: inherit }
-.l\:i { left: inherit }
-.r\:i { right: inherit }
-.b\:i { bottom: inherit }
+.t\:auto { top: auto }
+.l\:auto { left: auto }
+.r\:auto { right: auto }
+.b\:auto { bottom: auto }
 
 .full:where(.pos\:a, .pos\:f) {
   top: 0;

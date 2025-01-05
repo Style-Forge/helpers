@@ -1,16 +1,305 @@
-.d\:f,
-.d\:f\:x,
-.d\:f\:y,
-.d\:g,
-.d\:g\:x,
-.d\:g\:y
-{ gap: var(--sf-gap) }
+:root {
+  --sf-fz: 1rem;
+  --sf-gap-x: 0.5em;
+  --sf-gap-y: 0.5em;
+}
 
-.gap\:0:where(
-  .d\:f,
-  .d\:f\:x,
-  .d\:f\:y,
-  .d\:g,
-  .d\:g\:x,
-  .d\:g\:y
-) { gap: 0 }
+.gap { row-gap: var(--sf-gap-y); column-gap: var(--sf-gap-x) }
+.gap\:y { row-gap: var(--sf-gap-y) }
+.gap\:x { column-gap: var(--sf-gap-x) }
+
+.gap\:0 { --sf-gap-x: 0em; --sf-gap-y: 0em; margin-top: 0; margin-left: 0 }
+.gap\:0\:x { --sf-gap-x: 0em; margin-left: 0 }
+.gap\:0\:y { --sf-gap-y: 0em; margin-top: 0 }
+
+.gap\:0 > * { margin-top: 0; margin-left: 0; padding-top: 0; padding-left: 0 }
+.gap\:0\:x > * { margin-left: 0; padding-left: 0 }
+.gap\:0\:y > * { margin-top: 0; padding-top: 0 }
+
+/* inline */
+.\$d\:i, .\$d\:i\:x, .\$d\:i\:y { font-size: var(--sf-fz) }
+.\$d\:i { margin-top: calc(var(--sf-gap-y) * -1); margin-left: calc(var(--sf-gap-x) * -1) }
+.\$d\:i > * { margin-top: var(--sf-gap-y); margin-left: var(--sf-gap-x) }
+
+/* flex */
+.d\:f, .d\:f\:x, .d\:f\:y {
+  row-gap: var(--sf-gap-y);
+  column-gap: var(--sf-gap-x);
+}
+
+.d\:f[class*="cols"] > [class*="col"],
+.d\:f\:x[class*="cols"] > [class*="col"],
+.d\:f\:y[class*="cols"] > [class*="col"]
+{
+  width: calc(var(--col, 1) / var(--cols, 12) * 100% - var(--sf-gap-x) / var(--cols, 12) * (var(--cols, 12) - var(--col, 1)));
+  padding-top: calc(var(--sf-gap-y) * 0);
+  padding-left: calc(var(--sf-gap-x) * 0);
+}
+
+.d\:f[class*="cols"] > [class*="col:start"],
+.d\:f\:x[class*="cols"] > [class*="col:start"],
+.d\:f\:y[class*="cols"] > [class*="col:start"]
+{ margin-left: calc((var(--cs, 1) - 1) / var(--cols, 12) * 100% + var(--sf-gap-x) * (var(--cs, 1) - 1) / var(--cols, 12)) }
+
+.d\:f[class*="cols"] > [class*="col:end"],
+.d\:f\:x[class*="cols"] > [class*="col:end"],
+.d\:f\:y[class*="cols"] > [class*="col:end"]
+{ margin-right: calc((var(--ce, 1) - 1) / var(--cols, 12) * 100% + var(--sf-gap-x) * (var(--ce, 1) - 1) / var(--cols, 12)) }
+
+/* grid */
+.d\:g, .d\:g\:x, .d\:g\:y {
+  row-gap: var(--sf-gap-y);
+  column-gap: var(--sf-gap-x);
+}
+
+.d\:g[class*="cols"] > [class*="col"],
+.d\:g\:x[class*="cols"] > [class*="col"],
+.d\:g\:y[class*="cols"] > [class*="col"]
+{
+  margin-top: calc(var(--sf-gap-y) * 0);
+  margin-left: calc(var(--sf-gap-x) * 0);
+  margin-right: calc(var(--sf-gap-x) * 0);
+  padding-top: calc(var(--sf-gap-y) * 0);
+  padding-left: calc(var(--sf-gap-x) * 0);
+}
+
+/* cols */
+.cols,.cols\:1,.cols\:2,.cols\:3,.cols\:4,.cols\:5,.cols\:6,.cols\:7,.cols\:8,.cols\:9,.cols\:10,.cols\:11,.cols\:12
+{
+  margin-top: calc(var(--sf-gap-y) * -1);
+  margin-left: calc(var(--sf-gap-x) * -1);
+}
+
+.col,.col\:1,.col\:2,.col\:3,.col\:4,.col\:5,.col\:6,.col\:7,.col\:8,.col\:9,.col\:10,.col\:11,.col\:12
+{
+  padding-top: var(--sf-gap-y);
+  padding-left: var(--sf-gap-x);
+}
+
+.gap\:0 .col,
+.gap\:0 .col\:1,
+.gap\:0 .col\:2,
+.gap\:0 .col\:3,
+.gap\:0 .col\:4,
+.gap\:0 .col\:5,
+.gap\:0 .col\:6,
+.gap\:0 .col\:7,
+.gap\:0 .col\:8,
+.gap\:0 .col\:9,
+.gap\:0 .col\:10,
+.gap\:0 .col\:11,
+.gap\:0 .col\:12
+{ padding-top: 0; padding-left: 0 }
+
+.gap\:0\:x .col,
+.gap\:0\:x .col\:1,
+.gap\:0\:x .col\:2,
+.gap\:0\:x .col\:3,
+.gap\:0\:x .col\:4,
+.gap\:0\:x .col\:5,
+.gap\:0\:x .col\:6,
+.gap\:0\:x .col\:7,
+.gap\:0\:x .col\:8,
+.gap\:0\:x .col\:9,
+.gap\:0\:x .col\:10,
+.gap\:0\:x .col\:11,
+.gap\:0\:x .col\:12
+{ padding-left: 0 }
+
+.gap\:0\:y .col,
+.gap\:0\:y .col\:1,
+.gap\:0\:y .col\:2,
+.gap\:0\:y .col\:3,
+.gap\:0\:y .col\:4,
+.gap\:0\:y .col\:5,
+.gap\:0\:y .col\:6,
+.gap\:0\:y .col\:7,
+.gap\:0\:y .col\:8,
+.gap\:0\:y .col\:9,
+.gap\:0\:y .col\:10,
+.gap\:0\:y .col\:11,
+.gap\:0\:y .col\:12
+{ padding-top: 0 }
+
+/* /// */
+
+/* inline */
+
+html.var .\$d\:i, .\$d\:i\:x, .\$d\:i\:y { font-size: 16px }
+html.var .\$d\:i { margin-top: -0.5em; margin-left: -0.5em }
+html.var .\$d\:i > * { margin-top: 0.5em; margin-left: 0.5em }
+
+/* flex */
+
+html.gap .d\:f { margin-top: calc(var(--sf-gap-y) * -1); margin-left: calc(var(--sf-gap-x) * -1); padding-top: calc(var(--sf-gap-y) * 0); padding-left: calc(var(--sf-gap-x) * 0) }
+html.gap .d\:f\:x { margin-left: calc(var(--sf-gap-x) * -1); padding-left: calc(var(--sf-gap-x) * 0) }
+html.gap .d\:f\:y { margin-top: calc(var(--sf-gap-y) * -1); padding-top: calc(var(--sf-gap-y) * 0) }
+html.gap .d\:f > * { margin-top: var(--sf-gap-y); margin-left: var(--sf-gap-x) }
+html.gap .d\:f\:x > * { margin-left: var(--sf-gap-x) }
+html.gap .d\:f\:y > * { margin-top: var(--sf-gap-y) }
+
+html.var .d\:f:not([class*='cols']) { margin-top: -0.5em; margin-left: -0.5em; padding-top: 0; padding-left: 0 }
+html.var .d\:f\:x:not([class*='cols']) { margin-left: -0.5em; padding-left: 0 }
+html.var .d\:f\:y:not([class*='cols']) { margin-top: -0.5em; padding-top: 0 }
+
+html.var .d\:f:not([class*='cols']) > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:f\:x:not([class*='cols']) > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:f\:y:not([class*='cols']) > *:not([class*='col:start']) { margin-top: 0.5em }
+
+/* grid */
+html.gap .d\:g { margin-top: calc(var(--sf-gap-y) * -1); margin-left: calc(var(--sf-gap-x) * -1); padding-top: calc(var(--sf-gap-y) * 0); padding-left: calc(var(--sf-gap-x) * 0) }
+html.gap .d\:g\:x { margin-left: calc(var(--sf-gap-x) * -1); padding-left: calc(var(--sf-gap-x) * 0) }
+html.gap .d\:g\:y { margin-top: calc(var(--sf-gap-y) * -1); padding-top: calc(var(--sf-gap-y) * 0) }
+html.gap .d\:g > * { margin-top: var(--sf-gap-y); margin-left: var(--sf-gap-x) }
+html.gap .d\:g\:x > * { margin-left: var(--sf-gap-x) }
+html.gap .d\:g\:y > * { margin-top: var(--sf-gap-y) }
+
+html.var .d\:g:not([class*='cols']) { margin-top: -0.5em; margin-left: -0.5em; padding-top: 0; padding-left: 0 }
+html.var .d\:g\:x:not([class*='cols']) { margin-left: -0.5em; padding-left: 0 }
+html.var .d\:g\:y:not([class*='cols']) { margin-top: -0.5em; padding-top: 0 }
+
+html.var .d\:g:not([class*='cols']) > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:g\:x:not([class*='cols']) > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:g\:y:not([class*='cols']) > *:not([class*='col:start']) { margin-top: 0.5em }
+
+/* cols */
+
+html.var .cols,
+html.var .cols\:1,
+html.var .cols\:2,
+html.var .cols\:3,
+html.var .cols\:4,
+html.var .cols\:5,
+html.var .cols\:6,
+html.var .cols\:7,
+html.var .cols\:8,
+html.var .cols\:9,
+html.var .cols\:10,
+html.var .cols\:11,
+html.var .cols\:12
+{
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+}
+
+html.var .gap\:0.cols,
+html.var .gap\:0.cols\:1,
+html.var .gap\:0.cols\:2,
+html.var .gap\:0.cols\:3,
+html.var .gap\:0.cols\:4,
+html.var .gap\:0.cols\:5,
+html.var .gap\:0.cols\:6,
+html.var .gap\:0.cols\:7,
+html.var .gap\:0.cols\:8,
+html.var .gap\:0.cols\:9,
+html.var .gap\:0.cols\:10,
+html.var .gap\:0.cols\:11,
+html.var .gap\:0.cols\:12
+{
+  margin-top: 0;
+  margin-left: 0;
+}
+
+html.var .gap\:0\:x.cols,
+html.var .gap\:0\:x.cols\:1,
+html.var .gap\:0\:x.cols\:2,
+html.var .gap\:0\:x.cols\:3,
+html.var .gap\:0\:x.cols\:4,
+html.var .gap\:0\:x.cols\:5,
+html.var .gap\:0\:x.cols\:6,
+html.var .gap\:0\:x.cols\:7,
+html.var .gap\:0\:x.cols\:8,
+html.var .gap\:0\:x.cols\:9,
+html.var .gap\:0\:x.cols\:10,
+html.var .gap\:0\:x.cols\:11,
+html.var .gap\:0\:x.cols\:12
+{
+  margin-left: 0;
+}
+
+html.var .gap\:0\:y.cols,
+html.var .gap\:0\:y.cols\:1,
+html.var .gap\:0\:y.cols\:2,
+html.var .gap\:0\:y.cols\:3,
+html.var .gap\:0\:y.cols\:4,
+html.var .gap\:0\:y.cols\:5,
+html.var .gap\:0\:y.cols\:6,
+html.var .gap\:0\:y.cols\:7,
+html.var .gap\:0\:y.cols\:8,
+html.var .gap\:0\:y.cols\:9,
+html.var .gap\:0\:y.cols\:10,
+html.var .gap\:0\:y.cols\:11,
+html.var .gap\:0\:y.cols\:12
+{
+  margin-top: 0;
+}
+
+html.var .col,
+html.var .col\:1,
+html.var .col\:2,
+html.var .col\:3,
+html.var .col\:4,
+html.var .col\:5,
+html.var .col\:6,
+html.var .col\:7,
+html.var .col\:8,
+html.var .col\:9,
+html.var .col\:10,
+html.var .col\:11,
+html.var .col\:12
+{
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+html.var .gap\:0 .col,
+html.var .gap\:0 .col\:1,
+html.var .gap\:0 .col\:2,
+html.var .gap\:0 .col\:3,
+html.var .gap\:0 .col\:4,
+html.var .gap\:0 .col\:5,
+html.var .gap\:0 .col\:6,
+html.var .gap\:0 .col\:7,
+html.var .gap\:0 .col\:8,
+html.var .gap\:0 .col\:9,
+html.var .gap\:0 .col\:10,
+html.var .gap\:0 .col\:11,
+html.var .gap\:0 .col\:12
+{
+  padding-top: 0;
+  padding-left: 0;
+}
+
+html.var .gap\:0\:x .col,
+html.var .gap\:0\:x .col\:1,
+html.var .gap\:0\:x .col\:2,
+html.var .gap\:0\:x .col\:3,
+html.var .gap\:0\:x .col\:4,
+html.var .gap\:0\:x .col\:5,
+html.var .gap\:0\:x .col\:6,
+html.var .gap\:0\:x .col\:7,
+html.var .gap\:0\:x .col\:8,
+html.var .gap\:0\:x .col\:9,
+html.var .gap\:0\:x .col\:10,
+html.var .gap\:0\:x .col\:11,
+html.var .gap\:0\:x .col\:12
+{
+  padding-left: 0;
+}
+
+html.var .gap\:0\:y .col,
+html.var .gap\:0\:y .col\:1,
+html.var .gap\:0\:y .col\:2,
+html.var .gap\:0\:y .col\:3,
+html.var .gap\:0\:y .col\:4,
+html.var .gap\:0\:y .col\:5,
+html.var .gap\:0\:y .col\:6,
+html.var .gap\:0\:y .col\:7,
+html.var .gap\:0\:y .col\:8,
+html.var .gap\:0\:y .col\:9,
+html.var .gap\:0\:y .col\:10,
+html.var .gap\:0\:y .col\:11,
+html.var .gap\:0\:y .col\:12
+{
+  padding-top: 0;
+}

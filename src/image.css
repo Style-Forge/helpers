@@ -1,0 +1,14 @@
+.obj-fit\:none { object-fit: none }
+.obj-fit\:contain { object-fit: contain }
+.obj-fit\:cover { object-fit: cover }
+.obj-fit\:fill { object-fit: fill }
+.obj-fit\:scale { object-fit: scale-down }
+
+.obj-pos\:b { object-position: bottom }
+.obj-pos\:c { object-position: center }
+.obj-pos\:l { object-position: left }
+.obj-pos\:r { object-position: right }
+.obj-pos\:t { object-position: top }
+
+.iso { isolation: isolate }
+.iso\:auto { isolation: auto }
