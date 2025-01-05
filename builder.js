@@ -16,7 +16,7 @@ const license = packageFile.license + ' License'
 const link = packageFile.repository.url.replace('git+', '').replace('.git', '')
 const header = '/*! ' + [title, license, link].join(' | ') + ' */'
 
-const plugins = [pImport, pAutoprefixer, pDuplicated, pComments, pMinify]
+const plugins = [pImport, pAutoprefixer, pDuplicated({ removeDuplicatedProperties: true }), pComments, pMinify]
 
 postcss(plugins)
   .process(css, { from })
