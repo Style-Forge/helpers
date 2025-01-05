@@ -1,0 +1,93 @@
+.cols { --cols: 12 } .rows { --rows: 12 }
+.cols\:12 { --cols: 12 } .rows\:12 { --rows: 12 }
+.cols\:11 { --cols: 11 } .rows\:11 { --rows: 11 }
+.cols\:10 { --cols: 10 } .rows\:10 { --rows: 10 }
+.cols\:9 { --cols: 9 } .rows\:9 { --rows: 9 }
+.cols\:8 { --cols: 8 } .rows\:8 { --rows: 8 }
+.cols\:7 { --cols: 7 } .rows\:7 { --rows: 7 }
+.cols\:6 { --cols: 6 } .rows\:6 { --rows: 6 }
+.cols\:5 { --cols: 5 } .rows\:5 { --rows: 5 }
+.cols\:4 { --cols: 4 } .rows\:4 { --rows: 4 }
+.cols\:3 { --cols: 3 } .rows\:3 { --rows: 3 }
+.cols\:2 { --cols: 2 } .rows\:2 { --rows: 2 }
+.cols\:1 { --cols: 1 } .rows\:1 { --rows: 1 }
+
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3,.cols\:2,.cols\:1) > .col,
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3,.cols\:2,.cols\:1) > .col\:1 { --col: 1 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3,.cols\:2) > .col\:2 { --col: 2 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3) > .col\:3 { --col: 3 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4) > .col\:4 { --col: 4 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5) > .col\:5 { --col: 5 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6) > .col\:6 { --col: 6 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7) > .col\:7 { --col: 7 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8) > .col\:8 { --col: 8 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9) > .col\:9 { --col: 9 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10) > .col\:10 { --col: 10 }
+:where(.cols,.cols\:12,.cols\:11) > .col\:11 { --col: 11 }
+:where(.cols,.cols\:12) > .col\:12 { --col: 12 }
+
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3,.cols\:2,.cols\:1) > .col\:start\:1 { --cs: 1 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3,.cols\:2) > .col\:start\:2 { --cs: 2 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3) > .col\:start\:3 { --cs: 3 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4) > .col\:start\:4 { --cs: 4 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5) > .col\:start\:5 { --cs: 5 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6) > .col\:start\:6 { --cs: 6 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7) > .col\:start\:7 { --cs: 7 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8) > .col\:start\:8 { --cs: 8 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9) > .col\:start\:9 { --cs: 9 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10) > .col\:start\:10 { --cs: 10 }
+:where(.cols,.cols\:12,.cols\:11) > .col\:start\:11 { --cs: 11 }
+:where(.cols,.cols\:12) > .col\:start\:12 { --cs: 12 }
+
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3,.cols\:2,.cols\:1) > .col\:end\:1 { --ce: 1 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3,.cols\:2) > .col\:end\:2 { --ce: 2 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4,.cols\:3) > .col\:end\:3 { --ce: 3 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5,.cols\:4) > .col\:end\:4 { --ce: 4 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6,.cols\:5) > .col\:end\:5 { --ce: 5 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7,.cols\:6) > .col\:end\:6 { --ce: 6 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8,.cols\:7) > .col\:end\:7 { --ce: 7 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9,.cols\:8) > .col\:end\:8 { --ce: 8 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10,.cols\:9) > .col\:end\:9 { --ce: 9 }
+:where(.cols,.cols\:12,.cols\:11,.cols\:10) > .col\:end\:10 { --ce: 10 }
+:where(.cols,.cols\:12,.cols\:11) > .col\:end\:11 { --ce: 11 }
+:where(.cols,.cols\:12) > .col\:end\:12 { --ce: 12 }
+
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3,.rows\:2,.rows\:1) > .row,
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3,.rows\:2,.rows\:1) > .row\:1 { --row: 1 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3,.rows\:2) > .row\:2 { --row: 2 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3) > .row\:3 { --row: 3 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4) > .row\:4 { --row: 4 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5) > .row\:5 { --row: 5 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6) > .row\:6 { --row: 6 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7) > .row\:7 { --row: 7 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8) > .row\:8 { --row: 8 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9) > .row\:9 { --row: 9 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10) > .row\:10 { --row: 10 }
+:where(.rows,.rows\:12,.rows\:11) > .row\:11 { --row: 11 }
+:where(.rows,.rows\:12) > .row\:12 { --row: 12 }
+
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3,.rows\:2,.rows\:1) > .row\:start\:1 { --rs: 1 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3,.rows\:2) > .row\:start\:2 { --rs: 2 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3) > .row\:start\:3 { --rs: 3 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4) > .row\:start\:4 { --rs: 4 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5) > .row\:start\:5 { --rs: 5 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6) > .row\:start\:6 { --rs: 6 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7) > .row\:start\:7 { --rs: 7 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8) > .row\:start\:8 { --rs: 8 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9) > .row\:start\:9 { --rs: 9 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10) > .row\:start\:10 { --rs: 10 }
+:where(.rows,.rows\:12,.rows\:11) > .row\:start\:11 { --rs: 11 }
+:where(.rows,.rows\:12) > .row\:start\:12 { --rs: 12 }
+
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3,.rows\:2,.rows\:1) > .row\:end\:1 { --re: 1 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3,.rows\:2) > .row\:end\:2 { --re: 2 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4,.rows\:3) > .row\:end\:3 { --re: 3 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5,.rows\:4) > .row\:end\:4 { --re: 4 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6,.rows\:5) > .row\:end\:5 { --re: 5 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7,.rows\:6) > .row\:end\:6 { --re: 6 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8,.rows\:7) > .row\:end\:7 { --re: 7 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9,.rows\:8) > .row\:end\:8 { --re: 8 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10,.rows\:9) > .row\:end\:9 { --re: 9 }
+:where(.rows,.rows\:12,.rows\:11,.rows\:10) > .row\:end\:10 { --re: 10 }
+:where(.rows,.rows\:12,.rows\:11) > .row\:end\:11 { --re: 11 }
+:where(.rows,.rows\:12) > .row\:end\:12 { --re: 12 }

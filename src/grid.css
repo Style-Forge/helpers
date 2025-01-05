@@ -1,21 +1,25 @@
-.d\:g, .d\:g\:x, .d\:g\:y { display: grid }
+[hidden], datalist, dialog, source, template, track { display: none !important }
 
-.d\:g\:x, .d\:g { grid-auto-flow: column }
-.d\:g\:y { grid-auto-flow: row }
+.d\:g, .d\:g\:x, .d\:g\:y {
+  display: grid;
 
-.d\:g {
-  grid-auto-columns: auto;
-  grid-auto-rows: auto;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-rows: minmax(0, 1fr);
 }
-.d\:g\:x { grid-auto-columns: auto }
-.d\:g\:y { grid-auto-rows: auto }
 
-.even.d\:g {
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-}
-.even.d\:g\:x { grid-auto-columns: 1fr }
-.even.d\:g\:y { grid-auto-rows: 1fr }
+.d\:g { grid-auto-flow: dense }
+.d\:g\:x { grid-auto-flow: dense column }
+.d\:g\:y { grid-auto-flow: dense row }
 
-.wrap.d\:g\:x, .wrap.d\:g { grid-auto-flow: dense column }
-.wrap.d\:g\:y { grid-auto-flow: dense row }
+.d\:g\:x.nowrap, .d\:g.nowrap { grid-auto-flow: column }
+.d\:g\:y.nowrap { grid-auto-flow: row }
+
+/* /// */
+
+html.grid .d\:g, html.grid .d\:g\:x, html.grid .d\:g\:y { display: flex; flex-wrap: wrap }
+html.grid .d\:g\:x, html.grid .d\:g\:y { flex-wrap: nowrap }
+html.grid .d\:g.reverse, html.grid .reverse.d\:g\:x, html.grid .reverse.d\:g\:y { flex-wrap: wrap-reverse }
+
+html.flex .d\:g, html.flex .d\:g\:x, html.flex .d\:g\:y { display: block }
+html.flex .d\:g > *, html.flex .d\:g\:x > * { display: inline-block }
+html.flex .d\:g\:y > * { display: block }

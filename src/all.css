@@ -1,16 +1,20 @@
-@import 'var.css';
-
 @import 'content-position.css';
+@import 'cursor.css';
+@import 'image.css';
 @import 'display.css';
-@import 'flex.css';
-@import 'gap.css';
-@import 'grid.css';
+@import 'margin.css';
 @import 'op.css';
-@import 'order.css';
 @import 'ov.css';
+@import 'padding.css';
 @import 'position.css';
 @import 'radius.css';
-@import 'shift.css';
 @import 'size.css';
 @import 'text.css';
 @import 'z.css';
+
+@import 'columns/all.css';
+
+@import 'flex.css';
+@import 'grid.css';
+@import 'gap.css';
+@import 'order.css';

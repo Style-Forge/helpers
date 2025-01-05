@@ -1,39 +1,96 @@
-.d\:f, .d\:f\:x, .d\:f\:y { display: flex }
+[hidden], datalist, dialog, source, template, track { display: none !important }
 
-.d\:f\:x { flex-flow: row }
-.d\:f\:y { flex-flow: column }
+.d\:f, .d\:f\:x, .d\:f\:y {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.wrap.d\:f\:x, .wrap.d\:f { flex-flow: wrap row }
-.wrap.d\:f\:y { flex-flow: wrap column }
+.d\:f\:x, .d\:f\:y { flex-wrap: nowrap }
 
-.reverse.d\:f\:x, .reverse.d\:f { flex-flow: row-reverse }
-.reverse.d\:f\:y { flex-flow: column-reverse }
-.reverse.wrap.d\:f { flex-flow: wrap-reverse }
-.reverse.wrap.d\:f\:x, .reverse.wrap.d\:f { flex-flow: wrap-reverse row-reverse }
-.reverse.wrap.d\:f\:y { flex-flow: wrap-reverse column-reverse }
+.d\:f\:x { flex-direction: row }
+.d\:f\:y { flex-direction: column }
 
-.auto:where(.d\:f, .d\:f\:x, .d\:f\:y) > * { flex: auto }
-.even:where(.d\:f, .d\:f\:x, .d\:f\:y) > * { flex: 1 }
-.none:where(.d\:f, .d\:f\:x, .d\:f\:y) > * { flex: 0 }
+.reverse, .reverse.d\:f\:x, .reverse.d\:f\:y { flex-wrap: wrap-reverse }
+.reverse { flex-direction: row-reverse }
+.reverse\:x, .reverse.d\:f\:x { flex-direction: row-reverse }
+.reverse\:y, .reverse.d\:f\:y { flex-direction: column-reverse }
+.reverse\:wrap { flex-wrap: wrap-reverse }
 
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .flex\:auto { flex: auto }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .flex\:even { flex: 1 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .flex\:none { flex: 0 }
+.\$grow\:i > *, .grow\:i { flex-grow: initial }
+.\$grow\:0 > *, .grow\:0 { flex-grow: 0 }
+.\$grow\:1 > *, .grow\:1 { flex-grow: 1 }
+.\$grow\:2 > *, .grow\:2 { flex-grow: 2 }
+.\$grow\:3 > *, .grow\:3 { flex-grow: 3 }
+.\$grow\:4 > *, .grow\:4 { flex-grow: 4 }
+.\$grow\:5 > *, .grow\:5 { flex-grow: 5 }
 
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:0 { flex-grow: 0 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:1 { flex-grow: 1 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:2 { flex-grow: 2 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:3 { flex-grow: 3 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:4 { flex-grow: 4 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .grow\:5 { flex-grow: 5 }
+.\$shrink\:i > *, .shrink\:i { flex-shrink: initial }
+.\$shrink\:0 > *, .shrink\:0 { flex-shrink: 0 }
+.\$shrink\:1 > *, .shrink\:1 { flex-shrink: 1 }
+.\$shrink\:2 > *, .shrink\:2 { flex-shrink: 2 }
+.\$shrink\:3 > *, .shrink\:3 { flex-shrink: 3 }
+.\$shrink\:4 > *, .shrink\:4 { flex-shrink: 4 }
+.\$shrink\:5 > *, .shrink\:5 { flex-shrink: 5 }
 
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .shrink\:0 { flex-shrink: 0 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .shrink\:1 { flex-shrink: 1 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .shrink\:2 { flex-shrink: 2 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .shrink\:3 { flex-shrink: 3 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .shrink\:4 { flex-shrink: 4 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .shrink\:5 { flex-shrink: 5 }
+.\$basis\:i > *, basis\:i { flex-basis: initial }
+.\$basis\:0 > *, basis\:0 { flex-basis: 0 }
+.\$basis\:25 > *, basis\:25 { flex-basis: 25% }
+.\$basis\:33 > *, basis\:33 { flex-basis: 33.3333% }
+.\$basis\:50 > *, basis\:50 { flex-basis: 50% }
+.\$basis\:75 > *, basis\:75 { flex-basis: 75% }
+.\$basis\:100 > *, basis\:100 { flex-basis: 100% }
+.\$basis\:auto > *, basis\:auto { flex-basis: auto }
+.\$basis\:available > *, basis\:available { flex-basis: available }
+.\$basis\:bb > *, basis\:bb { flex-basis: border-box }
+.\$basis\:cb > *, basis\:cb { flex-basis: content-box }
+.\$basis\:c > *, basis\:c { flex-basis: content }
+.\$basis\:fc > *, basis\:fc { flex-basis: fit-content }
+.\$basis\:max > *, basis\:max { flex-basis: max-content }
+.\$basis\:min > *, basis\:min { flex-basis: min-content }
 
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .basis\:0 { flex-basis: 0 }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .basis\:100 { flex-basis: 100% }
-:where(body, .d\:f, .d\:f\:x, .d\:f\:y) > .basis\:auto { flex-basis: auto }
+/* /// */
+
+html.flex .d\:f, html.flex .d\:f\:x, html.flex .d\:f\:y { display: block }
+html.flex .d\:f > *, html.flex .d\:f\:x > * { display: inline-block }
+html.flex .d\:f\:y > * { display: block }
+
+[class*='cols'].reverse:not(.ltr),
+[class*='cols'].reverse\:wrap:not(.ltr)
+{ direction: rtl }
+
+[class*='cols'].reverse.d\:f:not(.rtl),
+[class*='cols'].reverse\:wrap.d\:f:not(.rtl),
+[class*='cols'].reverse.d\:f\:x:not(.rtl),
+[class*='cols'].reverse\:wrap.d\:f\:x:not(.rtl),
+[class*='cols'].reverse.d\:f\:y:not(.rtl),
+[class*='cols'].reverse\:wrap.d\:f\:y:not(.rtl),
+
+html.grid [class*='cols'].reverse.d\:g:not(.rtl),
+html.grid [class*='cols'].reverse\:wrap.d\:g:not(.rtl),
+html.grid [class*='cols'].reverse.d\:g\:x:not(.rtl),
+html.grid [class*='cols'].reverse\:wrap.d\:g\:x:not(.rtl),
+html.grid [class*='cols'].reverse.d\:g\:y:not(.rtl),
+html.grid [class*='cols'].reverse\:wrap.d\:g\:y:not(.rtl)
+{ direction: ltr }
+
+html.var [class*='cols'].reverse.d\:f\:y:not(.ltr),
+html.var [class*='cols'].reverse\:wrap.d\:f\:y:not(.ltr),
+
+html.flex [class*='cols'].reverse.d\:f:not(.ltr),
+html.flex [class*='cols'].reverse\:wrap.d\:f:not(.ltr),
+html.flex [class*='cols'].reverse.d\:f\:x:not(.ltr),
+html.flex [class*='cols'].reverse\:wrap.d\:f\:x:not(.ltr),
+html.flex [class*='cols'].reverse.d\:f\:y:not(.ltr),
+html.flex [class*='cols'].reverse\:wrap.d\:f\:y:not(.ltr),
+
+html.flex [class*='cols'].reverse.d\:g:not(.ltr),
+html.flex [class*='cols'].reverse\:wrap.d\:g:not(.ltr),
+html.flex [class*='cols'].reverse.d\:g\:x:not(.ltr),
+html.flex [class*='cols'].reverse\:wrap.d\:g\:x:not(.ltr),
+html.flex [class*='cols'].reverse.d\:g\:y:not(.ltr),
+html.flex [class*='cols'].reverse\:wrap.d\:g\:y:not(.ltr)
+{ direction: rtl }
+
+[class*='cols'].reverse > *:not(.rtl),
+[class*='cols'].reverse\:wrap > *:not(.rtl)
+{ direction: ltr }

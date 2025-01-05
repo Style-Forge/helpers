@@ -4,8 +4,7 @@
 ![npm](https://img.shields.io/npm/v/style-forge.helpers)
 ![license](https://img.shields.io/npm/l/style-forge.helpers)
 ![npm](https://img.shields.io/npm/dm/style-forge.helpers)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/61ef2880ff5a4ad5ac83f312970397af)](https://app.codacy.com/gh/Style-Forge/helpers/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-![build](https://github.com/Style-Forge/helpers/actions/workflows/publish.yml/badge.svg)
+![build](https://github.com/Style-Forge/helpers/actions/workflows/release.yml/badge.svg)
 
 `Style-Forge.Helpers` is a utility library that provides a set of essential CSS helper classes to enhance and simplify your web development workflow. It includes various utilities for spacing, alignment, visibility, and more, ensuring a more efficient and maintainable codebase.
 
