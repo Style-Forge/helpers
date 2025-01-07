@@ -154,7 +154,6 @@
 /* /// */
 
 /* inline */
-
 html.var .\$d\:i, html.var .\$d\:i\:x, html.var .\$d\:i\:y { font-size: 16px }
 html.var .\$d\:i\:x { margin-left: -0.5em }
 html.var .\$d\:i\:x > * { margin-left: 0.5em }
@@ -209,7 +208,6 @@ html.var .d\:g\:y:not([class*='cols']) > *:not([class*='col:start']) { margin-to
 html.var .d\:g:not([class*='cols']) > *:not([class*='col:start']) { margin-top: 0.5em; margin-left: 0.5em }
 
 /* cols */
-
 html.var .cols,
 html.var .cols\:1,
 html.var .cols\:2,
