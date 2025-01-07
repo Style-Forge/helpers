@@ -1,6 +1,6 @@
 {
   "name": "style-forge.helpers",
-  "version": "2025.1.6",
+  "version": "2025.1.8",
   "description": "Style-Forge.Helpers: essential CSS helper classes for spacing, alignment, visibility, and more in web development.",
   "type": "module",
   "main": "helpers.css",
@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "caniuse-lite": "^1.0.30001690",
     "postcss": "^8.4.49",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-discard-comments": "^7.0.3",

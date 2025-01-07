@@ -41,10 +41,7 @@
 .cols .col\:10, .cols\:1 .col\:10, .cols\:2 .col\:10, .cols\:3 .col\:10, .cols\:4 .col\:10, .cols\:5 .col\:10, .cols\:6 .col\:10, .cols\:7 .col\:10, .cols\:8 .col\:10, .cols\:9 .col\:10, .cols\:10 .col\:10, .cols\:11 .col\:10, .cols\:12 .col\:10,
 .cols .col\:11, .cols\:1 .col\:11, .cols\:2 .col\:11, .cols\:3 .col\:11, .cols\:4 .col\:11, .cols\:5 .col\:11, .cols\:6 .col\:11, .cols\:7 .col\:11, .cols\:8 .col\:11, .cols\:9 .col\:11, .cols\:10 .col\:11, .cols\:11 .col\:11, .cols\:12 .col\:11,
 .cols .col\:12, .cols\:1 .col\:12, .cols\:2 .col\:12, .cols\:3 .col\:12, .cols\:4 .col\:12, .cols\:5 .col\:12, .cols\:6 .col\:12, .cols\:7 .col\:12, .cols\:8 .col\:12, .cols\:9 .col\:12, .cols\:10 .col\:12, .cols\:11 .col\:12, .cols\:12 .col\:12
-{
-  display: inline-block;
-  vertical-align: middle;
-}
+{ display: inline-block }
 
 .col,
 .col\:1 { width: 8.3333% }
@@ -292,3 +289,20 @@
 .cols\:11 .col\:end\:9 { margin-right: 72.7272% }
 .cols\:11 .col\:end\:10 { margin-right: 81.8181% }
 .cols\:11 .col\:end\:11 { margin-right: 90.9090% }
+
+/* /// */
+
+html.flex .col,
+html.flex .col\:1,
+html.flex .col\:2,
+html.flex .col\:3,
+html.flex .col\:4,
+html.flex .col\:5,
+html.flex .col\:6,
+html.flex .col\:7,
+html.flex .col\:8,
+html.flex .col\:9,
+html.flex .col\:10,
+html.flex .col\:11,
+html.flex .col\:12
+{ vertical-align: middle }
