@@ -32,21 +32,21 @@
 .\$shrink\:4 > *, .shrink\:4 { flex-shrink: 4 }
 .\$shrink\:5 > *, .shrink\:5 { flex-shrink: 5 }
 
-.\$basis\:i > *, basis\:i { flex-basis: initial }
-.\$basis\:0 > *, basis\:0 { flex-basis: 0 }
-.\$basis\:25 > *, basis\:25 { flex-basis: 25% }
-.\$basis\:33 > *, basis\:33 { flex-basis: 33.3333% }
-.\$basis\:50 > *, basis\:50 { flex-basis: 50% }
-.\$basis\:75 > *, basis\:75 { flex-basis: 75% }
-.\$basis\:100 > *, basis\:100 { flex-basis: 100% }
-.\$basis\:auto > *, basis\:auto { flex-basis: auto }
-.\$basis\:available > *, basis\:available { flex-basis: available }
-.\$basis\:bb > *, basis\:bb { flex-basis: border-box }
-.\$basis\:cb > *, basis\:cb { flex-basis: content-box }
-.\$basis\:c > *, basis\:c { flex-basis: content }
-.\$basis\:fc > *, basis\:fc { flex-basis: fit-content }
-.\$basis\:max > *, basis\:max { flex-basis: max-content }
-.\$basis\:min > *, basis\:min { flex-basis: min-content }
+.\$basis\:i > *, .basis\:i { flex-basis: initial }
+.\$basis\:0 > *, .basis\:0 { flex-basis: 0 }
+.\$basis\:25 > *, .basis\:25 { flex-basis: 25% }
+.\$basis\:33 > *, .basis\:33 { flex-basis: 33.3333% }
+.\$basis\:50 > *, .basis\:50 { flex-basis: 50% }
+.\$basis\:75 > *, .basis\:75 { flex-basis: 75% }
+.\$basis\:100 > *, .basis\:100 { flex-basis: 100% }
+.\$basis\:auto > *, .basis\:auto { flex-basis: auto }
+.\$basis\:available > *, .basis\:available { flex-basis: available }
+.\$basis\:bb > *, .basis\:bb { flex-basis: border-box }
+.\$basis\:cb > *, .basis\:cb { flex-basis: content-box }
+.\$basis\:c > *, .basis\:c { flex-basis: content }
+.\$basis\:fc > *, .basis\:fc { flex-basis: fit-content }
+.\$basis\:max > *, .basis\:max { flex-basis: max-content }
+.\$basis\:min > *, .basis\:min { flex-basis: min-content }
 
 /* /// */
 

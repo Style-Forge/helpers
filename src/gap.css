@@ -42,6 +42,12 @@
 .d\:f, .d\:f\:x, .d\:f\:y {
   row-gap: var(--sf-gap-y);
   column-gap: var(--sf-gap-x);
+  margin-top: calc(var(--sf-gap-y) * 0);
+  margin-left: calc(var(--sf-gap-x) * 0);
+}
+.d\:f > *, .d\:f\:x > *, .d\:f\:y > * {
+  margin-top: calc(var(--sf-gap-y) * 0);
+  margin-left: calc(var(--sf-gap-x) * 0);
 }
 
 .d\:f[class*="cols"] > [class*="col"],
@@ -67,6 +73,12 @@
 .d\:g, .d\:g\:x, .d\:g\:y {
   row-gap: var(--sf-gap-y);
   column-gap: var(--sf-gap-x);
+  margin-top: calc(var(--sf-gap-y) * 0);
+  margin-left: calc(var(--sf-gap-x) * 0);
+}
+.d\:g > *, .d\:g\:x > *, .d\:g\:y > * {
+  margin-top: calc(var(--sf-gap-y) * 0);
+  margin-left: calc(var(--sf-gap-x) * 0);
 }
 
 .d\:g[class*="cols"] > [class*="col"],
@@ -142,7 +154,6 @@
 /* /// */
 
 /* inline */
-
 html.var .\$d\:i, html.var .\$d\:i\:x, html.var .\$d\:i\:y { font-size: 16px }
 html.var .\$d\:i\:x { margin-left: -0.5em }
 html.var .\$d\:i\:x > * { margin-left: 0.5em }
@@ -165,13 +176,12 @@ html.var .\$d\:i { margin-top: -0.5em; margin-left: -0.5em }
 html.var .\$d\:i > * { margin-top: 0.5em; margin-left: 0.5em }
 
 /* flex */
-
 html.gap .d\:f\:x { margin-left: calc(var(--sf-gap-x) * -1); padding-left: calc(var(--sf-gap-x) * 0) }
-html.gap .d\:f\:x > * { margin-left: var(--sf-gap-x) }
+html.gap .d\:f\:x:not([class*='cols']) > *:not([class*='col:start']) { margin-left: var(--sf-gap-x) }
 html.gap .d\:f\:y { margin-top: calc(var(--sf-gap-y) * -1); padding-top: calc(var(--sf-gap-y) * 0) }
-html.gap .d\:f\:y > * { margin-top: var(--sf-gap-y) }
+html.gap .d\:f\:y:not([class*='cols']) > *:not([class*='col:start']) { margin-top: var(--sf-gap-y) }
 html.gap .d\:f { margin-top: calc(var(--sf-gap-y) * -1); margin-left: calc(var(--sf-gap-x) * -1); padding-top: calc(var(--sf-gap-y) * 0); padding-left: calc(var(--sf-gap-x) * 0) }
-html.gap .d\:f > * { margin-top: var(--sf-gap-y); margin-left: var(--sf-gap-x) }
+html.gap .d\:f:not([class*='cols']) > *:not([class*='col:start']) { margin-top: var(--sf-gap-y); margin-left: var(--sf-gap-x) }
 
 html.var .d\:f\:x:not([class*='cols']) { margin-left: -0.5em; padding-left: 0 }
 html.var .d\:f\:y:not([class*='cols']) { margin-top: -0.5em; padding-top: 0 }
@@ -179,15 +189,15 @@ html.var .d\:f:not([class*='cols']) { margin-top: -0.5em; margin-left: -0.5em; p
 
 html.var .d\:f\:x:not([class*='cols']) > *:not([class*='col:start']) { margin-left: 0.5em }
 html.var .d\:f\:y:not([class*='cols']) > *:not([class*='col:start']) { margin-top: 0.5em }
-html.var .d\:f:not([class*='cols']) > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:f:not([class*='cols']) > *:not([class*='col:start']) { margin-top: 0.5em; margin-left: 0.5em }
 
 /* grid */
 html.gap .d\:g\:x { margin-left: calc(var(--sf-gap-x) * -1); padding-left: calc(var(--sf-gap-x) * 0) }
-html.gap .d\:g\:x > * { margin-left: var(--sf-gap-x) }
+html.gap .d\:g\:x:not([class*='cols']) > *:not([class*='col:start']) { margin-left: var(--sf-gap-x) }
 html.gap .d\:g\:y { margin-top: calc(var(--sf-gap-y) * -1); padding-top: calc(var(--sf-gap-y) * 0) }
-html.gap .d\:g\:y > * { margin-top: var(--sf-gap-y) }
+html.gap .d\:g\:y:not([class*='cols']) > *:not([class*='col:start']) { margin-top: var(--sf-gap-y) }
 html.gap .d\:g { margin-top: calc(var(--sf-gap-y) * -1); margin-left: calc(var(--sf-gap-x) * -1); padding-top: calc(var(--sf-gap-y) * 0); padding-left: calc(var(--sf-gap-x) * 0) }
-html.gap .d\:g > * { margin-top: var(--sf-gap-y); margin-left: var(--sf-gap-x) }
+html.gap .d\:g:not([class*='cols']) > *:not([class*='col:start']) { margin-top: var(--sf-gap-y); margin-left: var(--sf-gap-x) }
 
 html.var .d\:g\:x:not([class*='cols']) { margin-left: -0.5em; padding-left: 0 }
 html.var .d\:g\:y:not([class*='cols']) { margin-top: -0.5em; padding-top: 0 }
@@ -195,10 +205,9 @@ html.var .d\:g:not([class*='cols']) { margin-top: -0.5em; margin-left: -0.5em; p
 
 html.var .d\:g\:x:not([class*='cols']) > *:not([class*='col:start']) { margin-left: 0.5em }
 html.var .d\:g\:y:not([class*='cols']) > *:not([class*='col:start']) { margin-top: 0.5em }
-html.var .d\:g:not([class*='cols']) > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:g:not([class*='cols']) > *:not([class*='col:start']) { margin-top: 0.5em; margin-left: 0.5em }
 
 /* cols */
-
 html.var .cols,
 html.var .cols\:1,
 html.var .cols\:2,
