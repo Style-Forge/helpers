@@ -1,7 +1,3 @@
-:root {
-  --sf-fz: 1rem;
-}
-
 [hidden], datalist, dialog, source, template, track { display: none !important }
 
 .d\:b { display: block }
@@ -32,10 +28,10 @@
 
 .d\:tcp { display: table-caption }
 
-.\$d\:i, .\$d\:i\:x, .\$d\:i\:y { display: block; font-size: 0 }
-.\$d\:i > *, .\$d\:i\:x > * { display: inline-block; font-size: var(--sf-fz) }
-.\$d\:i\:y > * { display: block; font-size: var(--sf-fz) }
+.\$d\:i, .\$d\:i\:x, .\$d\:i\:y { display: block; letter-spacing: -1em }
+.\$d\:i > *, .\$d\:i\:x > * { display: inline-block; letter-spacing: normal }
+.\$d\:i\:y > * { display: block; letter-spacing: normal }
 
 /* /// */
 
-html.var .\$d\:i > *, html.var .\$d\:i\:x > *, html.var .\$d\:i\:y > * { font-size: 16px }
+html.var .\$d\:i > *, html.var .\$d\:i\:x > *, html.var .\$d\:i\:y > * { vertical-align: top }
