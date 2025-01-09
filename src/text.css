@@ -2,12 +2,12 @@
   --sf-lh: 0.8;
   --sf-lh-normal: 1.1875;
 
-  --sf-ff-sans: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --sf-ff-serif: Times, 'Times New Roman', Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --sf-ff-monospace: 'Lucida Console', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --sf-ff-sans: 'Inter', ui-sans-serif, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --sf-ff-serif: Times, 'Times New Roman', Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --sf-ff-monospace: 'Lucida Console', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --sf-ff-cursive: cursive;
   --sf-ff-fantasy: fantasy;
-  --sf-ff-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', emoji;
+  --sf-ff-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   --sf-ff-math: math;
   --sf-ff-fangsong: fangsong;
 
@@ -185,12 +185,12 @@ html.ta .ta\:r, html.ta .\$ta\:r > * { text-align: right }
 .wm\:vertical-rl { writing-mode: vertical-rl }
 
 /* /// */
-html.var .ff\:sans { font-family: Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' }
-html.var .ff\:serif { font-family: Times, 'Times New Roman', Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' }
-html.var .ff\:monospace { font-family: 'Lucida Console', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' }
+html.var .ff\:sans { font-family: 'Inter', ui-sans-serif, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' }
+html.var .ff\:serif { font-family: Times, 'Times New Roman', Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' }
+html.var .ff\:monospace { font-family: 'Lucida Console', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' }
 html.var .ff\:cursive { font-family: cursive }
 html.var .ff\:fantasy { font-family: fantasy }
-html.var .ff\:emoji { font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', emoji }
+html.var .ff\:emoji { font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji }
 html.var .ff\:math { font-family: math }
 html.var .ff\:fangsong { font-family: fangsong }
 
