@@ -9,138 +9,248 @@
   --sf-padding-6: calc(var(--sf-padding) * 2);
 }
 
-.p { padding: var(--sf-padding) }
-.p\:0, .pt\:0, .pb\:0, .pl\:0, .pr\:0, .px\:0, .py\:0 { --sf-padding: 0 }
-.p\:1, .pt\:1, .pb\:1, .pl\:1, .pr\:1, .px\:1, .py\:1 { --sf-padding: var(--sf-padding-1) }
-.p\:2, .pt\:2, .pb\:2, .pl\:2, .pr\:2, .px\:2, .py\:2 { --sf-padding: var(--sf-padding-2) }
-.p\:3, .pt\:3, .pb\:3, .pl\:3, .pr\:3, .px\:3, .py\:3 { --sf-padding: var(--sf-padding-3) }
-.p\:4, .pt\:4, .pb\:4, .pl\:4, .pr\:4, .px\:4, .py\:4 { --sf-padding: var(--sf-padding-4) }
-.p\:5, .pt\:5, .pb\:5, .pl\:5, .pr\:5, .px\:5, .py\:5 { --sf-padding: var(--sf-padding-5) }
-.p\:6, .pt\:6, .pb\:6, .pl\:6, .pr\:6, .px\:6, .py\:6 { --sf-padding: var(--sf-padding-6) }
+.p, .\$p > * { padding: var(--sf-padding) }
+.p\:0, .\$p\:0 > * { padding: 0 }
+.p\:1, .\$p\:1 > * { padding: var(--sf-padding-1) }
+.p\:2, .\$p\:2 > * { padding: var(--sf-padding-2) }
+.p\:3, .\$p\:3 > * { padding: var(--sf-padding-3) }
+.p\:4, .\$p\:4 > * { padding: var(--sf-padding-4) }
+.p\:5, .\$p\:5 > * { padding: var(--sf-padding-5) }
+.p\:6, .\$p\:6 > * { padding: var(--sf-padding-6) }
 
-.pt, .pt\:0, .pt\:1, .pt\:2, .pt\:3, .pt\:4, .pt\:5, .pt\:6 { padding-block-start: var(--sf-padding) }
-.pb, .pb\:0, .pb\:1, .pb\:2, .pb\:3, .pb\:4, .pb\:5, .pb\:6 { padding-block-end: var(--sf-padding) }
-.pl, .pl\:0, .pl\:1, .pl\:2, .pl\:3, .pl\:4, .pl\:5, .pl\:6 { padding-inline-start: var(--sf-padding) }
-.pr, .pr\:0, .pr\:1, .pr\:2, .pr\:3, .pr\:4, .pr\:5, .pr\:6 { padding-inline-end: var(--sf-padding) }
-.py, .py\:0, .py\:1, .py\:2, .py\:3, .py\:4, .py\:5, .py\:6 { padding-block: var(--sf-padding) }
-.px, .px\:0, .px\:1, .px\:2, .px\:3, .px\:4, .px\:5, .px\:6 { padding-inline: var(--sf-padding) }
+.pt, .\$pt > * { padding-block-start: var(--sf-padding) }
+.pt\:0, .\$pt\:0 > * { padding-block-start: 0 }
+.pt\:1, .\$pt\:1 > * { padding-block-start: var(--sf-padding-1) }
+.pt\:2, .\$pt\:2 > * { padding-block-start: var(--sf-padding-2) }
+.pt\:3, .\$pt\:3 > * { padding-block-start: var(--sf-padding-3) }
+.pt\:4, .\$pt\:4 > * { padding-block-start: var(--sf-padding-4) }
+.pt\:5, .\$pt\:5 > * { padding-block-start: var(--sf-padding-5) }
+.pt\:6, .\$pt\:6 > * { padding-block-start: var(--sf-padding-6) }
+
+.pr, .\$pr > * { padding-inline-end: var(--sf-padding) }
+.pr\:0, .\$pr\:0 > * { padding-inline-end: 0 }
+.pr\:1, .\$pr\:1 > * { padding-inline-end: var(--sf-padding-1) }
+.pr\:2, .\$pr\:2 > * { padding-inline-end: var(--sf-padding-2) }
+.pr\:3, .\$pr\:3 > * { padding-inline-end: var(--sf-padding-3) }
+.pr\:4, .\$pr\:4 > * { padding-inline-end: var(--sf-padding-4) }
+.pr\:5, .\$pr\:5 > * { padding-inline-end: var(--sf-padding-5) }
+.pr\:6, .\$pr\:6 > * { padding-inline-end: var(--sf-padding-6) }
+
+.pb, .\$pb > * { padding-block-end: var(--sf-padding) }
+.pb\:0, .\$pb\:0 > * { padding-block-end: 0 }
+.pb\:1, .\$pb\:1 > * { padding-block-end: var(--sf-padding-1) }
+.pb\:2, .\$pb\:2 > * { padding-block-end: var(--sf-padding-2) }
+.pb\:3, .\$pb\:3 > * { padding-block-end: var(--sf-padding-3) }
+.pb\:4, .\$pb\:4 > * { padding-block-end: var(--sf-padding-4) }
+.pb\:5, .\$pb\:5 > * { padding-block-end: var(--sf-padding-5) }
+.pb\:6, .\$pb\:6 > * { padding-block-end: var(--sf-padding-6) }
+
+.pl, .\$pl > * { padding-inline-start: var(--sf-padding) }
+.pl\:0, .\$pl\:0 > * { padding-inline-start: 0 }
+.pl\:1, .\$pl\:1 > * { padding-inline-start: var(--sf-padding-1) }
+.pl\:2, .\$pl\:2 > * { padding-inline-start: var(--sf-padding-2) }
+.pl\:3, .\$pl\:3 > * { padding-inline-start: var(--sf-padding-3) }
+.pl\:4, .\$pl\:4 > * { padding-inline-start: var(--sf-padding-4) }
+.pl\:5, .\$pl\:5 > * { padding-inline-start: var(--sf-padding-5) }
+.pl\:6, .\$pl\:6 > * { padding-inline-start: var(--sf-padding-6) }
+
+.px, .\$px > * { padding-inline: var(--sf-padding) }
+.px\:0, .\$px\:0 > * { padding-inline: 0 }
+.px\:1, .\$px\:1 > * { padding-inline: var(--sf-padding-1) }
+.px\:2, .\$px\:2 > * { padding-inline: var(--sf-padding-2) }
+.px\:3, .\$px\:3 > * { padding-inline: var(--sf-padding-3) }
+.px\:4, .\$px\:4 > * { padding-inline: var(--sf-padding-4) }
+.px\:5, .\$px\:5 > * { padding-inline: var(--sf-padding-5) }
+.px\:6, .\$px\:6 > * { padding-inline: var(--sf-padding-6) }
+
+.py, .\$py > * { padding-block: var(--sf-padding) }
+.py\:0, .\$py\:0 > * { padding-block: 0 }
+.py\:1, .\$py\:1 > * { padding-block: var(--sf-padding-1) }
+.py\:2, .\$py\:2 > * { padding-block: var(--sf-padding-2) }
+.py\:3, .\$py\:3 > * { padding-block: var(--sf-padding-3) }
+.py\:4, .\$py\:4 > * { padding-block: var(--sf-padding-4) }
+.py\:5, .\$py\:5 > * { padding-block: var(--sf-padding-5) }
+.py\:6, .\$py\:6 > * { padding-block: var(--sf-padding-6) }
+
+.negative.p, .negative.\$p > * { padding: var(--sf-padding) }
+.negative.p\:0, .negative.\$p\:0 > * { padding: 0 }
+.negative.p\:1, .negative.\$p\:1 > * { padding: calc(var(--sf-padding-1) * -1) }
+.negative.p\:2, .negative.\$p\:2 > * { padding: calc(var(--sf-padding-2) * -1) }
+.negative.p\:3, .negative.\$p\:3 > * { padding: calc(var(--sf-padding-3) * -1) }
+.negative.p\:4, .negative.\$p\:4 > * { padding: calc(var(--sf-padding-4) * -1) }
+.negative.p\:5, .negative.\$p\:5 > * { padding: calc(var(--sf-padding-5) * -1) }
+.negative.p\:6, .negative.\$p\:6 > * { padding: calc(var(--sf-padding-6) * -1) }
+
+.negative.pt, .negative.\$pt > * { padding-block-start: var(--sf-padding) }
+.negative.pt\:0, .negative.\$pt\:0 > * { padding-block-start: 0 }
+.negative.pt\:1, .negative.\$pt\:1 > * { padding-block-start: calc(var(--sf-padding-1) * -1) }
+.negative.pt\:2, .negative.\$pt\:2 > * { padding-block-start: calc(var(--sf-padding-2) * -1) }
+.negative.pt\:3, .negative.\$pt\:3 > * { padding-block-start: calc(var(--sf-padding-3) * -1) }
+.negative.pt\:4, .negative.\$pt\:4 > * { padding-block-start: calc(var(--sf-padding-4) * -1) }
+.negative.pt\:5, .negative.\$pt\:5 > * { padding-block-start: calc(var(--sf-padding-5) * -1) }
+.negative.pt\:6, .negative.\$pt\:6 > * { padding-block-start: calc(var(--sf-padding-6) * -1) }
+
+.negative.pr, .negative.\$pr > * { padding-inline-end: var(--sf-padding) }
+.negative.pr\:0, .negative.\$pr\:0 > * { padding-inline-end: 0 }
+.negative.pr\:1, .negative.\$pr\:1 > * { padding-inline-end: calc(var(--sf-padding-1) * -1) }
+.negative.pr\:2, .negative.\$pr\:2 > * { padding-inline-end: calc(var(--sf-padding-2) * -1) }
+.negative.pr\:3, .negative.\$pr\:3 > * { padding-inline-end: calc(var(--sf-padding-3) * -1) }
+.negative.pr\:4, .negative.\$pr\:4 > * { padding-inline-end: calc(var(--sf-padding-4) * -1) }
+.negative.pr\:5, .negative.\$pr\:5 > * { padding-inline-end: calc(var(--sf-padding-5) * -1) }
+.negative.pr\:6, .negative.\$pr\:6 > * { padding-inline-end: calc(var(--sf-padding-6) * -1) }
+
+.negative.pb, .negative.\$pb > * { padding-block-end: var(--sf-padding) }
+.negative.pb\:0, .negative.\$pb\:0 > * { padding-block-end: 0 }
+.negative.pb\:1, .negative.\$pb\:1 > * { padding-block-end: calc(var(--sf-padding-1) * -1) }
+.negative.pb\:2, .negative.\$pb\:2 > * { padding-block-end: calc(var(--sf-padding-2) * -1) }
+.negative.pb\:3, .negative.\$pb\:3 > * { padding-block-end: calc(var(--sf-padding-3) * -1) }
+.negative.pb\:4, .negative.\$pb\:4 > * { padding-block-end: calc(var(--sf-padding-4) * -1) }
+.negative.pb\:5, .negative.\$pb\:5 > * { padding-block-end: calc(var(--sf-padding-5) * -1) }
+.negative.pb\:6, .negative.\$pb\:6 > * { padding-block-end: calc(var(--sf-padding-6) * -1) }
+
+.negative.pl, .negative.\$pl > * { padding-inline-start: var(--sf-padding) }
+.negative.pl\:0, .negative.\$pl\:0 > * { padding-inline-start: 0 }
+.negative.pl\:1, .negative.\$pl\:1 > * { padding-inline-start: calc(var(--sf-padding-1) * -1) }
+.negative.pl\:2, .negative.\$pl\:2 > * { padding-inline-start: calc(var(--sf-padding-2) * -1) }
+.negative.pl\:3, .negative.\$pl\:3 > * { padding-inline-start: calc(var(--sf-padding-3) * -1) }
+.negative.pl\:4, .negative.\$pl\:4 > * { padding-inline-start: calc(var(--sf-padding-4) * -1) }
+.negative.pl\:5, .negative.\$pl\:5 > * { padding-inline-start: calc(var(--sf-padding-5) * -1) }
+.negative.pl\:6, .negative.\$pl\:6 > * { padding-inline-start: calc(var(--sf-padding-6) * -1) }
+
+.negative.px, .negative.\$px > * { padding-inline: var(--sf-padding) }
+.negative.px\:0, .negative.\$px\:0 > * { padding-inline: 0 }
+.negative.px\:1, .negative.\$px\:1 > * { padding-inline: calc(var(--sf-padding-1) * -1) }
+.negative.px\:2, .negative.\$px\:2 > * { padding-inline: calc(var(--sf-padding-2) * -1) }
+.negative.px\:3, .negative.\$px\:3 > * { padding-inline: calc(var(--sf-padding-3) * -1) }
+.negative.px\:4, .negative.\$px\:4 > * { padding-inline: calc(var(--sf-padding-4) * -1) }
+.negative.px\:5, .negative.\$px\:5 > * { padding-inline: calc(var(--sf-padding-5) * -1) }
+.negative.px\:6, .negative.\$px\:6 > * { padding-inline: calc(var(--sf-padding-6) * -1) }
+
+.negative.py, .negative.\$py > * { padding-block: var(--sf-padding) }
+.negative.py\:0, .negative.\$py\:0 > * { padding-block: 0 }
+.negative.py\:1, .negative.\$py\:1 > * { padding-block: calc(var(--sf-padding-1) * -1) }
+.negative.py\:2, .negative.\$py\:2 > * { padding-block: calc(var(--sf-padding-2) * -1) }
+.negative.py\:3, .negative.\$py\:3 > * { padding-block: calc(var(--sf-padding-3) * -1) }
+.negative.py\:4, .negative.\$py\:4 > * { padding-block: calc(var(--sf-padding-4) * -1) }
+.negative.py\:5, .negative.\$py\:5 > * { padding-block: calc(var(--sf-padding-5) * -1) }
+.negative.py\:6, .negative.\$py\:6 > * { padding-block: calc(var(--sf-padding-6) * -1) }
 
 /* /// */
 
-html.var .p { padding: 1em }
+html.var .p, html.var .\$p > * { padding: 1em }
 
-html.var .p\:0 { padding: 0 }
-html.var .p\:1 { padding: 0.25em }
-html.var .p\:2 { padding: 0.5em }
-html.var .p\:3 { padding: 0.75em }
-html.var .p\:4 { padding: 1.25em }
-html.var .p\:5 { padding: 1.5em }
-html.var .p\:6 { padding: 2em }
+html.var .p\:0, html.var .\$p\:0 > * { padding: 0 }
+html.var .p\:1, html.var .\$p\:1 > * { padding: 0.25em }
+html.var .p\:2, html.var .\$p\:2 > * { padding: 0.5em }
+html.var .p\:3, html.var .\$p\:3 > * { padding: 0.75em }
+html.var .p\:4, html.var .\$p\:4 > * { padding: 1.25em }
+html.var .p\:5, html.var .\$p\:5 > * { padding: 1.5em }
+html.var .p\:6, html.var .\$p\:6 > * { padding: 2em }
 
-html.var .pt { padding-block-start: 1em }
-html.var .pt\:0 { padding-block-start: 0 }
-html.var .pt\:1 { padding-block-start: 0.25em }
-html.var .pt\:2 { padding-block-start: 0.5em }
-html.var .pt\:3 { padding-block-start: 0.75em }
-html.var .pt\:4 { padding-block-start: 1.25em }
-html.var .pt\:5 { padding-block-start: 1.5em }
-html.var .pt\:6 { padding-block-start: 2em }
+html.var .pt, html.var .\$pt > * { padding-block-start: 1em }
+html.var .pt\:0, html.var .\$pt\:0 > * { padding-block-start: 0 }
+html.var .pt\:1, html.var .\$pt\:1 > * { padding-block-start: 0.25em }
+html.var .pt\:2, html.var .\$pt\:2 > * { padding-block-start: 0.5em }
+html.var .pt\:3, html.var .\$pt\:3 > * { padding-block-start: 0.75em }
+html.var .pt\:4, html.var .\$pt\:4 > * { padding-block-start: 1.25em }
+html.var .pt\:5, html.var .\$pt\:5 > * { padding-block-start: 1.5em }
+html.var .pt\:6, html.var .\$pt\:6 > * { padding-block-start: 2em }
 
-html.var .pr { padding-inline-end: 1em }
-html.var .pr\:0 { padding-inline-end: 0 }
-html.var .pr\:1 { padding-inline-end: 0.25em }
-html.var .pr\:2 { padding-inline-end: 0.5em }
-html.var .pr\:3 { padding-inline-end: 0.75em }
-html.var .pr\:4 { padding-inline-end: 1.25em }
-html.var .pr\:5 { padding-inline-end: 1.5em }
-html.var .pr\:6 { padding-inline-end: 2em }
+html.var .pr, html.var .\$pr > * { padding-inline-end: 1em }
+html.var .pr\:0, html.var .\$pr\:0 > * { padding-inline-end: 0 }
+html.var .pr\:1, html.var .\$pr\:1 > * { padding-inline-end: 0.25em }
+html.var .pr\:2, html.var .\$pr\:2 > * { padding-inline-end: 0.5em }
+html.var .pr\:3, html.var .\$pr\:3 > * { padding-inline-end: 0.75em }
+html.var .pr\:4, html.var .\$pr\:4 > * { padding-inline-end: 1.25em }
+html.var .pr\:5, html.var .\$pr\:5 > * { padding-inline-end: 1.5em }
+html.var .pr\:6, html.var .\$pr\:6 > * { padding-inline-end: 2em }
 
-html.var .pb { padding-block-end: 1em }
-html.var .pb\:0 { padding-block-end: 0 }
-html.var .pb\:1 { padding-block-end: 0.25em }
-html.var .pb\:2 { padding-block-end: 0.5em }
-html.var .pb\:3 { padding-block-end: 0.75em }
-html.var .pb\:4 { padding-block-end: 1.25em }
-html.var .pb\:5 { padding-block-end: 1.5em }
-html.var .pb\:6 { padding-block-end: 2em }
+html.var .pb, html.var .\$pb > * { padding-block-end: 1em }
+html.var .pb\:0, html.var .\$pb\:0 > * { padding-block-end: 0 }
+html.var .pb\:1, html.var .\$pb\:1 > * { padding-block-end: 0.25em }
+html.var .pb\:2, html.var .\$pb\:2 > * { padding-block-end: 0.5em }
+html.var .pb\:3, html.var .\$pb\:3 > * { padding-block-end: 0.75em }
+html.var .pb\:4, html.var .\$pb\:4 > * { padding-block-end: 1.25em }
+html.var .pb\:5, html.var .\$pb\:5 > * { padding-block-end: 1.5em }
+html.var .pb\:6, html.var .\$pb\:6 > * { padding-block-end: 2em }
 
-html.var .pl { padding-inline-start: 1em }
-html.var .pl\:0 { padding-inline-start: 0 }
-html.var .pl\:1 { padding-inline-start: 0.25em }
-html.var .pl\:2 { padding-inline-start: 0.5em }
-html.var .pl\:3 { padding-inline-start: 0.75em }
-html.var .pl\:4 { padding-inline-start: 1.25em }
-html.var .pl\:5 { padding-inline-start: 1.5em }
-html.var .pl\:6 { padding-inline-start: 2em }
+html.var .pl, html.var .\$pl > * { padding-inline-start: 1em }
+html.var .pl\:0, html.var .\$pl\:0 > * { padding-inline-start: 0 }
+html.var .pl\:1, html.var .\$pl\:1 > * { padding-inline-start: 0.25em }
+html.var .pl\:2, html.var .\$pl\:2 > * { padding-inline-start: 0.5em }
+html.var .pl\:3, html.var .\$pl\:3 > * { padding-inline-start: 0.75em }
+html.var .pl\:4, html.var .\$pl\:4 > * { padding-inline-start: 1.25em }
+html.var .pl\:5, html.var .\$pl\:5 > * { padding-inline-start: 1.5em }
+html.var .pl\:6, html.var .\$pl\:6 > * { padding-inline-start: 2em }
 
-html.var .px { padding-inline: 1em }
-html.var .px\:0 { padding-inline: 0 }
-html.var .px\:1 { padding-inline: 0.25em }
-html.var .px\:2 { padding-inline: 0.5em }
-html.var .px\:3 { padding-inline: 0.75em }
-html.var .px\:4 { padding-inline: 1.25em }
-html.var .px\:5 { padding-inline: 1.5em }
-html.var .px\:6 { padding-inline: 2em }
+html.var .px, html.var .\$px > * { padding-inline: 1em }
+html.var .px\:0, html.var .\$px\:0 > * { padding-inline: 0 }
+html.var .px\:1, html.var .\$px\:1 > * { padding-inline: 0.25em }
+html.var .px\:2, html.var .\$px\:2 > * { padding-inline: 0.5em }
+html.var .px\:3, html.var .\$px\:3 > * { padding-inline: 0.75em }
+html.var .px\:4, html.var .\$px\:4 > * { padding-inline: 1.25em }
+html.var .px\:5, html.var .\$px\:5 > * { padding-inline: 1.5em }
+html.var .px\:6, html.var .\$px\:6 > * { padding-inline: 2em }
 
-html.var .py { padding-block: 1em }
-html.var .py\:0 { padding-block: 0 }
-html.var .py\:1 { padding-block: 0.25em }
-html.var .py\:2 { padding-block: 0.5em }
-html.var .py\:3 { padding-block: 0.75em }
-html.var .py\:4 { padding-block: 1.25em }
-html.var .py\:5 { padding-block: 1.5em }
-html.var .py\:6 { padding-block: 2em }
+html.var .py, html.var .\$py > * { padding-block: 1em }
+html.var .py\:0, html.var .\$py\:0 > * { padding-block: 0 }
+html.var .py\:1, html.var .\$py\:1 > * { padding-block: 0.25em }
+html.var .py\:2, html.var .\$py\:2 > * { padding-block: 0.5em }
+html.var .py\:3, html.var .\$py\:3 > * { padding-block: 0.75em }
+html.var .py\:4, html.var .\$py\:4 > * { padding-block: 1.25em }
+html.var .py\:5, html.var .\$py\:5 > * { padding-block: 1.5em }
+html.var .py\:6, html.var .\$py\:6 > * { padding-block: 2em }
 
-html.padding .pt { padding-top: 1em }
-html.padding .pt\:0 { padding-top: 0 }
-html.padding .pt\:1 { padding-top: 0.25em }
-html.padding .pt\:2 { padding-top: 0.5em }
-html.padding .pt\:3 { padding-top: 0.75em }
-html.padding .pt\:4 { padding-top: 1.25em }
-html.padding .pt\:5 { padding-top: 1.5em }
-html.padding .pt\:6 { padding-top: 2em }
+html.mpb .pt, html.mpb .\$pt > * { padding-top: 1em }
+html.mpb .pt\:0, html.mpb .\$pt\:0 > * { padding-top: 0 }
+html.mpb .pt\:1, html.mpb .\$pt\:1 > * { padding-top: 0.25em }
+html.mpb .pt\:2, html.mpb .\$pt\:2 > * { padding-top: 0.5em }
+html.mpb .pt\:3, html.mpb .\$pt\:3 > * { padding-top: 0.75em }
+html.mpb .pt\:4, html.mpb .\$pt\:4 > * { padding-top: 1.25em }
+html.mpb .pt\:5, html.mpb .\$pt\:5 > * { padding-top: 1.5em }
+html.mpb .pt\:6, html.mpb .\$pt\:6 > * { padding-top: 2em }
 
-html.padding .pr { padding-right: 1em }
-html.padding .pr\:0 { padding-right: 0 }
-html.padding .pr\:1 { padding-right: 0.25em }
-html.padding .pr\:2 { padding-right: 0.5em }
-html.padding .pr\:3 { padding-right: 0.75em }
-html.padding .pr\:4 { padding-right: 1.25em }
-html.padding .pr\:5 { padding-right: 1.5em }
-html.padding .pr\:6 { padding-right: 2em }
+html.mpb .pr, html.mpb .\$pr > * { padding-right: 1em }
+html.mpb .pr\:0, html.mpb .\$pr\:0 { padding-right: 0 }
+html.mpb .pr\:1, html.mpb .\$pr\:1 { padding-right: 0.25em }
+html.mpb .pr\:2, html.mpb .\$pr\:2 { padding-right: 0.5em }
+html.mpb .pr\:3, html.mpb .\$pr\:3 { padding-right: 0.75em }
+html.mpb .pr\:4, html.mpb .\$pr\:4 { padding-right: 1.25em }
+html.mpb .pr\:5, html.mpb .\$pr\:5 { padding-right: 1.5em }
+html.mpb .pr\:6, html.mpb .\$pr\:6 { padding-right: 2em }
 
-html.padding .pb { padding-bottom: 1em }
-html.padding .pb\:0 { padding-bottom: 0 }
-html.padding .pb\:1 { padding-bottom: 0.25em }
-html.padding .pb\:2 { padding-bottom: 0.5em }
-html.padding .pb\:3 { padding-bottom: 0.75em }
-html.padding .pb\:4 { padding-bottom: 1.25em }
-html.padding .pb\:5 { padding-bottom: 1.5em }
-html.padding .pb\:6 { padding-bottom: 2em }
+html.mpb .pb, html.mpb .\$pb > * { padding-bottom: 1em }
+html.mpb .pb\:0, html.mpb .\$pb\:0 > * { padding-bottom: 0 }
+html.mpb .pb\:1, html.mpb .\$pb\:1 > * { padding-bottom: 0.25em }
+html.mpb .pb\:2, html.mpb .\$pb\:2 > * { padding-bottom: 0.5em }
+html.mpb .pb\:3, html.mpb .\$pb\:3 > * { padding-bottom: 0.75em }
+html.mpb .pb\:4, html.mpb .\$pb\:4 > * { padding-bottom: 1.25em }
+html.mpb .pb\:5, html.mpb .\$pb\:5 > * { padding-bottom: 1.5em }
+html.mpb .pb\:6, html.mpb .\$pb\:6 > * { padding-bottom: 2em }
 
-html.padding .pl { padding-left: 1em }
-html.padding .pl\:0 { padding-left: 0 }
-html.padding .pl\:1 { padding-left: 0.25em }
-html.padding .pl\:2 { padding-left: 0.5em }
-html.padding .pl\:3 { padding-left: 0.75em }
-html.padding .pl\:4 { padding-left: 1.25em }
-html.padding .pl\:5 { padding-left: 1.5em }
-html.padding .pl\:6 { padding-left: 2em }
+html.mpb .pl, html.mpb .\$pl > * { padding-left: 1em }
+html.mpb .pl\:0, html.mpb .\$pl\:0 > * { padding-left: 0 }
+html.mpb .pl\:1, html.mpb .\$pl\:1 > * { padding-left: 0.25em }
+html.mpb .pl\:2, html.mpb .\$pl\:2 > * { padding-left: 0.5em }
+html.mpb .pl\:3, html.mpb .\$pl\:3 > * { padding-left: 0.75em }
+html.mpb .pl\:4, html.mpb .\$pl\:4 > * { padding-left: 1.25em }
+html.mpb .pl\:5, html.mpb .\$pl\:5 > * { padding-left: 1.5em }
+html.mpb .pl\:6, html.mpb .\$pl\:6 > * { padding-left: 2em }
 
-html.padding .px { padding-left: 1em; padding-right: 1em }
-html.padding .px\:0 { padding-left: 0; padding-right: 0 }
-html.padding .px\:1 { padding-left: 0.25em; padding-right: 0.25em }
-html.padding .px\:2 { padding-left: 0.5em; padding-right: 0.5em }
-html.padding .px\:3 { padding-left: 0.75em; padding-right: 0.75em }
-html.padding .px\:4 { padding-left: 1.25em; padding-right: 1.25em }
-html.padding .px\:5 { padding-left: 1.5em; padding-right: 1.5em }
-html.padding .px\:6 { padding-left: 2em; padding-right: 2em }
+html.mpb .px, html.mpb .\$px > * { padding-left: 1em; padding-right: 1em }
+html.mpb .px\:0, html.mpb .\$px\:0 > * { padding-left: 0; padding-right: 0 }
+html.mpb .px\:1, html.mpb .\$px\:1 > * { padding-left: 0.25em; padding-right: 0.25em }
+html.mpb .px\:2, html.mpb .\$px\:2 > * { padding-left: 0.5em; padding-right: 0.5em }
+html.mpb .px\:3, html.mpb .\$px\:3 > * { padding-left: 0.75em; padding-right: 0.75em }
+html.mpb .px\:4, html.mpb .\$px\:4 > * { padding-left: 1.25em; padding-right: 1.25em }
+html.mpb .px\:5, html.mpb .\$px\:5 > * { padding-left: 1.5em; padding-right: 1.5em }
+html.mpb .px\:6, html.mpb .\$px\:6 > * { padding-left: 2em; padding-right: 2em }
 
-html.padding .py { padding-top: 1em; padding-bottom: 1em }
-html.padding .py\:0 { padding-top: 0; padding-bottom: 0 }
-html.padding .py\:1 { padding-top: 0.25em; padding-bottom: 0.25em }
-html.padding .py\:2 { padding-top: 0.5em; padding-bottom: 0.5em }
-html.padding .py\:3 { padding-top: 0.75em; padding-bottom: 0.75em }
-html.padding .py\:4 { padding-top: 1.25em; padding-bottom: 1.25em }
-html.padding .py\:5 { padding-top: 1.5em; padding-bottom: 1.5em }
-html.padding .py\:6 { padding-top: 2em; padding-bottom: 2em }
+html.mpb .py, html.mpb .\$py > * { padding-top: 1em; padding-bottom: 1em }
+html.mpb .py\:0, html.mpb .\$py\:0 > * { padding-top: 0; padding-bottom: 0 }
+html.mpb .py\:1, html.mpb .\$py\:1 > * { padding-top: 0.25em; padding-bottom: 0.25em }
+html.mpb .py\:2, html.mpb .\$py\:2 > * { padding-top: 0.5em; padding-bottom: 0.5em }
+html.mpb .py\:3, html.mpb .\$py\:3 > * { padding-top: 0.75em; padding-bottom: 0.75em }
+html.mpb .py\:4, html.mpb .\$py\:4 > * { padding-top: 1.25em; padding-bottom: 1.25em }
+html.mpb .py\:5, html.mpb .\$py\:5 > * { padding-top: 1.5em; padding-bottom: 1.5em }
+html.mpb .py\:6, html.mpb .\$py\:6 > * { padding-top: 2em; padding-bottom: 2em }

@@ -118,10 +118,7 @@
 .ta\:l, .\$ta\:l > * { text-align: start }
 .ta\:c, .\$ta\:c > * { text-align: center }
 .ta\:r, .\$ta\:r > * { text-align: end }
-.ta\:justify, .\$ta\:justify > * { text-align: justify }
-
-html.ta .ta\:l, html.ta .\$ta\:l > * { text-align: left }
-html.ta .ta\:r, html.ta .\$ta\:r > * { text-align: right }
+.ta\:j, .\$ta\:j > * { text-align: justify }
 
 .whs { white-space: normal }
 .whs\:i { white-space: inherit }
@@ -148,16 +145,6 @@ html.ta .ta\:r, html.ta .\$ta\:r > * { text-align: right }
 .va\:tb, .\$va\:tb > * { vertical-align: text-bottom }
 .va\:sub, .\$va\:sub > * { vertical-align: sub }
 .va\:sup, .\$va\:sup > * { vertical-align: super }
-.va\:be, .\$va\:be > * { vertical-align: before-edge }
-.va\:ae, .\$va\:ae > * { vertical-align: after-edge }
-.va\:tae, .\$va\:tae > * { vertical-align: text-after-edge }
-.va\:tbe, .\$va\:tbe > * { vertical-align: text-before-edge }
-.va\:center, .\$va\:center > * { vertical-align: center }
-.va\:central, .\$va\:central > * { vertical-align: central }
-.va\:hanging, .\$va\:hanging > * { vertical-align: hanging }
-.va\:alphabetic, .\$va\:alphabetic > * { vertical-align: alphabetic }
-.va\:ideographic, .\$va\:ideographic > * { vertical-align: ideographic }
-.va\:mathematical, .\$va\:mathematical > * { vertical-align: mathematical }
 
 .rtl { direction: rtl }
 .ltr { direction: ltr }
@@ -185,6 +172,7 @@ html.ta .ta\:r, html.ta .\$ta\:r > * { text-align: right }
 .wm\:vertical-rl { writing-mode: vertical-rl }
 
 /* /// */
+
 html.var .ff\:sans { font-family: 'Inter', ui-sans-serif, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' }
 html.var .ff\:serif { font-family: Times, 'Times New Roman', Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' }
 html.var .ff\:monospace { font-family: 'Lucida Console', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' }
@@ -229,23 +217,7 @@ html.var .fz\:small\:6 { font-size: 10px }
 html.var .lh { line-height: 1.1875 }
 html.var .lh\:base { line-height: 0.8 }
 
-html.var .\$va\:i.\$d\:i > *, html.var .\$va\:i[class*='cols'] > * { vertical-align: inherit }
-html.var .\$va\:bl.\$d\:i > *, html.var .\$va\:bl[class*='cols'] > * { vertical-align: baseline }
-html.var .\$va\:a.\$d\:i > *, html.var .\$va\:a[class*='cols'] > * { vertical-align: auto }
-html.var .\$va\:m.\$d\:i > *, html.var .\$va\:m[class*='cols'] > * { vertical-align: middle }
-html.var .\$va\:t.\$d\:i > *, html.var .\$va\:t[class*='cols'] > * { vertical-align: top }
-html.var .\$va\:b.\$d\:i > *, html.var .\$va\:b[class*='cols'] > * { vertical-align: bottom }
-html.var .\$va\:tt.\$d\:i > *, html.var .\$va\:tt[class*='cols'] > * { vertical-align: text-top }
-html.var .\$va\:tb.\$d\:i > *, html.var .\$va\:tb[class*='cols'] > * { vertical-align: text-bottom }
-html.var .\$va\:sub.\$d\:i > *, html.var .\$va\:sub[class*='cols'] > * { vertical-align: sub }
-html.var .\$va\:sup.\$d\:i > *, html.var .\$va\:sup[class*='cols'] > * { vertical-align: super }
-html.var .\$va\:be.\$d\:i > *, html.var .\$va\:be[class*='cols'] > * { vertical-align: before-edge }
-html.var .\$va\:ae.\$d\:i > *, html.var .\$va\:ae[class*='cols'] > * { vertical-align: after-edge }
-html.var .\$va\:tae.\$d\:i > *, html.var .\$va\:tae[class*='cols'] > * { vertical-align: text-after-edge }
-html.var .\$va\:tbe.\$d\:i > *, html.var .\$va\:tbe[class*='cols'] > * { vertical-align: text-before-edge }
-html.var .\$va\:center.\$d\:i > *, html.var .\$va\:center[class*='cols'] > * { vertical-align: center }
-html.var .\$va\:central.\$d\:i > *, html.var .\$va\:central[class*='cols'] > * { vertical-align: central }
-html.var .\$va\:hanging.\$d\:i > *, html.var .\$va\:hanging[class*='cols'] > * { vertical-align: hanging }
-html.var .\$va\:alphabetic.\$d\:i > *, html.var .\$va\:alphabetic[class*='cols'] > * { vertical-align: alphabetic }
-html.var .\$va\:ideographic.\$d\:i > *, html.var .\$va\:ideographic[class*='cols'] > * { vertical-align: ideographic }
-html.var .\$va\:mathematical.\$d\:i > *, html.var .\$va\:mathematical[class*='cols'] > * { vertical-align: mathematical }
+html.ta .ta\:l, html.ta .\$ta\:l > * { text-align: left }
+html.ta .ta\:c, html.ta .\$ta\:c > * { text-align: center }
+html.ta .ta\:r, html.ta .\$ta\:r > * { text-align: right }
+html.ta .ta\:j, html.ta .\$ta\:j > * { text-align: justify }

@@ -1,0 +1,60 @@
+:root {
+  --sf-bdw: 1px;
+}
+
+.bd\:0 { border: 0 }
+.bd, .bd\:1 { border: var(--sf-bdw) solid }
+.bd\:2 { border: calc(var(--sf-bdw) * 2) solid }
+
+.bdc\:i { border-color: initial }
+
+.bds { border-style: solid }
+.bds\:n { border-style: none }
+.bds\:r { border-style: ridge }
+.bds\:da { border-style: dashed }
+.bds\:do { border-style: dotted }
+.bds\:dbl { border-style: double }
+.bds\:g { border-style: groove }
+.bds\:h { border-style: hidden }
+.bds\:i { border-style: inset }
+.bds\:o { border-style: outset }
+
+.bdw\:0 { border-width: 0 }
+.bdw, .bdw\:1 { border-width: var(--sf-bdw) }
+.bdw\:2 { border-width: calc(var(--sf-bdw) * 2) }
+
+.bdyw { border-block-width: var(--sf-bdw) }
+.bdxw { border-inline-width: var(--sf-bdw) }
+.bdtw { border-block-start-width: var(--sf-bdw) }
+.bdlw { border-inline-start-width: var(--sf-bdw) }
+.bdrw { border-inline-end-width: var(--sf-bdw) }
+.bdbw { border-block-end-width: var(--sf-bdw) }
+
+/* /// */
+
+html.var .bdyw { border-block-width: 1px }
+html.var .bdxw { border-inline-width: 1px }
+html.var .bdtw { border-block-start-width: 1px }
+html.var .bdlw { border-inline-start-width: 1px }
+html.var .bdrw { border-inline-end-width: 1px }
+html.var .bdbw { border-block-end-width: 1px }
+
+html.mpb .bdtw { border-top-width: 1px }
+html.mpb .bdlw { border-left-width: 1px }
+html.mpb .bdrw { border-right-width: 1px }
+html.mpb .bdbw { border-bottom-width: 1px }
+html.mpb .bdyw { border-top-width: 1px; border-bottom-width: 1px }
+html.mpb .bdxw { border-left-width: 1px; border-right-width: 1px }
+
+html.mpb .bdtw\:2 { border-top-width: 2px }
+html.mpb .bdlw\:2 { border-left-width: 2px }
+html.mpb .bdrw\:2 { border-right-width: 2px }
+html.mpb .bdbw\:2 { border-bottom-width: 2px }
+html.mpb .bdyw\:2 { border-top-width: 2px; border-bottom-width: 2px }
+html.mpb .bdxw\:2 { border-left-width: 2px; border-right-width: 2px }
+html.mpb .bdw\:2 { border-width: 2px }
+
+html.var .bdw, html.var .bdw\:1 { border-width: 1px }
+
+html.var .bd, html.var .bd\:1 { border: 1px solid }
+html.var .bd\:2 { border: 2px solid }

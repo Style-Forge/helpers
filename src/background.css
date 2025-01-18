@@ -1,0 +1,64 @@
+.bg\:n { background: none }
+
+.bgi\:n { background-image: none }
+
+.bga\:f { background-attachment: fixed }
+.bga\:s { background-attachment: scroll }
+
+.bgc\:t { background-color: transparent }
+
+.bgb\:c { background-blend-mode: color }
+.bgb\:cb { background-blend-mode: color-burn }
+.bgb\:cd { background-blend-mode: color-dodge }
+.bgb\:d { background-blend-mode: darken }
+.bgb\:diff { background-blend-mode: difference }
+.bgb\:e { background-blend-mode: exclusion }
+.bgb\:hl { background-blend-mode: hard-light }
+.bgb\:h { background-blend-mode: hue }
+.bgb\:l { background-blend-mode: lighten }
+.bgb\:lum { background-blend-mode: luminosity }
+.bgb\:m { background-blend-mode: multiply }
+.bgb\:n { background-blend-mode: normal }
+.bgb\:o { background-blend-mode: overlay }
+.bgb\:s { background-blend-mode: saturation }
+.bgb\:sc { background-blend-mode: screen }
+.bgb\:sl { background-blend-mode: soft-light }
+
+.bgbk\:bb { background-break: bounding-box }
+.bgbk\:c { background-break: continuous }
+.bgbk\:eb { background-break: each-box }
+
+.bgsz\:a { background-size: auto }
+.bgsz\:ct { background-size: contain }
+.bgsz\:cv { background-size: cover }
+
+.bgp\:tl { background-position: top left }
+.bgp\:tc { background-position: top center }
+.bgp\:tr { background-position: top right }
+.bgp\:cl { background-position: center left }
+.bgp\:cc { background-position: center center }
+.bgp\:cr { background-position: center right }
+.bgp\:bl { background-position: bottom left }
+.bgp\:bc { background-position: bottom center }
+.bgp\:br { background-position: bottom right }
+.bgp\:x50y50 { background-position: 50% 50% }
+
+.bgr\:n { background-repeat: no-repeat }
+.bgr\:x { background-repeat: repeat-x }
+.bgr\:y { background-repeat: repeat-y }
+.bgr\:r { background-repeat: repeat }
+.bgr\:s { background-repeat: space }
+.bgr\:r { background-repeat: round }
+
+.bgcp\:b { background-clip: border-box }
+.bgcp\:p { background-clip: padding-box }
+.bgcp\:c { background-clip: content-box }
+.bgcp\:t { background-clip: text }
+
+.bgo\:b { background-origin: border-box }
+.bgo\:p { background-origin: padding-box }
+.bgo\:c { background-origin: content-box }
+
+.bgsz\:f { background-size: 100% 100% }
+.bgsz\:h { background-size: 100% auto }
+.bgsz\:w { background-size: auto 100% }

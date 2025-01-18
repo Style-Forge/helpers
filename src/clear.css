@@ -1,0 +1,17 @@
+.cl { clear: none }
+
+.cl\:b { clear: both }
+
+.cl\:l { clear: inline-start }
+.cl\:r { clear: inline-end }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* /// */
+
+html.clear .cl\:l { clear: left }
+html.clear .cl\:r { clear: right }

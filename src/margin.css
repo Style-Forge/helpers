@@ -9,286 +9,403 @@
   --sf-margin-6: calc(var(--sf-margin) * 2);
 }
 
-.m { margin: var(--sf-margin) }
-.m\:a, .mt\:a, .mb\:a, .ml\:a, .mr\:a, .mx\:a, .my\:a { --sf-margin: auto }
-.m\:0, .mt\:0, .mb\:0, .ml\:0, .mr\:0, .mx\:0, .my\:0 { --sf-margin: 0 }
-.m\:1, .mt\:1, .mb\:1, .ml\:1, .mr\:1, .mx\:1, .my\:1 { --sf-margin: var(--sf-margin-1) }
-.m\:2, .mt\:2, .mb\:2, .ml\:2, .mr\:2, .mx\:2, .my\:2 { --sf-margin: var(--sf-margin-2) }
-.m\:3, .mt\:3, .mb\:3, .ml\:3, .mr\:3, .mx\:3, .my\:3 { --sf-margin: var(--sf-margin-3) }
-.m\:4, .mt\:4, .mb\:4, .ml\:4, .mr\:4, .mx\:4, .my\:4 { --sf-margin: var(--sf-margin-4) }
-.m\:5, .mt\:5, .mb\:5, .ml\:5, .mr\:5, .mx\:5, .my\:5 { --sf-margin: var(--sf-margin-5) }
-.m\:6, .mt\:6, .mb\:6, .ml\:6, .mr\:6, .mx\:6, .my\:6 { --sf-margin: var(--sf-margin-6) }
+.m, .\$m > * { margin: var(--sf-margin) }
+.m\:a, .\$m\:a > * { margin: auto }
+.m\:0, .\$m\:0 > * { margin: 0 }
+.m\:1, .\$m\:1 > * { margin: var(--sf-margin-1) }
+.m\:2, .\$m\:2 > * { margin: var(--sf-margin-2) }
+.m\:3, .\$m\:3 > * { margin: var(--sf-margin-3) }
+.m\:4, .\$m\:4 > * { margin: var(--sf-margin-4) }
+.m\:5, .\$m\:5 > * { margin: var(--sf-margin-5) }
+.m\:6, .\$m\:6 > * { margin: var(--sf-margin-6) }
 
-.mt, .mt\:a, .mt\:0, .mt\:1, .mt\:2, .mt\:3, .mt\:4, .mt\:5, .mt\:6 { margin-block-start: var(--sf-margin) }
-.negative:is(.mt, .mt\:a, .mt\:0, .mt\:1, .mt\:2, .mt\:3, .mt\:4, .mt\:5, .mt\:6) { margin-block-start: calc(var(--sf-margin) * -1) }
-.mb, .mb\:a, .mb\:0, .mb\:1, .mb\:2, .mb\:3, .mb\:4, .mb\:5, .mb\:6 { margin-block-end: var(--sf-margin) }
-.negative:is(.mb, .mb\:a, .mb\:0, .mb\:1, .mb\:2, .mb\:3, .mb\:4, .mb\:5, .mb\:6) { margin-block-end: calc(var(--sf-margin) * -1) }
-.ml, .ml\:a, .ml\:0, .ml\:1, .ml\:2, .ml\:3, .ml\:4, .ml\:5, .ml\:6 { margin-inline-start: var(--sf-margin) }
-.negative:is(.ml, .ml\:a, .ml\:0, .ml\:1, .ml\:2, .ml\:3, .ml\:4, .ml\:5, .ml\:6) { margin-inline-start: calc(var(--sf-margin) * -1) }
-.mr, .mr\:a, .mr\:0, .mr\:1, .mr\:2, .mr\:3, .mr\:4, .mr\:5, .mr\:6 { margin-inline-end: var(--sf-margin) }
-.negative:is(.mr, .mr\:a, .mr\:0, .mr\:1, .mr\:2, .mr\:3, .mr\:4, .mr\:5, .mr\:6) { margin-inline-end: calc(var(--sf-margin) * -1) }
-.my, .my\:a, .my\:0, .my\:1, .my\:2, .my\:3, .my\:4, .my\:5, .my\:6 { margin-block: var(--sf-margin) }
-.negative:is(.my, .my\:a, .my\:0, .my\:1, .my\:2, .my\:3, .my\:4, .my\:5, .my\:6) { margin-block: calc(var(--sf-margin) * -1) }
-.mx, .mx\:a, .mx\:0, .mx\:1, .mx\:2, .mx\:3, .mx\:4, .mx\:5, .mx\:6 { margin-inline: var(--sf-margin) }
-.negative:is(.mx, .mx\:a, .mx\:0, .mx\:1, .mx\:2, .mx\:3, .mx\:4, .mx\:5, .mx\:6) { margin-inline: calc(var(--sf-margin) * -1) }
+.mt, .\$mt > * { margin-block-start: var(--sf-margin) }
+.mt\:a, .\$mt\:a > * { margin-block-start: auto }
+.mt\:0, .\$mt\:0 > * { margin-block-start: 0 }
+.mt\:1, .\$mt\:1 > * { margin-block-start: var(--sf-margin-1) }
+.mt\:2, .\$mt\:2 > * { margin-block-start: var(--sf-margin-2) }
+.mt\:3, .\$mt\:3 > * { margin-block-start: var(--sf-margin-3) }
+.mt\:4, .\$mt\:4 > * { margin-block-start: var(--sf-margin-4) }
+.mt\:5, .\$mt\:5 > * { margin-block-start: var(--sf-margin-5) }
+.mt\:6, .\$mt\:6 > * { margin-block-start: var(--sf-margin-6) }
+
+.mr, .\$mr > * { margin-inline-end: var(--sf-margin) }
+.mr\:a, .\$mr\:a > * { margin-inline-end: auto }
+.mr\:0, .\$mr\:0 > * { margin-inline-end: 0 }
+.mr\:1, .\$mr\:1 > * { margin-inline-end: var(--sf-margin-1) }
+.mr\:2, .\$mr\:2 > * { margin-inline-end: var(--sf-margin-2) }
+.mr\:3, .\$mr\:3 > * { margin-inline-end: var(--sf-margin-3) }
+.mr\:4, .\$mr\:4 > * { margin-inline-end: var(--sf-margin-4) }
+.mr\:5, .\$mr\:5 > * { margin-inline-end: var(--sf-margin-5) }
+.mr\:6, .\$mr\:6 > * { margin-inline-end: var(--sf-margin-6) }
+
+.mb, .\$mb > * { margin-block-end: var(--sf-margin) }
+.mb\:a, .\$mb\:a > * { margin-block-end: auto }
+.mb\:0, .\$mb\:0 > * { margin-block-end: 0 }
+.mb\:1, .\$mb\:1 > * { margin-block-end: var(--sf-margin-1) }
+.mb\:2, .\$mb\:2 > * { margin-block-end: var(--sf-margin-2) }
+.mb\:3, .\$mb\:3 > * { margin-block-end: var(--sf-margin-3) }
+.mb\:4, .\$mb\:4 > * { margin-block-end: var(--sf-margin-4) }
+.mb\:5, .\$mb\:5 > * { margin-block-end: var(--sf-margin-5) }
+.mb\:6, .\$mb\:6 > * { margin-block-end: var(--sf-margin-6) }
+
+.ml, .\$ml > * { margin-inline-start: var(--sf-margin) }
+.ml\:a, .\$ml\:a > * { margin-inline-start: auto }
+.ml\:0, .\$ml\:0 > * { margin-inline-start: 0 }
+.ml\:1, .\$ml\:1 > * { margin-inline-start: var(--sf-margin-1) }
+.ml\:2, .\$ml\:2 > * { margin-inline-start: var(--sf-margin-2) }
+.ml\:3, .\$ml\:3 > * { margin-inline-start: var(--sf-margin-3) }
+.ml\:4, .\$ml\:4 > * { margin-inline-start: var(--sf-margin-4) }
+.ml\:5, .\$ml\:5 > * { margin-inline-start: var(--sf-margin-5) }
+.ml\:6, .\$ml\:6 > * { margin-inline-start: var(--sf-margin-6) }
+
+.mx, .\$mx > * { margin-inline: var(--sf-margin) }
+.mx\:a, .\$mx\:a > * { margin-inline: auto }
+.mx\:0, .\$mx\:0 > * { margin-inline: 0 }
+.mx\:1, .\$mx\:1 > * { margin-inline: var(--sf-margin-1) }
+.mx\:2, .\$mx\:2 > * { margin-inline: var(--sf-margin-2) }
+.mx\:3, .\$mx\:3 > * { margin-inline: var(--sf-margin-3) }
+.mx\:4, .\$mx\:4 > * { margin-inline: var(--sf-margin-4) }
+.mx\:5, .\$mx\:5 > * { margin-inline: var(--sf-margin-5) }
+.mx\:6, .\$mx\:6 > * { margin-inline: var(--sf-margin-6) }
+
+.my, .\$my > * { margin-block: var(--sf-margin) }
+.my\:a, .\$my\:a > * { margin-block: auto }
+.my\:0, .\$my\:0 > * { margin-block: 0 }
+.my\:1, .\$my\:1 > * { margin-block: var(--sf-margin-1) }
+.my\:2, .\$my\:2 > * { margin-block: var(--sf-margin-2) }
+.my\:3, .\$my\:3 > * { margin-block: var(--sf-margin-3) }
+.my\:4, .\$my\:4 > * { margin-block: var(--sf-margin-4) }
+.my\:5, .\$my\:5 > * { margin-block: var(--sf-margin-5) }
+.my\:6, .\$my\:6 > * { margin-block: var(--sf-margin-6) }
+
+.negative.m, .negative.\$m > * { margin: calc(var(--sf-margin) * -1) }
+.negative.m\:a, .negative.\$m\:a > * { margin: auto }
+.negative.m\:0, .negative.\$m\:0 > * { margin: 0 }
+.negative.m\:1, .negative.\$m\:1 > * { margin: calc(var(--sf-margin-1) * -1) }
+.negative.m\:2, .negative.\$m\:2 > * { margin: calc(var(--sf-margin-2) * -1) }
+.negative.m\:3, .negative.\$m\:3 > * { margin: calc(var(--sf-margin-3) * -1) }
+.negative.m\:4, .negative.\$m\:4 > * { margin: calc(var(--sf-margin-4) * -1) }
+.negative.m\:5, .negative.\$m\:5 > * { margin: calc(var(--sf-margin-5) * -1) }
+.negative.m\:6, .negative.\$m\:6 > * { margin: calc(var(--sf-margin-6) * -1) }
+
+.negative.mt, .negative.\$mt > * { margin-block-start: calc(var(--sf-margin) * -1) }
+.negative.mt\:a, .negative.\$mt\:a > * { margin-block-start: auto }
+.negative.mt\:0, .negative.\$mt\:0 > * { margin-block-start: 0 }
+.negative.mt\:1, .negative.\$mt\:1 > * { margin-block-start: calc(var(--sf-margin-1) * -1) }
+.negative.mt\:2, .negative.\$mt\:2 > * { margin-block-start: calc(var(--sf-margin-2) * -1) }
+.negative.mt\:3, .negative.\$mt\:3 > * { margin-block-start: calc(var(--sf-margin-3) * -1) }
+.negative.mt\:4, .negative.\$mt\:4 > * { margin-block-start: calc(var(--sf-margin-4) * -1) }
+.negative.mt\:5, .negative.\$mt\:5 > * { margin-block-start: calc(var(--sf-margin-5) * -1) }
+.negative.mt\:6, .negative.\$mt\:6 > * { margin-block-start: calc(var(--sf-margin-6) * -1) }
+
+.negative.mr, .negative.\$mr > * { margin-inline-end: calc(var(--sf-margin) * -1) }
+.negative.mr\:a, .negative.\$mr\:a > * { margin-inline-end: auto }
+.negative.mr\:0, .negative.\$mr\:0 > * { margin-inline-end: 0 }
+.negative.mr\:1, .negative.\$mr\:1 > * { margin-inline-end: calc(var(--sf-margin-1) * -1) }
+.negative.mr\:2, .negative.\$mr\:2 > * { margin-inline-end: calc(var(--sf-margin-2) * -1) }
+.negative.mr\:3, .negative.\$mr\:3 > * { margin-inline-end: calc(var(--sf-margin-3) * -1) }
+.negative.mr\:4, .negative.\$mr\:4 > * { margin-inline-end: calc(var(--sf-margin-4) * -1) }
+.negative.mr\:5, .negative.\$mr\:5 > * { margin-inline-end: calc(var(--sf-margin-5) * -1) }
+.negative.mr\:6, .negative.\$mr\:6 > * { margin-inline-end: calc(var(--sf-margin-6) * -1) }
+
+.negative.mb, .negative.\$mb > * { margin-block-end: calc(var(--sf-margin) * -1) }
+.negative.mb\:a, .negative.\$mb\:a > * { margin-block-end: auto }
+.negative.mb\:0, .negative.\$mb\:0 > * { margin-block-end: 0 }
+.negative.mb\:1, .negative.\$mb\:1 > * { margin-block-end: calc(var(--sf-margin-1) * -1) }
+.negative.mb\:2, .negative.\$mb\:2 > * { margin-block-end: calc(var(--sf-margin-2) * -1) }
+.negative.mb\:3, .negative.\$mb\:3 > * { margin-block-end: calc(var(--sf-margin-3) * -1) }
+.negative.mb\:4, .negative.\$mb\:4 > * { margin-block-end: calc(var(--sf-margin-4) * -1) }
+.negative.mb\:5, .negative.\$mb\:5 > * { margin-block-end: calc(var(--sf-margin-5) * -1) }
+.negative.mb\:6, .negative.\$mb\:6 > * { margin-block-end: calc(var(--sf-margin-6) * -1) }
+
+.negative.ml, .negative.\$ml > * { margin-inline-start: calc(var(--sf-margin) * -1) }
+.negative.ml\:a, .negative.\$ml\:a > * { margin-inline-start: auto }
+.negative.ml\:0, .negative.\$ml\:0 > * { margin-inline-start: 0 }
+.negative.ml\:1, .negative.\$ml\:1 > * { margin-inline-start: calc(var(--sf-margin-1) * -1) }
+.negative.ml\:2, .negative.\$ml\:2 > * { margin-inline-start: calc(var(--sf-margin-2) * -1) }
+.negative.ml\:3, .negative.\$ml\:3 > * { margin-inline-start: calc(var(--sf-margin-3) * -1) }
+.negative.ml\:4, .negative.\$ml\:4 > * { margin-inline-start: calc(var(--sf-margin-4) * -1) }
+.negative.ml\:5, .negative.\$ml\:5 > * { margin-inline-start: calc(var(--sf-margin-5) * -1) }
+.negative.ml\:6, .negative.\$ml\:6 > * { margin-inline-start: calc(var(--sf-margin-6) * -1) }
+
+.negative.mx, .negative.\$mx > * { margin-inline: calc(var(--sf-margin) * -1) }
+.negative.mx\:a, .negative.\$mx\:a > * { margin-inline: auto }
+.negative.mx\:0, .negative.\$mx\:0 > * { margin-inline: 0 }
+.negative.mx\:1, .negative.\$mx\:1 > * { margin-inline: calc(var(--sf-margin-1) * -1) }
+.negative.mx\:2, .negative.\$mx\:2 > * { margin-inline: calc(var(--sf-margin-2) * -1) }
+.negative.mx\:3, .negative.\$mx\:3 > * { margin-inline: calc(var(--sf-margin-3) * -1) }
+.negative.mx\:4, .negative.\$mx\:4 > * { margin-inline: calc(var(--sf-margin-4) * -1) }
+.negative.mx\:5, .negative.\$mx\:5 > * { margin-inline: calc(var(--sf-margin-5) * -1) }
+.negative.mx\:6, .negative.\$mx\:6 > * { margin-inline: calc(var(--sf-margin-6) * -1) }
+
+.negative.my, .negative.\$my > * { margin-block: calc(var(--sf-margin) * -1) }
+.negative.my\:a, .negative.\$my\:a > * { margin-block: auto }
+.negative.my\:0, .negative.\$my\:0 > * { margin-block: 0 }
+.negative.my\:1, .negative.\$my\:1 > * { margin-block: calc(var(--sf-margin-1) * -1) }
+.negative.my\:2, .negative.\$my\:2 > * { margin-block: calc(var(--sf-margin-2) * -1) }
+.negative.my\:3, .negative.\$my\:3 > * { margin-block: calc(var(--sf-margin-3) * -1) }
+.negative.my\:4, .negative.\$my\:4 > * { margin-block: calc(var(--sf-margin-4) * -1) }
+.negative.my\:5, .negative.\$my\:5 > * { margin-block: calc(var(--sf-margin-5) * -1) }
+.negative.my\:6, .negative.\$my\:6 > * { margin-block: calc(var(--sf-margin-6) * -1) }
 
 /* /// */
 
-html.var .m { margin: 1em }
+html.var .m, html.var .\$m > * { margin: 1em }
 
-html.var .m\:a { margin: auto }
-html.var .m\:0 { margin: 0 }
-html.var .m\:1 { margin: 0.25em }
-html.var .m\:2 { margin: 0.5em }
-html.var .m\:3 { margin: 0.75em }
-html.var .m\:4 { margin: 1.25em }
-html.var .m\:5 { margin: 1.5em }
-html.var .m\:6 { margin: 2em }
+html.var .m\:a, html.var .\$m\:a > * { margin: auto }
+html.var .m\:0, html.var .\$m\:0 > * { margin: 0 }
+html.var .m\:1, html.var .\$m\:1 > * { margin: 0.25em }
+html.var .m\:2, html.var .\$m\:2 > * { margin: 0.5em }
+html.var .m\:3, html.var .\$m\:3 > * { margin: 0.75em }
+html.var .m\:4, html.var .\$m\:4 > * { margin: 1.25em }
+html.var .m\:5, html.var .\$m\:5 > * { margin: 1.5em }
+html.var .m\:6, html.var .\$m\:6 > * { margin: 2em }
 
-html.var .mt { margin-block-start: 1em }
-html.var .mt\:a { margin-block-start: auto }
-html.var .mt\:0 { margin-block-start: 0 }
-html.var .mt\:1 { margin-block-start: 0.25em }
-html.var .mt\:2 { margin-block-start: 0.5em }
-html.var .mt\:3 { margin-block-start: 0.75em }
-html.var .mt\:4 { margin-block-start: 1.25em }
-html.var .mt\:5 { margin-block-start: 1.5em }
-html.var .mt\:6 { margin-block-start: 2em }
+html.var .mt, html.var .\$mt > * { margin-block-start: 1em }
+html.var .mt\:a, html.var .\$mt\:a > * { margin-block-start: auto }
+html.var .mt\:0, html.var .\$mt\:0 > * { margin-block-start: 0 }
+html.var .mt\:1, html.var .\$mt\:1 > * { margin-block-start: 0.25em }
+html.var .mt\:2, html.var .\$mt\:2 > * { margin-block-start: 0.5em }
+html.var .mt\:3, html.var .\$mt\:3 > * { margin-block-start: 0.75em }
+html.var .mt\:4, html.var .\$mt\:4 > * { margin-block-start: 1.25em }
+html.var .mt\:5, html.var .\$mt\:5 > * { margin-block-start: 1.5em }
+html.var .mt\:6, html.var .\$mt\:6 > * { margin-block-start: 2em }
 
-html.var .mr { margin-inline-end: 1em }
-html.var .mr\:a { margin-inline-end: auto }
-html.var .mr\:0 { margin-inline-end: 0 }
-html.var .mr\:1 { margin-inline-end: 0.25em }
-html.var .mr\:2 { margin-inline-end: 0.5em }
-html.var .mr\:3 { margin-inline-end: 0.75em }
-html.var .mr\:4 { margin-inline-end: 1.25em }
-html.var .mr\:5 { margin-inline-end: 1.5em }
-html.var .mr\:6 { margin-inline-end: 2em }
+html.var .mr, html.var .\$mr > * { margin-inline-end: 1em }
+html.var .mr\:a, html.var .\$mr\:a > * { margin-inline-end: auto }
+html.var .mr\:0, html.var .\$mr\:0 > * { margin-inline-end: 0 }
+html.var .mr\:1, html.var .\$mr\:1 > * { margin-inline-end: 0.25em }
+html.var .mr\:2, html.var .\$mr\:2 > * { margin-inline-end: 0.5em }
+html.var .mr\:3, html.var .\$mr\:3 > * { margin-inline-end: 0.75em }
+html.var .mr\:4, html.var .\$mr\:4 > * { margin-inline-end: 1.25em }
+html.var .mr\:5, html.var .\$mr\:5 > * { margin-inline-end: 1.5em }
+html.var .mr\:6, html.var .\$mr\:6 > * { margin-inline-end: 2em }
 
-html.var .mb { margin-block-end: 1em }
-html.var .mb\:a { margin-block-end: auto }
-html.var .mb\:0 { margin-block-end: 0 }
-html.var .mb\:1 { margin-block-end: 0.25em }
-html.var .mb\:2 { margin-block-end: 0.5em }
-html.var .mb\:3 { margin-block-end: 0.75em }
-html.var .mb\:4 { margin-block-end: 1.25em }
-html.var .mb\:5 { margin-block-end: 1.5em }
-html.var .mb\:6 { margin-block-end: 2em }
+html.var .mb, html.var .\$mb > * { margin-block-end: 1em }
+html.var .mb\:a, html.var .\$mb\:a > * { margin-block-end: auto }
+html.var .mb\:0, html.var .\$mb\:0 > * { margin-block-end: 0 }
+html.var .mb\:1, html.var .\$mb\:1 > * { margin-block-end: 0.25em }
+html.var .mb\:2, html.var .\$mb\:2 > * { margin-block-end: 0.5em }
+html.var .mb\:3, html.var .\$mb\:3 > * { margin-block-end: 0.75em }
+html.var .mb\:4, html.var .\$mb\:4 > * { margin-block-end: 1.25em }
+html.var .mb\:5, html.var .\$mb\:5 > * { margin-block-end: 1.5em }
+html.var .mb\:6, html.var .\$mb\:6 > * { margin-block-end: 2em }
 
-html.var .ml { margin-inline-start: 1em }
-html.var .ml\:a { margin-inline-start: auto }
-html.var .ml\:0 { margin-inline-start: 0 }
-html.var .ml\:1 { margin-inline-start: 0.25em }
-html.var .ml\:2 { margin-inline-start: 0.5em }
-html.var .ml\:3 { margin-inline-start: 0.75em }
-html.var .ml\:4 { margin-inline-start: 1.25em }
-html.var .ml\:5 { margin-inline-start: 1.5em }
-html.var .ml\:6 { margin-inline-start: 2em }
+html.var .ml, html.var .\$ml > * { margin-inline-start: 1em }
+html.var .ml\:a, html.var .\$ml\:a > * { margin-inline-start: auto }
+html.var .ml\:0, html.var .\$ml\:0 > * { margin-inline-start: 0 }
+html.var .ml\:1, html.var .\$ml\:1 > * { margin-inline-start: 0.25em }
+html.var .ml\:2, html.var .\$ml\:2 > * { margin-inline-start: 0.5em }
+html.var .ml\:3, html.var .\$ml\:3 > * { margin-inline-start: 0.75em }
+html.var .ml\:4, html.var .\$ml\:4 > * { margin-inline-start: 1.25em }
+html.var .ml\:5, html.var .\$ml\:5 > * { margin-inline-start: 1.5em }
+html.var .ml\:6, html.var .\$ml\:6 > * { margin-inline-start: 2em }
 
-html.var .mx { margin-inline: 1em }
-html.var .mx\:a { margin-inline: auto }
-html.var .mx\:0 { margin-inline: 0 }
-html.var .mx\:1 { margin-inline: 0.25em }
-html.var .mx\:2 { margin-inline: 0.5em }
-html.var .mx\:3 { margin-inline: 0.75em }
-html.var .mx\:4 { margin-inline: 1.25em }
-html.var .mx\:5 { margin-inline: 1.5em }
-html.var .mx\:6 { margin-inline: 2em }
+html.var .mx, html.var .\$mx > * { margin-inline: 1em }
+html.var .mx\:a, html.var .\$mx\:a > * { margin-inline: auto }
+html.var .mx\:0, html.var .\$mx\:0 > * { margin-inline: 0 }
+html.var .mx\:1, html.var .\$mx\:1 > * { margin-inline: 0.25em }
+html.var .mx\:2, html.var .\$mx\:2 > * { margin-inline: 0.5em }
+html.var .mx\:3, html.var .\$mx\:3 > * { margin-inline: 0.75em }
+html.var .mx\:4, html.var .\$mx\:4 > * { margin-inline: 1.25em }
+html.var .mx\:5, html.var .\$mx\:5 > * { margin-inline: 1.5em }
+html.var .mx\:6, html.var .\$mx\:6 > * { margin-inline: 2em }
 
-html.var .my { margin-block: 1em }
-html.var .my\:a { margin-block: auto }
-html.var .my\:0 { margin-block: 0 }
-html.var .my\:1 { margin-block: 0.25em }
-html.var .my\:2 { margin-block: 0.5em }
-html.var .my\:3 { margin-block: 0.75em }
-html.var .my\:4 { margin-block: 1.25em }
-html.var .my\:5 { margin-block: 1.5em }
-html.var .my\:6 { margin-block: 2em }
+html.var .my, html.var .\$my > * { margin-block: 1em }
+html.var .my\:a, html.var .\$my\:a > * { margin-block: auto }
+html.var .my\:0, html.var .\$my\:0 > * { margin-block: 0 }
+html.var .my\:1, html.var .\$my\:1 > * { margin-block: 0.25em }
+html.var .my\:2, html.var .\$my\:2 > * { margin-block: 0.5em }
+html.var .my\:3, html.var .\$my\:3 > * { margin-block: 0.75em }
+html.var .my\:4, html.var .\$my\:4 > * { margin-block: 1.25em }
+html.var .my\:5, html.var .\$my\:5 > * { margin-block: 1.5em }
+html.var .my\:6, html.var .\$my\:6 > * { margin-block: 2em }
 
-html.var .negative.m { margin: -1em }
-html.var .negative.m\:1 { margin: -0.25em }
-html.var .negative.m\:2 { margin: -0.5em }
-html.var .negative.m\:3 { margin: -0.75em }
-html.var .negative.m\:4 { margin: -1.25em }
-html.var .negative.m\:5 { margin: -1.5em }
-html.var .negative.m\:6 { margin: -2em }
+html.var .negative.m, html.var .negative.\$m > * { margin: -1em }
+html.var .negative.m\:1, html.var .negative.\$m\:1 > * { margin: -0.25em }
+html.var .negative.m\:2, html.var .negative.\$m\:2 > * { margin: -0.5em }
+html.var .negative.m\:3, html.var .negative.\$m\:3 > * { margin: -0.75em }
+html.var .negative.m\:4, html.var .negative.\$m\:4 > * { margin: -1.25em }
+html.var .negative.m\:5, html.var .negative.\$m\:5 > * { margin: -1.5em }
+html.var .negative.m\:6, html.var .negative.\$m\:6 > * { margin: -2em }
 
-html.var .negative.mt { margin-block-start: -1em }
-html.var .negative.mt\:a { margin-block-start: auto }
-html.var .negative.mt\:0 { margin-block-start: 0 }
-html.var .negative.mt\:1 { margin-block-start: -0.25em }
-html.var .negative.mt\:2 { margin-block-start: -0.5em }
-html.var .negative.mt\:3 { margin-block-start: -0.75em }
-html.var .negative.mt\:4 { margin-block-start: -1.25em }
-html.var .negative.mt\:5 { margin-block-start: -1.5em }
-html.var .negative.mt\:6 { margin-block-start: -2em }
+html.var .negative.mt, html.var .negative.\$mt > * { margin-block-start: -1em }
+html.var .negative.mt\:a, html.var .negative.\$mt\:a > * { margin-block-start: auto }
+html.var .negative.mt\:0, html.var .negative.\$mt\:0 > * { margin-block-start: 0 }
+html.var .negative.mt\:1, html.var .negative.\$mt\:1 > * { margin-block-start: -0.25em }
+html.var .negative.mt\:2, html.var .negative.\$mt\:2 > * { margin-block-start: -0.5em }
+html.var .negative.mt\:3, html.var .negative.\$mt\:3 > * { margin-block-start: -0.75em }
+html.var .negative.mt\:4, html.var .negative.\$mt\:4 > * { margin-block-start: -1.25em }
+html.var .negative.mt\:5, html.var .negative.\$mt\:5 > * { margin-block-start: -1.5em }
+html.var .negative.mt\:6, html.var .negative.\$mt\:6 > * { margin-block-start: -2em }
 
-html.var .negative.mr { margin-inline-end: -1em }
-html.var .negative.mr\:a { margin-inline-end: auto }
-html.var .negative.mr\:0 { margin-inline-end: 0 }
-html.var .negative.mr\:1 { margin-inline-end: -0.25em }
-html.var .negative.mr\:2 { margin-inline-end: -0.5em }
-html.var .negative.mr\:3 { margin-inline-end: -0.75em }
-html.var .negative.mr\:4 { margin-inline-end: -1.25em }
-html.var .negative.mr\:5 { margin-inline-end: -1.5em }
-html.var .negative.mr\:6 { margin-inline-end: -2em }
+html.var .negative.mr, html.var .negative.\$mr > * { margin-inline-end: -1em }
+html.var .negative.mr\:a, html.var .negative.\$mr\:a > * { margin-inline-end: auto }
+html.var .negative.mr\:0, html.var .negative.\$mr\:0 > * { margin-inline-end: 0 }
+html.var .negative.mr\:1, html.var .negative.\$mr\:1 > * { margin-inline-end: -0.25em }
+html.var .negative.mr\:2, html.var .negative.\$mr\:2 > * { margin-inline-end: -0.5em }
+html.var .negative.mr\:3, html.var .negative.\$mr\:3 > * { margin-inline-end: -0.75em }
+html.var .negative.mr\:4, html.var .negative.\$mr\:4 > * { margin-inline-end: -1.25em }
+html.var .negative.mr\:5, html.var .negative.\$mr\:5 > * { margin-inline-end: -1.5em }
+html.var .negative.mr\:6, html.var .negative.\$mr\:6 > * { margin-inline-end: -2em }
 
-html.var .negative.mb { margin-block-end: -1em }
-html.var .negative.mb\:a { margin-block-end: auto }
-html.var .negative.mb\:0 { margin-block-end: 0 }
-html.var .negative.mb\:1 { margin-block-end: -0.25em }
-html.var .negative.mb\:2 { margin-block-end: -0.5em }
-html.var .negative.mb\:3 { margin-block-end: -0.75em }
-html.var .negative.mb\:4 { margin-block-end: -1.25em }
-html.var .negative.mb\:5 { margin-block-end: -1.5em }
-html.var .negative.mb\:6 { margin-block-end: -2em }
+html.var .negative.mb, html.var .negative.\$mb > * { margin-block-end: -1em }
+html.var .negative.mb\:a, html.var .negative.\$mb\:a > * { margin-block-end: auto }
+html.var .negative.mb\:0, html.var .negative.\$mb\:0 > * { margin-block-end: 0 }
+html.var .negative.mb\:1, html.var .negative.\$mb\:1 > * { margin-block-end: -0.25em }
+html.var .negative.mb\:2, html.var .negative.\$mb\:2 > * { margin-block-end: -0.5em }
+html.var .negative.mb\:3, html.var .negative.\$mb\:3 > * { margin-block-end: -0.75em }
+html.var .negative.mb\:4, html.var .negative.\$mb\:4 > * { margin-block-end: -1.25em }
+html.var .negative.mb\:5, html.var .negative.\$mb\:5 > * { margin-block-end: -1.5em }
+html.var .negative.mb\:6, html.var .negative.\$mb\:6 > * { margin-block-end: -2em }
 
-html.var .negative.ml { margin-inline-start: -1em }
-html.var .negative.ml\:a { margin-inline-start: auto }
-html.var .negative.ml\:0 { margin-inline-start: 0 }
-html.var .negative.ml\:1 { margin-inline-start: -0.25em }
-html.var .negative.ml\:2 { margin-inline-start: -0.5em }
-html.var .negative.ml\:3 { margin-inline-start: -0.75em }
-html.var .negative.ml\:4 { margin-inline-start: -1.25em }
-html.var .negative.ml\:5 { margin-inline-start: -1.5em }
-html.var .negative.ml\:6 { margin-inline-start: -2em }
+html.var .negative.ml, html.var .negative.\$ml > * { margin-inline-start: -1em }
+html.var .negative.ml\:a, html.var .negative.\$ml\:a > * { margin-inline-start: auto }
+html.var .negative.ml\:0, html.var .negative.\$ml\:0 > * { margin-inline-start: 0 }
+html.var .negative.ml\:1, html.var .negative.\$ml\:1 > * { margin-inline-start: -0.25em }
+html.var .negative.ml\:2, html.var .negative.\$ml\:2 > * { margin-inline-start: -0.5em }
+html.var .negative.ml\:3, html.var .negative.\$ml\:3 > * { margin-inline-start: -0.75em }
+html.var .negative.ml\:4, html.var .negative.\$ml\:4 > * { margin-inline-start: -1.25em }
+html.var .negative.ml\:5, html.var .negative.\$ml\:5 > * { margin-inline-start: -1.5em }
+html.var .negative.ml\:6, html.var .negative.\$ml\:6 > * { margin-inline-start: -2em }
 
-html.var .negative.mx { margin-inline: -1em }
-html.var .negative.mx\:a { margin-inline: auto }
-html.var .negative.mx\:0 { margin-inline: 0 }
-html.var .negative.mx\:1 { margin-inline: -0.25em }
-html.var .negative.mx\:2 { margin-inline: -0.5em }
-html.var .negative.mx\:3 { margin-inline: -0.75em }
-html.var .negative.mx\:4 { margin-inline: -1.25em }
-html.var .negative.mx\:5 { margin-inline: -1.5em }
-html.var .negative.mx\:6 { margin-inline: -2em }
+html.var .negative.mx, html.var .negative.\$mx > * { margin-inline: -1em }
+html.var .negative.mx\:a, html.var .negative.\$mx\:a > * { margin-inline: auto }
+html.var .negative.mx\:0, html.var .negative.\$mx\:0 > * { margin-inline: 0 }
+html.var .negative.mx\:1, html.var .negative.\$mx\:1 > * { margin-inline: -0.25em }
+html.var .negative.mx\:2, html.var .negative.\$mx\:2 > * { margin-inline: -0.5em }
+html.var .negative.mx\:3, html.var .negative.\$mx\:3 > * { margin-inline: -0.75em }
+html.var .negative.mx\:4, html.var .negative.\$mx\:4 > * { margin-inline: -1.25em }
+html.var .negative.mx\:5, html.var .negative.\$mx\:5 > * { margin-inline: -1.5em }
+html.var .negative.mx\:6, html.var .negative.\$mx\:6 > * { margin-inline: -2em }
 
-html.var .negative.my { margin-block: -1em }
-html.var .negative.my\:a { margin-block: auto }
-html.var .negative.my\:0 { margin-block: 0 }
-html.var .negative.my\:1 { margin-block: -0.25em }
-html.var .negative.my\:2 { margin-block: -0.5em }
-html.var .negative.my\:3 { margin-block: -0.75em }
-html.var .negative.my\:4 { margin-block: -1.25em }
-html.var .negative.my\:5 { margin-block: -1.5em }
-html.var .negative.my\:6 { margin-block: -2em }
+html.var .negative.my, html.var .negative.\$my > * { margin-block: -1em }
+html.var .negative.my\:a, html.var .negative.\$my\:a > * { margin-block: auto }
+html.var .negative.my\:0, html.var .negative.\$my\:0 > * { margin-block: 0 }
+html.var .negative.my\:1, html.var .negative.\$my\:1 > * { margin-block: -0.25em }
+html.var .negative.my\:2, html.var .negative.\$my\:2 > * { margin-block: -0.5em }
+html.var .negative.my\:3, html.var .negative.\$my\:3 > * { margin-block: -0.75em }
+html.var .negative.my\:4, html.var .negative.\$my\:4 > * { margin-block: -1.25em }
+html.var .negative.my\:5, html.var .negative.\$my\:5 > * { margin-block: -1.5em }
+html.var .negative.my\:6, html.var .negative.\$my\:6 > * { margin-block: -2em }
 
-html.margin .mt { margin-top: 1em }
-html.margin .mt\:a { margin-top: auto }
-html.margin .mt\:0 { margin-top: 0 }
-html.margin .mt\:1 { margin-top: 0.25em }
-html.margin .mt\:2 { margin-top: 0.5em }
-html.margin .mt\:3 { margin-top: 0.75em }
-html.margin .mt\:4 { margin-top: 1.25em }
-html.margin .mt\:5 { margin-top: 1.5em }
-html.margin .mt\:6 { margin-top: 2em }
+html.mpb .mt, html.mpb .\$mt > * { margin-top: 1em }
+html.mpb .mt\:a, html.mpb .\$mt\:a > * { margin-top: auto }
+html.mpb .mt\:0, html.mpb .\$mt\:0 > * { margin-top: 0 }
+html.mpb .mt\:1, html.mpb .\$mt\:1 > * { margin-top: 0.25em }
+html.mpb .mt\:2, html.mpb .\$mt\:2 > * { margin-top: 0.5em }
+html.mpb .mt\:3, html.mpb .\$mt\:3 > * { margin-top: 0.75em }
+html.mpb .mt\:4, html.mpb .\$mt\:4 > * { margin-top: 1.25em }
+html.mpb .mt\:5, html.mpb .\$mt\:5 > * { margin-top: 1.5em }
+html.mpb .mt\:6, html.mpb .\$mt\:6 > * { margin-top: 2em }
 
-html.margin .mr { margin-right: 1em }
-html.margin .mr\:a { margin-right: auto }
-html.margin .mr\:0 { margin-right: 0 }
-html.margin .mr\:1 { margin-right: 0.25em }
-html.margin .mr\:2 { margin-right: 0.5em }
-html.margin .mr\:3 { margin-right: 0.75em }
-html.margin .mr\:4 { margin-right: 1.25em }
-html.margin .mr\:5 { margin-right: 1.5em }
-html.margin .mr\:6 { margin-right: 2em }
+html.mpb .mr, html.mpb .\$mr > * { margin-right: 1em }
+html.mpb .mr\:a, html.mpb .\$mr\:a > * { margin-right: auto }
+html.mpb .mr\:0, html.mpb .\$mr\:0 > * { margin-right: 0 }
+html.mpb .mr\:1, html.mpb .\$mr\:1 > * { margin-right: 0.25em }
+html.mpb .mr\:2, html.mpb .\$mr\:2 > * { margin-right: 0.5em }
+html.mpb .mr\:3, html.mpb .\$mr\:3 > * { margin-right: 0.75em }
+html.mpb .mr\:4, html.mpb .\$mr\:4 > * { margin-right: 1.25em }
+html.mpb .mr\:5, html.mpb .\$mr\:5 > * { margin-right: 1.5em }
+html.mpb .mr\:6, html.mpb .\$mr\:6 > * { margin-right: 2em }
 
-html.margin .mb { margin-bottom: 1em }
-html.margin .mb\:a { margin-bottom: auto }
-html.margin .mb\:0 { margin-bottom: 0 }
-html.margin .mb\:1 { margin-bottom: 0.25em }
-html.margin .mb\:2 { margin-bottom: 0.5em }
-html.margin .mb\:3 { margin-bottom: 0.75em }
-html.margin .mb\:4 { margin-bottom: 1.25em }
-html.margin .mb\:5 { margin-bottom: 1.5em }
-html.margin .mb\:6 { margin-bottom: 2em }
+html.mpb .mb, html.mpb .\$mb > * { margin-bottom: 1em }
+html.mpb .mb\:a, html.mpb .\$mb\:a > * { margin-bottom: auto }
+html.mpb .mb\:0, html.mpb .\$mb\:0 > * { margin-bottom: 0 }
+html.mpb .mb\:1, html.mpb .\$mb\:1 > * { margin-bottom: 0.25em }
+html.mpb .mb\:2, html.mpb .\$mb\:2 > * { margin-bottom: 0.5em }
+html.mpb .mb\:3, html.mpb .\$mb\:3 > * { margin-bottom: 0.75em }
+html.mpb .mb\:4, html.mpb .\$mb\:4 > * { margin-bottom: 1.25em }
+html.mpb .mb\:5, html.mpb .\$mb\:5 > * { margin-bottom: 1.5em }
+html.mpb .mb\:6, html.mpb .\$mb\:6 > * { margin-bottom: 2em }
 
-html.margin .ml { margin-left: 1em }
-html.margin .ml\:a { margin-left: auto }
-html.margin .ml\:0 { margin-left: 0 }
-html.margin .ml\:1 { margin-left: 0.25em }
-html.margin .ml\:2 { margin-left: 0.5em }
-html.margin .ml\:3 { margin-left: 0.75em }
-html.margin .ml\:4 { margin-left: 1.25em }
-html.margin .ml\:5 { margin-left: 1.5em }
-html.margin .ml\:6 { margin-left: 2em }
+html.mpb .ml, html.mpb .\$ml > * { margin-left: 1em }
+html.mpb .ml\:a, html.mpb .\$ml\:a > * { margin-left: auto }
+html.mpb .ml\:0, html.mpb .\$ml\:0 > * { margin-left: 0 }
+html.mpb .ml\:1, html.mpb .\$ml\:1 > * { margin-left: 0.25em }
+html.mpb .ml\:2, html.mpb .\$ml\:2 > * { margin-left: 0.5em }
+html.mpb .ml\:3, html.mpb .\$ml\:3 > * { margin-left: 0.75em }
+html.mpb .ml\:4, html.mpb .\$ml\:4 > * { margin-left: 1.25em }
+html.mpb .ml\:5, html.mpb .\$ml\:5 > * { margin-left: 1.5em }
+html.mpb .ml\:6, html.mpb .\$ml\:6 > * { margin-left: 2em }
 
-html.margin .mx { margin-left: 1em; margin-right: 1em }
-html.margin .mx\:a { margin-left: auto; margin-right: auto }
-html.margin .mx\:0 { margin-left: 0; margin-right: 0 }
-html.margin .mx\:1 { margin-left: 0.25em; margin-right: 0.25em }
-html.margin .mx\:2 { margin-left: 0.5em; margin-right: 0.5em }
-html.margin .mx\:3 { margin-left: 0.75em; margin-right: 0.75em }
-html.margin .mx\:4 { margin-left: 1.25em; margin-right: 1.25em }
-html.margin .mx\:5 { margin-left: 1.5em; margin-right: 1.5em }
-html.margin .mx\:6 { margin-left: 2em; margin-right: 2em }
+html.mpb .mx, html.mpb .\$mx > * { margin-left: 1em; margin-right: 1em }
+html.mpb .mx\:a, html.mpb .\$mx\:a > * { margin-left: auto; margin-right: auto }
+html.mpb .mx\:0, html.mpb .\$mx\:0 > * { margin-left: 0; margin-right: 0 }
+html.mpb .mx\:1, html.mpb .\$mx\:1 > * { margin-left: 0.25em; margin-right: 0.25em }
+html.mpb .mx\:2, html.mpb .\$mx\:2 > * { margin-left: 0.5em; margin-right: 0.5em }
+html.mpb .mx\:3, html.mpb .\$mx\:3 > * { margin-left: 0.75em; margin-right: 0.75em }
+html.mpb .mx\:4, html.mpb .\$mx\:4 > * { margin-left: 1.25em; margin-right: 1.25em }
+html.mpb .mx\:5, html.mpb .\$mx\:5 > * { margin-left: 1.5em; margin-right: 1.5em }
+html.mpb .mx\:6, html.mpb .\$mx\:6 > * { margin-left: 2em; margin-right: 2em }
 
-html.margin .my { margin-top: 1em; margin-bottom: 1em }
-html.margin .my\:a { margin-top: auto; margin-bottom: auto }
-html.margin .my\:0 { margin-top: 0; margin-bottom: 0 }
-html.margin .my\:1 { margin-top: 0.25em; margin-bottom: 0.25em }
-html.margin .my\:2 { margin-top: 0.5em; margin-bottom: 0.5em }
-html.margin .my\:3 { margin-top: 0.75em; margin-bottom: 0.75em }
-html.margin .my\:4 { margin-top: 1.25em; margin-bottom: 1.25em }
-html.margin .my\:5 { margin-top: 1.5em; margin-bottom: 1.5em }
-html.margin .my\:6 { margin-top: 2em; margin-bottom: 2em }
+html.mpb .my, html.mpb .\$my > * { margin-top: 1em; margin-bottom: 1em }
+html.mpb .my\:a, html.mpb .\$my\:a > * { margin-top: auto; margin-bottom: auto }
+html.mpb .my\:0, html.mpb .\$my\:0 > * { margin-top: 0; margin-bottom: 0 }
+html.mpb .my\:1, html.mpb .\$my\:1 > * { margin-top: 0.25em; margin-bottom: 0.25em }
+html.mpb .my\:2, html.mpb .\$my\:2 > * { margin-top: 0.5em; margin-bottom: 0.5em }
+html.mpb .my\:3, html.mpb .\$my\:3 > * { margin-top: 0.75em; margin-bottom: 0.75em }
+html.mpb .my\:4, html.mpb .\$my\:4 > * { margin-top: 1.25em; margin-bottom: 1.25em }
+html.mpb .my\:5, html.mpb .\$my\:5 > * { margin-top: 1.5em; margin-bottom: 1.5em }
+html.mpb .my\:6, html.mpb .\$my\:6 > * { margin-top: 2em; margin-bottom: 2em }
 
-html.margin .negative.mt { margin-left: -1em }
-html.margin .negative.mt\:a { margin-top: auto }
-html.margin .negative.mt\:0 { margin-top: 0 }
-html.margin .negative.mt\:1 { margin-top: -0.25em }
-html.margin .negative.mt\:2 { margin-top: -0.5em }
-html.margin .negative.mt\:3 { margin-top: -0.75em }
-html.margin .negative.mt\:4 { margin-top: -1.25em }
-html.margin .negative.mt\:5 { margin-top: -1.5em }
-html.margin .negative.mt\:6 { margin-top: -2em }
+html.mpb .negative.mt, html.mpb .negative.\$mt > * { margin-left: -1em }
+html.mpb .negative.mt\:a, html.mpb .negative.\$mt\:a > * { margin-top: auto }
+html.mpb .negative.mt\:0, html.mpb .negative.\$mt\:0 > * { margin-top: 0 }
+html.mpb .negative.mt\:1, html.mpb .negative.\$mt\:1 > * { margin-top: -0.25em }
+html.mpb .negative.mt\:2, html.mpb .negative.\$mt\:2 > * { margin-top: -0.5em }
+html.mpb .negative.mt\:3, html.mpb .negative.\$mt\:3 > * { margin-top: -0.75em }
+html.mpb .negative.mt\:4, html.mpb .negative.\$mt\:4 > * { margin-top: -1.25em }
+html.mpb .negative.mt\:5, html.mpb .negative.\$mt\:5 > * { margin-top: -1.5em }
+html.mpb .negative.mt\:6, html.mpb .negative.\$mt\:6 > * { margin-top: -2em }
 
-html.margin .negative.mr { margin-left: -1em }
-html.margin .negative.mr\:a { margin-right: auto }
-html.margin .negative.mr\:0 { margin-right: 0 }
-html.margin .negative.mr\:1 { margin-right: -0.25em }
-html.margin .negative.mr\:2 { margin-right: -0.5em }
-html.margin .negative.mr\:3 { margin-right: -0.75em }
-html.margin .negative.mr\:4 { margin-right: -1.25em }
-html.margin .negative.mr\:5 { margin-right: -1.5em }
-html.margin .negative.mr\:6 { margin-right: -2em }
+html.mpb .negative.mr, html.mpb .negative.\$mr > * { margin-left: -1em }
+html.mpb .negative.mr\:a, html.mpb .negative.\$mr\:a > * { margin-right: auto }
+html.mpb .negative.mr\:0, html.mpb .negative.\$mr\:0 > * { margin-right: 0 }
+html.mpb .negative.mr\:1, html.mpb .negative.\$mr\:1 > * { margin-right: -0.25em }
+html.mpb .negative.mr\:2, html.mpb .negative.\$mr\:2 > * { margin-right: -0.5em }
+html.mpb .negative.mr\:3, html.mpb .negative.\$mr\:3 > * { margin-right: -0.75em }
+html.mpb .negative.mr\:4, html.mpb .negative.\$mr\:4 > * { margin-right: -1.25em }
+html.mpb .negative.mr\:5, html.mpb .negative.\$mr\:5 > * { margin-right: -1.5em }
+html.mpb .negative.mr\:6, html.mpb .negative.\$mr\:6 > * { margin-right: -2em }
 
-html.margin .negative.mb { margin-left: -1em }
-html.margin .negative.mb\:a { margin-bottom: auto }
-html.margin .negative.mb\:0 { margin-bottom: 0 }
-html.margin .negative.mb\:1 { margin-bottom: -0.25em }
-html.margin .negative.mb\:2 { margin-bottom: -0.5em }
-html.margin .negative.mb\:3 { margin-bottom: -0.75em }
-html.margin .negative.mb\:4 { margin-bottom: -1.25em }
-html.margin .negative.mb\:5 { margin-bottom: -1.5em }
-html.margin .negative.mb\:6 { margin-bottom: -2em }
+html.mpb .negative.mb, html.mpb .negative.\$mb > * { margin-left: -1em }
+html.mpb .negative.mb\:a, html.mpb .negative.\$mb\:a > * { margin-bottom: auto }
+html.mpb .negative.mb\:0, html.mpb .negative.\$mb\:0 > * { margin-bottom: 0 }
+html.mpb .negative.mb\:1, html.mpb .negative.\$mb\:1 > * { margin-bottom: -0.25em }
+html.mpb .negative.mb\:2, html.mpb .negative.\$mb\:2 > * { margin-bottom: -0.5em }
+html.mpb .negative.mb\:3, html.mpb .negative.\$mb\:3 > * { margin-bottom: -0.75em }
+html.mpb .negative.mb\:4, html.mpb .negative.\$mb\:4 > * { margin-bottom: -1.25em }
+html.mpb .negative.mb\:5, html.mpb .negative.\$mb\:5 > * { margin-bottom: -1.5em }
+html.mpb .negative.mb\:6, html.mpb .negative.\$mb\:6 > * { margin-bottom: -2em }
 
-html.margin .negative.ml { margin-left: -1em }
-html.margin .negative.ml\:a { margin-left: auto }
-html.margin .negative.ml\:0 { margin-left: 0 }
-html.margin .negative.ml\:1 { margin-left: -0.25em }
-html.margin .negative.ml\:2 { margin-left: -0.5em }
-html.margin .negative.ml\:3 { margin-left: -0.75em }
-html.margin .negative.ml\:4 { margin-left: -1.25em }
-html.margin .negative.ml\:5 { margin-left: -1.5em }
-html.margin .negative.ml\:6 { margin-left: -2em }
+html.mpb .negative.ml, html.mpb .negative.\$ml > * { margin-left: -1em }
+html.mpb .negative.ml\:a, html.mpb .negative.\$ml\:a > * { margin-left: auto }
+html.mpb .negative.ml\:0, html.mpb .negative.\$ml\:0 > * { margin-left: 0 }
+html.mpb .negative.ml\:1, html.mpb .negative.\$ml\:1 > * { margin-left: -0.25em }
+html.mpb .negative.ml\:2, html.mpb .negative.\$ml\:2 > * { margin-left: -0.5em }
+html.mpb .negative.ml\:3, html.mpb .negative.\$ml\:3 > * { margin-left: -0.75em }
+html.mpb .negative.ml\:4, html.mpb .negative.\$ml\:4 > * { margin-left: -1.25em }
+html.mpb .negative.ml\:5, html.mpb .negative.\$ml\:5 > * { margin-left: -1.5em }
+html.mpb .negative.ml\:6, html.mpb .negative.\$ml\:6 > * { margin-left: -2em }
 
-html.margin .negative.mx { margin-left: -1em; margin-right: -1em }
-html.margin .negative.mx\:a { margin-left: auto; margin-right: auto }
-html.margin .negative.mx\:0 { margin-left: 0; margin-right: 0 }
-html.margin .negative.mx\:1 { margin-left: -0.25em; margin-right: -0.25em }
-html.margin .negative.mx\:2 { margin-left: -0.5em; margin-right: -0.5em }
-html.margin .negative.mx\:3 { margin-left: -0.75em; margin-right: -0.75em }
-html.margin .negative.mx\:4 { margin-left: -1.25em; margin-right: -1.25em }
-html.margin .negative.mx\:5 { margin-left: -1.5em; margin-right: -1.5em }
-html.margin .negative.mx\:6 { margin-left: -2em; margin-right: -2em }
+html.mpb .negative.mx, html.mpb .negative.\$mx > * { margin-left: -1em; margin-right: -1em }
+html.mpb .negative.mx\:a, html.mpb .negative.\$mx\:a > * { margin-left: auto; margin-right: auto }
+html.mpb .negative.mx\:0, html.mpb .negative.\$mx\:0 > * { margin-left: 0; margin-right: 0 }
+html.mpb .negative.mx\:1, html.mpb .negative.\$mx\:1 > * { margin-left: -0.25em; margin-right: -0.25em }
+html.mpb .negative.mx\:2, html.mpb .negative.\$mx\:2 > * { margin-left: -0.5em; margin-right: -0.5em }
+html.mpb .negative.mx\:3, html.mpb .negative.\$mx\:3 > * { margin-left: -0.75em; margin-right: -0.75em }
+html.mpb .negative.mx\:4, html.mpb .negative.\$mx\:4 > * { margin-left: -1.25em; margin-right: -1.25em }
+html.mpb .negative.mx\:5, html.mpb .negative.\$mx\:5 > * { margin-left: -1.5em; margin-right: -1.5em }
+html.mpb .negative.mx\:6, html.mpb .negative.\$mx\:6 > * { margin-left: -2em; margin-right: -2em }
 
-html.margin .negative.my { margin-top: -1em; margin-bottom: -1em }
-html.margin .negative.my\:a { margin-top: auto; margin-bottom: auto }
-html.margin .negative.my\:0 { margin-top: 0; margin-bottom: 0 }
-html.margin .negative.my\:1 { margin-top: -0.25em; margin-bottom: -0.25em }
-html.margin .negative.my\:2 { margin-top: -0.5em; margin-bottom: -0.5em }
-html.margin .negative.my\:3 { margin-top: -0.75em; margin-bottom: -0.75em }
-html.margin .negative.my\:4 { margin-top: -1.25em; margin-bottom: -1.25em }
-html.margin .negative.my\:5 { margin-top: -1.5em; margin-bottom: -1.5em }
-html.margin .negative.my\:6 { margin-top: -2em; margin-bottom: -2em }
+html.mpb .negative.my, html.mpb .negative.\$my > * { margin-top: -1em; margin-bottom: -1em }
+html.mpb .negative.my\:a, html.mpb .negative.\$my\:a > * { margin-top: auto; margin-bottom: auto }
+html.mpb .negative.my\:0, html.mpb .negative.\$my\:0 > * { margin-top: 0; margin-bottom: 0 }
+html.mpb .negative.my\:1, html.mpb .negative.\$my\:1 > * { margin-top: -0.25em; margin-bottom: -0.25em }
+html.mpb .negative.my\:2, html.mpb .negative.\$my\:2 > * { margin-top: -0.5em; margin-bottom: -0.5em }
+html.mpb .negative.my\:3, html.mpb .negative.\$my\:3 > * { margin-top: -0.75em; margin-bottom: -0.75em }
+html.mpb .negative.my\:4, html.mpb .negative.\$my\:4 > * { margin-top: -1.25em; margin-bottom: -1.25em }
+html.mpb .negative.my\:5, html.mpb .negative.\$my\:5 > * { margin-top: -1.5em; margin-bottom: -1.5em }
+html.mpb .negative.my\:6, html.mpb .negative.\$my\:6 > * { margin-top: -2em; margin-bottom: -2em }
