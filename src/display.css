@@ -27,11 +27,3 @@
 .d\:thg { display: table-header-group }
 
 .d\:tcp { display: table-caption }
-
-.\$d\:i, .\$d\:i\:x, .\$d\:i\:y { display: block; letter-spacing: -1em }
-.\$d\:i > *, .\$d\:i\:x > * { display: inline-block; letter-spacing: normal }
-.\$d\:i\:y > * { display: block; letter-spacing: normal }
-
-/* /// */
-
-html.var .\$d\:i > *, html.var .\$d\:i\:x > *, html.var .\$d\:i\:y > * { vertical-align: top }

@@ -1,7 +1,7 @@
 .pos\:a { position: absolute }
 .pos\:f { position: fixed }
 .pos\:r { position: relative }
-.pos\:static { position: static }
+.pos\:st { position: static }
 .pos\:s { position: sticky }
 
 .t { top: 0 }
@@ -9,12 +9,17 @@
 .r { right: 0 }
 .b { bottom: 0 }
 
-.t\:auto { top: auto }
-.l\:auto { left: auto }
-.r\:auto { right: auto }
-.b\:auto { bottom: auto }
+.t\:a { top: auto }
+.l\:a { left: auto }
+.r\:a { right: auto }
+.b\:a { bottom: auto }
 
-.full:where(.pos\:a, .pos\:f) {
+.w.pos\:a, .w.pos\:f, .w.pos\:r, .w.pos\:s { left: 0; right: 0; width: auto }
+.h.pos\:a, .h.pos\:f, .h.pos\:r, .h.pos\:s { top: 0; bottom: 0; height: auto }
+
+.full.pos\:a,
+.full.pos\:f
+{
   top: 0;
   left: 0;
   right: 0;

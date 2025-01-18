@@ -18,8 +18,23 @@
 
 html.grid .d\:g, html.grid .d\:g\:x, html.grid .d\:g\:y { display: flex; flex-wrap: wrap }
 html.grid .d\:g\:x, html.grid .d\:g\:y { flex-wrap: nowrap }
-html.grid .d\:g.reverse, html.grid .reverse.d\:g\:x, html.grid .reverse.d\:g\:y { flex-wrap: wrap-reverse }
 
-html.flex .d\:g, html.flex .d\:g\:x, html.flex .d\:g\:y { display: block }
+html.grid .d\:g\:x { flex-direction: row }
+html.grid .d\:g\:y { flex-direction: column }
+
+html.flex .d\:g, html.flex .d\:g\:x, html.flex .d\:g\:y { display: block; letter-spacing: -1em !important }
+html.flex .d\:g > *, html.flex .d\:g\:x > *, html.flex .d\:g\:y > * { letter-spacing: normal }
 html.flex .d\:g > *, html.flex .d\:g\:x > * { display: inline-block }
 html.flex .d\:g\:y > * { display: block }
+
+html.flex .d\:f > .d\:g, html.flex .d\:f > .d\:g\:x, html.flex .d\:f > .d\:g\:y,
+html.flex .d\:g > .d\:g, html.flex .d\:g > .d\:g\:x, html.flex .d\:g > .d\:g\:y,
+html.flex .d\:f\:x > .d\:g, html.flex .d\:f\:x > .d\:g\:x, html.flex .d\:f\:x > .d\:g\:y,
+html.flex .d\:g\:x > .d\:g, html.flex .d\:g\:x > .d\:g\:x, html.flex .d\:g\:x > .d\:g\:y
+{ display: inline-block }
+
+html.flex .d\:g:not([class*='va:']) > *:not([class*='va:']),
+html.flex .d\:g\:x:not([class*='va:']) > *:not([class*='va:']),
+html.flex .d\:g\:y:not([class*='va:']) > *:not([class*='va:'])
+{ vertical-align: top }
+

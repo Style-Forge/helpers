@@ -22,7 +22,7 @@
 .radius\:75, .radius\:tl\:75, .radius\:lt\:75, .radius\:tr\:75, .radius\:rt\:75, .radius\:bl\:75, .radius\:lb\:75, .radius\:br\:75, .radius\:rb\:75 { --sf-radius: 75% }
 .radius\:100, .radius\:tl\:100, .radius\:lt\:100, .radius\:tr\:100, .radius\:rt\:100, .radius\:bl\:100, .radius\:lb\:100, .radius\:br\:100, .radius\:rb\:100 { --sf-radius: 100% }
 
-.radius, .radius\:0, .radius\:25, .radius\:50, .radius\:75, .radius\:100 { border-radius: var(--sf-radius) }
+.radius:not(html), .radius\:0, .radius\:25, .radius\:50, .radius\:75, .radius\:100 { border-radius: var(--sf-radius) }
 
 [class*='radius:tl'], [class*='radius:lt'] { border-start-start-radius: var(--sf-radius) }
 [class*='radius:tr'], [class*='radius:rt'] { border-start-end-radius: var(--sf-radius) }
