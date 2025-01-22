@@ -1,0 +1,6 @@
+.wc\:a { will-change: auto }
+.wc\:s { will-change: scroll-position }
+.wc\:t { will-change: transform }
+.wc\:o { will-change: opacity }
+.wc\:c { will-change: contents }
+.wc\:t\:o { will-change: transform, opacity }

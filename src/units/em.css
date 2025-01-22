@@ -1,0 +1,54 @@
+:root {
+  --sf-unit-em: 1em;
+
+  /* Tiny sizes */
+  --sf-em-xxxs: calc(var(--sf-unit-xxxs) * var(--sf-unit-em)); /* 1px */
+
+  --sf-em-xxs: calc(var(--sf-unit-xxs) * var(--sf-unit-em)); /* 2px */
+  --sf-em-xxs1: calc(3 / 16 * var(--sf-unit-em)); /* 3px */
+
+  --sf-em-xs: calc(var(--sf-unit-xs) * var(--sf-unit-em)); /* 4px */
+  --sf-em-xs1: calc(5 / 16 * var(--sf-unit-em)); /* 5px */
+  --sf-em-xs2: calc(6 / 16 * var(--sf-unit-em)); /* 6px */
+  --sf-em-xs3: calc(7 / 16 * var(--sf-unit-em)); /* 7px */
+
+  /* Small sizes */
+  --sf-em-sm: calc(var(--sf-unit-sm) * var(--sf-unit-em)); /* 8px */
+  --sf-em-sm1: calc(9 / 16 * var(--sf-unit-em)); /* 9px */
+  --sf-em-s: calc(var(--sf-unit-s) * var(--sf-unit-em)); /* 10px */
+  --sf-em-sm3: calc(11 / 16 * var(--sf-unit-em)); /* 11px */
+
+  --sf-em-ms: calc(var(--sf-unit-ms) * var(--sf-unit-em)); /* 12px */
+  --sf-em-ms1: calc(13 / 16 * var(--sf-unit-em)); /* 13px */
+
+  --sf-em-ls: calc(var(--sf-unit-ls) * var(--sf-unit-em)); /* 14px */
+  --sf-em-ls1: calc(15 / 16 * var(--sf-unit-em)); /* 15px */
+
+  /* Medium sizes */
+  --sf-em-md: var(--sf-unit-em); /* 16px */
+  --sf-em-md1: calc(17 / 16 * var(--sf-unit-em)); /* 17px */
+  --sf-em-md2: calc(18 / 16 * var(--sf-unit-em)); /* 18px */
+  --sf-em-md3: calc(19 / 16 * var(--sf-unit-em)); /* 19px */
+  --sf-em-md4: calc(20 / 16 * var(--sf-unit-em)); /* 20px */
+
+  /* Large sizes */
+  --sf-em-lg: calc(var(--sf-unit-lg) * var(--sf-unit-em)); /* 24px */
+  --sf-em-xl: calc(var(--sf-unit-xl) * var(--sf-unit-em)); /* 32px */
+
+  /* Extra Large Sizes */
+  --sf-em-2xl: calc(2 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 48px */
+  --sf-em-3xl: calc(3 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 64px */
+  --sf-em-4xl: calc(4 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 96px */
+  --sf-em-5xl: calc(5 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 128px */
+  --sf-em-6xl: calc(6 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 160px */
+  --sf-em-7xl: calc(7 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 192px */
+  --sf-em-8xl: calc(8 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 256px */
+  --sf-em-9xl: calc(9 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 320px */
+  --sf-em-10xl: calc(10 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 384px */
+  --sf-em-11xl: calc(11 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 512px */
+  --sf-em-12xl: calc(12 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 640px */
+  --sf-em-13xl: calc(13 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 768px */
+  --sf-em-14xl: calc(14 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 1024px */
+  --sf-em-15xl: calc(15 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 1280px */
+  --sf-em-16xl: calc(16 * var(--sf-unit-xl) * var(--sf-unit-em)); /* 1600px */
+}

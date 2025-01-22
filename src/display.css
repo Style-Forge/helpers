@@ -1,4 +1,4 @@
-[hidden], datalist, dialog, source, template, track { display: none !important }
+[hidden], datalist, dialog:not([open]), source, template, track { display: none !important }
 
 .d\:b { display: block }
 .d\:n, .hide { display: none }

@@ -1,49 +1,49 @@
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
 
 /* General */
-.cur\:auto { cursor: auto }
-.cur\:default { cursor: default }
-.cur\:none { cursor: none }
+.cur\:a { cursor: auto }
+.cur\:d { cursor: default }
+.cur\:n { cursor: none }
 
 /* Links & status */
-.cur\:context-menu { cursor: context-menu }
-.cur\:help { cursor: help }
-.cur\:pointer { cursor: pointer }
-.cur\:progress { cursor: progress }
-.cur\:wait { cursor: wait }
+.cur\:cm { cursor: context-menu }
+.cur\:h { cursor: help }
+.cur\:p { cursor: pointer }
+.cur\:pr { cursor: progress }
+.cur\:w { cursor: wait }
 
 /* Selection */
-.cur\:cell { cursor: cell }
-.cur\:crosshair { cursor: crosshair }
-.cur\:text { cursor: text }
-.cur\:vertical-text { cursor: vertical-text }
+.cur\:ce { cursor: cell }
+.cur\:ch { cursor: crosshair }
+.cur\:t { cursor: text }
+.cur\:vt { cursor: vertical-text }
 
 /* Drag & drop */
-.cur\:alias { cursor: alias }
-.cur\:copy { cursor: copy }
-.cur\:move { cursor: move }
-.cur\:no-drop { cursor: no-drop }
-.cur\:not-allowed { cursor: not-allowed }
-.cur\:grab { cursor: grab }
-.cur\:grabbing { cursor: grabbing }
+.cur\:al { cursor: alias }
+.cur\:cp { cursor: copy }
+.cur\:m { cursor: move }
+.cur\:nd { cursor: no-drop }
+.cur\:na { cursor: not-allowed }
+.cur\:gr { cursor: grab }
+.cur\:gg { cursor: grabbing }
 
 /* Resizing & scrolling */
-.cur\:all-scroll { cursor: all-scroll }
-.cur\:col-resize { cursor: col-resize }
-.cur\:row-resize { cursor: row-resize }
-.cur\:n-resize { cursor: n-resize }
-.cur\:e-resize { cursor: e-resize }
-.cur\:s-resize { cursor: s-resize }
-.cur\:w-resize { cursor: w-resize }
-.cur\:ne-resize { cursor: ne-resize }
-.cur\:nw-resize { cursor: nw-resize }
-.cur\:se-resize { cursor: se-resize }
-.cur\:sw-resize { cursor: sw-resize }
-.cur\:ew-resize { cursor: ew-resize }
-.cur\:ns-resize { cursor: ns-resize }
-.cur\:nesw-resize { cursor: nesw-resize }
-.cur\:nwse-resize { cursor: nwse-resize }
+.cur\:as { cursor: all-scroll }
+.cur\:cr { cursor: col-resize }
+.cur\:rr { cursor: row-resize }
+.cur\:nr { cursor: n-resize }
+.cur\:er { cursor: e-resize }
+.cur\:sr { cursor: s-resize }
+.cur\:wr { cursor: w-resize }
+.cur\:ner { cursor: ne-resize }
+.cur\:nwr { cursor: nw-resize }
+.cur\:ser { cursor: se-resize }
+.cur\:swr { cursor: sw-resize }
+.cur\:ewr { cursor: ew-resize }
+.cur\:nsr { cursor: ns-resize }
+.cur\:nesw { cursor: nesw-resize }
+.cur\:nwse { cursor: nwse-resize }
 
 /* Zooming */
-.cur\:zoom-in { cursor: zoom-in }
-.cur\:zoom-out { cursor: zoom-out }
+.cur\:zi { cursor: zoom-in }
+.cur\:zo { cursor: zoom-out }

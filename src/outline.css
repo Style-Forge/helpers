@@ -1,0 +1,41 @@
+:root {
+  --sf-ol-w: 1px;
+}
+
+.ol\:c\:i { outline-color: inherit }
+.ol\:c\:ii { outline-color: initial }
+
+.ol\:st { outline-style: solid }
+.ol\:st\:a { outline-style: auto }
+.ol\:st\:n { outline-style: none }
+.ol\:st\:do { outline-style: dotted }
+.ol\:st\:da { outline-style: dashed }
+.ol\:st\:dbl { outline-style: double }
+.ol\:st\:g { outline-style: groove }
+.ol\:st\:r { outline-style: ridge }
+.ol\:st\:in { outline-style: inset }
+.ol\:st\:out { outline-style: outset }
+
+.ol\:0 { outline: 0 }
+.ol\:w\:0 { outline-width: 0 }
+.ol\:off\:0 { outline-offset: 0 }
+
+.ol, .ol\:1 { outline: var(--sf-ol-w) solid }
+.ol\:2 { outline: calc(var(--sf-ol-w) * 2) solid }
+
+.ol\:off, .ol\:off\:1 { outline-offset: var(--sf-ol-w) }
+.ol\:off\:2 { outline-offset: calc(var(--sf-ol-w) * 2) }
+
+.ol\:w, .ol\:w\:1 { outline-width: var(--sf-ol-w) }
+.ol\:w\:2 { outline-width: calc(var(--sf-ol-w) * 2) }
+
+/* /// */
+
+html.var .ol, html.var .ol\:1 { outline: 1px solid }
+html.var .ol\:2 { outline: 2px solid }
+
+html.var .ol\:off, html.var .ol\:off\:1 { outline-width: 1px }
+html.var .ol\:off\:2 { outline-width: 2px }
+
+html.var .ol\:w, html.var .ol\:w\:1 { outline-width: 1px }
+html.var .ol\:w\:2 { outline-width: 2px }

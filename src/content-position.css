@@ -1,58 +1,97 @@
-.y\:c { align-content: stretch }
-.y\:c\:b { align-content: baseline }
-.y\:c\:n { align-content: normal }
-.y\:c\:c { align-content: center }
-.y\:c\:e { align-content: end }
-.y\:c\:s { align-content: start }
-.y\:c\:fe { align-content: flex-end }
-.y\:c\:fs { align-content: flex-start }
-.y\:c\:sa { align-content: space-around }
-.y\:c\:sb { align-content: space-between }
-.y\:c\:se { align-content: space-evenly }
+.y\:c, .d\:f\:y.x\:c { align-content: center }
+.y\:c\:b, .d\:f\:y.x\:c\:b { align-content: baseline }
+.y\:c\:n, .d\:f\:y.x\:c\:n { align-content: normal }
+.y\:c\:e, .d\:f\:y.x\:c\:e { align-content: end }
+.y\:c\:s, .d\:f\:y.x\:c\:s { align-content: start }
+.y\:c\:sa, .d\:f\:y.x\:c\:sa { align-content: space-around }
+.y\:c\:sb, .d\:f\:y.x\:c\:sb { align-content: space-between }
+.y\:c\:se, .d\:f\:y.x\:c\:se { align-content: space-evenly }
 
-.y\:i { align-items: stretch }
-.y\:i\:b { align-items: baseline }
-.y\:i\:c { align-items: center }
-.y\:i\:e { align-items: end }
-.y\:i\:s { align-items: start }
-.y\:i\:fe { align-items: flex-end }
-.y\:i\:fs { align-items: flex-start }
+.y\:i, .d\:f\:y.x\:i { align-items: center }
+.y\:i\:b, .d\:f\:y.x\:i\:b { align-items: baseline }
+.y\:i\:e, .d\:f\:y.x\:i\:e { align-items: end }
+.y\:i\:s, .d\:f\:y.x\:i\:s { align-items: start }
+.y\:i\:st, .d\:f\:y.x\:i\:st { align-items: stretch }
 
-.y\:s { align-self: stretch }
-.y\:s\:a { align-self: auto }
-.y\:s\:n { align-self: normal }
-.y\:s\:b { align-self: baseline }
-.y\:s\:c { align-self: center }
-.y\:s\:e { align-self: end }
-.y\:s\:s { align-self: start }
-.y\:s\:fe { align-self: flex-end }
-.y\:s\:fs { align-self: flex-start }
+.y\:s, .d\:f\:y.x\:s { align-self: center }
+.y\:s\:a, .d\:f\:y.x\:s\:a { align-self: auto }
+.y\:s\:n, .d\:f\:y.x\:s\:n { align-self: normal }
+.y\:s\:b, .d\:f\:y.x\:s\:b { align-self: baseline }
+.y\:s\:e, .d\:f\:y.x\:s\:e { align-self: end }
+.y\:s\:s, .d\:f\:y.x\:s\:s { align-self: start }
+.y\:s\:st, .d\:f\:y.x\:s\:st { align-self: stretch }
 
-.x\:c { justify-content: stretch }
-.x\:c\:n { justify-content: normal }
-.x\:c\:c { justify-content: center }
-.x\:c\:e { justify-content: end }
-.x\:c\:s { justify-content: start }
-.x\:c\:fe { justify-content: flex-end }
-.x\:c\:fs { justify-content: flex-start }
-.x\:c\:sa { justify-content: space-around }
-.x\:c\:sb { justify-content: space-between }
-.x\:c\:se { justify-content: space-evenly }
+.x\:c, .d\:f\:y.y\:c { justify-content: center }
+.x\:c\:n, .d\:f\:y.y\:c\:n { justify-content: normal }
+.x\:c\:e, .d\:f\:y.y\:c\:e { justify-content: end }
+.x\:c\:s, .d\:f\:y.y\:c\:s { justify-content: start }
+.x\:c\:sa, .d\:f\:y.y\:c\:sa { justify-content: space-around }
+.x\:c\:sb, .d\:f\:y.y\:c\:sb { justify-content: space-between }
+.x\:c\:se, .d\:f\:y.y\:c\:se { justify-content: space-evenly }
 
-.x\:i { justify-items: stretch }
-.x\:i\:b { justify-items: baseline }
-.x\:i\:c { justify-items: center }
-.x\:i\:e { justify-items: end }
-.x\:i\:s { justify-items: start }
-.x\:i\:fe { justify-items: flex-end }
-.x\:i\:fs { justify-items: flex-start }
+.x\:i, .d\:f\:y.y\:i { justify-items: center }
+.x\:i\:b, .d\:f\:y.y\:i\:b { justify-items: baseline }
+.x\:i\:e, .d\:f\:y.y\:i\:e { justify-items: end }
+.x\:i\:s, .d\:f\:y.y\:i\:s { justify-items: start }
+.x\:i\:st, .d\:f\:y.y\:i\:st { justify-items: stretch }
 
-.x\:s { justify-self: stretch }
-.x\:s\:a { justify-self: auto }
-.x\:s\:n { justify-self: normal }
-.x\:s\:b { justify-self: baseline }
-.x\:s\:c { justify-self: center }
-.x\:s\:e { justify-self: end }
-.x\:s\:s { justify-self: start }
-.x\:s\:fe { justify-self: flex-end }
-.x\:s\:fs { justify-self: flex-start }
+.x\:s, .d\:f\:y.y\:s { justify-self: center }
+.x\:s\:a, .d\:f\:y.y\:s\:a { justify-self: auto }
+.x\:s\:n, .d\:f\:y.y\:s\:n { justify-self: normal }
+.x\:s\:b, .d\:f\:y.y\:s\:b { justify-self: baseline }
+.x\:s\:e, .d\:f\:y.y\:s\:e { justify-self: end }
+.x\:s\:s, .d\:f\:y.y\:s\:s { justify-self: start }
+.x\:s\:st, .d\:f\:y.y\:s\:st { justify-self: stretch }
+
+/* /// */
+
+html.xy .y\:c\:e, html.xy .d\:f\:y.x\:c\:e { align-content: flex-end }
+html.xy .y\:c\:s, html.xy .d\:f\:y.x\:c\:s { align-content: flex-start }
+html.xy .y\:i\:e, html.xy .d\:f\:y.x\:i\:e { align-items: flex-end }
+html.xy .y\:i\:s, html.xy .d\:f\:y.x\:i\:s { align-items: flex-start }
+html.xy .y\:s\:e, html.xy .d\:f\:y.x\:s\:e { align-self: flex-end }
+html.xy .y\:s\:s, html.xy .d\:f\:y.x\:s\:s { align-self: flex-start }
+html.xy .x\:c\:e, html.xy .d\:f\:y.y\:c\:e { justify-content: flex-end }
+html.xy .x\:c\:s, html.xy .d\:f\:y.y\:c\:s { justify-content: flex-start }
+html.xy .x\:i\:e, html.xy .d\:f\:y.y\:i\:e { justify-items: flex-end }
+html.xy .x\:i\:s, html.xy .d\:f\:y.y\:i\:s { justify-items: flex-start }
+html.xy .x\:s\:e, html.xy .d\:f\:y.y\:s\:e { justify-self: flex-end }
+html.xy .x\:s\:s, html.xy .d\:f\:y.y\:s\:s { justify-self: flex-start }
+
+html.flex .y\:c > *, html.flex .d\:f\:y.x\:c > *,
+html.flex .y\:i > *, html.flex .d\:f\:y.x\:i > *,
+html.flex .y\:s > *, html.flex .d\:f\:y.x\:s > *
+{ vertical-align: middle }
+
+html.flex .y\:c\:s > *, html.flex .d\:f\:y.x\:c\:s > *,
+html.flex .y\:i\:s > *, html.flex .d\:f\:y.x\:i\:s > *,
+html.flex .y\:s\:s > *, html.flex .d\:f\:y.x\:s\:s > *
+{ vertical-align: top }
+
+html.flex .y\:c\:e > *, html.flex .d\:f\:y.x\:c\:e > *,
+html.flex .y\:i\:e > *, html.flex .d\:f\:y.x\:i\:e > *,
+html.flex .y\:s\:e > *, html.flex .d\:f\:y.x\:s\:e > *
+{ vertical-align: bottom }
+
+html.flex .x\:c, html.flex .d\:f\:y.y\:c,
+html.flex .x\:i, html.flex .d\:f\:y.y\:i,
+html.flex .x\:s, html.flex .d\:f\:y.y\:s
+{ text-align: center }
+
+html.flex .x\:c\:s, html.flex .d\:f\:y.y\:c\:s,
+html.flex .x\:i\:s, html.flex .d\:f\:y.y\:i\:s,
+html.flex .x\:s\:s, html.flex .d\:f\:y.y\:s\:s
+{ text-align: left }
+
+html.flex .x\:c\:e, html.flex .d\:f\:y.y\:c\:e,
+html.flex .x\:i\:e, html.flex .d\:f\:y.y\:i\:e,
+html.flex .x\:s\:e, html.flex .d\:f\:y.y\:s\:e
+{ text-align: right }
+
+html.flex .x\:c > *, html.flex .d\:f\:y.y\:c > *,
+html.flex .x\:i > *, html.flex .d\:f\:y.y\:i > *,
+html.flex .x\:s > *, html.flex .d\:f\:y.y\:s > *,
+html.flex .x\:c\:e > *, html.flex .d\:f\:y.y\:c\:e > *,
+html.flex .x\:i\:e > *, html.flex .d\:f\:y.y\:i\:e > *,
+html.flex .x\:s\:e > *, html.flex .d\:f\:y.y\:s\:e > *
+{ text-align: left }

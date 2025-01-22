@@ -1,0 +1,6 @@
+.pe\:a { pointer-events: auto }
+.pe\:n { pointer-events: none }
+.pe\:v { pointer-events: visible }
+.pe\:vf { pointer-events: visibleFill }
+.pe\:vs { pointer-events: visibleStroke }
+.pe\:vps { pointer-events: visiblePainted }

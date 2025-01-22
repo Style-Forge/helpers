@@ -1,0 +1,5 @@
+.us\:a { user-select: auto }
+.us\:n { user-select: none }
+.us\:t { user-select: text }
+.us\:c { user-select: contain }
+.us\:a\:e { user-select: all }

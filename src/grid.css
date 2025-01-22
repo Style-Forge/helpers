@@ -1,4 +1,4 @@
-[hidden], datalist, dialog, source, template, track { display: none !important }
+[hidden], datalist, dialog:not([open]), source, template, track { display: none !important }
 
 .d\:g, .d\:g\:x, .d\:g\:y {
   display: grid;
@@ -7,12 +7,12 @@
   grid-auto-rows: minmax(0, 1fr);
 }
 
-.d\:g { grid-auto-flow: dense }
-.d\:g\:x { grid-auto-flow: dense column }
-.d\:g\:y { grid-auto-flow: dense row }
+.d\:g, .wrap.d\:g { grid-auto-flow: dense }
+.d\:g\:x, .wrap.d\:g\:x { grid-auto-flow: dense column }
+.d\:g\:y, .wrap.d\:g\:y { grid-auto-flow: dense row }
 
-.d\:g\:x.nowrap, .d\:g.nowrap { grid-auto-flow: column }
-.d\:g\:y.nowrap { grid-auto-flow: row }
+.nowrap.d\:g\:x, .nowrap.d\:g { grid-auto-flow: column }
+.nowrap.d\:g\:y { grid-auto-flow: row }
 
 /* /// */
 
@@ -22,8 +22,11 @@ html.grid .d\:g\:x, html.grid .d\:g\:y { flex-wrap: nowrap }
 html.grid .d\:g\:x { flex-direction: row }
 html.grid .d\:g\:y { flex-direction: column }
 
+html.grid .wrap.d\:g, html.grid .wrap.d\:g\:x, html.grid .wrap.d\:g\:y { flex-wrap: wrap }
+html.grid .nowrap.d\:g, html.grid .nowrap.d\:g\:x, html.grid .nowrap.d\:g\:y { flex-wrap: nowrap }
+
 html.flex .d\:g, html.flex .d\:g\:x, html.flex .d\:g\:y { display: block; letter-spacing: -1em !important }
-html.flex .d\:g > *, html.flex .d\:g\:x > *, html.flex .d\:g\:y > * { letter-spacing: normal }
+html.flex .d\:g > *, html.flex .d\:g\:x > *, html.flex .d\:g\:y > * { letter-spacing: normal; vertical-align: top }
 html.flex .d\:g > *, html.flex .d\:g\:x > * { display: inline-block }
 html.flex .d\:g\:y > * { display: block }
 
@@ -32,9 +35,4 @@ html.flex .d\:g > .d\:g, html.flex .d\:g > .d\:g\:x, html.flex .d\:g > .d\:g\:y,
 html.flex .d\:f\:x > .d\:g, html.flex .d\:f\:x > .d\:g\:x, html.flex .d\:f\:x > .d\:g\:y,
 html.flex .d\:g\:x > .d\:g, html.flex .d\:g\:x > .d\:g\:x, html.flex .d\:g\:x > .d\:g\:y
 { display: inline-block }
-
-html.flex .d\:g:not([class*='va:']) > *:not([class*='va:']),
-html.flex .d\:g\:x:not([class*='va:']) > *:not([class*='va:']),
-html.flex .d\:g\:y:not([class*='va:']) > *:not([class*='va:'])
-{ vertical-align: top }
 

@@ -53,6 +53,7 @@
 
 .fw { font-weight: var(--sf-fw) }
 .fw\:i { font-weight: inherit }
+.fw\:ii { font-weight: initial }
 .fw\:bold { font-weight: var(--sf-fw-bold) }
 .fw\:small { font-weight: var(--sf-fw-small) }
 
@@ -105,6 +106,7 @@
 .fz { font-size: var(--sf-fz) }
 .fz\:0 { font-size: var(--sf-fz-0) }
 .fz\:i { font-size: inherit }
+.fz\:ii { font-size: initial }
 .fz\:bold { font-size: var(--sf-fz-bold) }
 
 .fz\:small { font-size: var(--sf-fz-small) }
@@ -122,6 +124,7 @@
 
 .whs { white-space: normal }
 .whs\:i { white-space: inherit }
+.whs\:ii { white-space: initial }
 .whs\:nowrap, .\$whs\:nowrap > * { white-space: nowrap }
 .whs\:p { white-space: pre }
 .whs\:pl { white-space: pre-line }
@@ -130,12 +133,14 @@
 .lh { line-height: var(--sf-lh-normal) }
 .lh\:base { line-height: var(--sf-lh) }
 .lh\:i { line-height: inherit }
+.lh\:ii { line-height: initial }
 .lh\:n { line-height: normal }
 .lh\:1 { line-height: 1 }
 .lh\:0 { line-height: 0 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align */
 .va\:i, .\$va\:i > * { vertical-align: inherit }
+.va\:ii, .\$va\:ii > * { vertical-align: initial }
 .va\:bl, .\$va\:bl > * { vertical-align: baseline }
 .va\:a, .\$va\:a > * { vertical-align: auto }
 .va\:m, .\$va\:m > * { vertical-align: middle }
@@ -163,7 +168,8 @@
 .wm\:tbl { writing-mode: tb-lr }
 .wm\:tbr { writing-mode: tb-rl }
 
-.wm\:inherit { writing-mode: inherit }
+.wm\:i { writing-mode: inherit }
+.wm\:ii { writing-mode: initial }
 
 .wm\:horizontal-tb { writing-mode: horizontal-tb }
 .wm\:sideways-lr { writing-mode: sideways-lr }
@@ -184,6 +190,7 @@ html.var .ff\:fangsong { font-family: fangsong }
 
 html.var .fw { font-weight: 400 }
 html.var .fw\:i { font-weight: inherit }
+html.var .fw\:ii { font-weight: initial }
 html.var .fw\:bold { font-weight: 600 }
 html.var .fw\:small { font-weight: 300 }
 
@@ -204,6 +211,7 @@ html.var .fz\:h6 { font-size: 16px }
 html.var .fz { font-size: 16px }
 html.var .fz\:0 { font-size: 0 }
 html.var .fz\:i { font-size: inherit }
+html.var .fz\:ii { font-size: initial }
 html.var .fz\:bold { font-size: 16px }
 
 html.var .fz\:small { font-size: 12px }
@@ -221,3 +229,14 @@ html.ta .ta\:l, html.ta .\$ta\:l > * { text-align: left }
 html.ta .ta\:c, html.ta .\$ta\:c > * { text-align: center }
 html.ta .ta\:r, html.ta .\$ta\:r > * { text-align: right }
 html.ta .ta\:j, html.ta .\$ta\:j > * { text-align: justify }
+
+html.flex .va\:bl, html.flex .\$va\:bl > * { vertical-align: baseline }
+html.flex .va\:a, html.flex .\$va\:a > * { vertical-align: auto }
+html.flex .va\:m, html.flex .\$va\:m > * { vertical-align: middle }
+html.flex .va\:t, html.flex .\$va\:t > * { vertical-align: top }
+html.flex .va\:b, html.flex .\$va\:b > * { vertical-align: bottom }
+html.flex .va\:tt, html.flex .\$va\:tt > * { vertical-align: text-top }
+html.flex .va\:tb, html.flex .\$va\:tb > * { vertical-align: text-bottom }
+html.flex .va\:sub, html.flex .\$va\:sub > * { vertical-align: sub }
+html.flex .va\:sup, html.flex .\$va\:sup > * { vertical-align: super }
+

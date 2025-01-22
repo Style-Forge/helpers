@@ -1,0 +1,16 @@
+.mbm\:c { mix-blend-mode: color }
+.mbm\:cb { mix-blend-mode: color-burn }
+.mbm\:cd { mix-blend-mode: color-dodge }
+.mbm\:dk { mix-blend-mode: darken }
+.mbm\:df { mix-blend-mode: difference }
+.mbm\:ex { mix-blend-mode: exclusion }
+.mbm\:hl { mix-blend-mode: hard-light }
+.mbm\:h { mix-blend-mode: hue }
+.mbm\:lt { mix-blend-mode: lighten }
+.mbm\:lm { mix-blend-mode: luminosity }
+.mbm\:m { mix-blend-mode: multiply }
+.mbm\:n { mix-blend-mode: normal }
+.mbm\:o { mix-blend-mode: overlay }
+.mbm\:s { mix-blend-mode: saturation }
+.mbm\:sc { mix-blend-mode: screen }
+.mbm\:sl { mix-blend-mode: soft-light }
