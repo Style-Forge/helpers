@@ -1,0 +1,111 @@
+:root {
+  --sf-scroll: var(--sf-em-md);
+
+  --sf-scroll-xs: var(--sf-em-xs);
+  --sf-scroll-sm: var(--sf-em-sm);
+  --sf-scroll-lg: var(--sf-em-lg);
+  --sf-scroll-xl: var(--sf-em-xl);
+}
+
+.sb\:a { scroll-behavior: auto }
+.sb\:s { scroll-behavior: smooth }
+
+.sst\:n { scroll-snap-type: none }
+.sst\:x { scroll-snap-type: x mandatory }
+.sst\:y { scroll-snap-type: y mandatory }
+.sst\:b { scroll-snap-type: block mandatory }
+.sst\:in { scroll-snap-type: inline mandatory }
+.sst\:x\:p { scroll-snap-type: x proximity }
+.sst\:y\:p { scroll-snap-type: y proximity }
+.sst\:b\:p { scroll-snap-type: block proximity }
+.sst\:in\:p { scroll-snap-type: inline proximity }
+
+.ssa\:s { scroll-snap-align: start }
+.ssa\:e { scroll-snap-align: end }
+.ssa\:c { scroll-snap-align: center }
+.ssa\:none { scroll-snap-align: none }
+
+.sp { scroll-padding: var(--sf-scroll) }
+.sp\:0 { scroll-padding: 0 }
+.sp\:xs { scroll-padding: var(--sf-scroll-xs) }
+.sp\:sm { scroll-padding: var(--sf-scroll-sm) }
+.sp\:lg { scroll-padding: var(--sf-scroll-lg) }
+.sp\:xl { scroll-padding: var(--sf-scroll-xl) }
+
+.sp\:t { scroll-padding-top: var(--sf-scroll) }
+.sp\:r { scroll-padding-right: var(--sf-scroll) }
+.sp\:b { scroll-padding-bottom: var(--sf-scroll) }
+.sp\:l { scroll-padding-left: var(--sf-scroll) }
+
+.sm { scroll-margin: var(--sf-scroll) }
+.sm\:0 { scroll-margin: 0 }
+.sm\:xs { scroll-margin: var(--sf-em-xs) }
+.sm\:sm { scroll-margin: var(--sf-em-sm) }
+.sm\:lg { scroll-margin: var(--sf-em-lg) }
+.sm\:xl { scroll-margin: var(--sf-em-xl) }
+
+.sm\:t { scroll-margin-top: var(--sf-scroll) }
+.sm\:r { scroll-margin-right: var(--sf-scroll) }
+.sm\:b { scroll-margin-bottom: var(--sf-scroll) }
+.sm\:l { scroll-margin-left: var(--sf-scroll) }
+
+.ov { overflow: auto }
+.ov\:h { overflow: hidden }
+.ov\:s { overflow: scroll }
+.ov\:v { overflow: visible }
+
+.ov\:x { overflow-x: auto }
+.ov\:x\:h, .ov\:h\:x { overflow-x: hidden }
+.ov\:x\:s, .ov\:s\:x { overflow-x: scroll }
+.ov\:x\:v, .ov\:v\:x { overflow-x: visible }
+
+.ov\:y { overflow-y: auto }
+.ov\:y\:h, .ov\:h\:y { overflow-y: hidden }
+.ov\:y\:s, .ov\:s\:y { overflow-y: scroll }
+.ov\:y\:v, .ov\:v\:y { overflow-y: visible }
+
+.osb\:a { overscroll-behavior: auto }
+.osb\:c { overscroll-behavior: contain }
+.osb\:n { overscroll-behavior: none }
+
+.osb\:x\:a { overscroll-behavior-x: auto }
+.osb\:x\:c { overscroll-behavior-x: contain }
+.osb\:x\:n { overscroll-behavior-x: none }
+
+.osb\:y\:a { overscroll-behavior-y: auto }
+.osb\:y\:c { overscroll-behavior-y: contain }
+.osb\:y\:n { overscroll-behavior-y: none }
+
+.sb\:w\:sm { scrollbar-width: thin }
+.sb\:w\:md { scrollbar-width: auto }
+.sb\:w\:none { scrollbar-width: none }
+
+.sb\:c\:t { scrollbar-color: transparent }
+.sb\:c\:d { scrollbar-color: dark }
+.sb\:c\:l { scrollbar-color: light }
+
+/* /// */
+
+html.var .sp { scroll-padding: 1rem }
+html.var .sp\:0 { scroll-padding: 0 }
+html.var .sp\:xs { scroll-padding: 0.25rem }
+html.var .sp\:sm { scroll-padding: 0.5rem }
+html.var .sp\:lg { scroll-padding: 1.5rem }
+html.var .sp\:xl { scroll-padding: 2rem }
+
+html.var .sp\:t { scroll-padding-top: 1rem }
+html.var .sp\:r { scroll-padding-right: 1rem }
+html.var .sp\:b { scroll-padding-bottom: 1rem }
+html.var .sp\:l { scroll-padding-left: 1rem }
+
+html.var .sm { scroll-margin: 1rem }
+html.var .sm\:0 { scroll-margin: 0 }
+html.var .sm\:xs { scroll-margin: 0.25rem }
+html.var .sm\:sm { scroll-margin: 0.5rem }
+html.var .sm\:lg { scroll-margin: 1.5rem }
+html.var .sm\:xl { scroll-margin: 2rem }
+
+html.var .sm\:t { scroll-margin-top: 1rem }
+html.var .sm\:r { scroll-margin-right: 1rem }
+html.var .sm\:b { scroll-margin-bottom: 1rem }
+html.var .sm\:l { scroll-margin-left: 1rem }

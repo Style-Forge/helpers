@@ -1,0 +1,13 @@
+.tac\:a { touch-action: auto }
+.tac\:n { touch-action: none }
+.tac\:m { touch-action: manipulation }
+
+.tac\:px { touch-action: pan-x }
+.tac\:py { touch-action: pan-y }
+.tac\:pxy { touch-action: pan-x pan-y }
+
+.tac\:pz { touch-action: pinch-zoom }
+
+.tac\:px\:pz { touch-action: pan-x pinch-zoom }
+.tac\:py\:pz { touch-action: pan-y pinch-zoom }
+.tac\:pxy\:pz { touch-action: pan-x pan-y pinch-zoom }

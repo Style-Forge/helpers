@@ -1,8 +1,6 @@
-[hidden], datalist, dialog, source, template, track { display: none !important }
+[hidden], datalist, dialog:not([open]), source, template, track { display: none !important }
 
 .d\:f, .d\:f\:x, .d\:f\:y { display: flex; flex-wrap: wrap }
-
-.d\:f\:x, .d\:f\:y { flex-wrap: nowrap }
 
 .d\:f\:x { flex-direction: row }
 .d\:f\:y { flex-direction: column }
@@ -13,7 +11,11 @@
 .reverse\:y, .reverse.d\:f\:y { flex-direction: column-reverse }
 .reverse\:wrap { flex-wrap: wrap-reverse }
 
-.grow\:i, .\$grow\:i > * { flex-grow: initial }
+.wrap { flex-wrap: wrap }
+.nowrap { flex-wrap: nowrap }
+
+.grow\:i, .\$grow\:i > * { flex-grow: inherit }
+.grow\:ii, .\$grow\:ii > * { flex-grow: initial }
 .grow\:0, .\$grow\:0 > * { flex-grow: 0 }
 .grow\:1, .\$grow\:1 > * { flex-grow: 1 }
 .grow\:2, .\$grow\:2 > * { flex-grow: 2 }
@@ -21,7 +23,8 @@
 .grow\:4, .\$grow\:4 > * { flex-grow: 4 }
 .grow\:5, .\$grow\:5 > * { flex-grow: 5 }
 
-.shrink\:i, .\$shrink\:i > * { flex-shrink: initial }
+.shrink\:i, .\$shrink\:i > * { flex-shrink: inherit }
+.shrink\:ii, .\$shrink\:ii > * { flex-shrink: initial }
 .shrink\:0, .\$shrink\:0 > * { flex-shrink: 0 }
 .shrink\:1, .\$shrink\:1 > * { flex-shrink: 1 }
 .shrink\:2, .\$shrink\:2 > * { flex-shrink: 2 }
@@ -29,12 +32,14 @@
 .shrink\:4, .\$shrink\:4 > * { flex-shrink: 4 }
 .shrink\:5, .\$shrink\:5 > * { flex-shrink: 5 }
 
-.basis\:i, .\$basis\:i > * { flex-basis: initial }
+.basis\:i, .\$basis\:i > * { flex-basis: inherit }
+.basis\:ii, .\$basis\:ii > * { flex-basis: initial }
 .basis\:0, .\$basis\:0 > * { flex-basis: 0 }
+.basis\:10, .\$basis\:10 > * { flex-basis: 10% }
+.basis\:20, .\$basis\:20 > * { flex-basis: 20% }
 .basis\:25, .\$basis\:25 > * { flex-basis: 25% }
 .basis\:33, .\$basis\:33 > * { flex-basis: 33.3333% }
 .basis\:50, .\$basis\:50 > * { flex-basis: 50% }
-.basis\:75, .\$basis\:75 > * { flex-basis: 75% }
 .basis\:100, .\$basis\:100 > * { flex-basis: 100% }
 .basis\:auto, .\$basis\:auto > * { flex-basis: auto }
 .basis\:available, .\$basis\:available > * { flex-basis: available }
@@ -50,7 +55,7 @@
 html.grid .d\:f, html.grid .d\:f\:x, html.grid .d\:f\:y { display: flex }
 
 html.flex .d\:f, html.flex .d\:f\:x, html.flex .d\:f\:y { display: block; letter-spacing: -1em !important }
-html.flex .d\:f > *, html.flex .d\:f\:x > *, html.flex .d\:f\:y > * { letter-spacing: normal }
+html.flex .d\:f > *, html.flex .d\:f\:x > *, html.flex .d\:f\:y > * { letter-spacing: normal; vertical-align: top }
 html.flex .d\:f > *, html.flex .d\:f\:x > * { display: inline-block }
 html.flex .d\:f\:y > * { display: block }
 
@@ -59,8 +64,3 @@ html.flex .d\:g > .d\:f, html.flex .d\:g > .d\:f\:x, html.flex .d\:g > .d\:f\:y,
 html.flex .d\:f\:x > .d\:f, html.flex .d\:f\:x > .d\:f\:x, html.flex .d\:f\:x > .d\:f\:y,
 html.flex .d\:g\:x > .d\:f, html.flex .d\:g\:x > .d\:f\:x, html.flex .d\:g\:x > .d\:f\:y
 { display: inline-block }
-
-html.flex .d\:f:not([class*='va:']) > *:not([class*='va:']),
-html.flex .d\:f\:x:not([class*='va:']) > *:not([class*='va:']),
-html.flex .d\:f\:y:not([class*='va:']) > *:not([class*='va:'])
-{ vertical-align: top }

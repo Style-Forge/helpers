@@ -1,0 +1,12 @@
+:root {
+  --sf-unit-xxxs: 0.0625;  /* 1px */
+  --sf-unit-xxs: 0.125;    /* 2px */
+  --sf-unit-xs: 0.25;      /* 4px */
+  --sf-unit-sm: 0.5;       /* 8px */
+  --sf-unit-s: 0.625;      /* 10px */
+  --sf-unit-ms: 0.75;      /* 12px */
+  --sf-unit-ls: 0.85;      /* 14px */
+  --sf-unit-md: 1;         /* 16px */
+  --sf-unit-lg: 1.5;       /* 24px */
+  --sf-unit-xl: 2;         /* 32px */
+}

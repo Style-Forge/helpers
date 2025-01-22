@@ -1,0 +1,46 @@
+.tr\:p\:a { transition-property: all }
+.tr\:p\:n { transition-property: none }
+.tr\:p\:op { transition-property: opacity }
+.tr\:p\:bg { transition-property: background-color }
+.tr\:p\:c { transition-property: color }
+.tr\:p\:t { transition-property: transform }
+.tr\:p\:h { transition-property: height }
+.tr\:p\:w { transition-property: width }
+.tr\:p\:m { transition-property: margin }
+.tr\:p\:p { transition-property: padding }
+
+.tr\:f\:e { transition-timing-function: ease }
+.tr\:f\:ei { transition-timing-function: ease-in }
+.tr\:f\:eo { transition-timing-function: ease-out }
+.tr\:f\:eio { transition-timing-function: ease-in-out }
+.tr\:f\:l { transition-timing-function: linear }
+.tr\:f\:st { transition-timing-function: step-start }
+.tr\:f\:se { transition-timing-function: step-end }
+
+.tr\:d\:0 { transition-duration: 0s }
+.tr\:d\:100 { transition-duration: .1s }
+.tr\:d\:200 { transition-duration: .2s }
+.tr\:d\:300 { transition-duration: .3s }
+.tr\:d\:400 { transition-duration: .4s }
+.tr\:d\:500 { transition-duration: .5s }
+.tr\:d\:600 { transition-duration: .6s }
+.tr\:d\:700 { transition-duration: .7s }
+.tr\:d\:800 { transition-duration: .8s }
+.tr\:d\:900 { transition-duration: .9s }
+.tr\:d\:1 { transition-duration: 1s }
+.tr\:d\:2 { transition-duration: 2s }
+.tr\:d\:3 { transition-duration: 3s }
+
+.tr\:dl\:0 { transition-delay: 0s }
+.tr\:dl\:100 { transition-delay: .1s }
+.tr\:dl\:200 { transition-delay: .2s }
+.tr\:dl\:300 { transition-delay: .3s }
+.tr\:dl\:400 { transition-delay: .4s }
+.tr\:dl\:500 { transition-delay: .5s }
+.tr\:dl\:600 { transition-delay: .6s }
+.tr\:dl\:700 { transition-delay: .7s }
+.tr\:dl\:800 { transition-delay: .8s }
+.tr\:dl\:900 { transition-delay: .9s }
+.tr\:dl\:1 { transition-delay: 1s }
+.tr\:dl\:2 { transition-delay: 2s }
+.tr\:dl\:3 { transition-delay: 3s }

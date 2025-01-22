@@ -1,11 +1,10 @@
-[hidden], datalist, dialog, source, template, track { display: none !important }
+[hidden], datalist, dialog:not([open]), source, template, track { display: none !important }
 
 .\$d\:i { display: block; letter-spacing: -1em !important }
-.\$d\:i > * { letter-spacing: normal }
-.\$d\:i > *:not([class*='cols']):not(.d\:f):not(.d\:f\:x):not(.d\:f\:y):not(.d\:g):not(.d\:g\:x):not(.d\:g\:y) { display: inline-block }
-.\$d\:i:not([class*='va:']) > *:not([class*='va:']) { vertical-align: top }
+.\$d\:i > * { letter-spacing: normal; vertical-align: top }
+.\$d\:i > *:not([class*='cols']):not(.d\:f):not(.d\:f\:x):not(.d\:f\:y):not(.d\:g):not(.d\:g\:x):not(.d\:g\:y):not(.sf-description):not(.sf-invalid):not(.sf-valid) { display: inline-block }
 
 /* /// */
 
 html.grid .\$d\:i { display: block }
-html.grid .\$d\:i > *:not([class*='cols']):not(.d\:f):not(.d\:f\:x):not(.d\:f\:y):not(.d\:g):not(.d\:g\:x):not(.d\:g\:y) { display: inline-block }
+html.grid .\$d\:i > *:not([class*='cols']):not(.d\:f):not(.d\:f\:x):not(.d\:f\:y):not(.d\:g):not(.d\:g\:x):not(.d\:g\:y):not(.sf-description):not(.sf-invalid):not(.sf-valid) { display: inline-block }

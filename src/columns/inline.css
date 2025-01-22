@@ -1,6 +1,5 @@
 [class*='cols'] { display: block; letter-spacing: -1em !important }
-[class*='cols'] > * { display: inline-block; letter-spacing: normal }
-[class*='cols']:not([class*='va:']) > [class*='col']:not([class*='va:']) { vertical-align: top }
+[class*='cols'] > * { display: inline-block; letter-spacing: normal; vertical-align: top }
 
 .cols > .col,
 .cols > .col\:1 { width: 8.3333% }
