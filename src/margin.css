@@ -1,12 +1,3 @@
-:root {
-  --sf-margin: var(--sf-em-sm);
-
-  --sf-margin-xs: var(--sf-em-xs);
-  --sf-margin-md: var(--sf-em-md);
-  --sf-margin-lg: var(--sf-em-lg);
-  --sf-margin-xl: var(--sf-em-xl);
-}
-
 .m, .\$m > * { margin: var(--sf-margin) }
 .m\:a, .\$m\:a > * { margin: auto }
 .m\:0, .\$m\:0 > * { margin: 0 }

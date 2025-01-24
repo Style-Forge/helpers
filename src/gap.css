@@ -1,8 +1,3 @@
-:root {
-  --sf-gap-x: var(--sf-em-sm);
-  --sf-gap-y: var(--sf-em-sm);
-}
-
 /* flex */
 .d\:f, .d\:f\:x, .d\:f\:y {
   row-gap: var(--sf-gap-y);

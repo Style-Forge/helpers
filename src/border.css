@@ -1,7 +1,3 @@
-:root {
-  --sf-bd-w: 1px;
-}
-
 .bd\:c\:i { border-color: inherit }
 .bd\:c\:ii { border-color: initial }
 
