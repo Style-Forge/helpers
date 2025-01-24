@@ -1,12 +1,3 @@
-:root {
-  --sf-scroll: var(--sf-em-md);
-
-  --sf-scroll-xs: var(--sf-em-xs);
-  --sf-scroll-sm: var(--sf-em-sm);
-  --sf-scroll-lg: var(--sf-em-lg);
-  --sf-scroll-xl: var(--sf-em-xl);
-}
-
 .sb\:a { scroll-behavior: auto }
 .sb\:s { scroll-behavior: smooth }
 

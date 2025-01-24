@@ -1,0 +1,86 @@
+@import './units/all.css';
+
+:root {
+  /* border */
+  --sf-bd-w: 1px;
+
+  /* outline */
+  --sf-ol-w: 1px;
+
+  /* gap */
+  --sf-gap-x: var(--sf-em-sm);
+  --sf-gap-y: var(--sf-em-sm);
+
+  /* margin */
+  --sf-margin: var(--sf-em-sm);
+  --sf-margin-xs: var(--sf-em-xs);
+  --sf-margin-md: var(--sf-em-md);
+  --sf-margin-lg: var(--sf-em-lg);
+  --sf-margin-xl: var(--sf-em-xl);
+
+  /* padding */
+  --sf-padding: var(--sf-em-sm);
+  --sf-padding-xs: var(--sf-em-xs);
+  --sf-padding-md: var(--sf-em-md);
+  --sf-padding-lg: var(--sf-em-lg);
+  --sf-padding-xl: var(--sf-em-xl);
+
+  /* radius */
+  --sf-radius: var(--sf-em-sm);
+  --sf-radius-xxs: var(--sf-em-xxs1);
+  --sf-radius-xs: var(--sf-em-xs);
+  --sf-radius-md: var(--sf-em-md);
+  --sf-radius-lg: var(--sf-em-lg);
+  --sf-radius-xl: var(--sf-em-xl);
+
+  /* scroll */
+  --sf-scroll: var(--sf-em-md);
+  --sf-scroll-xs: var(--sf-em-xs);
+  --sf-scroll-sm: var(--sf-em-sm);
+  --sf-scroll-lg: var(--sf-em-lg);
+  --sf-scroll-xl: var(--sf-em-xl);
+
+  /* text */
+  --sf-lh: 0.8;
+  --sf-lh-normal: 1.1875;
+
+  --sf-ff-sans: 'Inter', ui-sans-serif, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --sf-ff-serif: Times, 'Times New Roman', Georgia, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --sf-ff-monospace: 'Lucida Console', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --sf-ff-cursive: cursive;
+  --sf-ff-fantasy: fantasy;
+  --sf-ff-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  --sf-ff-math: math;
+  --sf-ff-fangsong: fangsong;
+
+  --sf-fz: 1rem;
+  --sf-fz-0: 0;
+  --sf-fz-bold: 1rem;
+
+  --sf-fz-h1: 3rem;
+  --sf-fz-h2: 2.5rem;
+  --sf-fz-h3: 2rem;
+  --sf-fz-h4: 1.5rem;
+  --sf-fz-h5: 1.25rem;
+  --sf-fz-h6: 1rem;
+
+  --sf-fz-small: 0.75rem;
+
+  --sf-fz-15: 0.9375rem;
+  --sf-fz-14: 0.875rem;
+  --sf-fz-13: 0.8125rem;
+  --sf-fz-12: 0.75rem;
+  --sf-fz-11: 0.6875rem;
+  --sf-fz-10: 0.625rem;
+
+  --sf-fw: 400;
+  --sf-fw-bold: 600;
+  --sf-fw-small: 300;
+
+  --sf-fw-h1: 700;
+  --sf-fw-h2: 700;
+  --sf-fw-h3: 700;
+  --sf-fw-h4: 600;
+  --sf-fw-h5: 600;
+  --sf-fw-h6: 600;
+}

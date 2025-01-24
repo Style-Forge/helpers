@@ -1,7 +1,3 @@
-:root {
-  --sf-ol-w: 1px;
-}
-
 .ol\:c\:i { outline-color: inherit }
 .ol\:c\:ii { outline-color: initial }
 

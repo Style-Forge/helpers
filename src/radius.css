@@ -1,13 +1,3 @@
-:root {
-  --sf-radius: var(--sf-em-sm);
-
-  --sf-radius-xxs: var(--sf-em-xxs1);
-  --sf-radius-xs: var(--sf-em-xs);
-  --sf-radius-md: var(--sf-em-md);
-  --sf-radius-lg: var(--sf-em-lg);
-  --sf-radius-xl: var(--sf-em-xl);
-}
-
 .radius:not(html) { border-radius: var(--sf-radius) }
 .radius\:xxs { border-radius: var(--sf-radius-xxs) }
 .radius\:xs { border-radius: var(--sf-radius-xs) }
