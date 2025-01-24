@@ -9,7 +9,22 @@
 
   /* gap */
   --sf-gap-x: var(--sf-em-sm);
+  --sf-gap-x-xs: var(--sf-em-xs);
+  --sf-gap-x-sm: var(--sf-em-sm);
+  --sf-gap-x-ms: var(--sf-em-ms);
+  --sf-gap-x-ls: var(--sf-em-ls);
+  --sf-gap-x-md: var(--sf-em-md);
+  --sf-gap-x-lg: var(--sf-em-lg);
+  --sf-gap-x-xl: var(--sf-em-xl);
+
   --sf-gap-y: var(--sf-em-sm);
+  --sf-gap-y-xs: var(--sf-em-xs);
+  --sf-gap-y-sm: var(--sf-em-sm);
+  --sf-gap-y-ms: var(--sf-em-ms);
+  --sf-gap-y-ls: var(--sf-em-ls);
+  --sf-gap-y-md: var(--sf-em-md);
+  --sf-gap-y-lg: var(--sf-em-lg);
+  --sf-gap-y-xl: var(--sf-em-xl);
 
   /* margin */
   --sf-margin: var(--sf-em-sm);

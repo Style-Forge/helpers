@@ -74,26 +74,28 @@
 .fz\:11 { font-size: var(--sf-fz-11) }
 .fz\:10 { font-size: var(--sf-fz-10) }
 
+.ta\:i, .\$ta\:i > * { text-align: inherit }
+.ta\:ii, .\$ta\:ii > * { text-align: inherit }
 .ta\:l, .\$ta\:l > * { text-align: start }
 .ta\:c, .\$ta\:c > * { text-align: center }
 .ta\:r, .\$ta\:r > * { text-align: end }
 .ta\:j, .\$ta\:j > * { text-align: justify }
 
-.whs { white-space: normal }
-.whs\:i { white-space: inherit }
-.whs\:ii { white-space: initial }
+.whs, .\$whs > * { white-space: normal }
+.whs\:i, .\$whs\:i > * { white-space: inherit }
+.whs\:ii, .\$whs\:ii > * { white-space: initial }
 .whs\:nowrap, .\$whs\:nowrap > * { white-space: nowrap }
-.whs\:p { white-space: pre }
-.whs\:pl { white-space: pre-line }
-.whs\:pw { white-space: pre-wrap }
+.whs\:p, .\$whs\:p > * { white-space: pre }
+.whs\:pl, .\$whs\:pl > * { white-space: pre-line }
+.whs\:pw, .\$whs\:pw > * { white-space: pre-wrap }
 
-.lh { line-height: var(--sf-lh-normal) }
-.lh\:base { line-height: var(--sf-lh) }
-.lh\:i { line-height: inherit }
-.lh\:ii { line-height: initial }
-.lh\:n { line-height: normal }
-.lh\:1 { line-height: 1 }
-.lh\:0 { line-height: 0 }
+.lh, .\$lh > * { line-height: var(--sf-lh-normal) }
+.lh\:base, .\$lh\:base > * { line-height: var(--sf-lh) }
+.lh\:i, .\$lh\:i > * { line-height: inherit }
+.lh\:ii, .\$lh\:ii > * { line-height: initial }
+.lh\:n, .\$lh\:n > * { line-height: normal }
+.lh\:1, .\$lh\:1 > * { line-height: 1 }
+.lh\:0, .\$lh\:0 > * { line-height: 0 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align */
 .va\:i, .\$va\:i > * { vertical-align: inherit }
@@ -179,9 +181,16 @@ html.var .fz\:small\:4 { font-size: 12px }
 html.var .fz\:small\:5 { font-size: 11px }
 html.var .fz\:small\:6 { font-size: 10px }
 
-html.var .lh { line-height: 1.1875 }
-html.var .lh\:base { line-height: 0.8 }
+html.var .lh, html.var .\$lh > * { line-height: 1.1875 }
+html.var .lh\:base, html.var .\$lh\:base > * { line-height: 0.8 }
+html.var .lh\:i, html.var .\$lh\:i > * { line-height: inherit }
+html.var .lh\:ii, html.var .\$lh\:ii > * { line-height: initial }
+html.var .lh\:n, html.var .\$lh\:n > * { line-height: normal }
+html.var .lh\:1, html.var .\$lh\:1 > * { line-height: 1 }
+html.var .lh\:0, html.var .\$lh\:0 > * { line-height: 0 }
 
+html.ta .ta\:i, html.ta .\$ta\:i > * { text-align: inherit }
+html.ta .ta\:ii, html.ta .\$ta\:ii > * { text-align: initial }
 html.ta .ta\:l, html.ta .\$ta\:l > * { text-align: left }
 html.ta .ta\:c, html.ta .\$ta\:c > * { text-align: center }
 html.ta .ta\:r, html.ta .\$ta\:r > * { text-align: right }
