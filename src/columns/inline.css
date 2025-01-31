@@ -247,3 +247,7 @@
 .cols\:11 > .col\:end\:9 { margin-right: 72.7272% }
 .cols\:11 > .col\:end\:10 { margin-right: 81.8181% }
 .cols\:11 > .col\:end\:11 { margin-right: 90.9090% }
+
+/* /// */
+
+html.grid [class*='cols'] { display: block }

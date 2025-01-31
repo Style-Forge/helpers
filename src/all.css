@@ -1,8 +1,9 @@
 @import './var.css';
 
+@import './inline.css';
+
 @import './columns/all.css';
 
-@import './inline.css';
 @import './flex.css';
 @import './grid.css';
 @import './gap.css';
