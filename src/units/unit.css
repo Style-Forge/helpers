@@ -5,8 +5,19 @@
   --sf-unit-sm: 0.5;       /* 8px */
   --sf-unit-s: 0.625;      /* 10px */
   --sf-unit-ms: 0.75;      /* 12px */
-  --sf-unit-ls: 0.85;      /* 14px */
+  --sf-unit-ls: 0.875;     /* 14px */
   --sf-unit-md: 1;         /* 16px */
-  --sf-unit-lg: 1.5;       /* 24px */
-  --sf-unit-xl: 2;         /* 32px */
+  --sf-unit-lg: 1.125;     /* 18px */
+  --sf-unit-xl: 1.25;      /* 20px */
+  --sf-unit-2xl: 1.5;      /* 24px */
+  --sf-unit-3xl: 2;        /* 32px */
+  --sf-unit-4xl: 2.5;      /* 40px */
+  --sf-unit-5xl: 3;        /* 48px */
+  --sf-unit-6xl: 3.5;      /* 56px */
+  --sf-unit-7xl: 4;        /* 64px */
+  --sf-unit-8xl: 4.5;      /* 72px */
+  --sf-unit-9xl: 5;        /* 80px */
+  --sf-unit-10xl: 5.5;     /* 88px */
+  --sf-unit-11xl: 6;       /* 96px */
+  --sf-unit-12xl: 6.5;     /* 104px */
 }

@@ -1,9 +1,25 @@
-.radius:not(html) { border-radius: var(--sf-radius) }
-.radius\:xxs { border-radius: var(--sf-radius-xxs) }
-.radius\:xs { border-radius: var(--sf-radius-xs) }
-.radius\:md { border-radius: var(--sf-radius-md) }
-.radius\:lg { border-radius: var(--sf-radius-lg) }
-.radius\:xl { border-radius: var(--sf-radius-xl) }
+.radius:not(html) { border-radius: var(--sf-rem) }
+.radius\:xxs { border-radius: var(--sf-rem-xxs) }
+.radius\:xxss { border-radius: var(--sf-rem-xxss) }
+.radius\:xs { border-radius: var(--sf-rem-xs) }
+.radius\:sm { border-radius: var(--sf-rem-sm) }
+.radius\:s { border-radius: var(--sf-rem-s) }
+.radius\:ms { border-radius: var(--sf-rem-ms) }
+.radius\:ls { border-radius: var(--sf-rem-ls) }
+.radius\:md { border-radius: var(--sf-rem-md) }
+.radius\:lg { border-radius: var(--sf-rem-lg) }
+.radius\:xl { border-radius: var(--sf-rem-xl) }
+.radius\:2xl { border-radius: var(--sf-rem-2xl) }
+.radius\:3xl { border-radius: var(--sf-rem-3xl) }
+.radius\:4xl { border-radius: var(--sf-rem-4xl) }
+.radius\:5xl { border-radius: var(--sf-rem-5xl) }
+.radius\:6xl { border-radius: var(--sf-rem-6xl) }
+.radius\:7xl { border-radius: var(--sf-rem-7xl) }
+.radius\:8xl { border-radius: var(--sf-rem-8xl) }
+.radius\:9xl { border-radius: var(--sf-rem-9xl) }
+.radius\:10xl { border-radius: var(--sf-rem-10xl) }
+.radius\:11xl { border-radius: var(--sf-rem-11xl) }
+.radius\:12xl { border-radius: var(--sf-rem-12xl) }
 
 .radius\:0 { border-radius: 0 }
 .radius\:25 { border-radius: 25% }
@@ -11,12 +27,28 @@
 .radius\:75 { border-radius: 75% }
 .radius\:100 { border-radius: 100% }
 
-.radius\:tl, .radius\:lt { border-start-start-radius: var(--sf-radius) }
-.radius\:tl\:xxs, .radius\:lt\:xxs { border-start-start-radius: var(--sf-radius-xxs) }
-.radius\:tl\:xs, .radius\:lt\:xs { border-start-start-radius: var(--sf-radius-xs) }
-.radius\:tl\:md, .radius\:lt\:md { border-start-start-radius: var(--sf-radius-md) }
-.radius\:tl\:lg, .radius\:lt\:lg { border-start-start-radius: var(--sf-radius-lg) }
-.radius\:tl\:xl, .radius\:lt\:xl { border-start-start-radius: var(--sf-radius-xl) }
+.radius\:tl, .radius\:lt { border-start-start-radius: var(--sf-rem) }
+.radius\:tl\:xxs, .radius\:lt\:xxs { border-start-start-radius: var(--sf-rem-xxs) }
+.radius\:tl\:xxss, .radius\:lt\:xxss { border-start-start-radius: var(--sf-rem-xxss) }
+.radius\:tl\:xs, .radius\:lt\:xs { border-start-start-radius: var(--sf-rem-xs) }
+.radius\:tl\:sm, .radius\:lt\:sm { border-start-start-radius: var(--sf-rem-sm) }
+.radius\:tl\:s, .radius\:lt\:s { border-start-start-radius: var(--sf-rem-s) }
+.radius\:tl\:ms, .radius\:lt\:ms { border-start-start-radius: var(--sf-rem-ms) }
+.radius\:tl\:ls, .radius\:lt\:ls { border-start-start-radius: var(--sf-rem-ls) }
+.radius\:tl\:md, .radius\:lt\:md { border-start-start-radius: var(--sf-rem-md) }
+.radius\:tl\:lg, .radius\:lt\:lg { border-start-start-radius: var(--sf-rem-lg) }
+.radius\:tl\:xl, .radius\:lt\:xl { border-start-start-radius: var(--sf-rem-xl) }
+.radius\:tl\:2xl, .radius\:lt\:2xl { border-start-start-radius: var(--sf-rem-2xl) }
+.radius\:tl\:3xl, .radius\:lt\:3xl { border-start-start-radius: var(--sf-rem-3xl) }
+.radius\:tl\:4xl, .radius\:lt\:4xl { border-start-start-radius: var(--sf-rem-4xl) }
+.radius\:tl\:5xl, .radius\:lt\:5xl { border-start-start-radius: var(--sf-rem-5xl) }
+.radius\:tl\:6xl, .radius\:lt\:6xl { border-start-start-radius: var(--sf-rem-6xl) }
+.radius\:tl\:7xl, .radius\:lt\:7xl { border-start-start-radius: var(--sf-rem-7xl) }
+.radius\:tl\:8xl, .radius\:lt\:8xl { border-start-start-radius: var(--sf-rem-8xl) }
+.radius\:tl\:9xl, .radius\:lt\:9xl { border-start-start-radius: var(--sf-rem-9xl) }
+.radius\:tl\:10xl, .radius\:lt\:10xl { border-start-start-radius: var(--sf-rem-10xl) }
+.radius\:tl\:11xl, .radius\:lt\:11xl { border-start-start-radius: var(--sf-rem-11xl) }
+.radius\:tl\:12xl, .radius\:lt\:12xl { border-start-start-radius: var(--sf-rem-12xl) }
 
 .radius\:tl\:0, .radius\:lt\:0 { border-start-start-radius: 0 }
 .radius\:tl\:25, .radius\:lt\:25 { border-start-start-radius: 25% }
@@ -24,12 +56,28 @@
 .radius\:tl\:75, .radius\:lt\:75 { border-start-start-radius: 75% }
 .radius\:tl\:100, .radius\:lt\:100 { border-start-start-radius: 100% }
 
-.radius\:tr, .radius\:rt { border-start-end-radius: var(--sf-radius) }
-.radius\:tr\:xxs, .radius\:rt\:xxs { border-start-end-radius: var(--sf-radius-xxs) }
-.radius\:tr\:xs, .radius\:rt\:xs { border-start-end-radius: var(--sf-radius-xs) }
-.radius\:tr\:md, .radius\:rt\:md { border-start-end-radius: var(--sf-radius-md) }
-.radius\:tr\:lg, .radius\:rt\:lg { border-start-end-radius: var(--sf-radius-lg) }
-.radius\:tr\:xl, .radius\:rt\:xl { border-start-end-radius: var(--sf-radius-xl) }
+.radius\:tr, .radius\:rt { border-start-end-radius: var(--sf-rem) }
+.radius\:tr\:xxs, .radius\:rt\:xxs { border-start-end-radius: var(--sf-rem-xxs) }
+.radius\:tr\:xxss, .radius\:rt\:xxss { border-start-end-radius: var(--sf-rem-xxss) }
+.radius\:tr\:xs, .radius\:rt\:xs { border-start-end-radius: var(--sf-rem-xs) }
+.radius\:tr\:sm, .radius\:rt\:sm { border-start-end-radius: var(--sf-rem-sm) }
+.radius\:tr\:s, .radius\:rt\:s { border-start-end-radius: var(--sf-rem-s) }
+.radius\:tr\:ms, .radius\:rt\:ms { border-start-end-radius: var(--sf-rem-ms) }
+.radius\:tr\:ls, .radius\:rt\:ls { border-start-end-radius: var(--sf-rem-ls) }
+.radius\:tr\:md, .radius\:rt\:md { border-start-end-radius: var(--sf-rem-md) }
+.radius\:tr\:lg, .radius\:rt\:lg { border-start-end-radius: var(--sf-rem-lg) }
+.radius\:tr\:xl, .radius\:rt\:xl { border-start-end-radius: var(--sf-rem-xl) }
+.radius\:tr\:2xl, .radius\:rt\:2xl { border-start-end-radius: var(--sf-rem-2xl) }
+.radius\:tr\:3xl, .radius\:rt\:3xl { border-start-end-radius: var(--sf-rem-3xl) }
+.radius\:tr\:4xl, .radius\:rt\:4xl { border-start-end-radius: var(--sf-rem-4xl) }
+.radius\:tr\:5xl, .radius\:rt\:5xl { border-start-end-radius: var(--sf-rem-5xl) }
+.radius\:tr\:6xl, .radius\:rt\:6xl { border-start-end-radius: var(--sf-rem-6xl) }
+.radius\:tr\:7xl, .radius\:rt\:7xl { border-start-end-radius: var(--sf-rem-7xl) }
+.radius\:tr\:8xl, .radius\:rt\:8xl { border-start-end-radius: var(--sf-rem-8xl) }
+.radius\:tr\:9xl, .radius\:rt\:9xl { border-start-end-radius: var(--sf-rem-9xl) }
+.radius\:tr\:10xl, .radius\:rt\:10xl { border-start-end-radius: var(--sf-rem-10xl) }
+.radius\:tr\:11xl, .radius\:rt\:11xl { border-start-end-radius: var(--sf-rem-11xl) }
+.radius\:tr\:12xl, .radius\:rt\:12xl { border-start-end-radius: var(--sf-rem-12xl) }
 
 .radius\:tr\:0, .radius\:rt\:0 { border-start-end-radius: 0 }
 .radius\:tr\:25, .radius\:rt\:25 { border-start-end-radius: 25% }
@@ -37,12 +85,28 @@
 .radius\:tr\:75, .radius\:rt\:75 { border-start-end-radius: 75% }
 .radius\:tr\:100, .radius\:rt\:100 { border-start-end-radius: 100% }
 
-.radius\:bl, .radius\:lb { border-end-start-radius: var(--sf-radius) }
-.radius\:bl\:xxs, .radius\:lb\:xxs { border-end-start-radius: var(--sf-radius-xxs) }
-.radius\:bl\:xs, .radius\:lb\:xs { border-end-start-radius: var(--sf-radius-xs) }
-.radius\:bl\:md, .radius\:lb\:md { border-end-start-radius: var(--sf-radius-md) }
-.radius\:bl\:lg, .radius\:lb\:lg { border-end-start-radius: var(--sf-radius-lg) }
-.radius\:bl\:xl, .radius\:lb\:xl { border-end-start-radius: var(--sf-radius-xl) }
+.radius\:bl, .radius\:lb { border-end-start-radius: var(--sf-rem) }
+.radius\:bl\:xxs, .radius\:lb\:xxs { border-end-start-radius: var(--sf-rem-xxs) }
+.radius\:bl\:xxss, .radius\:lb\:xxss { border-end-start-radius: var(--sf-rem-xxss) }
+.radius\:bl\:xs, .radius\:lb\:xs { border-end-start-radius: var(--sf-rem-xs) }
+.radius\:bl\:sm, .radius\:lb\:sm { border-end-start-radius: var(--sf-rem-sm) }
+.radius\:bl\:s, .radius\:lb\:s { border-end-start-radius: var(--sf-rem-s) }
+.radius\:bl\:ms, .radius\:lb\:ms { border-end-start-radius: var(--sf-rem-ms) }
+.radius\:bl\:ls, .radius\:lb\:ls { border-end-start-radius: var(--sf-rem-ls) }
+.radius\:bl\:md, .radius\:lb\:md { border-end-start-radius: var(--sf-rem-md) }
+.radius\:bl\:lg, .radius\:lb\:lg { border-end-start-radius: var(--sf-rem-lg) }
+.radius\:bl\:xl, .radius\:lb\:xl { border-end-start-radius: var(--sf-rem-xl) }
+.radius\:bl\:2xl, .radius\:lb\:2xl { border-end-start-radius: var(--sf-rem-2xl) }
+.radius\:bl\:3xl, .radius\:lb\:3xl { border-end-start-radius: var(--sf-rem-3xl) }
+.radius\:bl\:4xl, .radius\:lb\:4xl { border-end-start-radius: var(--sf-rem-4xl) }
+.radius\:bl\:5xl, .radius\:lb\:5xl { border-end-start-radius: var(--sf-rem-5xl) }
+.radius\:bl\:6xl, .radius\:lb\:6xl { border-end-start-radius: var(--sf-rem-6xl) }
+.radius\:bl\:7xl, .radius\:lb\:7xl { border-end-start-radius: var(--sf-rem-7xl) }
+.radius\:bl\:8xl, .radius\:lb\:8xl { border-end-start-radius: var(--sf-rem-8xl) }
+.radius\:bl\:9xl, .radius\:lb\:9xl { border-end-start-radius: var(--sf-rem-9xl) }
+.radius\:bl\:10xl, .radius\:lb\:10xl { border-end-start-radius: var(--sf-rem-10xl) }
+.radius\:bl\:11xl, .radius\:lb\:11xl { border-end-start-radius: var(--sf-rem-11xl) }
+.radius\:bl\:12xl, .radius\:lb\:12xl { border-end-start-radius: var(--sf-rem-12xl) }
 
 .radius\:bl\:0, .radius\:lb\:0 { border-end-start-radius: 0 }
 .radius\:bl\:25, .radius\:lb\:25 { border-end-start-radius: 25% }
@@ -50,12 +114,28 @@
 .radius\:bl\:75, .radius\:lb\:75 { border-end-start-radius: 75% }
 .radius\:bl\:100, .radius\:lb\:100 { border-end-start-radius: 100% }
 
-.radius\:br, .radius\:rb { border-end-end-radius: var(--sf-radius) }
-.radius\:br\:xxs, .radius\:rb\:xxs { border-end-end-radius: var(--sf-radius-xxs) }
-.radius\:br\:xs, .radius\:rb\:xs { border-end-end-radius: var(--sf-radius-xs) }
-.radius\:br\:md, .radius\:rb\:md { border-end-end-radius: var(--sf-radius-md) }
-.radius\:br\:lg, .radius\:rb\:lg { border-end-end-radius: var(--sf-radius-lg) }
-.radius\:br\:xl, .radius\:rb\:xl { border-end-end-radius: var(--sf-radius-xl) }
+.radius\:br, .radius\:rb { border-end-end-radius: var(--sf-rem) }
+.radius\:br\:xxs, .radius\:rb\:xxs { border-end-end-radius: var(--sf-rem-xxs) }
+.radius\:br\:xxss, .radius\:rb\:xxss { border-end-end-radius: var(--sf-rem-xxss) }
+.radius\:br\:xs, .radius\:rb\:xs { border-end-end-radius: var(--sf-rem-xs) }
+.radius\:br\:sm, .radius\:rb\:sm { border-end-end-radius: var(--sf-rem-sm) }
+.radius\:br\:s, .radius\:rb\:s { border-end-end-radius: var(--sf-rem-s) }
+.radius\:br\:ms, .radius\:rb\:ms { border-end-end-radius: var(--sf-rem-ms) }
+.radius\:br\:ls, .radius\:rb\:ls { border-end-end-radius: var(--sf-rem-ls) }
+.radius\:br\:md, .radius\:rb\:md { border-end-end-radius: var(--sf-rem-md) }
+.radius\:br\:lg, .radius\:rb\:lg { border-end-end-radius: var(--sf-rem-lg) }
+.radius\:br\:xl, .radius\:rb\:xl { border-end-end-radius: var(--sf-rem-xl) }
+.radius\:br\:2xl, .radius\:rb\:2xl { border-end-end-radius: var(--sf-rem-2xl) }
+.radius\:br\:3xl, .radius\:rb\:3xl { border-end-end-radius: var(--sf-rem-3xl) }
+.radius\:br\:4xl, .radius\:rb\:4xl { border-end-end-radius: var(--sf-rem-4xl) }
+.radius\:br\:5xl, .radius\:rb\:5xl { border-end-end-radius: var(--sf-rem-5xl) }
+.radius\:br\:6xl, .radius\:rb\:6xl { border-end-end-radius: var(--sf-rem-6xl) }
+.radius\:br\:7xl, .radius\:rb\:7xl { border-end-end-radius: var(--sf-rem-7xl) }
+.radius\:br\:8xl, .radius\:rb\:8xl { border-end-end-radius: var(--sf-rem-8xl) }
+.radius\:br\:9xl, .radius\:rb\:9xl { border-end-end-radius: var(--sf-rem-9xl) }
+.radius\:br\:10xl, .radius\:rb\:10xl { border-end-end-radius: var(--sf-rem-10xl) }
+.radius\:br\:11xl, .radius\:rb\:11xl { border-end-end-radius: var(--sf-rem-11xl) }
+.radius\:br\:12xl, .radius\:rb\:12xl { border-end-end-radius: var(--sf-rem-12xl) }
 
 .radius\:br\:0, .radius\:rb\:0 { border-end-end-radius: 0 }
 .radius\:br\:25, .radius\:rb\:25 { border-end-end-radius: 25% }
@@ -63,12 +143,28 @@
 .radius\:br\:75, .radius\:rb\:75 { border-end-end-radius: 75% }
 .radius\:br\:100, .radius\:rb\:100 { border-end-end-radius: 100% }
 
-.radius\:top { border-start-start-radius: var(--sf-radius); border-start-end-radius: var(--sf-radius) }
-.radius\:top\:xxs { border-start-start-radius: var(--sf-radius-xxs); border-start-end-radius: var(--sf-radius-xxs) }
-.radius\:top\:xs { border-start-start-radius: var(--sf-radius-xs); border-start-end-radius: var(--sf-radius-xs) }
-.radius\:top\:md { border-start-start-radius: var(--sf-radius-md); border-start-end-radius: var(--sf-radius-md) }
-.radius\:top\:lg { border-start-start-radius: var(--sf-radius-lg); border-start-end-radius: var(--sf-radius-lg) }
-.radius\:top\:xl { border-start-start-radius: var(--sf-radius-xl); border-start-end-radius: var(--sf-radius-xl) }
+.radius\:top { border-start-start-radius: var(--sf-rem); border-start-end-radius: var(--sf-rem) }
+.radius\:top\:xxs { border-start-start-radius: var(--sf-rem-xxs); border-start-end-radius: var(--sf-rem-xxs) }
+.radius\:top\:xxss { border-start-start-radius: var(--sf-rem-xxss); border-start-end-radius: var(--sf-rem-xxss) }
+.radius\:top\:xs { border-start-start-radius: var(--sf-rem-xs); border-start-end-radius: var(--sf-rem-xs) }
+.radius\:top\:sm { border-start-start-radius: var(--sf-rem-sm); border-start-end-radius: var(--sf-rem-sm) }
+.radius\:top\:s { border-start-start-radius: var(--sf-rem-s); border-start-end-radius: var(--sf-rem-s) }
+.radius\:top\:ms { border-start-start-radius: var(--sf-rem-ms); border-start-end-radius: var(--sf-rem-ms) }
+.radius\:top\:ls { border-start-start-radius: var(--sf-rem-ls); border-start-end-radius: var(--sf-rem-ls) }
+.radius\:top\:md { border-start-start-radius: var(--sf-rem-md); border-start-end-radius: var(--sf-rem-md) }
+.radius\:top\:lg { border-start-start-radius: var(--sf-rem-lg); border-start-end-radius: var(--sf-rem-lg) }
+.radius\:top\:xl { border-start-start-radius: var(--sf-rem-xl); border-start-end-radius: var(--sf-rem-xl) }
+.radius\:top\:2xl { border-start-start-radius: var(--sf-rem-2xl); border-start-end-radius: var(--sf-rem-2xl) }
+.radius\:top\:3xl { border-start-start-radius: var(--sf-rem-3xl); border-start-end-radius: var(--sf-rem-3xl) }
+.radius\:top\:4xl { border-start-start-radius: var(--sf-rem-4xl); border-start-end-radius: var(--sf-rem-4xl) }
+.radius\:top\:5xl { border-start-start-radius: var(--sf-rem-5xl); border-start-end-radius: var(--sf-rem-5xl) }
+.radius\:top\:6xl { border-start-start-radius: var(--sf-rem-6xl); border-start-end-radius: var(--sf-rem-6xl) }
+.radius\:top\:7xl { border-start-start-radius: var(--sf-rem-7xl); border-start-end-radius: var(--sf-rem-7xl) }
+.radius\:top\:8xl { border-start-start-radius: var(--sf-rem-8xl); border-start-end-radius: var(--sf-rem-8xl) }
+.radius\:top\:9xl { border-start-start-radius: var(--sf-rem-9xl); border-start-end-radius: var(--sf-rem-9xl) }
+.radius\:top\:10xl { border-start-start-radius: var(--sf-rem-10xl); border-start-end-radius: var(--sf-rem-10xl) }
+.radius\:top\:11xl { border-start-start-radius: var(--sf-rem-11xl); border-start-end-radius: var(--sf-rem-11xl) }
+.radius\:top\:12xl { border-start-start-radius: var(--sf-rem-12xl); border-start-end-radius: var(--sf-rem-12xl) }
 
 .radius\:top\:0 { border-start-start-radius: 0; border-start-end-radius: 0 }
 .radius\:top\:25 { border-start-start-radius: 25%; border-start-end-radius: 25% }
@@ -76,12 +172,28 @@
 .radius\:top\:75 { border-start-start-radius: 75%; border-start-end-radius: 75% }
 .radius\:top\:100 { border-start-start-radius: 100%; border-start-end-radius: 100% }
 
-.radius\:bottom { border-end-start-radius: var(--sf-radius); border-end-end-radius: var(--sf-radius) }
-.radius\:bottom\:xxs { border-end-start-radius: var(--sf-radius-xxs); border-end-end-radius: var(--sf-radius-xxs) }
-.radius\:bottom\:xs { border-end-start-radius: var(--sf-radius-xs); border-end-end-radius: var(--sf-radius-xs) }
-.radius\:bottom\:md { border-end-start-radius: var(--sf-radius-md); border-end-end-radius: var(--sf-radius-md) }
-.radius\:bottom\:lg { border-end-start-radius: var(--sf-radius-lg); border-end-end-radius: var(--sf-radius-lg) }
-.radius\:bottom\:xl { border-end-start-radius: var(--sf-radius-xl); border-end-end-radius: var(--sf-radius-xl) }
+.radius\:bottom { border-end-start-radius: var(--sf-rem); border-end-end-radius: var(--sf-rem) }
+.radius\:bottom\:xxs { border-end-start-radius: var(--sf-rem-xxs); border-end-end-radius: var(--sf-rem-xxs) }
+.radius\:bottom\:xxss { border-end-start-radius: var(--sf-rem-xxss); border-end-end-radius: var(--sf-rem-xxss) }
+.radius\:bottom\:xs { border-end-start-radius: var(--sf-rem-xs); border-end-end-radius: var(--sf-rem-xs) }
+.radius\:bottom\:sm { border-end-start-radius: var(--sf-rem-sm); border-end-end-radius: var(--sf-rem-sm) }
+.radius\:bottom\:s { border-end-start-radius: var(--sf-rem-s); border-end-end-radius: var(--sf-rem-s) }
+.radius\:bottom\:ms { border-end-start-radius: var(--sf-rem-ms); border-end-end-radius: var(--sf-rem-ms) }
+.radius\:bottom\:ls { border-end-start-radius: var(--sf-rem-ls); border-end-end-radius: var(--sf-rem-ls) }
+.radius\:bottom\:md { border-end-start-radius: var(--sf-rem-md); border-end-end-radius: var(--sf-rem-md) }
+.radius\:bottom\:lg { border-end-start-radius: var(--sf-rem-lg); border-end-end-radius: var(--sf-rem-lg) }
+.radius\:bottom\:xl { border-end-start-radius: var(--sf-rem-xl); border-end-end-radius: var(--sf-rem-xl) }
+.radius\:bottom\:2xl { border-end-start-radius: var(--sf-rem-2xl); border-end-end-radius: var(--sf-rem-2xl) }
+.radius\:bottom\:3xl { border-end-start-radius: var(--sf-rem-3xl); border-end-end-radius: var(--sf-rem-3xl) }
+.radius\:bottom\:4xl { border-end-start-radius: var(--sf-rem-4xl); border-end-end-radius: var(--sf-rem-4xl) }
+.radius\:bottom\:5xl { border-end-start-radius: var(--sf-rem-5xl); border-end-end-radius: var(--sf-rem-5xl) }
+.radius\:bottom\:6xl { border-end-start-radius: var(--sf-rem-6xl); border-end-end-radius: var(--sf-rem-6xl) }
+.radius\:bottom\:7xl { border-end-start-radius: var(--sf-rem-7xl); border-end-end-radius: var(--sf-rem-7xl) }
+.radius\:bottom\:8xl { border-end-start-radius: var(--sf-rem-8xl); border-end-end-radius: var(--sf-rem-8xl) }
+.radius\:bottom\:9xl { border-end-start-radius: var(--sf-rem-9xl); border-end-end-radius: var(--sf-rem-9xl) }
+.radius\:bottom\:10xl { border-end-start-radius: var(--sf-rem-10xl); border-end-end-radius: var(--sf-rem-10xl) }
+.radius\:bottom\:11xl { border-end-start-radius: var(--sf-rem-11xl); border-end-end-radius: var(--sf-rem-11xl) }
+.radius\:bottom\:12xl { border-end-start-radius: var(--sf-rem-12xl); border-end-end-radius: var(--sf-rem-12xl) }
 
 .radius\:bottom\:0 { border-end-start-radius: 0; border-end-end-radius: 0 }
 .radius\:bottom\:25 { border-end-start-radius: 25%; border-end-end-radius: 25% }
@@ -89,12 +201,28 @@
 .radius\:bottom\:75 { border-end-start-radius: 75%; border-end-end-radius: 75% }
 .radius\:bottom\:100 { border-end-start-radius: 100%; border-end-end-radius: 100% }
 
-.radius\:left { border-start-start-radius: var(--sf-radius); border-end-start-radius: var(--sf-radius) }
-.radius\:left\:xxs { border-start-start-radius: var(--sf-radius-xxs); border-end-start-radius: var(--sf-radius-xxs) }
-.radius\:left\:xs { border-start-start-radius: var(--sf-radius-xs); border-end-start-radius: var(--sf-radius-xs) }
-.radius\:left\:md { border-start-start-radius: var(--sf-radius-md); border-end-start-radius: var(--sf-radius-md) }
-.radius\:left\:lg { border-start-start-radius: var(--sf-radius-lg); border-end-start-radius: var(--sf-radius-lg) }
-.radius\:left\:xl { border-start-start-radius: var(--sf-radius-xl); border-end-start-radius: var(--sf-radius-xl) }
+.radius\:left { border-start-start-radius: var(--sf-rem); border-end-start-radius: var(--sf-rem) }
+.radius\:left\:xxs { border-start-start-radius: var(--sf-rem-xxs); border-end-start-radius: var(--sf-rem-xxs) }
+.radius\:left\:xxss { border-start-start-radius: var(--sf-rem-xxss); border-end-start-radius: var(--sf-rem-xxss) }
+.radius\:left\:xs { border-start-start-radius: var(--sf-rem-xs); border-end-start-radius: var(--sf-rem-xs) }
+.radius\:left\:sm { border-start-start-radius: var(--sf-rem-sm); border-end-start-radius: var(--sf-rem-sm) }
+.radius\:left\:s { border-start-start-radius: var(--sf-rem-s); border-end-start-radius: var(--sf-rem-s) }
+.radius\:left\:ms { border-start-start-radius: var(--sf-rem-ms); border-end-start-radius: var(--sf-rem-ms) }
+.radius\:left\:ls { border-start-start-radius: var(--sf-rem-ls); border-end-start-radius: var(--sf-rem-ls) }
+.radius\:left\:md { border-start-start-radius: var(--sf-rem-md); border-end-start-radius: var(--sf-rem-md) }
+.radius\:left\:lg { border-start-start-radius: var(--sf-rem-lg); border-end-start-radius: var(--sf-rem-lg) }
+.radius\:left\:xl { border-start-start-radius: var(--sf-rem-xl); border-end-start-radius: var(--sf-rem-xl) }
+.radius\:left\:2xl { border-start-start-radius: var(--sf-rem-2xl); border-end-start-radius: var(--sf-rem-2xl) }
+.radius\:left\:3xl { border-start-start-radius: var(--sf-rem-3xl); border-end-start-radius: var(--sf-rem-3xl) }
+.radius\:left\:4xl { border-start-start-radius: var(--sf-rem-4xl); border-end-start-radius: var(--sf-rem-4xl) }
+.radius\:left\:5xl { border-start-start-radius: var(--sf-rem-5xl); border-end-start-radius: var(--sf-rem-5xl) }
+.radius\:left\:6xl { border-start-start-radius: var(--sf-rem-6xl); border-end-start-radius: var(--sf-rem-6xl) }
+.radius\:left\:7xl { border-start-start-radius: var(--sf-rem-7xl); border-end-start-radius: var(--sf-rem-7xl) }
+.radius\:left\:8xl { border-start-start-radius: var(--sf-rem-8xl); border-end-start-radius: var(--sf-rem-8xl) }
+.radius\:left\:9xl { border-start-start-radius: var(--sf-rem-9xl); border-end-start-radius: var(--sf-rem-9xl) }
+.radius\:left\:10xl { border-start-start-radius: var(--sf-rem-10xl); border-end-start-radius: var(--sf-rem-10xl) }
+.radius\:left\:11xl { border-start-start-radius: var(--sf-rem-11xl); border-end-start-radius: var(--sf-rem-11xl) }
+.radius\:left\:12xl { border-start-start-radius: var(--sf-rem-12xl); border-end-start-radius: var(--sf-rem-12xl) }
 
 .radius\:left\:0 { border-start-start-radius: 0; border-end-start-radius: 0 }
 .radius\:left\:25 { border-start-start-radius: 25%; border-end-start-radius: 25% }
@@ -102,12 +230,28 @@
 .radius\:left\:75 { border-start-start-radius: 75%; border-end-start-radius: 75% }
 .radius\:left\:100 { border-start-start-radius: 100%; border-end-start-radius: 100% }
 
-.radius\:right { border-start-end-radius: var(--sf-radius); border-end-end-radius: var(--sf-radius) }
-.radius\:right\:xxs { border-end-start-radius: var(--sf-radius-xxs); border-end-end-radius: var(--sf-radius-xxs) }
-.radius\:right\:xs { border-end-start-radius: var(--sf-radius-xs); border-end-end-radius: var(--sf-radius-xs) }
-.radius\:right\:md { border-end-start-radius: var(--sf-radius-md); border-end-end-radius: var(--sf-radius-md) }
-.radius\:right\:lg { border-end-start-radius: var(--sf-radius-lg); border-end-end-radius: var(--sf-radius-lg) }
-.radius\:right\:xl { border-end-start-radius: var(--sf-radius-xl); border-end-end-radius: var(--sf-radius-xl) }
+.radius\:right { border-start-end-radius: var(--sf-rem); border-end-end-radius: var(--sf-rem) }
+.radius\:right\:xxs { border-end-start-radius: var(--sf-rem-xxs); border-end-end-radius: var(--sf-rem-xxs) }
+.radius\:right\:xxss { border-end-start-radius: var(--sf-rem-xxss); border-end-end-radius: var(--sf-rem-xxss) }
+.radius\:right\:xs { border-end-start-radius: var(--sf-rem-xs); border-end-end-radius: var(--sf-rem-xs) }
+.radius\:right\:sm { border-end-start-radius: var(--sf-rem-sm); border-end-end-radius: var(--sf-rem-sm) }
+.radius\:right\:s { border-end-start-radius: var(--sf-rem-s); border-end-end-radius: var(--sf-rem-s) }
+.radius\:right\:ms { border-end-start-radius: var(--sf-rem-ms); border-end-end-radius: var(--sf-rem-ms) }
+.radius\:right\:ls { border-end-start-radius: var(--sf-rem-ls); border-end-end-radius: var(--sf-rem-ls) }
+.radius\:right\:md { border-end-start-radius: var(--sf-rem-md); border-end-end-radius: var(--sf-rem-md) }
+.radius\:right\:lg { border-end-start-radius: var(--sf-rem-lg); border-end-end-radius: var(--sf-rem-lg) }
+.radius\:right\:xl { border-end-start-radius: var(--sf-rem-xl); border-end-end-radius: var(--sf-rem-xl) }
+.radius\:right\:2xl { border-end-start-radius: var(--sf-rem-2xl); border-end-end-radius: var(--sf-rem-2xl) }
+.radius\:right\:3xl { border-end-start-radius: var(--sf-rem-3xl); border-end-end-radius: var(--sf-rem-3xl) }
+.radius\:right\:4xl { border-end-start-radius: var(--sf-rem-4xl); border-end-end-radius: var(--sf-rem-4xl) }
+.radius\:right\:5xl { border-end-start-radius: var(--sf-rem-5xl); border-end-end-radius: var(--sf-rem-5xl) }
+.radius\:right\:6xl { border-end-start-radius: var(--sf-rem-6xl); border-end-end-radius: var(--sf-rem-6xl) }
+.radius\:right\:7xl { border-end-start-radius: var(--sf-rem-7xl); border-end-end-radius: var(--sf-rem-7xl) }
+.radius\:right\:8xl { border-end-start-radius: var(--sf-rem-8xl); border-end-end-radius: var(--sf-rem-8xl) }
+.radius\:right\:9xl { border-end-start-radius: var(--sf-rem-9xl); border-end-end-radius: var(--sf-rem-9xl) }
+.radius\:right\:10xl { border-end-start-radius: var(--sf-rem-10xl); border-end-end-radius: var(--sf-rem-10xl) }
+.radius\:right\:11xl { border-end-start-radius: var(--sf-rem-11xl); border-end-end-radius: var(--sf-rem-11xl) }
+.radius\:right\:12xl { border-end-start-radius: var(--sf-rem-12xl); border-end-end-radius: var(--sf-rem-12xl) }
 
 .radius\:right\:0 { border-end-start-radius: 0; border-end-end-radius: 0 }
 .radius\:right\:25 { border-end-start-radius: 25%; border-end-end-radius: 25% }
@@ -117,123 +261,186 @@
 
 /* /// */
 
-html.var .radius { border-radius: 0.5em }
-html.var .radius\:xxs1 { border-radius: 0.1875em }
-html.var .radius\:xs { border-radius: 0.25em }
-html.var .radius\:md { border-radius: 1em }
-html.var .radius\:lg { border-radius: 1.5em }
-html.var .radius\:xl { border-radius: 2em }
+html.var .radius\:tl, html.var .radius\:lt { border-top-left-radius: 8px }
+html.var .radius\:tl\:xxs, html.var .radius\:lt\:xxs { border-top-left-radius: 2px }
+html.var .radius\:tl\:xxss, html.var .radius\:lt\:xxss { border-top-left-radius: 3px }
+html.var .radius\:tl\:xs, html.var .radius\:lt\:xs { border-top-left-radius: 4px }
+html.var .radius\:tl\:sm, html.var .radius\:lt\:sm { border-top-left-radius: 8px }
+html.var .radius\:tl\:s, html.var .radius\:lt\:s { border-top-left-radius: 10px }
+html.var .radius\:tl\:ms, html.var .radius\:lt\:ms { border-top-left-radius: 12px }
+html.var .radius\:tl\:ls, html.var .radius\:lt\:ls { border-top-left-radius: 14px }
+html.var .radius\:tl\:md, html.var .radius\:lt\:md { border-top-left-radius: 16px }
+html.var .radius\:tl\:lg, html.var .radius\:lt\:lg { border-top-left-radius: 18px }
+html.var .radius\:tl\:xl, html.var .radius\:lt\:xl { border-top-left-radius: 20px }
+html.var .radius\:tl\:2xl, html.var .radius\:lt\:2xl { border-top-left-radius: 24px }
+html.var .radius\:tl\:3xl, html.var .radius\:lt\:3xl { border-top-left-radius: 32px }
+html.var .radius\:tl\:4xl, html.var .radius\:lt\:4xl { border-top-left-radius: 40px }
+html.var .radius\:tl\:5xl, html.var .radius\:lt\:5xl { border-top-left-radius: 48px }
+html.var .radius\:tl\:6xl, html.var .radius\:lt\:6xl { border-top-left-radius: 56px }
+html.var .radius\:tl\:7xl, html.var .radius\:lt\:7xl { border-top-left-radius: 64px }
+html.var .radius\:tl\:8xl, html.var .radius\:lt\:8xl { border-top-left-radius: 72px }
+html.var .radius\:tl\:9xl, html.var .radius\:lt\:9xl { border-top-left-radius: 80px }
+html.var .radius\:tl\:10xl, html.var .radius\:lt\:10xl { border-top-left-radius: 88px }
+html.var .radius\:tl\:11xl, html.var .radius\:lt\:11xl { border-top-left-radius: 96px }
+html.var .radius\:tl\:12xl, html.var .radius\:lt\:12xl { border-top-left-radius: 104px }
 
-html.var .radius\:tl, html.var .radius\:lt { border-start-start-radius: 0.5em }
-html.var .radius\:tl\:xxs1, html.var .radius\:lt\:xxs1 { border-start-start-radius: 0.1875em }
-html.var .radius\:tl\:xs, html.var .radius\:lt\:xs { border-start-start-radius: 0.25em }
-html.var .radius\:tl\:md, html.var .radius\:lt\:md { border-start-start-radius: 1em }
-html.var .radius\:tl\:lg, html.var .radius\:lt\:lg { border-start-start-radius: 1.5em }
-html.var .radius\:tl\:xl, html.var .radius\:lt\:xl { border-start-start-radius: 2em }
+html.var .radius\:tr, html.var .radius\:rt { border-top-right-radius: 8px }
+html.var .radius\:tr\:xxs, html.var .radius\:rt\:xxs { border-top-right-radius: 2px }
+html.var .radius\:tr\:xxss, html.var .radius\:rt\:xxss { border-top-right-radius: 3px }
+html.var .radius\:tr\:xs, html.var .radius\:rt\:xs { border-top-right-radius: 4px }
+html.var .radius\:tr\:sm, html.var .radius\:rt\:sm { border-top-right-radius: 8px }
+html.var .radius\:tr\:s, html.var .radius\:rt\:s { border-top-right-radius: 10px }
+html.var .radius\:tr\:ms, html.var .radius\:rt\:ms { border-top-right-radius: 12px }
+html.var .radius\:tr\:ls, html.var .radius\:rt\:ls { border-top-right-radius: 14px }
+html.var .radius\:tr\:md, html.var .radius\:rt\:md { border-top-right-radius: 16px }
+html.var .radius\:tr\:lg, html.var .radius\:rt\:lg { border-top-right-radius: 18px }
+html.var .radius\:tr\:xl, html.var .radius\:rt\:xl { border-top-right-radius: 20px }
+html.var .radius\:tr\:2xl, html.var .radius\:rt\:2xl { border-top-right-radius: 24px }
+html.var .radius\:tr\:3xl, html.var .radius\:rt\:3xl { border-top-right-radius: 32px }
+html.var .radius\:tr\:4xl, html.var .radius\:rt\:4xl { border-top-right-radius: 40px }
+html.var .radius\:tr\:5xl, html.var .radius\:rt\:5xl { border-top-right-radius: 48px }
+html.var .radius\:tr\:6xl, html.var .radius\:rt\:6xl { border-top-right-radius: 56px }
+html.var .radius\:tr\:7xl, html.var .radius\:rt\:7xl { border-top-right-radius: 64px }
+html.var .radius\:tr\:8xl, html.var .radius\:rt\:8xl { border-top-right-radius: 72px }
+html.var .radius\:tr\:9xl, html.var .radius\:rt\:9xl { border-top-right-radius: 80px }
+html.var .radius\:tr\:10xl, html.var .radius\:rt\:10xl { border-top-right-radius: 88px }
+html.var .radius\:tr\:11xl, html.var .radius\:rt\:11xl { border-top-right-radius: 96px }
+html.var .radius\:tr\:12xl, html.var .radius\:rt\:12xl { border-top-right-radius: 104px }
 
-html.var .radius\:tr, html.var .radius\:rt { border-start-end-radius: 0.5em }
-html.var .radius\:tr\:xxs1, html.var .radius\:rt\:xxs1 { border-start-end-radius: 0.1875em }
-html.var .radius\:tr\:xs, html.var .radius\:rt\:xs { border-start-end-radius: 0.25em }
-html.var .radius\:tr\:md, html.var .radius\:rt\:md { border-start-end-radius: 1em }
-html.var .radius\:tr\:lg, html.var .radius\:rt\:lg { border-start-end-radius: 1.5em }
-html.var .radius\:tr\:xl, html.var .radius\:rt\:xl { border-start-end-radius: 2em }
+html.var .radius\:bl, html.var .radius\:lb { border-bottom-left-radius: 8px }
+html.var .radius\:bl\:xxs, html.var .radius\:lb\:xxs { border-bottom-left-radius: 2px }
+html.var .radius\:bl\:xxss, html.var .radius\:lb\:xxss { border-bottom-left-radius: 3px }
+html.var .radius\:bl\:xs, html.var .radius\:lb\:xs { border-bottom-left-radius: 4px }
+html.var .radius\:bl\:sm, html.var .radius\:lb\:sm { border-bottom-left-radius: 8px }
+html.var .radius\:bl\:s, html.var .radius\:lb\:s { border-bottom-left-radius: 10px }
+html.var .radius\:bl\:ms, html.var .radius\:lb\:ms { border-bottom-left-radius: 12px }
+html.var .radius\:bl\:ls, html.var .radius\:lb\:ls { border-bottom-left-radius: 14px }
+html.var .radius\:bl\:md, html.var .radius\:lb\:md { border-bottom-left-radius: 16px }
+html.var .radius\:bl\:lg, html.var .radius\:lb\:lg { border-bottom-left-radius: 18px }
+html.var .radius\:bl\:xl, html.var .radius\:lb\:xl { border-bottom-left-radius: 20px }
+html.var .radius\:bl\:2xl, html.var .radius\:lb\:2xl { border-bottom-left-radius: 24px }
+html.var .radius\:bl\:3xl, html.var .radius\:lb\:3xl { border-bottom-left-radius: 32px }
+html.var .radius\:bl\:4xl, html.var .radius\:lb\:4xl { border-bottom-left-radius: 40px }
+html.var .radius\:bl\:5xl, html.var .radius\:lb\:5xl { border-bottom-left-radius: 48px }
+html.var .radius\:bl\:6xl, html.var .radius\:lb\:6xl { border-bottom-left-radius: 56px }
+html.var .radius\:bl\:7xl, html.var .radius\:lb\:7xl { border-bottom-left-radius: 64px }
+html.var .radius\:bl\:8xl, html.var .radius\:lb\:8xl { border-bottom-left-radius: 72px }
+html.var .radius\:bl\:9xl, html.var .radius\:lb\:9xl { border-bottom-left-radius: 80px }
+html.var .radius\:bl\:10xl, html.var .radius\:lb\:10xl { border-bottom-left-radius: 88px }
+html.var .radius\:bl\:11xl, html.var .radius\:lb\:11xl { border-bottom-left-radius: 96px }
+html.var .radius\:bl\:12xl, html.var .radius\:lb\:12xl { border-bottom-left-radius: 104px }
 
-html.var .radius\:bl, html.var .radius\:lb { border-end-start-radius: 0.5em }
-html.var .radius\:bl\:xxs1, html.var .radius\:lb\:xxs1 { border-end-start-radius: 0.1875em }
-html.var .radius\:bl\:xs, html.var .radius\:lb\:xs { border-end-start-radius: 0.25em }
-html.var .radius\:bl\:md, html.var .radius\:lb\:md { border-end-start-radius: 1em }
-html.var .radius\:bl\:lg, html.var .radius\:lb\:lg { border-end-start-radius: 1.5em }
-html.var .radius\:bl\:xl, html.var .radius\:lb\:xl { border-end-start-radius: 2em }
+html.var .radius\:br, html.var .radius\:rb { border-bottom-right-radius: 8px }
+html.var .radius\:br\:xxs, html.var .radius\:rb\:xxs { border-bottom-right-radius: 2px }
+html.var .radius\:br\:xxss, html.var .radius\:rb\:xxss { border-bottom-right-radius: 3px }
+html.var .radius\:br\:xs, html.var .radius\:rb\:xs { border-bottom-right-radius: 4px }
+html.var .radius\:br\:sm, html.var .radius\:rb\:sm { border-bottom-right-radius: 8px }
+html.var .radius\:br\:s, html.var .radius\:rb\:s { border-bottom-right-radius: 10px }
+html.var .radius\:br\:ms, html.var .radius\:rb\:ms { border-bottom-right-radius: 12px }
+html.var .radius\:br\:ls, html.var .radius\:rb\:ls { border-bottom-right-radius: 14px }
+html.var .radius\:br\:md, html.var .radius\:rb\:md { border-bottom-right-radius: 16px }
+html.var .radius\:br\:lg, html.var .radius\:rb\:lg { border-bottom-right-radius: 18px }
+html.var .radius\:br\:xl, html.var .radius\:rb\:xl { border-bottom-right-radius: 20px }
+html.var .radius\:br\:2xl, html.var .radius\:rb\:2xl { border-bottom-right-radius: 24px }
+html.var .radius\:br\:3xl, html.var .radius\:rb\:3xl { border-bottom-right-radius: 32px }
+html.var .radius\:br\:4xl, html.var .radius\:rb\:4xl { border-bottom-right-radius: 40px }
+html.var .radius\:br\:5xl, html.var .radius\:rb\:5xl { border-bottom-right-radius: 48px }
+html.var .radius\:br\:6xl, html.var .radius\:rb\:6xl { border-bottom-right-radius: 56px }
+html.var .radius\:br\:7xl, html.var .radius\:rb\:7xl { border-bottom-right-radius: 64px }
+html.var .radius\:br\:8xl, html.var .radius\:rb\:8xl { border-bottom-right-radius: 72px }
+html.var .radius\:br\:9xl, html.var .radius\:rb\:9xl { border-bottom-right-radius: 80px }
+html.var .radius\:br\:10xl, html.var .radius\:rb\:10xl { border-bottom-right-radius: 88px }
+html.var .radius\:br\:11xl, html.var .radius\:rb\:11xl { border-bottom-right-radius: 96px }
+html.var .radius\:br\:12xl, html.var .radius\:rb\:12xl { border-bottom-right-radius: 104px }
 
-html.var .radius\:br, html.var .radius\:rb { border-end-end-radius: 0.5em }
-html.var .radius\:br\:xxs1, html.var .radius\:rb\:xxs1 { border-end-end-radius: 0.1875em }
-html.var .radius\:br\:xs, html.var .radius\:rb\:xs { border-end-end-radius: 0.25em }
-html.var .radius\:br\:md, html.var .radius\:rb\:md { border-end-end-radius: 1em }
-html.var .radius\:br\:lg, html.var .radius\:rb\:lg { border-end-end-radius: 1.5em }
-html.var .radius\:br\:xl, html.var .radius\:rb\:xl { border-end-end-radius: 2em }
+html.var .radius\:top { border-top-left-radius: 8px; border-top-right-radius: 8px }
+html.var .radius\:top\:xxs { border-top-left-radius: 2px; border-top-right-radius: 2px }
+html.var .radius\:top\:xxss { border-top-left-radius: 3px; border-top-right-radius: 3px }
+html.var .radius\:top\:xs { border-top-left-radius: 4px; border-top-right-radius: 4px }
+html.var .radius\:top\:sm { border-top-left-radius: 8px; border-top-right-radius: 8px }
+html.var .radius\:top\:s { border-top-left-radius: 10px; border-top-right-radius: 10px }
+html.var .radius\:top\:ms { border-top-left-radius: 12px; border-top-right-radius: 12px }
+html.var .radius\:top\:ls { border-top-left-radius: 14px; border-top-right-radius: 14px }
+html.var .radius\:top\:md { border-top-left-radius: 16px; border-top-right-radius: 16px }
+html.var .radius\:top\:lg { border-top-left-radius: 18px; border-top-right-radius: 18px }
+html.var .radius\:top\:xl { border-top-left-radius: 20px; border-top-right-radius: 20px }
+html.var .radius\:top\:2xl { border-top-left-radius: 24px; border-top-right-radius: 24px }
+html.var .radius\:top\:3xl { border-top-left-radius: 32px; border-top-right-radius: 32px }
+html.var .radius\:top\:4xl { border-top-left-radius: 40px; border-top-right-radius: 40px }
+html.var .radius\:top\:5xl { border-top-left-radius: 48px; border-top-right-radius: 48px }
+html.var .radius\:top\:6xl { border-top-left-radius: 56px; border-top-right-radius: 56px }
+html.var .radius\:top\:7xl { border-top-left-radius: 64px; border-top-right-radius: 64px }
+html.var .radius\:top\:8xl { border-top-left-radius: 72px; border-top-right-radius: 72px }
+html.var .radius\:top\:9xl { border-top-left-radius: 80px; border-top-right-radius: 80px }
+html.var .radius\:top\:10xl { border-top-left-radius: 88px; border-top-right-radius: 88px }
+html.var .radius\:top\:11xl { border-top-left-radius: 96px; border-top-right-radius: 96px }
+html.var .radius\:top\:12xl { border-top-left-radius: 104px; border-top-right-radius: 104px }
 
-html.var .radius\:top { border-start-start-radius: 0.5em; border-start-end-radius: 0.5em }
-html.var .radius\:top\:xxs1 { border-start-start-radius: 0.1875em; border-start-end-radius: 0.1875em }
-html.var .radius\:top\:xs { border-start-start-radius: 0.25em; border-start-end-radius: 0.25em }
-html.var .radius\:top\:md { border-start-start-radius: 1em; border-start-end-radius: 1em }
-html.var .radius\:top\:lg { border-start-start-radius: 1.5em; border-start-end-radius: 1.5em }
-html.var .radius\:top\:xl { border-start-start-radius: 2em; border-start-end-radius: 2em }
+html.var .radius\:bottom { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px }
+html.var .radius\:bottom\:xxs { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px }
+html.var .radius\:bottom\:xxss { border-bottom-left-radius: 3px; border-bottom-right-radius: 3px }
+html.var .radius\:bottom\:xs { border-bottom-left-radius: 4px; border-bottom-right-radius: 4px }
+html.var .radius\:bottom\:sm { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px }
+html.var .radius\:bottom\:s { border-bottom-left-radius: 10px; border-bottom-right-radius: 10px }
+html.var .radius\:bottom\:ms { border-bottom-left-radius: 12px; border-bottom-right-radius: 12px }
+html.var .radius\:bottom\:ls { border-bottom-left-radius: 14px; border-bottom-right-radius: 14px }
+html.var .radius\:bottom\:md { border-bottom-left-radius: 16px; border-bottom-right-radius: 16px }
+html.var .radius\:bottom\:lg { border-bottom-left-radius: 18px; border-bottom-right-radius: 18px }
+html.var .radius\:bottom\:xl { border-bottom-left-radius: 20px; border-bottom-right-radius: 20px }
+html.var .radius\:bottom\:2xl { border-bottom-left-radius: 24px; border-bottom-right-radius: 24px }
+html.var .radius\:bottom\:3xl { border-bottom-left-radius: 32px; border-bottom-right-radius: 32px }
+html.var .radius\:bottom\:4xl { border-bottom-left-radius: 40px; border-bottom-right-radius: 40px }
+html.var .radius\:bottom\:5xl { border-bottom-left-radius: 48px; border-bottom-right-radius: 48px }
+html.var .radius\:bottom\:6xl { border-bottom-left-radius: 56px; border-bottom-right-radius: 56px }
+html.var .radius\:bottom\:7xl { border-bottom-left-radius: 64px; border-bottom-right-radius: 64px }
+html.var .radius\:bottom\:8xl { border-bottom-left-radius: 72px; border-bottom-right-radius: 72px }
+html.var .radius\:bottom\:9xl { border-bottom-left-radius: 80px; border-bottom-right-radius: 80px }
+html.var .radius\:bottom\:10xl { border-bottom-left-radius: 88px; border-bottom-right-radius: 88px }
+html.var .radius\:bottom\:11xl { border-bottom-left-radius: 96px; border-bottom-right-radius: 96px }
+html.var .radius\:bottom\:12xl { border-bottom-left-radius: 104px; border-bottom-right-radius: 104px }
 
-html.var .radius\:bottom { border-end-start-radius: 0.5em; border-end-end-radius: 0.5em }
-html.var .radius\:bottom\:xxs1 { border-end-start-radius: 0.1875em; border-end-end-radius: 0.1875em }
-html.var .radius\:bottom\:xs { border-end-start-radius: 0.25em; border-end-end-radius: 0.25em }
-html.var .radius\:bottom\:md { border-end-start-radius: 1em; border-end-end-radius: 1em }
-html.var .radius\:bottom\:lg { border-end-start-radius: 1.5em; border-end-end-radius: 1.5em }
-html.var .radius\:bottom\:xl { border-end-start-radius: 2em; border-end-end-radius: 2em }
+html.var .radius\:left { border-top-left-radius: 8px; border-bottom-left-radius: 8px }
+html.var .radius\:left\:xxs { border-top-left-radius: 2px; border-bottom-left-radius: 2px }
+html.var .radius\:left\:xxss { border-top-left-radius: 3px; border-bottom-left-radius: 3px }
+html.var .radius\:left\:xs { border-top-left-radius: 4px; border-bottom-left-radius: 4px }
+html.var .radius\:left\:sm { border-top-left-radius: 8px; border-bottom-left-radius: 8px }
+html.var .radius\:left\:s { border-top-left-radius: 10px; border-bottom-left-radius: 10px }
+html.var .radius\:left\:ms { border-top-left-radius: 12px; border-bottom-left-radius: 12px }
+html.var .radius\:left\:ls { border-top-left-radius: 14px; border-bottom-left-radius: 14px }
+html.var .radius\:left\:md { border-top-left-radius: 16px; border-bottom-left-radius: 16px }
+html.var .radius\:left\:lg { border-top-left-radius: 18px; border-bottom-left-radius: 18px }
+html.var .radius\:left\:xl { border-top-left-radius: 20px; border-bottom-left-radius: 20px }
+html.var .radius\:left\:2xl { border-top-left-radius: 24px; border-bottom-left-radius: 24px }
+html.var .radius\:left\:3xl { border-top-left-radius: 32px; border-bottom-left-radius: 32px }
+html.var .radius\:left\:4xl { border-top-left-radius: 40px; border-bottom-left-radius: 40px }
+html.var .radius\:left\:5xl { border-top-left-radius: 48px; border-bottom-left-radius: 48px }
+html.var .radius\:left\:6xl { border-top-left-radius: 56px; border-bottom-left-radius: 56px }
+html.var .radius\:left\:7xl { border-top-left-radius: 64px; border-bottom-left-radius: 64px }
+html.var .radius\:left\:8xl { border-top-left-radius: 72px; border-bottom-left-radius: 72px }
+html.var .radius\:left\:9xl { border-top-left-radius: 80px; border-bottom-left-radius: 80px }
+html.var .radius\:left\:10xl { border-top-left-radius: 88px; border-bottom-left-radius: 88px }
+html.var .radius\:left\:11xl { border-top-left-radius: 96px; border-bottom-left-radius: 96px }
+html.var .radius\:left\:12xl { border-top-left-radius: 104px; border-bottom-left-radius: 104px }
 
-html.var .radius\:left { border-start-start-radius: 0.5em; border-end-start-radius: 0.5em }
-html.var .radius\:left\:xxs1 { border-start-start-radius: 0.1875em; border-end-start-radius: 0.1875em }
-html.var .radius\:left\:xs { border-start-start-radius: 0.25em; border-end-start-radius: 0.25em }
-html.var .radius\:left\:md { border-start-start-radius: 1em; border-end-start-radius: 1em }
-html.var .radius\:left\:lg { border-start-start-radius: 1.5em; border-end-start-radius: 1.5em }
-html.var .radius\:left\:xl { border-start-start-radius: 2em; border-end-start-radius: 2em }
-
-html.var .radius\:right { border-start-end-radius: 0.5em; border-end-end-radius: 0.5em }
-html.var .radius\:right\:xxs1 { border-end-start-radius: 0.1875em; border-end-end-radius: 0.1875em }
-html.var .radius\:right\:xs { border-end-start-radius: 0.25em; border-end-end-radius: 0.25em }
-html.var .radius\:right\:md { border-end-start-radius: 1em; border-end-end-radius: 1em }
-html.var .radius\:right\:lg { border-end-start-radius: 1.5em; border-end-end-radius: 1.5em }
-html.var .radius\:right\:xl { border-end-start-radius: 2em; border-end-end-radius: 2em }
-
-/* /// */
-
-html.radius .radius\:tl, html.radius .radius\:lt { border-top-left-radius: 0.5em }
-html.radius .radius\:tl\:xxs1, html.radius .radius\:lt\:xxs1 { border-top-left-radius: 0.1875em }
-html.radius .radius\:tl\:xs, html.radius .radius\:lt\:xs { border-top-left-radius: 0.25em }
-html.radius .radius\:tl\:md, html.radius .radius\:lt\:md { border-top-left-radius: 1em }
-html.radius .radius\:tl\:lg, html.radius .radius\:lt\:lg { border-top-left-radius: 1.5em }
-html.radius .radius\:tl\:xl, html.radius .radius\:lt\:xl { border-top-left-radius: 2em }
-
-html.radius .radius\:tr, html.radius .radius\:rt { border-top-right-radius: 0.5em }
-html.radius .radius\:tr\:xxs1, html.radius .radius\:rt\:xxs1 { border-top-right-radius: 0.1875em }
-html.radius .radius\:tr\:xs, html.radius .radius\:rt\:xs { border-top-right-radius: 0.25em }
-html.radius .radius\:tr\:md, html.radius .radius\:rt\:md { border-top-right-radius: 1em }
-html.radius .radius\:tr\:lg, html.radius .radius\:rt\:lg { border-top-right-radius: 1.5em }
-html.radius .radius\:tr\:xl, html.radius .radius\:rt\:xl { border-top-right-radius: 2em }
-
-html.radius .radius\:bl, html.radius .radius\:lb { border-bottom-left-radius: 0.5em }
-html.radius .radius\:bl\:xxs1, html.radius .radius\:lb\:xxs1 { border-bottom-left-radius: 0.1875em }
-html.radius .radius\:bl\:xs, html.radius .radius\:lb\:xs { border-bottom-left-radius: 0.25em }
-html.radius .radius\:bl\:md, html.radius .radius\:lb\:md { border-bottom-left-radius: 1em }
-html.radius .radius\:bl\:lg, html.radius .radius\:lb\:lg { border-bottom-left-radius: 1.5em }
-html.radius .radius\:bl\:xl, html.radius .radius\:lb\:xl { border-bottom-left-radius: 2em }
-
-html.radius .radius\:br, html.radius .radius\:rb { border-bottom-right-radius: 0.5em }
-html.radius .radius\:br\:xxs1, html.radius .radius\:rb\:xxs1 { border-bottom-right-radius: 0.1875em }
-html.radius .radius\:br\:xs, html.radius .radius\:rb\:xs { border-bottom-right-radius: 0.25em }
-html.radius .radius\:br\:md, html.radius .radius\:rb\:md { border-bottom-right-radius: 1em }
-html.radius .radius\:br\:lg, html.radius .radius\:rb\:lg { border-bottom-right-radius: 1.5em }
-html.radius .radius\:br\:xl, html.radius .radius\:rb\:xl { border-bottom-right-radius: 2em }
-
-html.radius .radius\:top { border-top-left-radius: 0.5em; border-top-right-radius: 0.5em }
-html.radius .radius\:top\:xxs1 { border-top-left-radius: 0.1875em; border-top-right-radius: 0.1875em }
-html.radius .radius\:top\:xs { border-top-left-radius: 0.25em; border-top-right-radius: 0.25em }
-html.radius .radius\:top\:md { border-top-left-radius: 1em; border-top-right-radius: 1em }
-html.radius .radius\:top\:lg { border-top-left-radius: 1.5em; border-top-right-radius: 1.5em }
-html.radius .radius\:top\:xl { border-top-left-radius: 2em; border-top-right-radius: 2em }
-
-html.radius .radius\:bottom { border-bottom-left-radius: 0.5em; border-bottom-right-radius: 0.5em }
-html.radius .radius\:bottom\:xxs1 { border-bottom-left-radius: 0.1875em; border-bottom-right-radius: 0.1875em }
-html.radius .radius\:bottom\:xs { border-bottom-left-radius: 0.25em; border-bottom-right-radius: 0.25em }
-html.radius .radius\:bottom\:md { border-bottom-left-radius: 1em; border-bottom-right-radius: 1em }
-html.radius .radius\:bottom\:lg { border-bottom-left-radius: 1.5em; border-bottom-right-radius: 1.5em }
-html.radius .radius\:bottom\:xl { border-bottom-left-radius: 2em; border-bottom-right-radius: 2em }
-
-html.radius .radius\:left { border-top-left-radius: 0.5em; border-bottom-left-radius: 0.5em }
-html.radius .radius\:left\:xxs1 { border-top-left-radius: 0.1875em; border-bottom-left-radius: 0.1875em }
-html.radius .radius\:left\:xs { border-top-left-radius: 0.25em; border-bottom-left-radius: 0.25em }
-html.radius .radius\:left\:md { border-top-left-radius: 1em; border-bottom-left-radius: 1em }
-html.radius .radius\:left\:lg { border-top-left-radius: 1.5em; border-bottom-left-radius: 1.5em }
-html.radius .radius\:left\:xl { border-top-left-radius: 2em; border-bottom-left-radius: 2em }
-
-html.radius .radius\:right { border-top-right-radius: 0.5em; border-bottom-right-radius: 0.5em }
-html.radius .radius\:right\:xxs1 { border-top-right-radius: 0.1875em; border-bottom-right-radius: 0.1875em }
-html.radius .radius\:right\:xs { border-top-right-radius: 0.25em; border-bottom-right-radius: 0.25em }
-html.radius .radius\:right\:md { border-top-right-radius: 1em; border-bottom-right-radius: 1em }
-html.radius .radius\:right\:lg { border-top-right-radius: 1.5em; border-bottom-right-radius: 1.5em }
-html.radius .radius\:right\:xl { border-top-right-radius: 2em; border-bottom-right-radius: 2em }
+html.var .radius\:right { border-top-right-radius: 8px; border-bottom-right-radius: 8px }
+html.var .radius\:right\:xxs { border-top-right-radius: 2px; border-bottom-right-radius: 2px }
+html.var .radius\:right\:xxss { border-top-right-radius: 3px; border-bottom-right-radius: 3px }
+html.var .radius\:right\:xs { border-top-right-radius: 4px; border-bottom-right-radius: 4px }
+html.var .radius\:right\:sm { border-top-right-radius: 8px; border-bottom-right-radius: 8px }
+html.var .radius\:right\:s { border-top-right-radius: 10px; border-bottom-right-radius: 10px }
+html.var .radius\:right\:ms { border-top-right-radius: 12px; border-bottom-right-radius: 12px }
+html.var .radius\:right\:ls { border-top-right-radius: 14px; border-bottom-right-radius: 14px }
+html.var .radius\:right\:md { border-top-right-radius: 16px; border-bottom-right-radius: 16px }
+html.var .radius\:right\:lg { border-top-right-radius: 18px; border-bottom-right-radius: 18px }
+html.var .radius\:right\:xl { border-top-right-radius: 20px; border-bottom-right-radius: 20px }
+html.var .radius\:right\:2xl { border-top-right-radius: 24px; border-bottom-right-radius: 24px }
+html.var .radius\:right\:3xl { border-top-right-radius: 32px; border-bottom-right-radius: 32px }
+html.var .radius\:right\:4xl { border-top-right-radius: 40px; border-bottom-right-radius: 40px }
+html.var .radius\:right\:5xl { border-top-right-radius: 48px; border-bottom-right-radius: 48px }
+html.var .radius\:right\:6xl { border-top-right-radius: 56px; border-bottom-right-radius: 56px }
+html.var .radius\:right\:7xl { border-top-right-radius: 64px; border-bottom-right-radius: 64px }
+html.var .radius\:right\:8xl { border-top-right-radius: 72px; border-bottom-right-radius: 72px }
+html.var .radius\:right\:9xl { border-top-right-radius: 80px; border-bottom-right-radius: 80px }
+html.var .radius\:right\:10xl { border-top-right-radius: 88px; border-bottom-right-radius: 88px }
+html.var .radius\:right\:11xl { border-top-right-radius: 96px; border-bottom-right-radius: 96px }
+html.var .radius\:right\:12xl { border-top-right-radius: 104px; border-bottom-right-radius: 104px }
