@@ -1,0 +1,47 @@
+:root {
+  --sf-rem: 1rem;
+
+  /* Tiny sizes */
+  --sf-rem-xxxs: calc(var(--sf-unit-xxxs) * var(--sf-rem)); /* 1px */
+
+  --sf-rem-xxs: calc(var(--sf-unit-xxs) * var(--sf-rem)); /* 2px */
+  --sf-rem-xxss: calc(3 / 16 * var(--sf-rem)); /* 3px */
+
+  --sf-rem-xs: calc(var(--sf-unit-xs) * var(--sf-rem)); /* 4px */
+  --sf-rem-xss: calc(5 / 16 * var(--sf-rem)); /* 5px */
+  --sf-rem-xsss: calc(6 / 16 * var(--sf-rem)); /* 6px */
+  --sf-rem-3xs: calc(7 / 16 * var(--sf-rem)); /* 7px */
+
+  /* Small sizes */
+  --sf-rem-sm: calc(var(--sf-unit-sm) * var(--sf-rem)); /* 8px */
+  --sf-rem-smm: calc(9 / 16 * var(--sf-rem)); /* 9px */
+
+  --sf-rem-s: calc(var(--sf-unit-s) * var(--sf-rem)); /* 10px */
+  --sf-rem-ss: calc(11 / 16 * var(--sf-rem)); /* 11px */
+
+  --sf-rem-ms: calc(var(--sf-unit-ms) * var(--sf-rem)); /* 12px */
+  --sf-rem-mss: calc(13 / 16 * var(--sf-rem)); /* 13px */
+
+  --sf-rem-ls: calc(var(--sf-unit-ls) * var(--sf-rem)); /* 14px */
+  --sf-rem-lss: calc(15 / 16 * var(--sf-rem)); /* 15px */
+
+  /* Medium sizes */
+  --sf-rem-md: calc(var(--sf-unit-md) * var(--sf-rem)); /* 16px */
+  --sf-rem-mdd: calc(17 / 16 * var(--sf-rem)); /* 17px */
+  --sf-rem-lg: calc(var(--sf-unit-lg) * var(--sf-rem)); /* 18px */
+  --sf-rem-lgg: calc(19 / 16 * var(--sf-rem)); /* 19px */
+
+  /* Large sizes */
+  --sf-rem-xl: calc(var(--sf-unit-xl) * var(--sf-rem)); /* 20px */
+  --sf-rem-2xl: calc(var(--sf-unit-2xl) * var(--sf-rem)); /* 24px */
+  --sf-rem-3xl: calc(var(--sf-unit-3xl) * var(--sf-rem)); /* 32px */
+  --sf-rem-4xl: calc(var(--sf-unit-4xl) * var(--sf-rem)); /* 40px */
+  --sf-rem-5xl: calc(var(--sf-unit-5xl) * var(--sf-rem)); /* 48px */
+  --sf-rem-6xl: calc(var(--sf-unit-6xl) * var(--sf-rem)); /* 56px */
+  --sf-rem-7xl: calc(var(--sf-unit-7xl) * var(--sf-rem)); /* 64px */
+  --sf-rem-8xl: calc(var(--sf-unit-8xl) * var(--sf-rem)); /* 72px */
+  --sf-rem-9xl: calc(var(--sf-unit-9xl) * var(--sf-rem)); /* 80px */
+  --sf-rem-10xl: calc(var(--sf-unit-10xl) * var(--sf-rem)); /* 88px */
+  --sf-rem-11xl: calc(var(--sf-unit-11xl) * var(--sf-rem)); /* 96px */
+  --sf-rem-12xl: calc(var(--sf-unit-12xl) * var(--sf-rem)); /* 104px */
+}

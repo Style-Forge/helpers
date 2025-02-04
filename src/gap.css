@@ -12,98 +12,202 @@
 .gap\:0 { --sf-gap-x: 0em; --sf-gap-y: 0em }
 .gap\:x\:0 { --sf-gap-x: 0em } .gap\:y\:0 { --sf-gap-y: 0em }
 
-.gap { --sf-gap-x: var(--sf-gap-x-sm); --sf-gap-y: var(--sf-gap-y-sm) }
+.gap:not(html) { --sf-gap-x: var(--sf-gap-x-sm); --sf-gap-y: var(--sf-gap-y-sm) }
 .gap\:xs { --sf-gap-x: var(--sf-gap-x-xs); --sf-gap-y: var(--sf-gap-y-xs) }
 .gap\:sm { --sf-gap-x: var(--sf-gap-x-sm); --sf-gap-y: var(--sf-gap-y-sm) }
+.gap\:s { --sf-gap-x: var(--sf-gap-x-s); --sf-gap-y: var(--sf-gap-y-s) }
 .gap\:ms { --sf-gap-x: var(--sf-gap-x-ms); --sf-gap-y: var(--sf-gap-y-ms) }
 .gap\:ls { --sf-gap-x: var(--sf-gap-x-ls); --sf-gap-y: var(--sf-gap-y-ls) }
 .gap\:md { --sf-gap-x: var(--sf-gap-x-md); --sf-gap-y: var(--sf-gap-y-md) }
 .gap\:lg { --sf-gap-x: var(--sf-gap-x-lg); --sf-gap-y: var(--sf-gap-y-lg) }
 .gap\:xl { --sf-gap-x: var(--sf-gap-x-xl); --sf-gap-y: var(--sf-gap-y-xl) }
+.gap\:2xl { --sf-gap-x: var(--sf-gap-x-2xl); --sf-gap-y: var(--sf-gap-y-2xl) }
+.gap\:3xl { --sf-gap-x: var(--sf-gap-x-3xl); --sf-gap-y: var(--sf-gap-y-3xl) }
+.gap\:4xl { --sf-gap-x: var(--sf-gap-x-4xl); --sf-gap-y: var(--sf-gap-y-4xl) }
+.gap\:5xl { --sf-gap-x: var(--sf-gap-x-5xl); --sf-gap-y: var(--sf-gap-y-5xl) }
+.gap\:6xl { --sf-gap-x: var(--sf-gap-x-6xl); --sf-gap-y: var(--sf-gap-y-6xl) }
+.gap\:7xl { --sf-gap-x: var(--sf-gap-x-7xl); --sf-gap-y: var(--sf-gap-y-7xl) }
+.gap\:8xl { --sf-gap-x: var(--sf-gap-x-8xl); --sf-gap-y: var(--sf-gap-y-8xl) }
+.gap\:9xl { --sf-gap-x: var(--sf-gap-x-9xl); --sf-gap-y: var(--sf-gap-y-9xl) }
+.gap\:10xl { --sf-gap-x: var(--sf-gap-x-10xl); --sf-gap-y: var(--sf-gap-y-10xl) }
+.gap\:11xl { --sf-gap-x: var(--sf-gap-x-11xl); --sf-gap-y: var(--sf-gap-y-11xl) }
+.gap\:12xl { --sf-gap-x: var(--sf-gap-x-12xl); --sf-gap-y: var(--sf-gap-y-12xl) }
 
 .gap\:x { --sf-gap-x: var(--sf-gap-x-sm) } .gap\:y { --sf-gap-y: var(--sf-gap-y-sm) }
 .gap\:x\:xs { --sf-gap-x: var(--sf-gap-x-xs) } .gap\:y\:xs { --sf-gap-y: var(--sf-gap-y-xs) }
 .gap\:x\:sm { --sf-gap-x: var(--sf-gap-x-sm) } .gap\:y\:sm { --sf-gap-y: var(--sf-gap-y-sm) }
+.gap\:x\:s { --sf-gap-x: var(--sf-gap-x-s) } .gap\:y\:s { --sf-gap-y: var(--sf-gap-y-s) }
 .gap\:x\:ms { --sf-gap-x: var(--sf-gap-x-ms) } .gap\:y\:ms { --sf-gap-y: var(--sf-gap-y-ms) }
 .gap\:x\:ls { --sf-gap-x: var(--sf-gap-x-ls) } .gap\:y\:ls { --sf-gap-y: var(--sf-gap-y-ls) }
 .gap\:x\:md { --sf-gap-x: var(--sf-gap-x-md) } .gap\:y\:md { --sf-gap-y: var(--sf-gap-y-md) }
 .gap\:x\:lg { --sf-gap-x: var(--sf-gap-x-lg) } .gap\:y\:lg { --sf-gap-y: var(--sf-gap-y-lg) }
 .gap\:x\:xl { --sf-gap-x: var(--sf-gap-x-xl) } .gap\:y\:xl { --sf-gap-y: var(--sf-gap-y-xl) }
+.gap\:x\:2xl { --sf-gap-x: var(--sf-gap-x-2xl) } .gap\:y\:2xl { --sf-gap-y: var(--sf-gap-y-2xl) }
+.gap\:x\:3xl { --sf-gap-x: var(--sf-gap-x-3xl) } .gap\:y\:3xl { --sf-gap-y: var(--sf-gap-y-3xl) }
+.gap\:x\:4xl { --sf-gap-x: var(--sf-gap-x-4xl) } .gap\:y\:4xl { --sf-gap-y: var(--sf-gap-y-4xl) }
+.gap\:x\:5xl { --sf-gap-x: var(--sf-gap-x-5xl) } .gap\:y\:5xl { --sf-gap-y: var(--sf-gap-y-5xl) }
+.gap\:x\:6xl { --sf-gap-x: var(--sf-gap-x-6xl) } .gap\:y\:6xl { --sf-gap-y: var(--sf-gap-y-6xl) }
+.gap\:x\:7xl { --sf-gap-x: var(--sf-gap-x-7xl) } .gap\:y\:7xl { --sf-gap-y: var(--sf-gap-y-7xl) }
+.gap\:x\:8xl { --sf-gap-x: var(--sf-gap-x-8xl) } .gap\:y\:8xl { --sf-gap-y: var(--sf-gap-y-8xl) }
+.gap\:x\:9xl { --sf-gap-x: var(--sf-gap-x-9xl) } .gap\:y\:9xl { --sf-gap-y: var(--sf-gap-y-9xl) }
+.gap\:x\:10xl { --sf-gap-x: var(--sf-gap-x-10xl) } .gap\:y\:10xl { --sf-gap-y: var(--sf-gap-y-10xl) }
+.gap\:x\:11xl { --sf-gap-x: var(--sf-gap-x-11xl) } .gap\:y\:11xl { --sf-gap-y: var(--sf-gap-y-11xl) }
+.gap\:x\:12xl { --sf-gap-x: var(--sf-gap-x-12xl) } .gap\:y\:12xl { --sf-gap-y: var(--sf-gap-y-12xl) }
 
 /* gap */
-.gap { margin-top: calc(var(--sf-gap-y) * -1); margin-left: calc(var(--sf-gap-x) * -1) }
-.gap\:x { margin-left: calc(var(--sf-gap-x) * -1) }
-.gap\:y { margin-top: calc(var(--sf-gap-y) * -1) }
+.gap:not(html),
+.gap\:xs,
+.gap\:sm,
+.gap\:s,
+.gap\:ms,
+.gap\:ls,
+.gap\:md,
+.gap\:lg,
+.gap\:xl,
+.gap\:2xl,
+.gap\:3xl,
+.gap\:4xl,
+.gap\:5xl,
+.gap\:6xl,
+.gap\:7xl,
+.gap\:8xl,
+.gap\:9xl,
+.gap\:10xl,
+.gap\:11xl,
+.gap\:12xl
+{ margin-top: calc(var(--sf-gap-y) * -1); margin-left: calc(var(--sf-gap-x) * -1) }
 
-.gap:not(html) > * { margin-top: var(--sf-gap-y) }
-.gap:not(html) > *:not([class*="col:start"]) { margin-left: var(--sf-gap-x) }
-.gap\:x > *:not([class*="col:start"]) { margin-left: var(--sf-gap-x) }
-.gap\:y > * { margin-top: var(--sf-gap-y) }
+.gap\:x,
+.gap\:x\:xs,
+.gap\:x\:sm,
+.gap\:x\:s,
+.gap\:x\:ms,
+.gap\:x\:ls,
+.gap\:x\:md,
+.gap\:x\:lg,
+.gap\:x\:xl,
+.gap\:x\:2xl,
+.gap\:x\:3xl,
+.gap\:x\:4xl,
+.gap\:x\:5xl,
+.gap\:x\:6xl,
+.gap\:x\:7xl,
+.gap\:x\:8xl,
+.gap\:x\:9xl,
+.gap\:x\:10xl,
+.gap\:x\:11xl,
+.gap\:x\:12xl
+{ margin-left: calc(var(--sf-gap-x) * -1) }
 
-.gap > .col,
-.gap > .col\:1,
-.gap > .col\:2,
-.gap > .col\:3,
-.gap > .col\:4,
-.gap > .col\:5,
-.gap > .col\:6,
-.gap > .col\:7,
-.gap > .col\:8,
-.gap > .col\:9,
-.gap > .col\:10,
-.gap > .col\:11,
-.gap > .col\:12
-{
-  margin-top: calc(var(--sf-gap-y) * 0);
-  padding-top: var(--sf-gap-y);
-}
-.gap > .col:not([class*="col:start"]),
-.gap > .col\:1:not([class*="col:start"]),
-.gap > .col\:2:not([class*="col:start"]),
-.gap > .col\:3:not([class*="col:start"]),
-.gap > .col\:4:not([class*="col:start"]),
-.gap > .col\:5:not([class*="col:start"]),
-.gap > .col\:6:not([class*="col:start"]),
-.gap > .col\:7:not([class*="col:start"]),
-.gap > .col\:8:not([class*="col:start"]),
-.gap > .col\:9:not([class*="col:start"]),
-.gap > .col\:10:not([class*="col:start"]),
-.gap > .col\:11:not([class*="col:start"]),
-.gap > .col\:12:not([class*="col:start"])
-{
-  margin-left: calc(var(--sf-gap-x) * 0);
-  padding-left: var(--sf-gap-x);
-}
+.gap\:y,
+.gap\:y\:xs,
+.gap\:y\:sm,
+.gap\:y\:s,
+.gap\:y\:ms,
+.gap\:y\:ls,
+.gap\:y\:md,
+.gap\:y\:lg,
+.gap\:y\:xl,
+.gap\:y\:2xl,
+.gap\:y\:3xl,
+.gap\:y\:4xl,
+.gap\:y\:5xl,
+.gap\:y\:6xl,
+.gap\:y\:7xl,
+.gap\:y\:8xl,
+.gap\:y\:9xl,
+.gap\:y\:10xl,
+.gap\:y\:11xl,
+.gap\:y\:12xl
+{ margin-top: calc(var(--sf-gap-y) * -1) }
 
-.gap\:x > .col:not([class*="col:start"]),
-.gap\:x > .col\:1:not([class*="col:start"]),
-.gap\:x > .col\:2:not([class*="col:start"]),
-.gap\:x > .col\:3:not([class*="col:start"]),
-.gap\:x > .col\:4:not([class*="col:start"]),
-.gap\:x > .col\:5:not([class*="col:start"]),
-.gap\:x > .col\:6:not([class*="col:start"]),
-.gap\:x > .col\:7:not([class*="col:start"]),
-.gap\:x > .col\:8:not([class*="col:start"]),
-.gap\:x > .col\:9:not([class*="col:start"]),
-.gap\:x > .col\:10:not([class*="col:start"]),
-.gap\:x > .col\:11:not([class*="col:start"]),
-.gap\:x > .col\:12:not([class*="col:start"])
-{ margin-left: calc(var(--sf-gap-x) * 0); padding-left: var(--sf-gap-x) }
+.gap:not(html) > *,
+.gap\:xs > *,
+.gap\:sm > *,
+.gap\:s > *,
+.gap\:ms > *,
+.gap\:ls > *,
+.gap\:md > *,
+.gap\:lg > *,
+.gap\:xl > *,
+.gap\:2xl > *,
+.gap\:3xl > *,
+.gap\:4xl > *,
+.gap\:5xl > *,
+.gap\:6xl > *,
+.gap\:7xl > *,
+.gap\:8xl > *,
+.gap\:9xl > *,
+.gap\:10xl > *,
+.gap\:11xl > *,
+.gap\:12xl > *
+{ margin-top: var(--sf-gap-y) }
 
-.gap\:y > .col,
-.gap\:y > .col\:1,
-.gap\:y > .col\:2,
-.gap\:y > .col\:3,
-.gap\:y > .col\:4,
-.gap\:y > .col\:5,
-.gap\:y > .col\:6,
-.gap\:y > .col\:7,
-.gap\:y > .col\:8,
-.gap\:y > .col\:9,
-.gap\:y > .col\:10,
-.gap\:y > .col\:11,
-.gap\:y > .col\:12
-{ margin-top: calc(var(--sf-gap-y) * 0); padding-top: var(--sf-gap-y) }
+.gap:not(html) > *,
+.gap\:xs > *,
+.gap\:sm > *,
+.gap\:s > *,
+.gap\:ms > *,
+.gap\:ls > *,
+.gap\:md > *,
+.gap\:lg > *,
+.gap\:xl > *,
+.gap\:2xl > *,
+.gap\:3xl > *,
+.gap\:4xl > *,
+.gap\:5xl > *,
+.gap\:6xl > *,
+.gap\:7xl > *,
+.gap\:8xl > *,
+.gap\:9xl > *,
+.gap\:10xl > *,
+.gap\:11xl > *,
+.gap\:12xl > *
+{ margin-left: var(--sf-gap-x) }
+
+.gap\:x > *,
+.gap\:x\:xs > *,
+.gap\:x\:sm > *,
+.gap\:x\:s > *,
+.gap\:x\:ms > *,
+.gap\:x\:ls > *,
+.gap\:x\:md > *,
+.gap\:x\:lg > *,
+.gap\:x\:xl > *,
+.gap\:x\:2xl > *,
+.gap\:x\:3xl > *,
+.gap\:x\:4xl > *,
+.gap\:x\:5xl > *,
+.gap\:x\:6xl > *,
+.gap\:x\:7xl > *,
+.gap\:x\:8xl > *,
+.gap\:x\:9xl > *,
+.gap\:x\:10xl > *,
+.gap\:x\:11xl > *,
+.gap\:x\:12xl > *
+{ margin-left: var(--sf-gap-x) }
+
+.gap\:y > *,
+.gap\:y\:xs > *,
+.gap\:y\:sm > *,
+.gap\:y\:s > *,
+.gap\:y\:ms > *,
+.gap\:y\:ls > *,
+.gap\:y\:md > *,
+.gap\:y\:lg > *,
+.gap\:y\:xl > *,
+.gap\:y\:2xl > *,
+.gap\:y\:3xl > *,
+.gap\:y\:4xl > *,
+.gap\:y\:5xl > *,
+.gap\:y\:6xl > *,
+.gap\:y\:7xl > *,
+.gap\:y\:8xl > *,
+.gap\:y\:9xl > *,
+.gap\:y\:10xl > *,
+.gap\:y\:11xl > *,
+.gap\:y\:12xl > *
+{ margin-top: var(--sf-gap-y) }
 
 /* flex */
 .d\:f, .d\:f\:x, .d\:f\:y {
@@ -185,19 +289,19 @@
 .cols\:12
 { margin-top: calc(var(--sf-gap-y) * -1); margin-left: calc(var(--sf-gap-x) * -1) }
 
-.col,
-.col\:1,
-.col\:2,
-.col\:3,
-.col\:4,
-.col\:5,
-.col\:6,
-.col\:7,
-.col\:8,
-.col\:9,
-.col\:10,
-.col\:11,
-.col\:12
+html .col,
+html .col\:1,
+html .col\:2,
+html .col\:3,
+html .col\:4,
+html .col\:5,
+html .col\:6,
+html .col\:7,
+html .col\:8,
+html .col\:9,
+html .col\:10,
+html .col\:11,
+html .col\:12
 {
   margin-top: calc(var(--sf-gap-y) * 0);
   margin-left: calc(var(--sf-gap-x) * 0);
@@ -208,15 +312,15 @@
 /* /// */
 
 /* flex */
-html.var .d\:f { margin-top: -0.5em; margin-left: -0.5em }
-html.var .d\:f > * { margin-top: 0.5em }
-html.var .d\:f > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:f { margin-top: -8px; margin-left: -8px }
+html.var .d\:f > * { margin-top: 8px }
+html.var .d\:f > *:not([class*='col:start']) { margin-left: 8px }
 
-html.var .d\:f\:x { margin-left: -0.5em }
-html.var .d\:f\:x > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:f\:x { margin-left: -8px }
+html.var .d\:f\:x > *:not([class*='col:start']) { margin-left: 8px }
 
-html.var .d\:f\:y { margin-top: -0.5em }
-html.var .d\:f\:y > * { margin-top: 0.5em }
+html.var .d\:f\:y { margin-top: -8px }
+html.var .d\:f\:y > * { margin-top: 8px }
 
 html.var .d\:f > .\$d\:i,
 html.var .d\:f > .d\:f, html.var .d\:f > .d\:f\:x, html.var .d\:f > .d\:f\:y,
@@ -237,15 +341,15 @@ html.var .d\:f\:y > [class*='cols']
 { margin-top: 0 }
 
 /* grid */
-html.var .d\:g { margin-top: -0.5em; margin-left: -0.5em }
-html.var .d\:g > * { margin-top: 0.5em }
-html.var .d\:g > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:g { margin-top: -8px; margin-left: -8px }
+html.var .d\:g > * { margin-top: 8px }
+html.var .d\:g > *:not([class*='col:start']) { margin-left: 8px }
 
-html.var .d\:g\:x { margin-left: -0.5em }
-html.var .d\:g\:x > *:not([class*='col:start']) { margin-left: 0.5em }
+html.var .d\:g\:x { margin-left: -8px }
+html.var .d\:g\:x > *:not([class*='col:start']) { margin-left: 8px }
 
-html.var .d\:g\:y { margin-top: -0.5em }
-html.var .d\:g\:y > * { margin-top: 0.5em }
+html.var .d\:g\:y { margin-top: -8px }
+html.var .d\:g\:y > * { margin-top: 8px }
 
 html.var .d\:g > .\$d\:i,
 html.var .d\:g > .d\:f, html.var .d\:g > .d\:f\:x, html.var .d\:g > .d\:f\:y,
@@ -266,8 +370,8 @@ html.var .d\:g\:y > [class*='cols']
 { margin-top: 0 }
 
 /* inline */
-html.var .\$d\:i { margin-top: -0.5em; margin-left: -0.5em }
-html.var .\$d\:i > * { margin-top: 0.5em; margin-left: 0.5em }
+html.var .\$d\:i { margin-top: -8px; margin-left: -8px }
+html.var .\$d\:i > * { margin-top: 8px; margin-left: 8px }
 
 html.var .\$d\:i > .\$d\:i,
 html.var .\$d\:i > .d\:f, html.var .\$d\:i > .d\:f\:x, html.var .\$d\:i > .d\:f\:y,
@@ -276,73 +380,137 @@ html.var .\$d\:i > [class*='cols']
 { margin-top: 0; margin-left: 0 }
 
 /* cols */
-html.var [class*='cols'] { margin-top: -0.5em; margin-left: -0.5em }
-html.var [class*='cols'] > [class*='col'] { margin-top: 0; padding-top: 0.5em; padding-left: 0.5em }
+html.var [class*='cols'] { margin-top: -8px; margin-left: -8px }
+html.var [class*='cols'] > [class*='col'] { margin-top: 0; padding-top: 8px; padding-left: 8px }
 html.var [class*='cols'] > [class*='col']:not([class*='col:start']) { margin-left: 0 }
 
-html.var .gap[class*='cols'] > [class*='col'] { padding-top: 0.5em; padding-left: 0.5em }
+html.var .gap[class*='cols'] > [class*='col'] { padding-top: 8px; padding-left: 8px }
 
-html.var .gap\:x[class*='cols'] { margin-left: -0.5em }
-html.var .gap\:x[class*='cols'] > [class*='col'] { padding-left: 0.5em }
+html.var .gap\:x[class*='cols'] { margin-left: -8px }
+html.var .gap\:x[class*='cols'] > [class*='col'] { padding-left: 8px }
 
-html.var .gap\:y[class*='cols'] { margin-top: -0.5em }
-html.var .gap\:y[class*='cols'] > [class*='col'] { padding-top: 0.5em }
+html.var .gap\:y[class*='cols'] { margin-top: -8px }
+html.var .gap\:y[class*='cols'] > [class*='col'] { padding-top: 8px }
 
-html.var .gap\:xs[class*='cols'] { margin-top: -0.25em; margin-left: -0.25em }
-html.var .gap\:sm[class*='cols'] { margin-top: -0.5em; margin-left: -0.5em }
-html.var .gap\:ms[class*='cols'] { margin-top: -0.75em; margin-left: -0.75em }
-html.var .gap\:ls[class*='cols'] { margin-top: -0.85em; margin-left: -0.85em }
-html.var .gap\:md[class*='cols'] { margin-top: -1em; margin-left: -1em }
-html.var .gap\:lg[class*='cols'] { margin-top: -1.5em; margin-left: -1.5em }
-html.var .gap\:xl[class*='cols'] { margin-top: -2em; margin-left: -2em }
+html.var .gap\:xs[class*='cols'] { margin-top: -4px; margin-left: -4px }
+html.var .gap\:sm[class*='cols'] { margin-top: -8px; margin-left: -8px }
+html.var .gap\:s[class*='cols'] { margin-top: -10px; margin-left: -10px }
+html.var .gap\:ms[class*='cols'] { margin-top: -12px; margin-left: -12px }
+html.var .gap\:ls[class*='cols'] { margin-top: -14px; margin-left: -14px }
+html.var .gap\:md[class*='cols'] { margin-top: -16px; margin-left: -16px }
+html.var .gap\:lg[class*='cols'] { margin-top: -18px; margin-left: -18px }
+html.var .gap\:xl[class*='cols'] { margin-top: -20px; margin-left: -20px }
+html.var .gap\:2xl[class*='cols'] { margin-top: -24px; margin-left: -24px }
+html.var .gap\:3xl[class*='cols'] { margin-top: -32px; margin-left: -32px }
+html.var .gap\:4xl[class*='cols'] { margin-top: -40px; margin-left: -40px }
+html.var .gap\:5xl[class*='cols'] { margin-top: -48px; margin-left: -48px }
+html.var .gap\:6xl[class*='cols'] { margin-top: -56px; margin-left: -56px }
+html.var .gap\:7xl[class*='cols'] { margin-top: -64px; margin-left: -64px }
+html.var .gap\:8xl[class*='cols'] { margin-top: -72px; margin-left: -72px }
+html.var .gap\:9xl[class*='cols'] { margin-top: -80px; margin-left: -80px }
+html.var .gap\:10xl[class*='cols'] { margin-top: -88px; margin-left: -88px }
+html.var .gap\:11xl[class*='cols'] { margin-top: -96px; margin-left: -96px }
+html.var .gap\:12xl[class*='cols'] { margin-top: -104px; margin-left: -104px }
 
-html.var .gap\:xs[class*='cols'] > [class*='col'] { margin-top: 0; padding-top: 0.25em; padding-left: 0.25em }
-html.var .gap\:sm[class*='cols'] > [class*='col'] { margin-top: 0; padding-top: 0.5em; padding-left: 0.5em }
-html.var .gap\:ms[class*='cols'] > [class*='col'] { margin-top: 0; padding-top: 0.75em; padding-left: 0.75em }
-html.var .gap\:ls[class*='cols'] > [class*='col'] { margin-top: 0; padding-top: 0.85em; padding-left: 0.85em }
-html.var .gap\:md[class*='cols'] > [class*='col'] { margin-top: 0; padding-top: 1em; padding-left: 1em }
-html.var .gap\:lg[class*='cols'] > [class*='col'] { margin-top: 0; padding-top: 1.5em; padding-left: 1.5em }
-html.var .gap\:xl[class*='cols'] > [class*='col'] { margin-top: 0; padding-top: 2em; padding-left: 2em }
+html.var .gap\:xs[class*='cols'] > [class*='col'] { padding-top: 4px; padding-left: 4px }
+html.var .gap\:sm[class*='cols'] > [class*='col'] { padding-top: 8px; padding-left: 8px }
+html.var .gap\:s[class*='cols'] > [class*='col'] { padding-top: 10px; padding-left: 10px }
+html.var .gap\:ms[class*='cols'] > [class*='col'] { padding-top: 12px; padding-left: 12px }
+html.var .gap\:ls[class*='cols'] > [class*='col'] { padding-top: 14px; padding-left: 14px }
+html.var .gap\:md[class*='cols'] > [class*='col'] { padding-top: 16px; padding-left: 16px }
+html.var .gap\:lg[class*='cols'] > [class*='col'] { padding-top: 18px; padding-left: 18px }
+html.var .gap\:xl[class*='cols'] > [class*='col'] { padding-top: 20px; padding-left: 20px }
+html.var .gap\:2xl[class*='cols'] > [class*='col'] { padding-top: 24px; padding-left: 24px }
+html.var .gap\:3xl[class*='cols'] > [class*='col'] { padding-top: 32px; padding-left: 32px }
+html.var .gap\:4xl[class*='cols'] > [class*='col'] { padding-top: 40px; padding-left: 40px }
+html.var .gap\:5xl[class*='cols'] > [class*='col'] { padding-top: 48px; padding-left: 48px }
+html.var .gap\:6xl[class*='cols'] > [class*='col'] { padding-top: 56px; padding-left: 56px }
+html.var .gap\:7xl[class*='cols'] > [class*='col'] { padding-top: 64px; padding-left: 64px }
+html.var .gap\:8xl[class*='cols'] > [class*='col'] { padding-top: 72px; padding-left: 72px }
+html.var .gap\:9xl[class*='cols'] > [class*='col'] { padding-top: 80px; padding-left: 80px }
+html.var .gap\:10xl[class*='cols'] > [class*='col'] { padding-top: 88px; padding-left: 88px }
+html.var .gap\:11xl[class*='cols'] > [class*='col'] { padding-top: 96px; padding-left: 96px }
+html.var .gap\:12xl[class*='cols'] > [class*='col'] { padding-top: 104px; padding-left: 104px }
 
-html.var .gap\:xs[class*='cols'] > [class*='col']:not([class*='col:start']) { margin-left: 0 }
-html.var .gap\:sm[class*='cols'] > [class*='col']:not([class*='col:start']) { margin-left: 0 }
-html.var .gap\:ms[class*='cols'] > [class*='col']:not([class*='col:start']) { margin-left: 0 }
-html.var .gap\:ls[class*='cols'] > [class*='col']:not([class*='col:start']) { margin-left: 0 }
-html.var .gap\:md[class*='cols'] > [class*='col']:not([class*='col:start']) { margin-left: 0 }
-html.var .gap\:lg[class*='cols'] > [class*='col']:not([class*='col:start']) { margin-left: 0 }
-html.var .gap\:xl[class*='cols'] > [class*='col']:not([class*='col:start']) { margin-left: 0 }
+html.var .gap\:x\:xs[class*='cols'] { margin-left: -4px }
+html.var .gap\:x\:sm[class*='cols'] { margin-left: -8px }
+html.var .gap\:x\:s[class*='cols'] { margin-left: -10px }
+html.var .gap\:x\:ms[class*='cols'] { margin-left: -12px }
+html.var .gap\:x\:ls[class*='cols'] { margin-left: -14px }
+html.var .gap\:x\:md[class*='cols'] { margin-left: -16px }
+html.var .gap\:x\:lg[class*='cols'] { margin-left: -18px }
+html.var .gap\:x\:xl[class*='cols'] { margin-left: -20px }
+html.var .gap\:x\:2xl[class*='cols'] { margin-left: -24px }
+html.var .gap\:x\:3xl[class*='cols'] { margin-left: -32px }
+html.var .gap\:x\:4xl[class*='cols'] { margin-left: -40px }
+html.var .gap\:x\:5xl[class*='cols'] { margin-left: -48px }
+html.var .gap\:x\:6xl[class*='cols'] { margin-left: -56px }
+html.var .gap\:x\:7xl[class*='cols'] { margin-left: -64px }
+html.var .gap\:x\:8xl[class*='cols'] { margin-left: -72px }
+html.var .gap\:x\:9xl[class*='cols'] { margin-left: -80px }
+html.var .gap\:x\:10xl[class*='cols'] { margin-left: -88px }
+html.var .gap\:x\:11xl[class*='cols'] { margin-left: -96px }
+html.var .gap\:x\:12xl[class*='cols'] { margin-left: -104px }
 
-html.var .gap\:x\:xs[class*='cols'] { margin-left: -0.25em }
-html.var .gap\:x\:sm[class*='cols'] { margin-left: -0.5em }
-html.var .gap\:x\:ms[class*='cols'] { margin-left: -0.75em }
-html.var .gap\:x\:ls[class*='cols'] { margin-left: -0.85em }
-html.var .gap\:x\:md[class*='cols'] { margin-left: -1em }
-html.var .gap\:x\:lg[class*='cols'] { margin-left: -1.5em }
-html.var .gap\:x\:xl[class*='cols'] { margin-left: -2em }
+html.var .gap\:x\:xs[class*='cols'] > [class*='col'] { padding-left: 4px }
+html.var .gap\:x\:sm[class*='cols'] > [class*='col'] { padding-left: 8px }
+html.var .gap\:x\:s[class*='cols'] > [class*='col'] { padding-left: 10px }
+html.var .gap\:x\:ms[class*='cols'] > [class*='col'] { padding-left: 12px }
+html.var .gap\:x\:ls[class*='cols'] > [class*='col'] { padding-left: 14px }
+html.var .gap\:x\:md[class*='cols'] > [class*='col'] { padding-left: 16px }
+html.var .gap\:x\:lg[class*='cols'] > [class*='col'] { padding-left: 18px }
+html.var .gap\:x\:xl[class*='cols'] > [class*='col'] { padding-left: 20px }
+html.var .gap\:x\:2xl[class*='cols'] > [class*='col'] { padding-left: 24px }
+html.var .gap\:x\:3xl[class*='cols'] > [class*='col'] { padding-left: 32px }
+html.var .gap\:x\:4xl[class*='cols'] > [class*='col'] { padding-left: 40px }
+html.var .gap\:x\:5xl[class*='cols'] > [class*='col'] { padding-left: 48px }
+html.var .gap\:x\:6xl[class*='cols'] > [class*='col'] { padding-left: 56px }
+html.var .gap\:x\:7xl[class*='cols'] > [class*='col'] { padding-left: 64px }
+html.var .gap\:x\:8xl[class*='cols'] > [class*='col'] { padding-left: 72px }
+html.var .gap\:x\:9xl[class*='cols'] > [class*='col'] { padding-left: 80px }
+html.var .gap\:x\:10xl[class*='cols'] > [class*='col'] { padding-left: 88px }
+html.var .gap\:x\:11xl[class*='cols'] > [class*='col'] { padding-left: 96px }
+html.var .gap\:x\:12xl[class*='cols'] > [class*='col'] { padding-left: 104px }
 
-html.var .gap\:x\:xs[class*='cols'] > [class*='col'] { padding-left: 0.25em }
-html.var .gap\:x\:sm[class*='cols'] > [class*='col'] { padding-left: 0.5em }
-html.var .gap\:x\:ms[class*='cols'] > [class*='col'] { padding-left: 0.75em }
-html.var .gap\:x\:ls[class*='cols'] > [class*='col'] { padding-left: 0.85em }
-html.var .gap\:x\:md[class*='cols'] > [class*='col'] { padding-left: 1em }
-html.var .gap\:x\:lg[class*='cols'] > [class*='col'] { padding-left: 1.5em }
-html.var .gap\:x\:xl[class*='cols'] > [class*='col'] { padding-left: 2em }
+html.var .gap\:y\:xs[class*='cols'] { margin-top: -4px }
+html.var .gap\:y\:sm[class*='cols'] { margin-top: -8px }
+html.var .gap\:y\:s[class*='cols'] { margin-top: -10px }
+html.var .gap\:y\:ms[class*='cols'] { margin-top: -12px }
+html.var .gap\:y\:ls[class*='cols'] { margin-top: -14px }
+html.var .gap\:y\:md[class*='cols'] { margin-top: -16px }
+html.var .gap\:y\:lg[class*='cols'] { margin-top: -18px }
+html.var .gap\:y\:xl[class*='cols'] { margin-top: -20px }
+html.var .gap\:y\:2xl[class*='cols'] { margin-top: -24px }
+html.var .gap\:y\:3xl[class*='cols'] { margin-top: -32px }
+html.var .gap\:y\:4xl[class*='cols'] { margin-top: -40px }
+html.var .gap\:y\:5xl[class*='cols'] { margin-top: -48px }
+html.var .gap\:y\:6xl[class*='cols'] { margin-top: -56px }
+html.var .gap\:y\:7xl[class*='cols'] { margin-top: -64px }
+html.var .gap\:y\:8xl[class*='cols'] { margin-top: -72px }
+html.var .gap\:y\:9xl[class*='cols'] { margin-top: -80px }
+html.var .gap\:y\:10xl[class*='cols'] { margin-top: -88px }
+html.var .gap\:y\:11xl[class*='cols'] { margin-top: -96px }
+html.var .gap\:y\:12xl[class*='cols'] { margin-top: -104px }
 
-html.var .gap\:y\:xs[class*='cols'] { margin-top: -0.25em }
-html.var .gap\:y\:sm[class*='cols'] { margin-top: -0.5em }
-html.var .gap\:y\:ms[class*='cols'] { margin-top: -0.75em }
-html.var .gap\:y\:ls[class*='cols'] { margin-top: -0.85em }
-html.var .gap\:y\:md[class*='cols'] { margin-top: -1em }
-html.var .gap\:y\:lg[class*='cols'] { margin-top: -1.5em }
-html.var .gap\:y\:xl[class*='cols'] { margin-top: -2em }
-
-html.var .gap\:y\:xs[class*='cols'] > [class*='col'] { padding-top: 0.25em }
-html.var .gap\:y\:sm[class*='cols'] > [class*='col'] { padding-top: 0.5em }
-html.var .gap\:y\:ms[class*='cols'] > [class*='col'] { padding-top: 0.75em }
-html.var .gap\:y\:ls[class*='cols'] > [class*='col'] { padding-top: 0.85em }
-html.var .gap\:y\:md[class*='cols'] > [class*='col'] { padding-top: 1em }
-html.var .gap\:y\:lg[class*='cols'] > [class*='col'] { padding-top: 1.5em }
-html.var .gap\:y\:xl[class*='cols'] > [class*='col'] { padding-top: 2em }
+html.var .gap\:y\:xs[class*='cols'] > [class*='col'] { padding-top: 4px }
+html.var .gap\:y\:sm[class*='cols'] > [class*='col'] { padding-top: 8px }
+html.var .gap\:y\:s[class*='cols'] > [class*='col'] { padding-top: 10px }
+html.var .gap\:y\:ms[class*='cols'] > [class*='col'] { padding-top: 12px }
+html.var .gap\:y\:ls[class*='cols'] > [class*='col'] { padding-top: 14px }
+html.var .gap\:y\:md[class*='cols'] > [class*='col'] { padding-top: 16px }
+html.var .gap\:y\:lg[class*='cols'] > [class*='col'] { padding-top: 18px }
+html.var .gap\:y\:xl[class*='cols'] > [class*='col'] { padding-top: 20px }
+html.var .gap\:y\:2xl[class*='cols'] > [class*='col'] { padding-top: 24px }
+html.var .gap\:y\:3xl[class*='cols'] > [class*='col'] { padding-top: 32px }
+html.var .gap\:y\:4xl[class*='cols'] > [class*='col'] { padding-top: 40px }
+html.var .gap\:y\:5xl[class*='cols'] > [class*='col'] { padding-top: 48px }
+html.var .gap\:y\:6xl[class*='cols'] > [class*='col'] { padding-top: 56px }
+html.var .gap\:y\:7xl[class*='cols'] > [class*='col'] { padding-top: 64px }
+html.var .gap\:y\:8xl[class*='cols'] > [class*='col'] { padding-top: 72px }
+html.var .gap\:y\:9xl[class*='cols'] > [class*='col'] { padding-top: 80px }
+html.var .gap\:y\:10xl[class*='cols'] > [class*='col'] { padding-top: 88px }
+html.var .gap\:y\:11xl[class*='cols'] > [class*='col'] { padding-top: 96px }
+html.var .gap\:y\:12xl[class*='cols'] > [class*='col'] { padding-top: 104px }
 
 html.var .gap\:0[class*='cols'] { margin-top: 0; margin-left: 0 }
 html.var .gap\:0[class*='cols'] > [class*='col'] { padding-top: 0; padding-left: 0 }
@@ -364,31 +532,67 @@ html.var .gap\:x\:0 > *:not([class*='col:start']) { margin-left: 0 }
 html.var .gap\:y\:0 { margin-top: 0 }
 html.var .gap\:y\:0 > * { margin-top: 0 }
 
-html.var .gap { margin-top: -0.5em; margin-left: -0.5em }
-html.var .gap > * { margin-top: 0.5em } html.var .gap > *:not([class*='col:start']) { margin-left: 0.5em }
-html.var .gap\:x { margin-left: -0.5em } html.var .gap\:x > *:not([class*='col:start']) { margin-left: 0.5em }
-html.var .gap\:y { margin-top: -0.5em } html.var .gap\:y > * { margin-top: 0.5em }
+html.var .gap { margin-top: -8px; margin-left: -8px }
+html.var .gap > * { margin-top: 8px } html.var .gap > *:not([class*='col:start']) { margin-left: 8px }
+html.var .gap\:x { margin-left: -8px } html.var .gap\:x > *:not([class*='col:start']) { margin-left: 8px }
+html.var .gap\:y { margin-top: -8px } html.var .gap\:y > * { margin-top: 8px }
 
-html.var .gap\:xs { margin-top: -0.25em; margin-left: -0.25em } html.var .gap\:xs > * { margin-top: 0.25em } html.var .gap\:xs > *:not([class*='col:start']) { margin-left: 0.25em }
-html.var .gap\:sm { margin-top: -0.5em; margin-left: -0.5em } html.var .gap\:sm > * { margin-top: 0.5em } html.var .gap\:sm > *:not([class*='col:start']) { margin-left: 0.5em }
-html.var .gap\:ms { margin-top: -0.75em; margin-left: -0.75em } html.var .gap\:ms > * { margin-top: 0.75em } html.var .gap\:ms > *:not([class*='col:start']) { margin-top: 0.75em }
-html.var .gap\:ls { margin-top: -0.85em; margin-left: -0.85em } html.var .gap\:ls > * { margin-top: 0.85em } html.var .gap\:ls > *:not([class*='col:start']) { margin-left: 0.85em }
-html.var .gap\:md { margin-top: -1em; margin-left: -1em } html.var .gap\:md > * { margin-top: 1em } html.var .gap\:md > *:not([class*='col:start']) { margin-left: 1em }
-html.var .gap\:lg { margin-top: -1.5em; margin-left: -1.5em } html.var .gap\:lg > * { margin-top: 1.5em } html.var .gap\:lg > *:not([class*='col:start']) { margin-left: 1.5em }
-html.var .gap\:xl { margin-top: -2em; margin-left: -2em } html.var .gap\:xl > * { margin-top: 2em } html.var .gap\:xl > *:not([class*='col:start']) { margin-left: 2em }
+html.var .gap\:xs { margin-top: -4px; margin-left: -4px } html.var .gap\:xs > * { margin-top: 4px } html.var .gap\:xs > *:not([class*='col:start']) { margin-left: 4px }
+html.var .gap\:sm { margin-top: -8px; margin-left: -8px } html.var .gap\:sm > * { margin-top: 8px } html.var .gap\:sm > *:not([class*='col:start']) { margin-left: 8px }
+html.var .gap\:s { margin-top: -10px; margin-left: -10px } html.var .gap\:s > * { margin-top: 10px } html.var .gap\:s > *:not([class*='col:start']) { margin-top: 10px }
+html.var .gap\:ms { margin-top: -12px; margin-left: -12px } html.var .gap\:ms > * { margin-top: 12px } html.var .gap\:ms > *:not([class*='col:start']) { margin-left: 12px }
+html.var .gap\:ls { margin-top: -14px; margin-left: -14px } html.var .gap\:ls > * { margin-top: 14px } html.var .gap\:ls > *:not([class*='col:start']) { margin-left: 14px }
+html.var .gap\:md { margin-top: -16px; margin-left: -16px } html.var .gap\:md > * { margin-top: 16px } html.var .gap\:md > *:not([class*='col:start']) { margin-left: 16px }
+html.var .gap\:lg { margin-top: -18px; margin-left: -18px } html.var .gap\:lg > * { margin-top: 18px } html.var .gap\:lg > *:not([class*='col:start']) { margin-left: 18px }
+html.var .gap\:xl { margin-top: -20px; margin-left: -20px } html.var .gap\:xl > * { margin-top: 20px } html.var .gap\:xl > *:not([class*='col:start']) { margin-left: 20px }
+html.var .gap\:2xl { margin-top: -24px; margin-left: -24px } html.var .gap\:2xl > * { margin-top: 24px } html.var .gap\:2xl > *:not([class*='col:start']) { margin-left: 24px }
+html.var .gap\:3xl { margin-top: -32px; margin-left: -32px } html.var .gap\:3xl > * { margin-top: 32px } html.var .gap\:3xl > *:not([class*='col:start']) { margin-left: 32px }
+html.var .gap\:4xl { margin-top: -40px; margin-left: -40px } html.var .gap\:4xl > * { margin-top: 40px } html.var .gap\:4xl > *:not([class*='col:start']) { margin-left: 40px }
+html.var .gap\:5xl { margin-top: -48px; margin-left: -48px } html.var .gap\:5xl > * { margin-top: 48px } html.var .gap\:5xl > *:not([class*='col:start']) { margin-left: 48px }
+html.var .gap\:6xl { margin-top: -56px; margin-left: -56px } html.var .gap\:6xl > * { margin-top: 56px } html.var .gap\:6xl > *:not([class*='col:start']) { margin-left: 56px }
+html.var .gap\:7xl { margin-top: -64px; margin-left: -64px } html.var .gap\:7xl > * { margin-top: 64px } html.var .gap\:7xl > *:not([class*='col:start']) { margin-left: 64px }
+html.var .gap\:8xl { margin-top: -72px; margin-left: -72px } html.var .gap\:8xl > * { margin-top: 72px } html.var .gap\:8xl > *:not([class*='col:start']) { margin-left: 72px }
+html.var .gap\:9xl { margin-top: -80px; margin-left: -80px } html.var .gap\:9xl > * { margin-top: 80px } html.var .gap\:9xl > *:not([class*='col:start']) { margin-left: 80px }
+html.var .gap\:10xl { margin-top: -88px; margin-left: -88px } html.var .gap\:10xl > * { margin-top: 88px } html.var .gap\:10xl > *:not([class*='col:start']) { margin-left: 88px }
+html.var .gap\:11xl { margin-top: -96px; margin-left: -96px } html.var .gap\:11xl > * { margin-top: 96px } html.var .gap\:11xl > *:not([class*='col:start']) { margin-left: 96px }
+html.var .gap\:12xl { margin-top: -104px; margin-left: -104px } html.var .gap\:12xl > * { margin-top: 104px } html.var .gap\:12xl > *:not([class*='col:start']) { margin-left: 104px }
 
-html.var .gap\:x\:xs { margin-left: -0.25em } html.var .gap\:x\:xs > *:not([class*='col:start']) { margin-left: 0.25em }
-html.var .gap\:x\:sm { margin-left: -0.5em } html.var .gap\:x\:sm > *:not([class*='col:start']) { margin-left: 0.5em }
-html.var .gap\:x\:ms { margin-left: -0.75em } html.var .gap\:x\:ms > *:not([class*='col:start']) { margin-left: 0.75em }
-html.var .gap\:x\:ls { margin-left: -0.85em } html.var .gap\:x\:ls > *:not([class*='col:start']) { margin-left: 0.85em }
-html.var .gap\:x\:md { margin-left: -1em } html.var .gap\:x\:md > *:not([class*='col:start']) { margin-left: 1em }
-html.var .gap\:x\:lg { margin-left: -1.5em } html.var .gap\:x\:lg > *:not([class*='col:start']) { margin-left: 1.5em }
-html.var .gap\:x\:xl { margin-left: -2em } html.var .gap\:x\:xl > *:not([class*='col:start']) { margin-left: 2em }
+html.var .gap\:x\:xs { margin-left: -4px } html.var .gap\:x\:xs > *:not([class*='col:start']) { margin-left: 4px }
+html.var .gap\:x\:sm { margin-left: -8px } html.var .gap\:x\:sm > *:not([class*='col:start']) { margin-left: 8px }
+html.var .gap\:x\:s { margin-left: -10px } html.var .gap\:x\:s > *:not([class*='col:start']) { margin-left: 10px }
+html.var .gap\:x\:ms { margin-left: -12px } html.var .gap\:x\:ms > *:not([class*='col:start']) { margin-left: 12px }
+html.var .gap\:x\:ls { margin-left: -14px } html.var .gap\:x\:ls > *:not([class*='col:start']) { margin-left: 14px }
+html.var .gap\:x\:md { margin-left: -16px } html.var .gap\:x\:md > *:not([class*='col:start']) { margin-left: 16px }
+html.var .gap\:x\:lg { margin-left: -18px } html.var .gap\:x\:lg > *:not([class*='col:start']) { margin-left: 18px }
+html.var .gap\:x\:xl { margin-left: -20px } html.var .gap\:x\:xl > *:not([class*='col:start']) { margin-left: 20px }
+html.var .gap\:x\:2xl { margin-left: -24px } html.var .gap\:x\:2xl > *:not([class*='col:start']) { margin-left: 24px }
+html.var .gap\:x\:3xl { margin-left: -32px } html.var .gap\:x\:3xl > *:not([class*='col:start']) { margin-left: 32px }
+html.var .gap\:x\:4xl { margin-left: -40px } html.var .gap\:x\:4xl > *:not([class*='col:start']) { margin-left: 40px }
+html.var .gap\:x\:5xl { margin-left: -48px } html.var .gap\:x\:5xl > *:not([class*='col:start']) { margin-left: 48px }
+html.var .gap\:x\:6xl { margin-left: -56px } html.var .gap\:x\:6xl > *:not([class*='col:start']) { margin-left: 56px }
+html.var .gap\:x\:7xl { margin-left: -64px } html.var .gap\:x\:7xl > *:not([class*='col:start']) { margin-left: 64px }
+html.var .gap\:x\:8xl { margin-left: -72px } html.var .gap\:x\:8xl > *:not([class*='col:start']) { margin-left: 72px }
+html.var .gap\:x\:9xl { margin-left: -80px } html.var .gap\:x\:9xl > *:not([class*='col:start']) { margin-left: 80px }
+html.var .gap\:x\:10xl { margin-left: -88px } html.var .gap\:x\:10xl > *:not([class*='col:start']) { margin-left: 88px }
+html.var .gap\:x\:11xl { margin-left: -96px } html.var .gap\:x\:11xl > *:not([class*='col:start']) { margin-left: 96px }
+html.var .gap\:x\:12xl { margin-left: -104px } html.var .gap\:x\:12xl > *:not([class*='col:start']) { margin-left: 104px }
 
-html.var .gap\:y\:xs { margin-top: -0.25em } html.var .gap\:y\:xs > * { margin-top: 0.25em }
-html.var .gap\:y\:sm { margin-top: -0.5em } html.var .gap\:y\:sm > * { margin-top: 0.5em }
-html.var .gap\:y\:ms { margin-top: -0.75em } html.var .gap\:y\:ms > * { margin-top: 0.75em }
-html.var .gap\:y\:ls { margin-top: -0.85em } html.var .gap\:y\:ls > * { margin-top: 0.85em }
-html.var .gap\:y\:md { margin-top: -1em } html.var .gap\:y\:md > * { margin-top: 1em }
-html.var .gap\:y\:lg { margin-top: -1.5em } html.var .gap\:y\:lg > * { margin-top: 1.5em }
-html.var .gap\:y\:xl { margin-top: -2em } html.var .gap\:y\:xl > * { margin-top: 2em }
+html.var .gap\:y\:xs { margin-top: -4px } html.var .gap\:y\:xs > * { margin-top: 4px }
+html.var .gap\:y\:sm { margin-top: -8px } html.var .gap\:y\:sm > * { margin-top: 8px }
+html.var .gap\:y\:s { margin-top: -10px } html.var .gap\:y\:s > * { margin-top: 10px }
+html.var .gap\:y\:ms { margin-top: -12px } html.var .gap\:y\:ms > * { margin-top: 12px }
+html.var .gap\:y\:ls { margin-top: -14px } html.var .gap\:y\:ls > * { margin-top: 14px }
+html.var .gap\:y\:md { margin-top: -16px } html.var .gap\:y\:md > * { margin-top: 16px }
+html.var .gap\:y\:lg { margin-top: -18px } html.var .gap\:y\:lg > * { margin-top: 18px }
+html.var .gap\:y\:xl { margin-top: -20px } html.var .gap\:y\:xl > * { margin-top: 20px }
+html.var .gap\:y\:2xl { margin-top: -24px } html.var .gap\:y\:2xl > * { margin-top: 24px }
+html.var .gap\:y\:3xl { margin-top: -32px } html.var .gap\:y\:3xl > * { margin-top: 32px }
+html.var .gap\:y\:4xl { margin-top: -40px } html.var .gap\:y\:4xl > * { margin-top: 40px }
+html.var .gap\:y\:5xl { margin-top: -48px } html.var .gap\:y\:5xl > * { margin-top: 48px }
+html.var .gap\:y\:6xl { margin-top: -56px } html.var .gap\:y\:6xl > * { margin-top: 56px }
+html.var .gap\:y\:7xl { margin-top: -64px } html.var .gap\:y\:7xl > * { margin-top: 64px }
+html.var .gap\:y\:8xl { margin-top: -72px } html.var .gap\:y\:8xl > * { margin-top: 72px }
+html.var .gap\:y\:9xl { margin-top: -80px } html.var .gap\:y\:9xl > * { margin-top: 80px }
+html.var .gap\:y\:10xl { margin-top: -88px } html.var .gap\:y\:10xl > * { margin-top: 88px }
+html.var .gap\:y\:11xl { margin-top: -96px } html.var .gap\:y\:11xl > * { margin-top: 96px }
+html.var .gap\:y\:12xl { margin-top: -104px } html.var .gap\:y\:12xl > * { margin-top: 104px }

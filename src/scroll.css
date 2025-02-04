@@ -16,29 +16,37 @@
 .ssa\:c { scroll-snap-align: center }
 .ssa\:none { scroll-snap-align: none }
 
-.sp { scroll-padding: var(--sf-scroll) }
+.sp { scroll-padding: var(--sf-rem) }
 .sp\:0 { scroll-padding: 0 }
-.sp\:xs { scroll-padding: var(--sf-scroll-xs) }
-.sp\:sm { scroll-padding: var(--sf-scroll-sm) }
-.sp\:lg { scroll-padding: var(--sf-scroll-lg) }
-.sp\:xl { scroll-padding: var(--sf-scroll-xl) }
+.sp\:xs { scroll-padding: var(--sf-rem-xs) }
+.sp\:sm { scroll-padding: var(--sf-rem-sm) }
+.sp\:s { scroll-padding: var(--sf-rem-s) }
+.sp\:ms { scroll-padding: var(--sf-rem-ms) }
+.sp\:ls { scroll-padding: var(--sf-rem-ls) }
+.sp\:md { scroll-padding: var(--sf-rem-md) }
+.sp\:lg { scroll-padding: var(--sf-rem-lg) }
+.sp\:xl { scroll-padding: var(--sf-rem-xl) }
 
-.sp\:t { scroll-padding-top: var(--sf-scroll) }
-.sp\:r { scroll-padding-right: var(--sf-scroll) }
-.sp\:b { scroll-padding-bottom: var(--sf-scroll) }
-.sp\:l { scroll-padding-left: var(--sf-scroll) }
+.sp\:t { scroll-padding-top: var(--sf-rem) }
+.sp\:r { scroll-padding-right: var(--sf-rem) }
+.sp\:b { scroll-padding-bottom: var(--sf-rem) }
+.sp\:l { scroll-padding-left: var(--sf-rem) }
 
-.sm { scroll-margin: var(--sf-scroll) }
+.sm { scroll-margin: var(--sf-rem) }
 .sm\:0 { scroll-margin: 0 }
-.sm\:xs { scroll-margin: var(--sf-em-xs) }
-.sm\:sm { scroll-margin: var(--sf-em-sm) }
-.sm\:lg { scroll-margin: var(--sf-em-lg) }
-.sm\:xl { scroll-margin: var(--sf-em-xl) }
+.sm\:xs { scroll-margin: var(--sf-rem-xs) }
+.sm\:sm { scroll-margin: var(--sf-rem-sm) }
+.sm\:s { scroll-margin: var(--sf-rem-s) }
+.sm\:ms { scroll-margin: var(--sf-rem-ms) }
+.sm\:ls { scroll-margin: var(--sf-rem-ls) }
+.sm\:md { scroll-margin: var(--sf-rem-md) }
+.sm\:lg { scroll-margin: var(--sf-rem-lg) }
+.sm\:xl { scroll-margin: var(--sf-rem-xl) }
 
-.sm\:t { scroll-margin-top: var(--sf-scroll) }
-.sm\:r { scroll-margin-right: var(--sf-scroll) }
-.sm\:b { scroll-margin-bottom: var(--sf-scroll) }
-.sm\:l { scroll-margin-left: var(--sf-scroll) }
+.sm\:t { scroll-margin-top: var(--sf-rem) }
+.sm\:r { scroll-margin-right: var(--sf-rem) }
+.sm\:b { scroll-margin-bottom: var(--sf-rem) }
+.sm\:l { scroll-margin-left: var(--sf-rem) }
 
 .ov { overflow: auto }
 .ov\:h { overflow: hidden }
@@ -77,26 +85,34 @@
 
 /* /// */
 
-html.var .sp { scroll-padding: 1rem }
+html.var .sp { scroll-padding: 16px }
 html.var .sp\:0 { scroll-padding: 0 }
-html.var .sp\:xs { scroll-padding: 0.25rem }
-html.var .sp\:sm { scroll-padding: 0.5rem }
-html.var .sp\:lg { scroll-padding: 1.5rem }
-html.var .sp\:xl { scroll-padding: 2rem }
+html.var .sp\:xs { scroll-padding: 4px }
+html.var .sp\:sm { scroll-padding: 8px }
+html.var .sp\:s { scroll-padding: 10px }
+html.var .sp\:ms { scroll-padding: 12px }
+html.var .sp\:ls { scroll-padding: 14px }
+html.var .sp\:md { scroll-padding: 16px }
+html.var .sp\:lg { scroll-padding: 18px }
+html.var .sp\:xl { scroll-padding: 20px }
 
-html.var .sp\:t { scroll-padding-top: 1rem }
-html.var .sp\:r { scroll-padding-right: 1rem }
-html.var .sp\:b { scroll-padding-bottom: 1rem }
-html.var .sp\:l { scroll-padding-left: 1rem }
+html.var .sp\:t { scroll-padding-top: 16px }
+html.var .sp\:r { scroll-padding-right: 16px }
+html.var .sp\:b { scroll-padding-bottom: 16px }
+html.var .sp\:l { scroll-padding-left: 16px }
 
-html.var .sm { scroll-margin: 1rem }
+html.var .sm { scroll-margin: 16px }
 html.var .sm\:0 { scroll-margin: 0 }
-html.var .sm\:xs { scroll-margin: 0.25rem }
-html.var .sm\:sm { scroll-margin: 0.5rem }
-html.var .sm\:lg { scroll-margin: 1.5rem }
-html.var .sm\:xl { scroll-margin: 2rem }
+html.var .sm\:xs { scroll-margin: 4px }
+html.var .sm\:sm { scroll-margin: 8px }
+html.var .sm\:s { scroll-margin: 10px }
+html.var .sm\:ms { scroll-margin: 12px }
+html.var .sm\:ls { scroll-margin: 14px }
+html.var .sm\:md { scroll-margin: 16px }
+html.var .sm\:lg { scroll-margin: 18px }
+html.var .sm\:xl { scroll-margin: 20px }
 
-html.var .sm\:t { scroll-margin-top: 1rem }
-html.var .sm\:r { scroll-margin-right: 1rem }
-html.var .sm\:b { scroll-margin-bottom: 1rem }
-html.var .sm\:l { scroll-margin-left: 1rem }
+html.var .sm\:t { scroll-margin-top: 16px }
+html.var .sm\:r { scroll-margin-right: 16px }
+html.var .sm\:b { scroll-margin-bottom: 16px }
+html.var .sm\:l { scroll-margin-left: 16px }
