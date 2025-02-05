@@ -67,12 +67,37 @@
 
 .fz\:small { font-size: var(--sf-fz-small) }
 
-.fz\:15 { font-size: var(--sf-fz-15) }
-.fz\:14 { font-size: var(--sf-fz-14) }
-.fz\:13 { font-size: var(--sf-fz-13) }
-.fz\:12 { font-size: var(--sf-fz-12) }
-.fz\:11 { font-size: var(--sf-fz-11) }
-.fz\:10 { font-size: var(--sf-fz-10) }
+.fz\:xxxs { font-size: var(--sf-rem-xxxs) }   /* 1px */
+.fz\:xxs  { font-size: var(--sf-rem-xxs) }    /* 2px */
+.fz\:xxss { font-size: var(--sf-rem-xxss) }   /* 3px */
+.fz\:xs   { font-size: var(--sf-rem-xs) }     /* 4px */
+.fz\:xss  { font-size: var(--sf-rem-xss) }    /* 5px */
+.fz\:xsss { font-size: var(--sf-rem-xsss) }   /* 6px */
+.fz\:3xs  { font-size: var(--sf-rem-3xs) }    /* 7px */
+.fz\:sm   { font-size: var(--sf-rem-sm) }     /* 8px */
+.fz\:smm  { font-size: var(--sf-rem-smm) }    /* 9px */
+.fz\:s    { font-size: var(--sf-rem-s) }      /* 10px */
+.fz\:ss   { font-size: var(--sf-rem-ss) }     /* 11px */
+.fz\:ms   { font-size: var(--sf-rem-ms) }     /* 12px */
+.fz\:mss  { font-size: var(--sf-rem-mss) }    /* 13px */
+.fz\:ls   { font-size: var(--sf-rem-ls) }     /* 14px */
+.fz\:lss  { font-size: var(--sf-rem-lss) }    /* 15px */
+.fz\:md   { font-size: var(--sf-rem-md) }     /* 16px */
+.fz\:mdd  { font-size: var(--sf-rem-mdd) }    /* 17px */
+.fz\:lg   { font-size: var(--sf-rem-lg) }     /* 18px */
+.fz\:lgg  { font-size: var(--sf-rem-lgg) }    /* 19px */
+.fz\:xl   { font-size: var(--sf-rem-xl) }     /* 20px */
+.fz\:2xl  { font-size: var(--sf-rem-2xl) }    /* 24px */
+.fz\:3xl  { font-size: var(--sf-rem-3xl) }    /* 32px */
+.fz\:4xl  { font-size: var(--sf-rem-4xl) }    /* 40px */
+.fz\:5xl  { font-size: var(--sf-rem-5xl) }    /* 48px */
+.fz\:6xl  { font-size: var(--sf-rem-6xl) }    /* 56px */
+.fz\:7xl  { font-size: var(--sf-rem-7xl) }    /* 64px */
+.fz\:8xl  { font-size: var(--sf-rem-8xl) }    /* 72px */
+.fz\:9xl  { font-size: var(--sf-rem-9xl) }    /* 80px */
+.fz\:10xl { font-size: var(--sf-rem-10xl) }   /* 88px */
+.fz\:11xl { font-size: var(--sf-rem-11xl) }   /* 96px */
+.fz\:12xl { font-size: var(--sf-rem-12xl) }   /* 104px */
 
 .ta\:i, .\$ta\:i > * { text-align: inherit }
 .ta\:ii, .\$ta\:ii > * { text-align: inherit }
@@ -185,12 +210,37 @@ html.var .fz\:bold { font-size: 16px }
 
 html.var .fz\:small { font-size: 12px }
 
-html.var .fz\:15 { font-size: 15px }
-html.var .fz\:14 { font-size: 14px }
-html.var .fz\:13 { font-size: 13px }
-html.var .fz\:12 { font-size: 12px }
-html.var .fz\:11 { font-size: 11px }
-html.var .fz\:10 { font-size: 10px }
+html.var .fz\:xxxs { font-size: 1px }
+html.var .fz\:xxs  { font-size: 2px }
+html.var .fz\:xxss { font-size: 3px }
+html.var .fz\:xs   { font-size: 4px }
+html.var .fz\:xss  { font-size: 5px }
+html.var .fz\:xsss { font-size: 6px }
+html.var .fz\:3xs  { font-size: 7px }
+html.var .fz\:sm   { font-size: 8px }
+html.var .fz\:smm  { font-size: 9px }
+html.var .fz\:s    { font-size: 10px }
+html.var .fz\:ss   { font-size: 11px }
+html.var .fz\:ms   { font-size: 12px }
+html.var .fz\:mss  { font-size: 13px }
+html.var .fz\:ls   { font-size: 14px }
+html.var .fz\:lss  { font-size: 15px }
+html.var .fz\:md   { font-size: 16px }
+html.var .fz\:mdd  { font-size: 17px }
+html.var .fz\:lg   { font-size: 18px }
+html.var .fz\:lgg  { font-size: 19px }
+html.var .fz\:xl   { font-size: 20px }
+html.var .fz\:2xl  { font-size: 24px }
+html.var .fz\:3xl  { font-size: 32px }
+html.var .fz\:4xl  { font-size: 40px }
+html.var .fz\:5xl  { font-size: 48px }
+html.var .fz\:6xl  { font-size: 56px }
+html.var .fz\:7xl  { font-size: 64px }
+html.var .fz\:8xl  { font-size: 72px }
+html.var .fz\:9xl  { font-size: 80px }
+html.var .fz\:10xl { font-size: 88px }
+html.var .fz\:11xl { font-size: 96px }
+html.var .fz\:12xl { font-size: 104px }
 
 html.var .lh, html.var .\$lh > * { line-height: 1.1875 }
 html.var .lh\:base, html.var .\$lh\:base > * { line-height: 0.8 }
