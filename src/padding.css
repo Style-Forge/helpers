@@ -1,287 +1,309 @@
-.p, .\$p > * { padding: var(--sf-rem) }
-.p\:0, .\$p\:0 > * { padding: 0 }
-.p\:xs, .\$p\:xs > * { padding: var(--sf-rem-xs) }
-.p\:sm, .\$p\:sm > * { padding: var(--sf-rem-sm) }
-.p\:s, .\$p\:s > * { padding: var(--sf-rem-s) }
-.p\:ms, .\$p\:ms > * { padding: var(--sf-rem-ms) }
-.p\:ls, .\$p\:ls > * { padding: var(--sf-rem-ls) }
-.p\:md, .\$p\:md > * { padding: var(--sf-rem-md) }
-.p\:lg, .\$p\:lg > * { padding: var(--sf-rem-lg) }
-.p\:xl, .\$p\:xl > * { padding: var(--sf-rem-xl) }
-.p\:2xl, .\$p\:2xl > * { padding: var(--sf-rem-2xl) }
-.p\:3xl, .\$p\:3xl > * { padding: var(--sf-rem-3xl) }
-.p\:4xl, .\$p\:4xl > * { padding: var(--sf-rem-4xl) }
-.p\:5xl, .\$p\:5xl > * { padding: var(--sf-rem-5xl) }
-.p\:6xl, .\$p\:6xl > * { padding: var(--sf-rem-6xl) }
-.p\:7xl, .\$p\:7xl > * { padding: var(--sf-rem-7xl) }
-.p\:8xl, .\$p\:8xl > * { padding: var(--sf-rem-8xl) }
-.p\:9xl, .\$p\:9xl > * { padding: var(--sf-rem-9xl) }
-.p\:10xl, .\$p\:10xl > * { padding: var(--sf-rem-10xl) }
-.p\:11xl, .\$p\:11xl > * { padding: var(--sf-rem-11xl) }
-.p\:12xl, .\$p\:12xl > * { padding: var(--sf-rem-12xl) }
+.p { padding: var(--sf-rem) }
+.p\:0 { padding: 0 }
+.p\:xs { padding: var(--sf-rem-xs) }
+.p\:sm { padding: var(--sf-rem-sm) }
+.p\:s { padding: var(--sf-rem-s) }
+.p\:ms { padding: var(--sf-rem-ms) }
+.p\:ls { padding: var(--sf-rem-ls) }
+.p\:md { padding: var(--sf-rem-md) }
+.p\:lg { padding: var(--sf-rem-lg) }
+.p\:xl { padding: var(--sf-rem-xl) }
+.p\:2xl { padding: var(--sf-rem-2xl) }
+.p\:3xl { padding: var(--sf-rem-3xl) }
+.p\:4xl { padding: var(--sf-rem-4xl) }
+.p\:5xl { padding: var(--sf-rem-5xl) }
+.p\:6xl { padding: var(--sf-rem-6xl) }
+.p\:7xl { padding: var(--sf-rem-7xl) }
+.p\:8xl { padding: var(--sf-rem-8xl) }
+.p\:9xl { padding: var(--sf-rem-9xl) }
+.p\:10xl { padding: var(--sf-rem-10xl) }
+.p\:11xl { padding: var(--sf-rem-11xl) }
+.p\:12xl { padding: var(--sf-rem-12xl) }
 
-.pt, .\$pt > * { padding-block-start: var(--sf-rem) }
-.pt\:0, .\$pt\:0 > * { padding-block-start: 0 }
-.pt\:xs, .\$pt\:xs > * { padding-block-start: var(--sf-rem-xs) }
-.pt\:sm, .\$pt\:sm > * { padding-block-start: var(--sf-rem-sm) }
-.pt\:s, .\$pt\:s > * { padding-block-start: var(--sf-rem-s) }
-.pt\:ms, .\$pt\:ms > * { padding-block-start: var(--sf-rem-ms) }
-.pt\:ls, .\$pt\:ls > * { padding-block-start: var(--sf-rem-ls) }
-.pt\:md, .\$pt\:md > * { padding-block-start: var(--sf-rem-md) }
-.pt\:lg, .\$pt\:lg > * { padding-block-start: var(--sf-rem-lg) }
-.pt\:xl, .\$pt\:xl > * { padding-block-start: var(--sf-rem-xl) }
-.pt\:2xl, .\$pt\:2xl > * { padding-block-start: var(--sf-rem-2xl) }
-.pt\:3xl, .\$pt\:3xl > * { padding-block-start: var(--sf-rem-3xl) }
-.pt\:4xl, .\$pt\:4xl > * { padding-block-start: var(--sf-rem-4xl) }
-.pt\:5xl, .\$pt\:5xl > * { padding-block-start: var(--sf-rem-5xl) }
-.pt\:6xl, .\$pt\:6xl > * { padding-block-start: var(--sf-rem-6xl) }
-.pt\:7xl, .\$pt\:7xl > * { padding-block-start: var(--sf-rem-7xl) }
-.pt\:8xl, .\$pt\:8xl > * { padding-block-start: var(--sf-rem-8xl) }
-.pt\:9xl, .\$pt\:9xl > * { padding-block-start: var(--sf-rem-9xl) }
-.pt\:10xl, .\$pt\:10xl > * { padding-block-start: var(--sf-rem-10xl) }
-.pt\:11xl, .\$pt\:11xl > * { padding-block-start: var(--sf-rem-11xl) }
-.pt\:12xl, .\$pt\:12xl > * { padding-block-start: var(--sf-rem-12xl) }
+.pt { padding-block-start: var(--sf-rem) }
+.pt\:0 { padding-block-start: 0 }
+.pt\:xs { padding-block-start: var(--sf-rem-xs) }
+.pt\:sm { padding-block-start: var(--sf-rem-sm) }
+.pt\:s { padding-block-start: var(--sf-rem-s) }
+.pt\:ms { padding-block-start: var(--sf-rem-ms) }
+.pt\:ls { padding-block-start: var(--sf-rem-ls) }
+.pt\:md { padding-block-start: var(--sf-rem-md) }
+.pt\:lg { padding-block-start: var(--sf-rem-lg) }
+.pt\:xl { padding-block-start: var(--sf-rem-xl) }
+.pt\:2xl { padding-block-start: var(--sf-rem-2xl) }
+.pt\:3xl { padding-block-start: var(--sf-rem-3xl) }
+.pt\:4xl { padding-block-start: var(--sf-rem-4xl) }
+.pt\:5xl { padding-block-start: var(--sf-rem-5xl) }
+.pt\:6xl { padding-block-start: var(--sf-rem-6xl) }
+.pt\:7xl { padding-block-start: var(--sf-rem-7xl) }
+.pt\:8xl { padding-block-start: var(--sf-rem-8xl) }
+.pt\:9xl { padding-block-start: var(--sf-rem-9xl) }
+.pt\:10xl { padding-block-start: var(--sf-rem-10xl) }
+.pt\:11xl { padding-block-start: var(--sf-rem-11xl) }
+.pt\:12xl { padding-block-start: var(--sf-rem-12xl) }
 
-.pr, .\$pr > * { padding-inline-end: var(--sf-rem) }
-.pr\:0, .\$pr\:0 > * { padding-inline-end: 0 }
-.pr\:xs, .\$pr\:xs > * { padding-inline-end: var(--sf-rem-xs) }
-.pr\:sm, .\$pr\:sm > * { padding-inline-end: var(--sf-rem-sm) }
-.pr\:s, .\$pr\:s > * { padding-inline-end: var(--sf-rem-s) }
-.pr\:ms, .\$pr\:ms > * { padding-inline-end: var(--sf-rem-ms) }
-.pr\:ls, .\$pr\:ls > * { padding-inline-end: var(--sf-rem-ls) }
-.pr\:md, .\$pr\:md > * { padding-inline-end: var(--sf-rem-md) }
-.pr\:lg, .\$pr\:lg > * { padding-inline-end: var(--sf-rem-lg) }
-.pr\:xl, .\$pr\:xl > * { padding-inline-end: var(--sf-rem-xl) }
-.pr\:2xl, .\$pr\:2xl > * { padding-inline-end: var(--sf-rem-2xl) }
-.pr\:3xl, .\$pr\:3xl > * { padding-inline-end: var(--sf-rem-3xl) }
-.pr\:4xl, .\$pr\:4xl > * { padding-inline-end: var(--sf-rem-4xl) }
-.pr\:5xl, .\$pr\:5xl > * { padding-inline-end: var(--sf-rem-5xl) }
-.pr\:6xl, .\$pr\:6xl > * { padding-inline-end: var(--sf-rem-6xl) }
-.pr\:7xl, .\$pr\:7xl > * { padding-inline-end: var(--sf-rem-7xl) }
-.pr\:8xl, .\$pr\:8xl > * { padding-inline-end: var(--sf-rem-8xl) }
-.pr\:9xl, .\$pr\:9xl > * { padding-inline-end: var(--sf-rem-9xl) }
-.pr\:10xl, .\$pr\:10xl > * { padding-inline-end: var(--sf-rem-10xl) }
-.pr\:11xl, .\$pr\:11xl > * { padding-inline-end: var(--sf-rem-11xl) }
-.pr\:12xl, .\$pr\:12xl > * { padding-inline-end: var(--sf-rem-12xl) }
+.pr { padding-inline-end: var(--sf-rem) }
+.pr\:0 { padding-inline-end: 0 }
+.pr\:xs { padding-inline-end: var(--sf-rem-xs) }
+.pr\:sm { padding-inline-end: var(--sf-rem-sm) }
+.pr\:s { padding-inline-end: var(--sf-rem-s) }
+.pr\:ms { padding-inline-end: var(--sf-rem-ms) }
+.pr\:ls { padding-inline-end: var(--sf-rem-ls) }
+.pr\:md { padding-inline-end: var(--sf-rem-md) }
+.pr\:lg { padding-inline-end: var(--sf-rem-lg) }
+.pr\:xl { padding-inline-end: var(--sf-rem-xl) }
+.pr\:2xl { padding-inline-end: var(--sf-rem-2xl) }
+.pr\:3xl { padding-inline-end: var(--sf-rem-3xl) }
+.pr\:4xl { padding-inline-end: var(--sf-rem-4xl) }
+.pr\:5xl { padding-inline-end: var(--sf-rem-5xl) }
+.pr\:6xl { padding-inline-end: var(--sf-rem-6xl) }
+.pr\:7xl { padding-inline-end: var(--sf-rem-7xl) }
+.pr\:8xl { padding-inline-end: var(--sf-rem-8xl) }
+.pr\:9xl { padding-inline-end: var(--sf-rem-9xl) }
+.pr\:10xl { padding-inline-end: var(--sf-rem-10xl) }
+.pr\:11xl { padding-inline-end: var(--sf-rem-11xl) }
+.pr\:12xl { padding-inline-end: var(--sf-rem-12xl) }
 
-.pb, .\$pb > * { padding-block-end: var(--sf-rem) }
-.pb\:0, .\$pb\:0 > * { padding-block-end: 0 }
-.pb\:xs, .\$pb\:xs > * { padding-block-end: var(--sf-rem-xs) }
-.pb\:sm, .\$pb\:sm > * { padding-block-end: var(--sf-rem-sm) }
-.pb\:s, .\$pb\:s > * { padding-block-end: var(--sf-rem-s) }
-.pb\:ms, .\$pb\:ms > * { padding-block-end: var(--sf-rem-ms) }
-.pb\:ls, .\$pb\:ls > * { padding-block-end: var(--sf-rem-ls) }
-.pb\:md, .\$pb\:md > * { padding-block-end: var(--sf-rem-md) }
-.pb\:lg, .\$pb\:lg > * { padding-block-end: var(--sf-rem-lg) }
-.pb\:xl, .\$pb\:xl > * { padding-block-end: var(--sf-rem-xl) }
-.pb\:2xl, .\$pb\:2xl > * { padding-block-end: var(--sf-rem-2xl) }
-.pb\:3xl, .\$pb\:3xl > * { padding-block-end: var(--sf-rem-3xl) }
-.pb\:4xl, .\$pb\:4xl > * { padding-block-end: var(--sf-rem-4xl) }
-.pb\:5xl, .\$pb\:5xl > * { padding-block-end: var(--sf-rem-5xl) }
-.pb\:6xl, .\$pb\:6xl > * { padding-block-end: var(--sf-rem-6xl) }
-.pb\:7xl, .\$pb\:7xl > * { padding-block-end: var(--sf-rem-7xl) }
-.pb\:8xl, .\$pb\:8xl > * { padding-block-end: var(--sf-rem-8xl) }
-.pb\:9xl, .\$pb\:9xl > * { padding-block-end: var(--sf-rem-9xl) }
-.pb\:10xl, .\$pb\:10xl > * { padding-block-end: var(--sf-rem-10xl) }
-.pb\:11xl, .\$pb\:11xl > * { padding-block-end: var(--sf-rem-11xl) }
-.pb\:12xl, .\$pb\:12xl > * { padding-block-end: var(--sf-rem-12xl) }
+.pb { padding-block-end: var(--sf-rem) }
+.pb\:0 { padding-block-end: 0 }
+.pb\:xs { padding-block-end: var(--sf-rem-xs) }
+.pb\:sm { padding-block-end: var(--sf-rem-sm) }
+.pb\:s { padding-block-end: var(--sf-rem-s) }
+.pb\:ms { padding-block-end: var(--sf-rem-ms) }
+.pb\:ls { padding-block-end: var(--sf-rem-ls) }
+.pb\:md { padding-block-end: var(--sf-rem-md) }
+.pb\:lg { padding-block-end: var(--sf-rem-lg) }
+.pb\:xl { padding-block-end: var(--sf-rem-xl) }
+.pb\:2xl { padding-block-end: var(--sf-rem-2xl) }
+.pb\:3xl { padding-block-end: var(--sf-rem-3xl) }
+.pb\:4xl { padding-block-end: var(--sf-rem-4xl) }
+.pb\:5xl { padding-block-end: var(--sf-rem-5xl) }
+.pb\:6xl { padding-block-end: var(--sf-rem-6xl) }
+.pb\:7xl { padding-block-end: var(--sf-rem-7xl) }
+.pb\:8xl { padding-block-end: var(--sf-rem-8xl) }
+.pb\:9xl { padding-block-end: var(--sf-rem-9xl) }
+.pb\:10xl { padding-block-end: var(--sf-rem-10xl) }
+.pb\:11xl { padding-block-end: var(--sf-rem-11xl) }
+.pb\:12xl { padding-block-end: var(--sf-rem-12xl) }
 
-.pl, .\$pl > * { padding-inline-start: var(--sf-rem) }
-.pl\:0, .\$pl\:0 > * { padding-inline-start: 0 }
-.pl\:xs, .\$pl\:xs > * { padding-inline-start: var(--sf-rem-xs) }
-.pl\:sm, .\$pl\:sm > * { padding-inline-start: var(--sf-rem-sm) }
-.pl\:s, .\$pl\:s > * { padding-inline-start: var(--sf-rem-s) }
-.pl\:ms, .\$pl\:ms > * { padding-inline-start: var(--sf-rem-ms) }
-.pl\:ls, .\$pl\:ls > * { padding-inline-start: var(--sf-rem-ls) }
-.pl\:md, .\$pl\:md > * { padding-inline-start: var(--sf-rem-md) }
-.pl\:lg, .\$pl\:lg > * { padding-inline-start: var(--sf-rem-lg) }
-.pl\:xl, .\$pl\:xl > * { padding-inline-start: var(--sf-rem-xl) }
-.pl\:2xl, .\$pl\:2xl > * { padding-inline-start: var(--sf-rem-2xl) }
-.pl\:3xl, .\$pl\:3xl > * { padding-inline-start: var(--sf-rem-3xl) }
-.pl\:4xl, .\$pl\:4xl > * { padding-inline-start: var(--sf-rem-4xl) }
-.pl\:5xl, .\$pl\:5xl > * { padding-inline-start: var(--sf-rem-5xl) }
-.pl\:6xl, .\$pl\:6xl > * { padding-inline-start: var(--sf-rem-6xl) }
-.pl\:7xl, .\$pl\:7xl > * { padding-inline-start: var(--sf-rem-7xl) }
-.pl\:8xl, .\$pl\:8xl > * { padding-inline-start: var(--sf-rem-8xl) }
-.pl\:9xl, .\$pl\:9xl > * { padding-inline-start: var(--sf-rem-9xl) }
-.pl\:10xl, .\$pl\:10xl > * { padding-inline-start: var(--sf-rem-10xl) }
-.pl\:11xl, .\$pl\:11xl > * { padding-inline-start: var(--sf-rem-11xl) }
-.pl\:12xl, .\$pl\:12xl > * { padding-inline-start: var(--sf-rem-12xl) }
+.pl { padding-inline-start: var(--sf-rem) }
+.pl\:0 { padding-inline-start: 0 }
+.pl\:xs { padding-inline-start: var(--sf-rem-xs) }
+.pl\:sm { padding-inline-start: var(--sf-rem-sm) }
+.pl\:s { padding-inline-start: var(--sf-rem-s) }
+.pl\:ms { padding-inline-start: var(--sf-rem-ms) }
+.pl\:ls { padding-inline-start: var(--sf-rem-ls) }
+.pl\:md { padding-inline-start: var(--sf-rem-md) }
+.pl\:lg { padding-inline-start: var(--sf-rem-lg) }
+.pl\:xl { padding-inline-start: var(--sf-rem-xl) }
+.pl\:2xl { padding-inline-start: var(--sf-rem-2xl) }
+.pl\:3xl { padding-inline-start: var(--sf-rem-3xl) }
+.pl\:4xl { padding-inline-start: var(--sf-rem-4xl) }
+.pl\:5xl { padding-inline-start: var(--sf-rem-5xl) }
+.pl\:6xl { padding-inline-start: var(--sf-rem-6xl) }
+.pl\:7xl { padding-inline-start: var(--sf-rem-7xl) }
+.pl\:8xl { padding-inline-start: var(--sf-rem-8xl) }
+.pl\:9xl { padding-inline-start: var(--sf-rem-9xl) }
+.pl\:10xl { padding-inline-start: var(--sf-rem-10xl) }
+.pl\:11xl { padding-inline-start: var(--sf-rem-11xl) }
+.pl\:12xl { padding-inline-start: var(--sf-rem-12xl) }
 
-.px, .\$px > * { padding-inline: var(--sf-rem) }
-.px\:0, .\$px\:0 > * { padding-inline: 0 }
-.px\:xs, .\$px\:xs > * { padding-inline: var(--sf-rem-xs) }
-.px\:sm, .\$px\:sm > * { padding-inline: var(--sf-rem-sm) }
-.px\:s, .\$px\:s > * { padding-inline: var(--sf-rem-s) }
-.px\:ms, .\$px\:ms > * { padding-inline: var(--sf-rem-ms) }
-.px\:ls, .\$px\:ls > * { padding-inline: var(--sf-rem-ls) }
-.px\:md, .\$px\:md > * { padding-inline: var(--sf-rem-md) }
-.px\:lg, .\$px\:lg > * { padding-inline: var(--sf-rem-lg) }
-.px\:xl, .\$px\:xl > * { padding-inline: var(--sf-rem-xl) }
-.px\:2xl, .\$px\:2xl > * { padding-inline: var(--sf-rem-2xl) }
-.px\:3xl, .\$px\:3xl > * { padding-inline: var(--sf-rem-3xl) }
-.px\:4xl, .\$px\:4xl > * { padding-inline: var(--sf-rem-4xl) }
-.px\:5xl, .\$px\:5xl > * { padding-inline: var(--sf-rem-5xl) }
-.px\:6xl, .\$px\:6xl > * { padding-inline: var(--sf-rem-6xl) }
-.px\:7xl, .\$px\:7xl > * { padding-inline: var(--sf-rem-7xl) }
-.px\:8xl, .\$px\:8xl > * { padding-inline: var(--sf-rem-8xl) }
-.px\:9xl, .\$px\:9xl > * { padding-inline: var(--sf-rem-9xl) }
-.px\:10xl, .\$px\:10xl > * { padding-inline: var(--sf-rem-10xl) }
-.px\:11xl, .\$px\:11xl > * { padding-inline: var(--sf-rem-11xl) }
-.px\:12xl, .\$px\:12xl > * { padding-inline: var(--sf-rem-12xl) }
+.px { padding-inline: var(--sf-rem) }
+.px\:0 { padding-inline: 0 }
+.px\:xs { padding-inline: var(--sf-rem-xs) }
+.px\:sm { padding-inline: var(--sf-rem-sm) }
+.px\:s { padding-inline: var(--sf-rem-s) }
+.px\:ms { padding-inline: var(--sf-rem-ms) }
+.px\:ls { padding-inline: var(--sf-rem-ls) }
+.px\:md { padding-inline: var(--sf-rem-md) }
+.px\:lg { padding-inline: var(--sf-rem-lg) }
+.px\:xl { padding-inline: var(--sf-rem-xl) }
+.px\:2xl { padding-inline: var(--sf-rem-2xl) }
+.px\:3xl { padding-inline: var(--sf-rem-3xl) }
+.px\:4xl { padding-inline: var(--sf-rem-4xl) }
+.px\:5xl { padding-inline: var(--sf-rem-5xl) }
+.px\:6xl { padding-inline: var(--sf-rem-6xl) }
+.px\:7xl { padding-inline: var(--sf-rem-7xl) }
+.px\:8xl { padding-inline: var(--sf-rem-8xl) }
+.px\:9xl { padding-inline: var(--sf-rem-9xl) }
+.px\:10xl { padding-inline: var(--sf-rem-10xl) }
+.px\:11xl { padding-inline: var(--sf-rem-11xl) }
+.px\:12xl { padding-inline: var(--sf-rem-12xl) }
 
-.py, .\$py > * { padding-block: var(--sf-rem) }
-.py\:0, .\$py\:0 > * { padding-block: 0 }
-.py\:xs, .\$py\:xs > * { padding-block: var(--sf-rem-xs) }
-.py\:sm, .\$py\:sm > * { padding-block: var(--sf-rem-sm) }
-.py\:s, .\$py\:s > * { padding-block: var(--sf-rem-s) }
-.py\:ms, .\$py\:ms > * { padding-block: var(--sf-rem-ms) }
-.py\:ls, .\$py\:ls > * { padding-block: var(--sf-rem-ls) }
-.py\:md, .\$py\:md > * { padding-block: var(--sf-rem-md) }
-.py\:lg, .\$py\:lg > * { padding-block: var(--sf-rem-lg) }
-.py\:xl, .\$py\:xl > * { padding-block: var(--sf-rem-xl) }
-.py\:2xl, .\$py\:2xl > * { padding-block: var(--sf-rem-2xl) }
-.py\:3xl, .\$py\:3xl > * { padding-block: var(--sf-rem-3xl) }
-.py\:4xl, .\$py\:4xl > * { padding-block: var(--sf-rem-4xl) }
-.py\:5xl, .\$py\:5xl > * { padding-block: var(--sf-rem-5xl) }
-.py\:6xl, .\$py\:6xl > * { padding-block: var(--sf-rem-6xl) }
-.py\:7xl, .\$py\:7xl > * { padding-block: var(--sf-rem-7xl) }
-.py\:8xl, .\$py\:8xl > * { padding-block: var(--sf-rem-8xl) }
-.py\:9xl, .\$py\:9xl > * { padding-block: var(--sf-rem-9xl) }
-.py\:10xl, .\$py\:10xl > * { padding-block: var(--sf-rem-10xl) }
-.py\:11xl, .\$py\:11xl > * { padding-block: var(--sf-rem-11xl) }
-.py\:12xl, .\$py\:12xl > * { padding-block: var(--sf-rem-12xl) }
+.py { padding-block: var(--sf-rem) }
+.py\:0 { padding-block: 0 }
+.py\:xs { padding-block: var(--sf-rem-xs) }
+.py\:sm { padding-block: var(--sf-rem-sm) }
+.py\:s { padding-block: var(--sf-rem-s) }
+.py\:ms { padding-block: var(--sf-rem-ms) }
+.py\:ls { padding-block: var(--sf-rem-ls) }
+.py\:md { padding-block: var(--sf-rem-md) }
+.py\:lg { padding-block: var(--sf-rem-lg) }
+.py\:xl { padding-block: var(--sf-rem-xl) }
+.py\:2xl { padding-block: var(--sf-rem-2xl) }
+.py\:3xl { padding-block: var(--sf-rem-3xl) }
+.py\:4xl { padding-block: var(--sf-rem-4xl) }
+.py\:5xl { padding-block: var(--sf-rem-5xl) }
+.py\:6xl { padding-block: var(--sf-rem-6xl) }
+.py\:7xl { padding-block: var(--sf-rem-7xl) }
+.py\:8xl { padding-block: var(--sf-rem-8xl) }
+.py\:9xl { padding-block: var(--sf-rem-9xl) }
+.py\:10xl { padding-block: var(--sf-rem-10xl) }
+.py\:11xl { padding-block: var(--sf-rem-11xl) }
+.py\:12xl { padding-block: var(--sf-rem-12xl) }
 
 /* /// */
 
-html.var .pt, html.var .\$pt > * { padding-top: 8px }
-html.var .pt\:0, html.var .\$pt\:0 > * { padding-top: 0 }
-html.var .pt\:xs, html.var .\$pt\:xs > * { padding-top: 4px }
-html.var .pt\:sm, html.var .\$pt\:sm > * { padding-top: 8px }
-html.var .pt\:s, html.var .\$pt\:s > * { padding-top: 10px }
-html.var .pt\:ms, html.var .\$pt\:ms > * { padding-top: 12px }
-html.var .pt\:ls, html.var .\$pt\:ls > * { padding-top: 14px }
-html.var .pt\:md, html.var .\$pt\:md > * { padding-top: 16px }
-html.var .pt\:lg, html.var .\$pt\:lg > * { padding-top: 18px }
-html.var .pt\:xl, html.var .\$pt\:xl > * { padding-top: 20px }
-html.var .pt\:2xl, html.var .\$pt\:2xl > * { padding-top: 24px }
-html.var .pt\:3xl, html.var .\$pt\:3xl > * { padding-top: 32px }
-html.var .pt\:4xl, html.var .\$pt\:4xl > * { padding-top: 40px }
-html.var .pt\:5xl, html.var .\$pt\:5xl > * { padding-top: 48px }
-html.var .pt\:6xl, html.var .\$pt\:6xl > * { padding-top: 56px }
-html.var .pt\:7xl, html.var .\$pt\:7xl > * { padding-top: 64px }
-html.var .pt\:8xl, html.var .\$pt\:8xl > * { padding-top: 72px }
-html.var .pt\:9xl, html.var .\$pt\:9xl > * { padding-top: 80px }
-html.var .pt\:10xl, html.var .\$pt\:10xl > * { padding-top: 88px }
-html.var .pt\:11xl, html.var .\$pt\:11xl > * { padding-top: 96px }
-html.var .pt\:12xl, html.var .\$pt\:12xl > * { padding-top: 104px }
+html.var .p { padding: 8px }
+html.var .p\:0 { padding: 0 }
+html.var .p\:xs { padding: 4px }
+html.var .p\:sm { padding: 8px }
+html.var .p\:s { padding: 10px }
+html.var .p\:ms { padding: 12px }
+html.var .p\:ls { padding: 14px }
+html.var .p\:md { padding: 16px }
+html.var .p\:lg { padding: 18px }
+html.var .p\:xl { padding: 20px }
+html.var .p\:2xl { padding: 24px }
+html.var .p\:3xl { padding: 32px }
+html.var .p\:4xl { padding: 40px }
+html.var .p\:5xl { padding: 48px }
+html.var .p\:6xl { padding: 56px }
+html.var .p\:7xl { padding: 64px }
+html.var .p\:8xl { padding: 72px }
+html.var .p\:9xl { padding: 80px }
+html.var .p\:10xl { padding: 88px }
+html.var .p\:11xl { padding: 96px }
+html.var .p\:12xl { padding: 104px }
 
-html.var .pr, html.var .\$pr > * { padding-right: 8px }
-html.var .pr\:0, html.var .\$pr\:0 > * { padding-right: 0 }
-html.var .pr\:xs, html.var .\$pr\:xs > * { padding-right: 4px }
-html.var .pr\:sm, html.var .\$pr\:sm > * { padding-right: 8px }
-html.var .pr\:s, html.var .\$pr\:s > * { padding-right: 10px }
-html.var .pr\:ms, html.var .\$pr\:ms > * { padding-right: 12px }
-html.var .pr\:ls, html.var .\$pr\:ls > * { padding-right: 14px }
-html.var .pr\:md, html.var .\$pr\:md > * { padding-right: 16px }
-html.var .pr\:lg, html.var .\$pr\:lg > * { padding-right: 18px }
-html.var .pr\:xl, html.var .\$pr\:xl > * { padding-right: 20px }
-html.var .pr\:2xl, html.var .\$pr\:2xl > * { padding-right: 24px }
-html.var .pr\:3xl, html.var .\$pr\:3xl > * { padding-right: 32px }
-html.var .pr\:4xl, html.var .\$pr\:4xl > * { padding-right: 40px }
-html.var .pr\:5xl, html.var .\$pr\:5xl > * { padding-right: 48px }
-html.var .pr\:6xl, html.var .\$pr\:6xl > * { padding-right: 56px }
-html.var .pr\:7xl, html.var .\$pr\:7xl > * { padding-right: 64px }
-html.var .pr\:8xl, html.var .\$pr\:8xl > * { padding-right: 72px }
-html.var .pr\:9xl, html.var .\$pr\:9xl > * { padding-right: 80px }
-html.var .pr\:10xl, html.var .\$pr\:10xl > * { padding-right: 88px }
-html.var .pr\:11xl, html.var .\$pr\:11xl > * { padding-right: 96px }
-html.var .pr\:12xl, html.var .\$pr\:12xl > * { padding-right: 104px }
+html.var .pt { padding-top: 8px }
+html.var .pt\:0 { padding-top: 0 }
+html.var .pt\:xs { padding-top: 4px }
+html.var .pt\:sm { padding-top: 8px }
+html.var .pt\:s { padding-top: 10px }
+html.var .pt\:ms { padding-top: 12px }
+html.var .pt\:ls { padding-top: 14px }
+html.var .pt\:md { padding-top: 16px }
+html.var .pt\:lg { padding-top: 18px }
+html.var .pt\:xl { padding-top: 20px }
+html.var .pt\:2xl { padding-top: 24px }
+html.var .pt\:3xl { padding-top: 32px }
+html.var .pt\:4xl { padding-top: 40px }
+html.var .pt\:5xl { padding-top: 48px }
+html.var .pt\:6xl { padding-top: 56px }
+html.var .pt\:7xl { padding-top: 64px }
+html.var .pt\:8xl { padding-top: 72px }
+html.var .pt\:9xl { padding-top: 80px }
+html.var .pt\:10xl { padding-top: 88px }
+html.var .pt\:11xl { padding-top: 96px }
+html.var .pt\:12xl { padding-top: 104px }
 
-html.var .pb, html.var .\$pb > * { padding-bottom: 8px }
-html.var .pb\:0, html.var .\$pb\:0 > * { padding-bottom: 0 }
-html.var .pb\:xs, html.var .\$pb\:xs > * { padding-bottom: 4px }
-html.var .pb\:sm, html.var .\$pb\:sm > * { padding-bottom: 8px }
-html.var .pb\:s, html.var .\$pb\:s > * { padding-bottom: 10px }
-html.var .pb\:ms, html.var .\$pb\:ms > * { padding-bottom: 12px }
-html.var .pb\:ls, html.var .\$pb\:ls > * { padding-bottom: 14px }
-html.var .pb\:md, html.var .\$pb\:md > * { padding-bottom: 16px }
-html.var .pb\:lg, html.var .\$pb\:lg > * { padding-bottom: 18px }
-html.var .pb\:xl, html.var .\$pb\:xl > * { padding-bottom: 20px }
-html.var .pb\:2xl, html.var .\$pb\:2xl > * { padding-bottom: 24px }
-html.var .pb\:3xl, html.var .\$pb\:3xl > * { padding-bottom: 32px }
-html.var .pb\:4xl, html.var .\$pb\:4xl > * { padding-bottom: 40px }
-html.var .pb\:5xl, html.var .\$pb\:5xl > * { padding-bottom: 48px }
-html.var .pb\:6xl, html.var .\$pb\:6xl > * { padding-bottom: 56px }
-html.var .pb\:7xl, html.var .\$pb\:7xl > * { padding-bottom: 64px }
-html.var .pb\:8xl, html.var .\$pb\:8xl > * { padding-bottom: 72px }
-html.var .pb\:9xl, html.var .\$pb\:9xl > * { padding-bottom: 80px }
-html.var .pb\:10xl, html.var .\$pb\:10xl > * { padding-bottom: 88px }
-html.var .pb\:11xl, html.var .\$pb\:11xl > * { padding-bottom: 96px }
-html.var .pb\:12xl, html.var .\$pb\:12xl > * { padding-bottom: 104px }
+html.var .pr { padding-right: 8px }
+html.var .pr\:0 { padding-right: 0 }
+html.var .pr\:xs { padding-right: 4px }
+html.var .pr\:sm { padding-right: 8px }
+html.var .pr\:s { padding-right: 10px }
+html.var .pr\:ms { padding-right: 12px }
+html.var .pr\:ls { padding-right: 14px }
+html.var .pr\:md { padding-right: 16px }
+html.var .pr\:lg { padding-right: 18px }
+html.var .pr\:xl { padding-right: 20px }
+html.var .pr\:2xl { padding-right: 24px }
+html.var .pr\:3xl { padding-right: 32px }
+html.var .pr\:4xl { padding-right: 40px }
+html.var .pr\:5xl { padding-right: 48px }
+html.var .pr\:6xl { padding-right: 56px }
+html.var .pr\:7xl { padding-right: 64px }
+html.var .pr\:8xl { padding-right: 72px }
+html.var .pr\:9xl { padding-right: 80px }
+html.var .pr\:10xl { padding-right: 88px }
+html.var .pr\:11xl { padding-right: 96px }
+html.var .pr\:12xl { padding-right: 104px }
 
-html.var .pl, html.var .\$pl > * { padding-left: 8px }
-html.var .pl\:0, html.var .\$pl\:0 > * { padding-left: 0 }
-html.var .pl\:xs, html.var .\$pl\:xs > * { padding-left: 4px }
-html.var .pl\:sm, html.var .\$pl\:sm > * { padding-left: 8px }
-html.var .pl\:s, html.var .\$pl\:s > * { padding-left: 10px }
-html.var .pl\:ms, html.var .\$pl\:ms > * { padding-left: 12px }
-html.var .pl\:ls, html.var .\$pl\:ls > * { padding-left: 14px }
-html.var .pl\:md, html.var .\$pl\:md > * { padding-left: 16px }
-html.var .pl\:lg, html.var .\$pl\:lg > * { padding-left: 18px }
-html.var .pl\:xl, html.var .\$pl\:xl > * { padding-left: 20px }
-html.var .pl\:2xl, html.var .\$pl\:2xl > * { padding-left: 24px }
-html.var .pl\:3xl, html.var .\$pl\:3xl > * { padding-left: 32px }
-html.var .pl\:4xl, html.var .\$pl\:4xl > * { padding-left: 40px }
-html.var .pl\:5xl, html.var .\$pl\:5xl > * { padding-left: 48px }
-html.var .pl\:6xl, html.var .\$pl\:6xl > * { padding-left: 56px }
-html.var .pl\:7xl, html.var .\$pl\:7xl > * { padding-left: 64px }
-html.var .pl\:8xl, html.var .\$pl\:8xl > * { padding-left: 72px }
-html.var .pl\:9xl, html.var .\$pl\:9xl > * { padding-left: 80px }
-html.var .pl\:10xl, html.var .\$pl\:10xl > * { padding-left: 88px }
-html.var .pl\:11xl, html.var .\$pl\:11xl > * { padding-left: 96px }
-html.var .pl\:12xl, html.var .\$pl\:12xl > * { padding-left: 104px }
+html.var .pb { padding-bottom: 8px }
+html.var .pb\:0 { padding-bottom: 0 }
+html.var .pb\:xs { padding-bottom: 4px }
+html.var .pb\:sm { padding-bottom: 8px }
+html.var .pb\:s { padding-bottom: 10px }
+html.var .pb\:ms { padding-bottom: 12px }
+html.var .pb\:ls { padding-bottom: 14px }
+html.var .pb\:md { padding-bottom: 16px }
+html.var .pb\:lg { padding-bottom: 18px }
+html.var .pb\:xl { padding-bottom: 20px }
+html.var .pb\:2xl { padding-bottom: 24px }
+html.var .pb\:3xl { padding-bottom: 32px }
+html.var .pb\:4xl { padding-bottom: 40px }
+html.var .pb\:5xl { padding-bottom: 48px }
+html.var .pb\:6xl { padding-bottom: 56px }
+html.var .pb\:7xl { padding-bottom: 64px }
+html.var .pb\:8xl { padding-bottom: 72px }
+html.var .pb\:9xl { padding-bottom: 80px }
+html.var .pb\:10xl { padding-bottom: 88px }
+html.var .pb\:11xl { padding-bottom: 96px }
+html.var .pb\:12xl { padding-bottom: 104px }
 
-html.var .px, html.var .\$px > * { padding-left: 8px; padding-right: 8px }
-html.var .px\:0, html.var .\$px\:0 > * { padding-left: 0; padding-right: 0 }
-html.var .px\:xs, html.var .\$px\:xs > * { padding-left: 4px; padding-right: 4px }
-html.var .px\:sm, html.var .\$px\:sm > * { padding-left: 8px; padding-right: 8px }
-html.var .px\:s, html.var .\$px\:s > * { padding-left: 10px; padding-right: 10px }
-html.var .px\:ms, html.var .\$px\:ms > * { padding-left: 12px; padding-right: 12px }
-html.var .px\:ls, html.var .\$px\:ls > * { padding-left: 14px; padding-right: 14px }
-html.var .px\:md, html.var .\$px\:md > * { padding-left: 16px; padding-right: 16px }
-html.var .px\:lg, html.var .\$px\:lg > * { padding-left: 18px; padding-right: 18px }
-html.var .px\:xl, html.var .\$px\:xl > * { padding-left: 20px; padding-right: 20px }
-html.var .px\:2xl, html.var .\$px\:2xl > * { padding-left: 24px; padding-right: 24px }
-html.var .px\:3xl, html.var .\$px\:3xl > * { padding-left: 32px; padding-right: 32px }
-html.var .px\:4xl, html.var .\$px\:4xl > * { padding-left: 40px; padding-right: 40px }
-html.var .px\:5xl, html.var .\$px\:5xl > * { padding-left: 48px; padding-right: 48px }
-html.var .px\:6xl, html.var .\$px\:6xl > * { padding-left: 56px; padding-right: 56px }
-html.var .px\:7xl, html.var .\$px\:7xl > * { padding-left: 64px; padding-right: 64px }
-html.var .px\:8xl, html.var .\$px\:8xl > * { padding-left: 72px; padding-right: 72px }
-html.var .px\:9xl, html.var .\$px\:9xl > * { padding-left: 80px; padding-right: 80px }
-html.var .px\:10xl, html.var .\$px\:10xl > * { padding-left: 88px; padding-right: 88px }
-html.var .px\:11xl, html.var .\$px\:11xl > * { padding-left: 96px; padding-right: 96px }
-html.var .px\:12xl, html.var .\$px\:12xl > * { padding-left: 104px; padding-right: 104px }
+html.var .pl { padding-left: 8px }
+html.var .pl\:0 { padding-left: 0 }
+html.var .pl\:xs { padding-left: 4px }
+html.var .pl\:sm { padding-left: 8px }
+html.var .pl\:s { padding-left: 10px }
+html.var .pl\:ms { padding-left: 12px }
+html.var .pl\:ls { padding-left: 14px }
+html.var .pl\:md { padding-left: 16px }
+html.var .pl\:lg { padding-left: 18px }
+html.var .pl\:xl { padding-left: 20px }
+html.var .pl\:2xl { padding-left: 24px }
+html.var .pl\:3xl { padding-left: 32px }
+html.var .pl\:4xl { padding-left: 40px }
+html.var .pl\:5xl { padding-left: 48px }
+html.var .pl\:6xl { padding-left: 56px }
+html.var .pl\:7xl { padding-left: 64px }
+html.var .pl\:8xl { padding-left: 72px }
+html.var .pl\:9xl { padding-left: 80px }
+html.var .pl\:10xl { padding-left: 88px }
+html.var .pl\:11xl { padding-left: 96px }
+html.var .pl\:12xl { padding-left: 104px }
 
-html.var .py, html.var .\$py > * { padding-top: 8px; padding-bottom: 8px }
-html.var .py\:0, html.var .\$py\:0 > * { padding-top: 0; padding-bottom: 0 }
-html.var .py\:xs, html.var .\$py\:xs > * { padding-top: 4px; padding-bottom: 4px }
-html.var .py\:sm, html.var .\$py\:sm > * { padding-top: 8px; padding-bottom: 8px }
-html.var .py\:s, html.var .\$py\:s > * { padding-top: 10px; padding-bottom: 10px }
-html.var .py\:ms, html.var .\$py\:ms > * { padding-top: 12px; padding-bottom: 12px }
-html.var .py\:ls, html.var .\$py\:ls > * { padding-top: 14px; padding-bottom: 14px }
-html.var .py\:md, html.var .\$py\:md > * { padding-top: 16px; padding-bottom: 16px }
-html.var .py\:lg, html.var .\$py\:lg > * { padding-top: 18px; padding-bottom: 18px }
-html.var .py\:xl, html.var .\$py\:xl > * { padding-top: 20px; padding-bottom: 20px }
-html.var .py\:2xl, html.var .\$py\:2xl > * { padding-top: 24px; padding-bottom: 24px }
-html.var .py\:3xl, html.var .\$py\:3xl > * { padding-top: 32px; padding-bottom: 32px }
-html.var .py\:4xl, html.var .\$py\:4xl > * { padding-top: 40px; padding-bottom: 40px }
-html.var .py\:5xl, html.var .\$py\:5xl > * { padding-top: 48px; padding-bottom: 48px }
-html.var .py\:6xl, html.var .\$py\:6xl > * { padding-top: 56px; padding-bottom: 56px }
-html.var .py\:7xl, html.var .\$py\:7xl > * { padding-top: 64px; padding-bottom: 64px }
-html.var .py\:8xl, html.var .\$py\:8xl > * { padding-top: 72px; padding-bottom: 72px }
-html.var .py\:9xl, html.var .\$py\:9xl > * { padding-top: 80px; padding-bottom: 80px }
-html.var .py\:10xl, html.var .\$py\:10xl > * { padding-top: 88px; padding-bottom: 88px }
-html.var .py\:11xl, html.var .\$py\:11xl > * { padding-top: 96px; padding-bottom: 96px }
-html.var .py\:12xl, html.var .\$py\:12xl > * { padding-top: 104px; padding-bottom: 104px }
+html.var .px { padding-left: 8px; padding-right: 8px }
+html.var .px\:0 { padding-left: 0; padding-right: 0 }
+html.var .px\:xs { padding-left: 4px; padding-right: 4px }
+html.var .px\:sm { padding-left: 8px; padding-right: 8px }
+html.var .px\:s { padding-left: 10px; padding-right: 10px }
+html.var .px\:ms { padding-left: 12px; padding-right: 12px }
+html.var .px\:ls { padding-left: 14px; padding-right: 14px }
+html.var .px\:md { padding-left: 16px; padding-right: 16px }
+html.var .px\:lg { padding-left: 18px; padding-right: 18px }
+html.var .px\:xl { padding-left: 20px; padding-right: 20px }
+html.var .px\:2xl { padding-left: 24px; padding-right: 24px }
+html.var .px\:3xl { padding-left: 32px; padding-right: 32px }
+html.var .px\:4xl { padding-left: 40px; padding-right: 40px }
+html.var .px\:5xl { padding-left: 48px; padding-right: 48px }
+html.var .px\:6xl { padding-left: 56px; padding-right: 56px }
+html.var .px\:7xl { padding-left: 64px; padding-right: 64px }
+html.var .px\:8xl { padding-left: 72px; padding-right: 72px }
+html.var .px\:9xl { padding-left: 80px; padding-right: 80px }
+html.var .px\:10xl { padding-left: 88px; padding-right: 88px }
+html.var .px\:11xl { padding-left: 96px; padding-right: 96px }
+html.var .px\:12xl { padding-left: 104px; padding-right: 104px }
+
+html.var .py { padding-top: 8px; padding-bottom: 8px }
+html.var .py\:0 { padding-top: 0; padding-bottom: 0 }
+html.var .py\:xs { padding-top: 4px; padding-bottom: 4px }
+html.var .py\:sm { padding-top: 8px; padding-bottom: 8px }
+html.var .py\:s { padding-top: 10px; padding-bottom: 10px }
+html.var .py\:ms { padding-top: 12px; padding-bottom: 12px }
+html.var .py\:ls { padding-top: 14px; padding-bottom: 14px }
+html.var .py\:md { padding-top: 16px; padding-bottom: 16px }
+html.var .py\:lg { padding-top: 18px; padding-bottom: 18px }
+html.var .py\:xl { padding-top: 20px; padding-bottom: 20px }
+html.var .py\:2xl { padding-top: 24px; padding-bottom: 24px }
+html.var .py\:3xl { padding-top: 32px; padding-bottom: 32px }
+html.var .py\:4xl { padding-top: 40px; padding-bottom: 40px }
+html.var .py\:5xl { padding-top: 48px; padding-bottom: 48px }
+html.var .py\:6xl { padding-top: 56px; padding-bottom: 56px }
+html.var .py\:7xl { padding-top: 64px; padding-bottom: 64px }
+html.var .py\:8xl { padding-top: 72px; padding-bottom: 72px }
+html.var .py\:9xl { padding-top: 80px; padding-bottom: 80px }
+html.var .py\:10xl { padding-top: 88px; padding-bottom: 88px }
+html.var .py\:11xl { padding-top: 96px; padding-bottom: 96px }
+html.var .py\:12xl { padding-top: 104px; padding-bottom: 104px }
