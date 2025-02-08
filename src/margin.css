@@ -1,573 +1,596 @@
-.m, .\$m > * { margin: var(--sf-rem) }
-.m\:a, .\$m\:a > * { margin: auto }
-.m\:0, .\$m\:0 > * { margin: 0 }
-.m\:xs, .\$m\:xs > * { margin: var(--sf-rem-xs) }
-.m\:sm, .\$m\:sm > * { margin: var(--sf-rem-sm) }
-.m\:s, .\$m\:s > * { margin: var(--sf-rem-s) }
-.m\:ms, .\$m\:ms > * { margin: var(--sf-rem-ms) }
-.m\:ls, .\$m\:ls > * { margin: var(--sf-rem-ls) }
-.m\:md, .\$m\:md > * { margin: var(--sf-rem-md) }
-.m\:lg, .\$m\:lg > * { margin: var(--sf-rem-lg) }
-.m\:xl, .\$m\:xl > * { margin: var(--sf-rem-xl) }
-.m\:2xl, .\$m\:2xl > * { margin: var(--sf-rem-2xl) }
-.m\:3xl, .\$m\:3xl > * { margin: var(--sf-rem-3xl) }
-.m\:4xl, .\$m\:4xl > * { margin: var(--sf-rem-4xl) }
-.m\:5xl, .\$m\:5xl > * { margin: var(--sf-rem-5xl) }
-.m\:6xl, .\$m\:6xl > * { margin: var(--sf-rem-6xl) }
-.m\:7xl, .\$m\:7xl > * { margin: var(--sf-rem-7xl) }
-.m\:8xl, .\$m\:8xl > * { margin: var(--sf-rem-8xl) }
-.m\:9xl, .\$m\:9xl > * { margin: var(--sf-rem-9xl) }
-.m\:10xl, .\$m\:10xl > * { margin: var(--sf-rem-10xl) }
-.m\:11xl, .\$m\:11xl > * { margin: var(--sf-rem-11xl) }
-.m\:12xl, .\$m\:12xl > * { margin: var(--sf-rem-12xl) }
+.m { margin: var(--sf-rem) }
+.m\:a { margin: auto }
+.m\:0 { margin: 0 }
+.m\:xs { margin: var(--sf-rem-xs) }
+.m\:sm { margin: var(--sf-rem-sm) }
+.m\:s { margin: var(--sf-rem-s) }
+.m\:ms { margin: var(--sf-rem-ms) }
+.m\:ls { margin: var(--sf-rem-ls) }
+.m\:md { margin: var(--sf-rem-md) }
+.m\:lg { margin: var(--sf-rem-lg) }
+.m\:xl { margin: var(--sf-rem-xl) }
+.m\:2xl { margin: var(--sf-rem-2xl) }
+.m\:3xl { margin: var(--sf-rem-3xl) }
+.m\:4xl { margin: var(--sf-rem-4xl) }
+.m\:5xl { margin: var(--sf-rem-5xl) }
+.m\:6xl { margin: var(--sf-rem-6xl) }
+.m\:7xl { margin: var(--sf-rem-7xl) }
+.m\:8xl { margin: var(--sf-rem-8xl) }
+.m\:9xl { margin: var(--sf-rem-9xl) }
+.m\:10xl { margin: var(--sf-rem-10xl) }
+.m\:11xl { margin: var(--sf-rem-11xl) }
+.m\:12xl { margin: var(--sf-rem-12xl) }
 
-.mt, .\$mt > * { margin-block-start: var(--sf-rem) }
-.mt\:a, .\$mt\:a > * { margin-block-start: auto }
-.mt\:0, .\$mt\:0 > * { margin-block-start: 0 }
-.mt\:xs, .\$mt\:xs > * { margin-block-start: var(--sf-rem-xs) }
-.mt\:sm, .\$mt\:sm > * { margin-block-start: var(--sf-rem-sm) }
-.mt\:s, .\$mt\:s > * { margin-block-start: var(--sf-rem-s) }
-.mt\:ms, .\$mt\:ms > * { margin-block-start: var(--sf-rem-ms) }
-.mt\:ls, .\$mt\:ls > * { margin-block-start: var(--sf-rem-ls) }
-.mt\:md, .\$mt\:md > * { margin-block-start: var(--sf-rem-md) }
-.mt\:lg, .\$mt\:lg > * { margin-block-start: var(--sf-rem-lg) }
-.mt\:xl, .\$mt\:xl > * { margin-block-start: var(--sf-rem-xl) }
-.mt\:2xl, .\$mt\:2xl > * { margin-block-start: var(--sf-rem-2xl) }
-.mt\:3xl, .\$mt\:3xl > * { margin-block-start: var(--sf-rem-3xl) }
-.mt\:4xl, .\$mt\:4xl > * { margin-block-start: var(--sf-rem-4xl) }
-.mt\:5xl, .\$mt\:5xl > * { margin-block-start: var(--sf-rem-5xl) }
-.mt\:6xl, .\$mt\:6xl > * { margin-block-start: var(--sf-rem-6xl) }
-.mt\:7xl, .\$mt\:7xl > * { margin-block-start: var(--sf-rem-7xl) }
-.mt\:8xl, .\$mt\:8xl > * { margin-block-start: var(--sf-rem-8xl) }
-.mt\:9xl, .\$mt\:9xl > * { margin-block-start: var(--sf-rem-9xl) }
-.mt\:10xl, .\$mt\:10xl > * { margin-block-start: var(--sf-rem-10xl) }
-.mt\:11xl, .\$mt\:11xl > * { margin-block-start: var(--sf-rem-11xl) }
-.mt\:12xl, .\$mt\:12xl > * { margin-block-start: var(--sf-rem-12xl) }
+.mt { margin-block-start: var(--sf-rem) }
+.mt\:a { margin-block-start: auto }
+.mt\:0 { margin-block-start: 0 }
+.mt\:xs { margin-block-start: var(--sf-rem-xs) }
+.mt\:sm { margin-block-start: var(--sf-rem-sm) }
+.mt\:s { margin-block-start: var(--sf-rem-s) }
+.mt\:ms { margin-block-start: var(--sf-rem-ms) }
+.mt\:ls { margin-block-start: var(--sf-rem-ls) }
+.mt\:md { margin-block-start: var(--sf-rem-md) }
+.mt\:lg { margin-block-start: var(--sf-rem-lg) }
+.mt\:xl { margin-block-start: var(--sf-rem-xl) }
+.mt\:2xl { margin-block-start: var(--sf-rem-2xl) }
+.mt\:3xl { margin-block-start: var(--sf-rem-3xl) }
+.mt\:4xl { margin-block-start: var(--sf-rem-4xl) }
+.mt\:5xl { margin-block-start: var(--sf-rem-5xl) }
+.mt\:6xl { margin-block-start: var(--sf-rem-6xl) }
+.mt\:7xl { margin-block-start: var(--sf-rem-7xl) }
+.mt\:8xl { margin-block-start: var(--sf-rem-8xl) }
+.mt\:9xl { margin-block-start: var(--sf-rem-9xl) }
+.mt\:10xl { margin-block-start: var(--sf-rem-10xl) }
+.mt\:11xl { margin-block-start: var(--sf-rem-11xl) }
+.mt\:12xl { margin-block-start: var(--sf-rem-12xl) }
 
-.mr, .\$mr > * { margin-inline-end: var(--sf-rem) }
-.mr\:a, .\$mr\:a > * { margin-inline-end: auto }
-.mr\:0, .\$mr\:0 > * { margin-inline-end: 0 }
-.mr\:xs, .\$mr\:xs > * { margin-inline-end: var(--sf-rem-xs) }
-.mr\:sm, .\$mr\:sm > * { margin-inline-end: var(--sf-rem-sm) }
-.mr\:s, .\$mr\:s > * { margin-inline-end: var(--sf-rem-s) }
-.mr\:ms, .\$mr\:ms > * { margin-inline-end: var(--sf-rem-ms) }
-.mr\:ls, .\$mr\:ls > * { margin-inline-end: var(--sf-rem-ls) }
-.mr\:md, .\$mr\:md > * { margin-inline-end: var(--sf-rem-md) }
-.mr\:lg, .\$mr\:lg > * { margin-inline-end: var(--sf-rem-lg) }
-.mr\:xl, .\$mr\:xl > * { margin-inline-end: var(--sf-rem-xl) }
-.mr\:2xl, .\$mr\:2xl > * { margin-inline-end: var(--sf-rem-2xl) }
-.mr\:3xl, .\$mr\:3xl > * { margin-inline-end: var(--sf-rem-3xl) }
-.mr\:4xl, .\$mr\:4xl > * { margin-inline-end: var(--sf-rem-4xl) }
-.mr\:5xl, .\$mr\:5xl > * { margin-inline-end: var(--sf-rem-5xl) }
-.mr\:6xl, .\$mr\:6xl > * { margin-inline-end: var(--sf-rem-6xl) }
-.mr\:7xl, .\$mr\:7xl > * { margin-inline-end: var(--sf-rem-7xl) }
-.mr\:8xl, .\$mr\:8xl > * { margin-inline-end: var(--sf-rem-8xl) }
-.mr\:9xl, .\$mr\:9xl > * { margin-inline-end: var(--sf-rem-9xl) }
-.mr\:10xl, .\$mr\:10xl > * { margin-inline-end: var(--sf-rem-10xl) }
-.mr\:11xl, .\$mr\:11xl > * { margin-inline-end: var(--sf-rem-11xl) }
-.mr\:12xl, .\$mr\:12xl > * { margin-inline-end: var(--sf-rem-12xl) }
+.mr { margin-inline-end: var(--sf-rem) }
+.mr\:a { margin-inline-end: auto }
+.mr\:0 { margin-inline-end: 0 }
+.mr\:xs { margin-inline-end: var(--sf-rem-xs) }
+.mr\:sm { margin-inline-end: var(--sf-rem-sm) }
+.mr\:s { margin-inline-end: var(--sf-rem-s) }
+.mr\:ms { margin-inline-end: var(--sf-rem-ms) }
+.mr\:ls { margin-inline-end: var(--sf-rem-ls) }
+.mr\:md { margin-inline-end: var(--sf-rem-md) }
+.mr\:lg { margin-inline-end: var(--sf-rem-lg) }
+.mr\:xl { margin-inline-end: var(--sf-rem-xl) }
+.mr\:2xl { margin-inline-end: var(--sf-rem-2xl) }
+.mr\:3xl { margin-inline-end: var(--sf-rem-3xl) }
+.mr\:4xl { margin-inline-end: var(--sf-rem-4xl) }
+.mr\:5xl { margin-inline-end: var(--sf-rem-5xl) }
+.mr\:6xl { margin-inline-end: var(--sf-rem-6xl) }
+.mr\:7xl { margin-inline-end: var(--sf-rem-7xl) }
+.mr\:8xl { margin-inline-end: var(--sf-rem-8xl) }
+.mr\:9xl { margin-inline-end: var(--sf-rem-9xl) }
+.mr\:10xl { margin-inline-end: var(--sf-rem-10xl) }
+.mr\:11xl { margin-inline-end: var(--sf-rem-11xl) }
+.mr\:12xl { margin-inline-end: var(--sf-rem-12xl) }
 
-.mb, .\$mb > * { margin-block-end: var(--sf-rem) }
-.mb\:a, .\$mb\:a > * { margin-block-end: auto }
-.mb\:0, .\$mb\:0 > * { margin-block-end: 0 }
-.mb\:xs, .\$mb\:xs > * { margin-block-end: var(--sf-rem-xs) }
-.mb\:sm, .\$mb\:sm > * { margin-block-end: var(--sf-rem-sm) }
-.mb\:s, .\$mb\:s > * { margin-block-end: var(--sf-rem-s) }
-.mb\:ms, .\$mb\:ms > * { margin-block-end: var(--sf-rem-ms) }
-.mb\:ls, .\$mb\:ls > * { margin-block-end: var(--sf-rem-ls) }
-.mb\:md, .\$mb\:md > * { margin-block-end: var(--sf-rem-md) }
-.mb\:lg, .\$mb\:lg > * { margin-block-end: var(--sf-rem-lg) }
-.mb\:xl, .\$mb\:xl > * { margin-block-end: var(--sf-rem-xl) }
-.mb\:2xl, .\$mb\:2xl > * { margin-block-end: var(--sf-rem-2xl) }
-.mb\:3xl, .\$mb\:3xl > * { margin-block-end: var(--sf-rem-3xl) }
-.mb\:4xl, .\$mb\:4xl > * { margin-block-end: var(--sf-rem-4xl) }
-.mb\:5xl, .\$mb\:5xl > * { margin-block-end: var(--sf-rem-5xl) }
-.mb\:6xl, .\$mb\:6xl > * { margin-block-end: var(--sf-rem-6xl) }
-.mb\:7xl, .\$mb\:7xl > * { margin-block-end: var(--sf-rem-7xl) }
-.mb\:8xl, .\$mb\:8xl > * { margin-block-end: var(--sf-rem-8xl) }
-.mb\:9xl, .\$mb\:9xl > * { margin-block-end: var(--sf-rem-9xl) }
-.mb\:10xl, .\$mb\:10xl > * { margin-block-end: var(--sf-rem-10xl) }
-.mb\:11xl, .\$mb\:11xl > * { margin-block-end: var(--sf-rem-11xl) }
-.mb\:12xl, .\$mb\:12xl > * { margin-block-end: var(--sf-rem-12xl) }
+.mb { margin-block-end: var(--sf-rem) }
+.mb\:a { margin-block-end: auto }
+.mb\:0 { margin-block-end: 0 }
+.mb\:xs { margin-block-end: var(--sf-rem-xs) }
+.mb\:sm { margin-block-end: var(--sf-rem-sm) }
+.mb\:s { margin-block-end: var(--sf-rem-s) }
+.mb\:ms { margin-block-end: var(--sf-rem-ms) }
+.mb\:ls { margin-block-end: var(--sf-rem-ls) }
+.mb\:md { margin-block-end: var(--sf-rem-md) }
+.mb\:lg { margin-block-end: var(--sf-rem-lg) }
+.mb\:xl { margin-block-end: var(--sf-rem-xl) }
+.mb\:2xl { margin-block-end: var(--sf-rem-2xl) }
+.mb\:3xl { margin-block-end: var(--sf-rem-3xl) }
+.mb\:4xl { margin-block-end: var(--sf-rem-4xl) }
+.mb\:5xl { margin-block-end: var(--sf-rem-5xl) }
+.mb\:6xl { margin-block-end: var(--sf-rem-6xl) }
+.mb\:7xl { margin-block-end: var(--sf-rem-7xl) }
+.mb\:8xl { margin-block-end: var(--sf-rem-8xl) }
+.mb\:9xl { margin-block-end: var(--sf-rem-9xl) }
+.mb\:10xl { margin-block-end: var(--sf-rem-10xl) }
+.mb\:11xl { margin-block-end: var(--sf-rem-11xl) }
+.mb\:12xl { margin-block-end: var(--sf-rem-12xl) }
 
-.ml, .\$ml > * { margin-inline-start: var(--sf-rem) }
-.ml\:a, .\$ml\:a > * { margin-inline-start: auto }
-.ml\:0, .\$ml\:0 > * { margin-inline-start: 0 }
-.ml\:xs, .\$ml\:xs > * { margin-inline-start: var(--sf-rem-xs) }
-.ml\:sm, .\$ml\:sm > * { margin-inline-start: var(--sf-rem-sm) }
-.ml\:s, .\$ml\:s > * { margin-inline-start: var(--sf-rem-s) }
-.ml\:ms, .\$ml\:ms > * { margin-inline-start: var(--sf-rem-ms) }
-.ml\:ls, .\$ml\:ls > * { margin-inline-start: var(--sf-rem-ls) }
-.ml\:md, .\$ml\:md > * { margin-inline-start: var(--sf-rem-md) }
-.ml\:lg, .\$ml\:lg > * { margin-inline-start: var(--sf-rem-lg) }
-.ml\:xl, .\$ml\:xl > * { margin-inline-start: var(--sf-rem-xl) }
-.ml\:2xl, .\$ml\:2xl > * { margin-inline-start: var(--sf-rem-2xl) }
-.ml\:3xl, .\$ml\:3xl > * { margin-inline-start: var(--sf-rem-3xl) }
-.ml\:4xl, .\$ml\:4xl > * { margin-inline-start: var(--sf-rem-4xl) }
-.ml\:5xl, .\$ml\:5xl > * { margin-inline-start: var(--sf-rem-5xl) }
-.ml\:6xl, .\$ml\:6xl > * { margin-inline-start: var(--sf-rem-6xl) }
-.ml\:7xl, .\$ml\:7xl > * { margin-inline-start: var(--sf-rem-7xl) }
-.ml\:8xl, .\$ml\:8xl > * { margin-inline-start: var(--sf-rem-8xl) }
-.ml\:9xl, .\$ml\:9xl > * { margin-inline-start: var(--sf-rem-9xl) }
-.ml\:10xl, .\$ml\:10xl > * { margin-inline-start: var(--sf-rem-10xl) }
-.ml\:11xl, .\$ml\:11xl > * { margin-inline-start: var(--sf-rem-11xl) }
-.ml\:12xl, .\$ml\:12xl > * { margin-inline-start: var(--sf-rem-12xl) }
+.ml { margin-inline-start: var(--sf-rem) }
+.ml\:a { margin-inline-start: auto }
+.ml\:0 { margin-inline-start: 0 }
+.ml\:xs { margin-inline-start: var(--sf-rem-xs) }
+.ml\:sm { margin-inline-start: var(--sf-rem-sm) }
+.ml\:s { margin-inline-start: var(--sf-rem-s) }
+.ml\:ms { margin-inline-start: var(--sf-rem-ms) }
+.ml\:ls { margin-inline-start: var(--sf-rem-ls) }
+.ml\:md { margin-inline-start: var(--sf-rem-md) }
+.ml\:lg { margin-inline-start: var(--sf-rem-lg) }
+.ml\:xl { margin-inline-start: var(--sf-rem-xl) }
+.ml\:2xl { margin-inline-start: var(--sf-rem-2xl) }
+.ml\:3xl { margin-inline-start: var(--sf-rem-3xl) }
+.ml\:4xl { margin-inline-start: var(--sf-rem-4xl) }
+.ml\:5xl { margin-inline-start: var(--sf-rem-5xl) }
+.ml\:6xl { margin-inline-start: var(--sf-rem-6xl) }
+.ml\:7xl { margin-inline-start: var(--sf-rem-7xl) }
+.ml\:8xl { margin-inline-start: var(--sf-rem-8xl) }
+.ml\:9xl { margin-inline-start: var(--sf-rem-9xl) }
+.ml\:10xl { margin-inline-start: var(--sf-rem-10xl) }
+.ml\:11xl { margin-inline-start: var(--sf-rem-11xl) }
+.ml\:12xl { margin-inline-start: var(--sf-rem-12xl) }
 
-.mx, .\$mx > * { margin-inline: var(--sf-rem) }
-.mx\:a, .\$mx\:a > * { margin-inline: auto }
-.mx\:0, .\$mx\:0 > * { margin-inline: 0 }
-.mx\:xs, .\$mx\:xs > * { margin-inline: var(--sf-rem-xs) }
-.mx\:sm, .\$mx\:sm > * { margin-inline: var(--sf-rem-sm) }
-.mx\:s, .\$mx\:s > * { margin-inline: var(--sf-rem-s) }
-.mx\:ms, .\$mx\:ms > * { margin-inline: var(--sf-rem-ms) }
-.mx\:ls, .\$mx\:ls > * { margin-inline: var(--sf-rem-ls) }
-.mx\:md, .\$mx\:md > * { margin-inline: var(--sf-rem-md) }
-.mx\:lg, .\$mx\:lg > * { margin-inline: var(--sf-rem-lg) }
-.mx\:xl, .\$mx\:xl > * { margin-inline: var(--sf-rem-xl) }
-.mx\:2xl, .\$mx\:2xl > * { margin-inline: var(--sf-rem-2xl) }
-.mx\:3xl, .\$mx\:3xl > * { margin-inline: var(--sf-rem-3xl) }
-.mx\:4xl, .\$mx\:4xl > * { margin-inline: var(--sf-rem-4xl) }
-.mx\:5xl, .\$mx\:5xl > * { margin-inline: var(--sf-rem-5xl) }
-.mx\:6xl, .\$mx\:6xl > * { margin-inline: var(--sf-rem-6xl) }
-.mx\:7xl, .\$mx\:7xl > * { margin-inline: var(--sf-rem-7xl) }
-.mx\:8xl, .\$mx\:8xl > * { margin-inline: var(--sf-rem-8xl) }
-.mx\:9xl, .\$mx\:9xl > * { margin-inline: var(--sf-rem-9xl) }
-.mx\:10xl, .\$mx\:10xl > * { margin-inline: var(--sf-rem-10xl) }
-.mx\:11xl, .\$mx\:11xl > * { margin-inline: var(--sf-rem-11xl) }
-.mx\:12xl, .\$mx\:12xl > * { margin-inline: var(--sf-rem-12xl) }
+.mx { margin-inline: var(--sf-rem) }
+.mx\:a { margin-inline: auto }
+.mx\:0 { margin-inline: 0 }
+.mx\:xs { margin-inline: var(--sf-rem-xs) }
+.mx\:sm { margin-inline: var(--sf-rem-sm) }
+.mx\:s { margin-inline: var(--sf-rem-s) }
+.mx\:ms { margin-inline: var(--sf-rem-ms) }
+.mx\:ls { margin-inline: var(--sf-rem-ls) }
+.mx\:md { margin-inline: var(--sf-rem-md) }
+.mx\:lg { margin-inline: var(--sf-rem-lg) }
+.mx\:xl { margin-inline: var(--sf-rem-xl) }
+.mx\:2xl { margin-inline: var(--sf-rem-2xl) }
+.mx\:3xl { margin-inline: var(--sf-rem-3xl) }
+.mx\:4xl { margin-inline: var(--sf-rem-4xl) }
+.mx\:5xl { margin-inline: var(--sf-rem-5xl) }
+.mx\:6xl { margin-inline: var(--sf-rem-6xl) }
+.mx\:7xl { margin-inline: var(--sf-rem-7xl) }
+.mx\:8xl { margin-inline: var(--sf-rem-8xl) }
+.mx\:9xl { margin-inline: var(--sf-rem-9xl) }
+.mx\:10xl { margin-inline: var(--sf-rem-10xl) }
+.mx\:11xl { margin-inline: var(--sf-rem-11xl) }
+.mx\:12xl { margin-inline: var(--sf-rem-12xl) }
 
-.my, .\$my > * { margin-block: var(--sf-rem) }
-.my\:a, .\$my\:a > * { margin-block: auto }
-.my\:0, .\$my\:0 > * { margin-block: 0 }
-.my\:xs, .\$my\:xs > * { margin-block: var(--sf-rem-xs) }
-.my\:sm, .\$my\:sm > * { margin-block: var(--sf-rem-sm) }
-.my\:s, .\$my\:s > * { margin-block: var(--sf-rem-s) }
-.my\:ms, .\$my\:ms > * { margin-block: var(--sf-rem-ms) }
-.my\:ls, .\$my\:ls > * { margin-block: var(--sf-rem-ls) }
-.my\:md, .\$my\:md > * { margin-block: var(--sf-rem-md) }
-.my\:lg, .\$my\:lg > * { margin-block: var(--sf-rem-lg) }
-.my\:xl, .\$my\:xl > * { margin-block: var(--sf-rem-xl) }
-.my\:2xl, .\$my\:2xl > * { margin-block: var(--sf-rem-2xl) }
-.my\:3xl, .\$my\:3xl > * { margin-block: var(--sf-rem-3xl) }
-.my\:4xl, .\$my\:4xl > * { margin-block: var(--sf-rem-4xl) }
-.my\:5xl, .\$my\:5xl > * { margin-block: var(--sf-rem-5xl) }
-.my\:6xl, .\$my\:6xl > * { margin-block: var(--sf-rem-6xl) }
-.my\:7xl, .\$my\:7xl > * { margin-block: var(--sf-rem-7xl) }
-.my\:8xl, .\$my\:8xl > * { margin-block: var(--sf-rem-8xl) }
-.my\:9xl, .\$my\:9xl > * { margin-block: var(--sf-rem-9xl) }
-.my\:10xl, .\$my\:10xl > * { margin-block: var(--sf-rem-10xl) }
-.my\:11xl, .\$my\:11xl > * { margin-block: var(--sf-rem-11xl) }
-.my\:12xl, .\$my\:12xl > * { margin-block: var(--sf-rem-12xl) }
+.my { margin-block: var(--sf-rem) }
+.my\:a { margin-block: auto }
+.my\:0 { margin-block: 0 }
+.my\:xs { margin-block: var(--sf-rem-xs) }
+.my\:sm { margin-block: var(--sf-rem-sm) }
+.my\:s { margin-block: var(--sf-rem-s) }
+.my\:ms { margin-block: var(--sf-rem-ms) }
+.my\:ls { margin-block: var(--sf-rem-ls) }
+.my\:md { margin-block: var(--sf-rem-md) }
+.my\:lg { margin-block: var(--sf-rem-lg) }
+.my\:xl { margin-block: var(--sf-rem-xl) }
+.my\:2xl { margin-block: var(--sf-rem-2xl) }
+.my\:3xl { margin-block: var(--sf-rem-3xl) }
+.my\:4xl { margin-block: var(--sf-rem-4xl) }
+.my\:5xl { margin-block: var(--sf-rem-5xl) }
+.my\:6xl { margin-block: var(--sf-rem-6xl) }
+.my\:7xl { margin-block: var(--sf-rem-7xl) }
+.my\:8xl { margin-block: var(--sf-rem-8xl) }
+.my\:9xl { margin-block: var(--sf-rem-9xl) }
+.my\:10xl { margin-block: var(--sf-rem-10xl) }
+.my\:11xl { margin-block: var(--sf-rem-11xl) }
+.my\:12xl { margin-block: var(--sf-rem-12xl) }
 
-.m\:n, .\$m\:n > * { margin: calc(var(--sf-rem) * -1) }
-.m\:n\:xs, .\$m\:n\:xs > * { margin: calc(var(--sf-rem-xs) * -1) }
-.m\:n\:sm, .\$m\:n\:sm > * { margin: calc(var(--sf-rem-sm) * -1) }
-.m\:n\:s, .\$m\:n\:s > * { margin: calc(var(--sf-rem-s) * -1) }
-.m\:n\:ms, .\$m\:n\:ms > * { margin: calc(var(--sf-rem-ms) * -1) }
-.m\:n\:ls, .\$m\:n\:ls > * { margin: calc(var(--sf-rem-ls) * -1) }
-.m\:n\:md, .\$m\:n\:md > * { margin: calc(var(--sf-rem-md) * -1) }
-.m\:n\:lg, .\$m\:n\:lg > * { margin: calc(var(--sf-rem-lg) * -1) }
-.m\:n\:xl, .\$m\:n\:xl > * { margin: calc(var(--sf-rem-xl) * -1) }
-.m\:n\:2xl, .\$m\:n\:2xl > * { margin: calc(var(--sf-rem-2xl) * -1) }
-.m\:n\:3xl, .\$m\:n\:3xl > * { margin: calc(var(--sf-rem-3xl) * -1) }
-.m\:n\:4xl, .\$m\:n\:4xl > * { margin: calc(var(--sf-rem-4xl) * -1) }
-.m\:n\:5xl, .\$m\:n\:5xl > * { margin: calc(var(--sf-rem-5xl) * -1) }
-.m\:n\:6xl, .\$m\:n\:6xl > * { margin: calc(var(--sf-rem-6xl) * -1) }
-.m\:n\:7xl, .\$m\:n\:7xl > * { margin: calc(var(--sf-rem-7xl) * -1) }
-.m\:n\:8xl, .\$m\:n\:8xl > * { margin: calc(var(--sf-rem-8xl) * -1) }
-.m\:n\:9xl, .\$m\:n\:9xl > * { margin: calc(var(--sf-rem-9xl) * -1) }
-.m\:n\:10xl, .\$m\:n\:10xl > * { margin: calc(var(--sf-rem-10xl) * -1) }
-.m\:n\:11xl, .\$m\:n\:11xl > * { margin: calc(var(--sf-rem-11xl) * -1) }
-.m\:n\:12xl, .\$m\:n\:12xl > * { margin: calc(var(--sf-rem-12xl) * -1) }
+.m\:n { margin: calc(var(--sf-rem) * -1) }
+.m\:n\:xs { margin: calc(var(--sf-rem-xs) * -1) }
+.m\:n\:sm { margin: calc(var(--sf-rem-sm) * -1) }
+.m\:n\:s { margin: calc(var(--sf-rem-s) * -1) }
+.m\:n\:ms { margin: calc(var(--sf-rem-ms) * -1) }
+.m\:n\:ls { margin: calc(var(--sf-rem-ls) * -1) }
+.m\:n\:md { margin: calc(var(--sf-rem-md) * -1) }
+.m\:n\:lg { margin: calc(var(--sf-rem-lg) * -1) }
+.m\:n\:xl { margin: calc(var(--sf-rem-xl) * -1) }
+.m\:n\:2xl { margin: calc(var(--sf-rem-2xl) * -1) }
+.m\:n\:3xl { margin: calc(var(--sf-rem-3xl) * -1) }
+.m\:n\:4xl { margin: calc(var(--sf-rem-4xl) * -1) }
+.m\:n\:5xl { margin: calc(var(--sf-rem-5xl) * -1) }
+.m\:n\:6xl { margin: calc(var(--sf-rem-6xl) * -1) }
+.m\:n\:7xl { margin: calc(var(--sf-rem-7xl) * -1) }
+.m\:n\:8xl { margin: calc(var(--sf-rem-8xl) * -1) }
+.m\:n\:9xl { margin: calc(var(--sf-rem-9xl) * -1) }
+.m\:n\:10xl { margin: calc(var(--sf-rem-10xl) * -1) }
+.m\:n\:11xl { margin: calc(var(--sf-rem-11xl) * -1) }
+.m\:n\:12xl { margin: calc(var(--sf-rem-12xl) * -1) }
 
-.mt\:n, .\$mt\:n > * { margin-block-start: calc(var(--sf-rem) * -1) }
-.mt\:n\:xs, .\$mt\:n\:xs > * { margin-block-start: calc(var(--sf-rem-xs) * -1) }
-.mt\:n\:sm, .\$mt\:n\:sm > * { margin-block-start: calc(var(--sf-rem-sm) * -1) }
-.mt\:n\:s, .\$mt\:n\:s > * { margin-block-start: calc(var(--sf-rem-s) * -1) }
-.mt\:n\:ms, .\$mt\:n\:ms > * { margin-block-start: calc(var(--sf-rem-ms) * -1) }
-.mt\:n\:ls, .\$mt\:n\:ls > * { margin-block-start: calc(var(--sf-rem-ls) * -1) }
-.mt\:n\:md, .\$mt\:n\:md > * { margin-block-start: calc(var(--sf-rem-md) * -1) }
-.mt\:n\:lg, .\$mt\:n\:lg > * { margin-block-start: calc(var(--sf-rem-lg) * -1) }
-.mt\:n\:xl, .\$mt\:n\:xl > * { margin-block-start: calc(var(--sf-rem-xl) * -1) }
-.mt\:n\:2xl, .\$mt\:n\:2xl > * { margin-block-start: calc(var(--sf-rem-2xl) * -1) }
-.mt\:n\:3xl, .\$mt\:n\:3xl > * { margin-block-start: calc(var(--sf-rem-3xl) * -1) }
-.mt\:n\:4xl, .\$mt\:n\:4xl > * { margin-block-start: calc(var(--sf-rem-4xl) * -1) }
-.mt\:n\:5xl, .\$mt\:n\:5xl > * { margin-block-start: calc(var(--sf-rem-5xl) * -1) }
-.mt\:n\:6xl, .\$mt\:n\:6xl > * { margin-block-start: calc(var(--sf-rem-6xl) * -1) }
-.mt\:n\:7xl, .\$mt\:n\:7xl > * { margin-block-start: calc(var(--sf-rem-7xl) * -1) }
-.mt\:n\:8xl, .\$mt\:n\:8xl > * { margin-block-start: calc(var(--sf-rem-8xl) * -1) }
-.mt\:n\:9xl, .\$mt\:n\:9xl > * { margin-block-start: calc(var(--sf-rem-9xl) * -1) }
-.mt\:n\:10xl, .\$mt\:n\:10xl > * { margin-block-start: calc(var(--sf-rem-10xl) * -1) }
-.mt\:n\:11xl, .\$mt\:n\:11xl > * { margin-block-start: calc(var(--sf-rem-11xl) * -1) }
-.mt\:n\:12xl, .\$mt\:n\:12xl > * { margin-block-start: calc(var(--sf-rem-12xl) * -1) }
+.mt\:n { margin-block-start: calc(var(--sf-rem) * -1) }
+.mt\:n\:xs { margin-block-start: calc(var(--sf-rem-xs) * -1) }
+.mt\:n\:sm { margin-block-start: calc(var(--sf-rem-sm) * -1) }
+.mt\:n\:s { margin-block-start: calc(var(--sf-rem-s) * -1) }
+.mt\:n\:ms { margin-block-start: calc(var(--sf-rem-ms) * -1) }
+.mt\:n\:ls { margin-block-start: calc(var(--sf-rem-ls) * -1) }
+.mt\:n\:md { margin-block-start: calc(var(--sf-rem-md) * -1) }
+.mt\:n\:lg { margin-block-start: calc(var(--sf-rem-lg) * -1) }
+.mt\:n\:xl { margin-block-start: calc(var(--sf-rem-xl) * -1) }
+.mt\:n\:2xl { margin-block-start: calc(var(--sf-rem-2xl) * -1) }
+.mt\:n\:3xl { margin-block-start: calc(var(--sf-rem-3xl) * -1) }
+.mt\:n\:4xl { margin-block-start: calc(var(--sf-rem-4xl) * -1) }
+.mt\:n\:5xl { margin-block-start: calc(var(--sf-rem-5xl) * -1) }
+.mt\:n\:6xl { margin-block-start: calc(var(--sf-rem-6xl) * -1) }
+.mt\:n\:7xl { margin-block-start: calc(var(--sf-rem-7xl) * -1) }
+.mt\:n\:8xl { margin-block-start: calc(var(--sf-rem-8xl) * -1) }
+.mt\:n\:9xl { margin-block-start: calc(var(--sf-rem-9xl) * -1) }
+.mt\:n\:10xl { margin-block-start: calc(var(--sf-rem-10xl) * -1) }
+.mt\:n\:11xl { margin-block-start: calc(var(--sf-rem-11xl) * -1) }
+.mt\:n\:12xl { margin-block-start: calc(var(--sf-rem-12xl) * -1) }
 
-.mr\:n, .\$mr\:n > * { margin-inline-end: calc(var(--sf-rem) * -1) }
-.mr\:n\:xs, .\$mr\:n\:xs > * { margin-inline-end: calc(var(--sf-rem-xs) * -1) }
-.mr\:n\:sm, .\$mr\:n\:sm > * { margin-inline-end: calc(var(--sf-rem-sm) * -1) }
-.mr\:n\:s, .\$mr\:n\:s > * { margin-inline-end: calc(var(--sf-rem-s) * -1) }
-.mr\:n\:ms, .\$mr\:n\:ms > * { margin-inline-end: calc(var(--sf-rem-ms) * -1) }
-.mr\:n\:ls, .\$mr\:n\:ls > * { margin-inline-end: calc(var(--sf-rem-ls) * -1) }
-.mr\:n\:md, .\$mr\:n\:md > * { margin-inline-end: calc(var(--sf-rem-md) * -1) }
-.mr\:n\:lg, .\$mr\:n\:lg > * { margin-inline-end: calc(var(--sf-rem-lg) * -1) }
-.mr\:n\:xl, .\$mr\:n\:xl > * { margin-inline-end: calc(var(--sf-rem-xl) * -1) }
-.mr\:n\:2xl, .\$mr\:n\:2xl > * { margin-inline-end: calc(var(--sf-rem-2xl) * -1) }
-.mr\:n\:3xl, .\$mr\:n\:3xl > * { margin-inline-end: calc(var(--sf-rem-3xl) * -1) }
-.mr\:n\:4xl, .\$mr\:n\:4xl > * { margin-inline-end: calc(var(--sf-rem-4xl) * -1) }
-.mr\:n\:5xl, .\$mr\:n\:5xl > * { margin-inline-end: calc(var(--sf-rem-5xl) * -1) }
-.mr\:n\:6xl, .\$mr\:n\:6xl > * { margin-inline-end: calc(var(--sf-rem-6xl) * -1) }
-.mr\:n\:7xl, .\$mr\:n\:7xl > * { margin-inline-end: calc(var(--sf-rem-7xl) * -1) }
-.mr\:n\:8xl, .\$mr\:n\:8xl > * { margin-inline-end: calc(var(--sf-rem-8xl) * -1) }
-.mr\:n\:9xl, .\$mr\:n\:9xl > * { margin-inline-end: calc(var(--sf-rem-9xl) * -1) }
-.mr\:n\:10xl, .\$mr\:n\:10xl > * { margin-inline-end: calc(var(--sf-rem-10xl) * -1) }
-.mr\:n\:11xl, .\$mr\:n\:11xl > * { margin-inline-end: calc(var(--sf-rem-11xl) * -1) }
-.mr\:n\:12xl, .\$mr\:n\:12xl > * { margin-inline-end: calc(var(--sf-rem-12xl) * -1) }
+.mr\:n { margin-inline-end: calc(var(--sf-rem) * -1) }
+.mr\:n\:xs { margin-inline-end: calc(var(--sf-rem-xs) * -1) }
+.mr\:n\:sm { margin-inline-end: calc(var(--sf-rem-sm) * -1) }
+.mr\:n\:s { margin-inline-end: calc(var(--sf-rem-s) * -1) }
+.mr\:n\:ms { margin-inline-end: calc(var(--sf-rem-ms) * -1) }
+.mr\:n\:ls { margin-inline-end: calc(var(--sf-rem-ls) * -1) }
+.mr\:n\:md { margin-inline-end: calc(var(--sf-rem-md) * -1) }
+.mr\:n\:lg { margin-inline-end: calc(var(--sf-rem-lg) * -1) }
+.mr\:n\:xl { margin-inline-end: calc(var(--sf-rem-xl) * -1) }
+.mr\:n\:2xl { margin-inline-end: calc(var(--sf-rem-2xl) * -1) }
+.mr\:n\:3xl { margin-inline-end: calc(var(--sf-rem-3xl) * -1) }
+.mr\:n\:4xl { margin-inline-end: calc(var(--sf-rem-4xl) * -1) }
+.mr\:n\:5xl { margin-inline-end: calc(var(--sf-rem-5xl) * -1) }
+.mr\:n\:6xl { margin-inline-end: calc(var(--sf-rem-6xl) * -1) }
+.mr\:n\:7xl { margin-inline-end: calc(var(--sf-rem-7xl) * -1) }
+.mr\:n\:8xl { margin-inline-end: calc(var(--sf-rem-8xl) * -1) }
+.mr\:n\:9xl { margin-inline-end: calc(var(--sf-rem-9xl) * -1) }
+.mr\:n\:10xl { margin-inline-end: calc(var(--sf-rem-10xl) * -1) }
+.mr\:n\:11xl { margin-inline-end: calc(var(--sf-rem-11xl) * -1) }
+.mr\:n\:12xl { margin-inline-end: calc(var(--sf-rem-12xl) * -1) }
 
-.mb\:n, .\$mb\:n > * { margin-block-end: calc(var(--sf-rem) * -1) }
-.mb\:n\:xs, .\$mb\:n\:xs > * { margin-block-end: calc(var(--sf-rem-xs) * -1) }
-.mb\:n\:sm, .\$mb\:n\:sm > * { margin-block-end: calc(var(--sf-rem-sm) * -1) }
-.mb\:n\:s, .\$mb\:n\:s > * { margin-block-end: calc(var(--sf-rem-s) * -1) }
-.mb\:n\:ms, .\$mb\:n\:ms > * { margin-block-end: calc(var(--sf-rem-ms) * -1) }
-.mb\:n\:ls, .\$mb\:n\:ls > * { margin-block-end: calc(var(--sf-rem-ls) * -1) }
-.mb\:n\:md, .\$mb\:n\:md > * { margin-block-end: calc(var(--sf-rem-md) * -1) }
-.mb\:n\:lg, .\$mb\:n\:lg > * { margin-block-end: calc(var(--sf-rem-lg) * -1) }
-.mb\:n\:xl, .\$mb\:n\:xl > * { margin-block-end: calc(var(--sf-rem-xl) * -1) }
-.mb\:n\:2xl, .\$mb\:n\:2xl > * { margin-block-end: calc(var(--sf-rem-2xl) * -1) }
-.mb\:n\:3xl, .\$mb\:n\:3xl > * { margin-block-end: calc(var(--sf-rem-3xl) * -1) }
-.mb\:n\:4xl, .\$mb\:n\:4xl > * { margin-block-end: calc(var(--sf-rem-4xl) * -1) }
-.mb\:n\:5xl, .\$mb\:n\:5xl > * { margin-block-end: calc(var(--sf-rem-5xl) * -1) }
-.mb\:n\:6xl, .\$mb\:n\:6xl > * { margin-block-end: calc(var(--sf-rem-6xl) * -1) }
-.mb\:n\:7xl, .\$mb\:n\:7xl > * { margin-block-end: calc(var(--sf-rem-7xl) * -1) }
-.mb\:n\:8xl, .\$mb\:n\:8xl > * { margin-block-end: calc(var(--sf-rem-8xl) * -1) }
-.mb\:n\:9xl, .\$mb\:n\:9xl > * { margin-block-end: calc(var(--sf-rem-9xl) * -1) }
-.mb\:n\:10xl, .\$mb\:n\:10xl > * { margin-block-end: calc(var(--sf-rem-10xl) * -1) }
-.mb\:n\:11xl, .\$mb\:n\:11xl > * { margin-block-end: calc(var(--sf-rem-11xl) * -1) }
-.mb\:n\:12xl, .\$mb\:n\:12xl > * { margin-block-end: calc(var(--sf-rem-12xl) * -1) }
+.mb\:n { margin-block-end: calc(var(--sf-rem) * -1) }
+.mb\:n\:xs { margin-block-end: calc(var(--sf-rem-xs) * -1) }
+.mb\:n\:sm { margin-block-end: calc(var(--sf-rem-sm) * -1) }
+.mb\:n\:s { margin-block-end: calc(var(--sf-rem-s) * -1) }
+.mb\:n\:ms { margin-block-end: calc(var(--sf-rem-ms) * -1) }
+.mb\:n\:ls { margin-block-end: calc(var(--sf-rem-ls) * -1) }
+.mb\:n\:md { margin-block-end: calc(var(--sf-rem-md) * -1) }
+.mb\:n\:lg { margin-block-end: calc(var(--sf-rem-lg) * -1) }
+.mb\:n\:xl { margin-block-end: calc(var(--sf-rem-xl) * -1) }
+.mb\:n\:2xl { margin-block-end: calc(var(--sf-rem-2xl) * -1) }
+.mb\:n\:3xl { margin-block-end: calc(var(--sf-rem-3xl) * -1) }
+.mb\:n\:4xl { margin-block-end: calc(var(--sf-rem-4xl) * -1) }
+.mb\:n\:5xl { margin-block-end: calc(var(--sf-rem-5xl) * -1) }
+.mb\:n\:6xl { margin-block-end: calc(var(--sf-rem-6xl) * -1) }
+.mb\:n\:7xl { margin-block-end: calc(var(--sf-rem-7xl) * -1) }
+.mb\:n\:8xl { margin-block-end: calc(var(--sf-rem-8xl) * -1) }
+.mb\:n\:9xl { margin-block-end: calc(var(--sf-rem-9xl) * -1) }
+.mb\:n\:10xl { margin-block-end: calc(var(--sf-rem-10xl) * -1) }
+.mb\:n\:11xl { margin-block-end: calc(var(--sf-rem-11xl) * -1) }
+.mb\:n\:12xl { margin-block-end: calc(var(--sf-rem-12xl) * -1) }
 
-.ml\:n, .\$ml\:n > * { margin-inline-start: calc(var(--sf-rem) * -1) }
-.ml\:n\:xs, .\$ml\:n\:xs > * { margin-inline-start: calc(var(--sf-rem-xs) * -1) }
-.ml\:n\:sm, .\$ml\:n\:sm > * { margin-inline-start: calc(var(--sf-rem-sm) * -1) }
-.ml\:n\:s, .\$ml\:n\:s > * { margin-inline-start: calc(var(--sf-rem-s) * -1) }
-.ml\:n\:ms, .\$ml\:n\:ms > * { margin-inline-start: calc(var(--sf-rem-ms) * -1) }
-.ml\:n\:ls, .\$ml\:n\:ls > * { margin-inline-start: calc(var(--sf-rem-ls) * -1) }
-.ml\:n\:md, .\$ml\:n\:md > * { margin-inline-start: calc(var(--sf-rem-md) * -1) }
-.ml\:n\:lg, .\$ml\:n\:lg > * { margin-inline-start: calc(var(--sf-rem-lg) * -1) }
-.ml\:n\:xl, .\$ml\:n\:xl > * { margin-inline-start: calc(var(--sf-rem-xl) * -1) }
-.ml\:n\:2xl, .\$ml\:n\:2xl > * { margin-inline-start: calc(var(--sf-rem-2xl) * -1) }
-.ml\:n\:3xl, .\$ml\:n\:3xl > * { margin-inline-start: calc(var(--sf-rem-3xl) * -1) }
-.ml\:n\:4xl, .\$ml\:n\:4xl > * { margin-inline-start: calc(var(--sf-rem-4xl) * -1) }
-.ml\:n\:5xl, .\$ml\:n\:5xl > * { margin-inline-start: calc(var(--sf-rem-5xl) * -1) }
-.ml\:n\:6xl, .\$ml\:n\:6xl > * { margin-inline-start: calc(var(--sf-rem-6xl) * -1) }
-.ml\:n\:7xl, .\$ml\:n\:7xl > * { margin-inline-start: calc(var(--sf-rem-7xl) * -1) }
-.ml\:n\:8xl, .\$ml\:n\:8xl > * { margin-inline-start: calc(var(--sf-rem-8xl) * -1) }
-.ml\:n\:9xl, .\$ml\:n\:9xl > * { margin-inline-start: calc(var(--sf-rem-9xl) * -1) }
-.ml\:n\:10xl, .\$ml\:n\:10xl > * { margin-inline-start: calc(var(--sf-rem-10xl) * -1) }
-.ml\:n\:11xl, .\$ml\:n\:11xl > * { margin-inline-start: calc(var(--sf-rem-11xl) * -1) }
-.ml\:n\:12xl, .\$ml\:n\:12xl > * { margin-inline-start: calc(var(--sf-rem-12xl) * -1) }
+.ml\:n { margin-inline-start: calc(var(--sf-rem) * -1) }
+.ml\:n\:xs { margin-inline-start: calc(var(--sf-rem-xs) * -1) }
+.ml\:n\:sm { margin-inline-start: calc(var(--sf-rem-sm) * -1) }
+.ml\:n\:s { margin-inline-start: calc(var(--sf-rem-s) * -1) }
+.ml\:n\:ms { margin-inline-start: calc(var(--sf-rem-ms) * -1) }
+.ml\:n\:ls { margin-inline-start: calc(var(--sf-rem-ls) * -1) }
+.ml\:n\:md { margin-inline-start: calc(var(--sf-rem-md) * -1) }
+.ml\:n\:lg { margin-inline-start: calc(var(--sf-rem-lg) * -1) }
+.ml\:n\:xl { margin-inline-start: calc(var(--sf-rem-xl) * -1) }
+.ml\:n\:2xl { margin-inline-start: calc(var(--sf-rem-2xl) * -1) }
+.ml\:n\:3xl { margin-inline-start: calc(var(--sf-rem-3xl) * -1) }
+.ml\:n\:4xl { margin-inline-start: calc(var(--sf-rem-4xl) * -1) }
+.ml\:n\:5xl { margin-inline-start: calc(var(--sf-rem-5xl) * -1) }
+.ml\:n\:6xl { margin-inline-start: calc(var(--sf-rem-6xl) * -1) }
+.ml\:n\:7xl { margin-inline-start: calc(var(--sf-rem-7xl) * -1) }
+.ml\:n\:8xl { margin-inline-start: calc(var(--sf-rem-8xl) * -1) }
+.ml\:n\:9xl { margin-inline-start: calc(var(--sf-rem-9xl) * -1) }
+.ml\:n\:10xl { margin-inline-start: calc(var(--sf-rem-10xl) * -1) }
+.ml\:n\:11xl { margin-inline-start: calc(var(--sf-rem-11xl) * -1) }
+.ml\:n\:12xl { margin-inline-start: calc(var(--sf-rem-12xl) * -1) }
 
-.mx\:n, .\$mx\:n > * { margin-inline: calc(var(--sf-rem) * -1) }
-.mx\:n\:xs, .\$mx\:n\:xs > * { margin-inline: calc(var(--sf-rem-xs) * -1) }
-.mx\:n\:sm, .\$mx\:n\:sm > * { margin-inline: calc(var(--sf-rem-sm) * -1) }
-.mx\:n\:s, .\$mx\:n\:s > * { margin-inline: calc(var(--sf-rem-s) * -1) }
-.mx\:n\:ms, .\$mx\:n\:ms > * { margin-inline: calc(var(--sf-rem-ms) * -1) }
-.mx\:n\:ls, .\$mx\:n\:ls > * { margin-inline: calc(var(--sf-rem-ls) * -1) }
-.mx\:n\:md, .\$mx\:n\:md > * { margin-inline: calc(var(--sf-rem-md) * -1) }
-.mx\:n\:lg, .\$mx\:n\:lg > * { margin-inline: calc(var(--sf-rem-lg) * -1) }
-.mx\:n\:xl, .\$mx\:n\:xl > * { margin-inline: calc(var(--sf-rem-xl) * -1) }
-.mx\:n\:2xl, .\$mx\:n\:2xl > * { margin-inline: calc(var(--sf-rem-2xl) * -1) }
-.mx\:n\:3xl, .\$mx\:n\:3xl > * { margin-inline: calc(var(--sf-rem-3xl) * -1) }
-.mx\:n\:4xl, .\$mx\:n\:4xl > * { margin-inline: calc(var(--sf-rem-4xl) * -1) }
-.mx\:n\:5xl, .\$mx\:n\:5xl > * { margin-inline: calc(var(--sf-rem-5xl) * -1) }
-.mx\:n\:6xl, .\$mx\:n\:6xl > * { margin-inline: calc(var(--sf-rem-6xl) * -1) }
-.mx\:n\:7xl, .\$mx\:n\:7xl > * { margin-inline: calc(var(--sf-rem-7xl) * -1) }
-.mx\:n\:8xl, .\$mx\:n\:8xl > * { margin-inline: calc(var(--sf-rem-8xl) * -1) }
-.mx\:n\:9xl, .\$mx\:n\:9xl > * { margin-inline: calc(var(--sf-rem-9xl) * -1) }
-.mx\:n\:10xl, .\$mx\:n\:10xl > * { margin-inline: calc(var(--sf-rem-10xl) * -1) }
-.mx\:n\:11xl, .\$mx\:n\:11xl > * { margin-inline: calc(var(--sf-rem-11xl) * -1) }
-.mx\:n\:12xl, .\$mx\:n\:12xl > * { margin-inline: calc(var(--sf-rem-12xl) * -1) }
+.mx\:n { margin-inline: calc(var(--sf-rem) * -1) }
+.mx\:n\:xs { margin-inline: calc(var(--sf-rem-xs) * -1) }
+.mx\:n\:sm { margin-inline: calc(var(--sf-rem-sm) * -1) }
+.mx\:n\:s { margin-inline: calc(var(--sf-rem-s) * -1) }
+.mx\:n\:ms { margin-inline: calc(var(--sf-rem-ms) * -1) }
+.mx\:n\:ls { margin-inline: calc(var(--sf-rem-ls) * -1) }
+.mx\:n\:md { margin-inline: calc(var(--sf-rem-md) * -1) }
+.mx\:n\:lg { margin-inline: calc(var(--sf-rem-lg) * -1) }
+.mx\:n\:xl { margin-inline: calc(var(--sf-rem-xl) * -1) }
+.mx\:n\:2xl { margin-inline: calc(var(--sf-rem-2xl) * -1) }
+.mx\:n\:3xl { margin-inline: calc(var(--sf-rem-3xl) * -1) }
+.mx\:n\:4xl { margin-inline: calc(var(--sf-rem-4xl) * -1) }
+.mx\:n\:5xl { margin-inline: calc(var(--sf-rem-5xl) * -1) }
+.mx\:n\:6xl { margin-inline: calc(var(--sf-rem-6xl) * -1) }
+.mx\:n\:7xl { margin-inline: calc(var(--sf-rem-7xl) * -1) }
+.mx\:n\:8xl { margin-inline: calc(var(--sf-rem-8xl) * -1) }
+.mx\:n\:9xl { margin-inline: calc(var(--sf-rem-9xl) * -1) }
+.mx\:n\:10xl { margin-inline: calc(var(--sf-rem-10xl) * -1) }
+.mx\:n\:11xl { margin-inline: calc(var(--sf-rem-11xl) * -1) }
+.mx\:n\:12xl { margin-inline: calc(var(--sf-rem-12xl) * -1) }
 
-.my\:n, .\$my\:n > * { margin-block: calc(var(--sf-rem) * -1) }
-.my\:n\:xs, .\$my\:n\:xs > * { margin-block: calc(var(--sf-rem-xs) * -1) }
-.my\:n\:sm, .\$my\:n\:sm > * { margin-block: calc(var(--sf-rem-sm) * -1) }
-.my\:n\:s, .\$my\:n\:s > * { margin-block: calc(var(--sf-rem-s) * -1) }
-.my\:n\:ms, .\$my\:n\:ms > * { margin-block: calc(var(--sf-rem-ms) * -1) }
-.my\:n\:ls, .\$my\:n\:ls > * { margin-block: calc(var(--sf-rem-ls) * -1) }
-.my\:n\:md, .\$my\:n\:md > * { margin-block: calc(var(--sf-rem-md) * -1) }
-.my\:n\:lg, .\$my\:n\:lg > * { margin-block: calc(var(--sf-rem-lg) * -1) }
-.my\:n\:xl, .\$my\:n\:xl > * { margin-block: calc(var(--sf-rem-xl) * -1) }
-.my\:n\:2xl, .\$my\:n\:2xl > * { margin-block: calc(var(--sf-rem-2xl) * -1) }
-.my\:n\:3xl, .\$my\:n\:3xl > * { margin-block: calc(var(--sf-rem-3xl) * -1) }
-.my\:n\:4xl, .\$my\:n\:4xl > * { margin-block: calc(var(--sf-rem-4xl) * -1) }
-.my\:n\:5xl, .\$my\:n\:5xl > * { margin-block: calc(var(--sf-rem-5xl) * -1) }
-.my\:n\:6xl, .\$my\:n\:6xl > * { margin-block: calc(var(--sf-rem-6xl) * -1) }
-.my\:n\:7xl, .\$my\:n\:7xl > * { margin-block: calc(var(--sf-rem-7xl) * -1) }
-.my\:n\:8xl, .\$my\:n\:8xl > * { margin-block: calc(var(--sf-rem-8xl) * -1) }
-.my\:n\:9xl, .\$my\:n\:9xl > * { margin-block: calc(var(--sf-rem-9xl) * -1) }
-.my\:n\:10xl, .\$my\:n\:10xl > * { margin-block: calc(var(--sf-rem-10xl) * -1) }
-.my\:n\:11xl, .\$my\:n\:11xl > * { margin-block: calc(var(--sf-rem-11xl) * -1) }
-.my\:n\:12xl, .\$my\:n\:12xl > * { margin-block: calc(var(--sf-rem-12xl) * -1) }
+.my\:n { margin-block: calc(var(--sf-rem) * -1) }
+.my\:n\:xs { margin-block: calc(var(--sf-rem-xs) * -1) }
+.my\:n\:sm { margin-block: calc(var(--sf-rem-sm) * -1) }
+.my\:n\:s { margin-block: calc(var(--sf-rem-s) * -1) }
+.my\:n\:ms { margin-block: calc(var(--sf-rem-ms) * -1) }
+.my\:n\:ls { margin-block: calc(var(--sf-rem-ls) * -1) }
+.my\:n\:md { margin-block: calc(var(--sf-rem-md) * -1) }
+.my\:n\:lg { margin-block: calc(var(--sf-rem-lg) * -1) }
+.my\:n\:xl { margin-block: calc(var(--sf-rem-xl) * -1) }
+.my\:n\:2xl { margin-block: calc(var(--sf-rem-2xl) * -1) }
+.my\:n\:3xl { margin-block: calc(var(--sf-rem-3xl) * -1) }
+.my\:n\:4xl { margin-block: calc(var(--sf-rem-4xl) * -1) }
+.my\:n\:5xl { margin-block: calc(var(--sf-rem-5xl) * -1) }
+.my\:n\:6xl { margin-block: calc(var(--sf-rem-6xl) * -1) }
+.my\:n\:7xl { margin-block: calc(var(--sf-rem-7xl) * -1) }
+.my\:n\:8xl { margin-block: calc(var(--sf-rem-8xl) * -1) }
+.my\:n\:9xl { margin-block: calc(var(--sf-rem-9xl) * -1) }
+.my\:n\:10xl { margin-block: calc(var(--sf-rem-10xl) * -1) }
+.my\:n\:11xl { margin-block: calc(var(--sf-rem-11xl) * -1) }
+.my\:n\:12xl { margin-block: calc(var(--sf-rem-12xl) * -1) }
 
 /* /// */
 
-html.var .mt, html.var .\$mt > * { margin-top: 8px }
-html.var .mt\:0, html.var .\$mt\:0 > * { margin-top: 0 }
-html.var .mt\:a, html.var .\$mt\:a > * { margin-top: auto }
-html.var .mt\:xs, html.var .\$mt\:xs > * { margin-top: 4px }
-html.var .mt\:sm, html.var .\$mt\:sm > * { margin-top: 8px }
-html.var .mt\:s, html.var .\$mt\:s > * { margin-top: 10px }
-html.var .mt\:ms, html.var .\$mt\:ms > * { margin-top: 12px }
-html.var .mt\:ls, html.var .\$mt\:ls > * { margin-top: 14px }
-html.var .mt\:md, html.var .\$mt\:md > * { margin-top: 16px }
-html.var .mt\:lg, html.var .\$mt\:lg > * { margin-top: 18px }
-html.var .mt\:xl, html.var .\$mt\:xl > * { margin-top: 20px }
-html.var .mt\:2xl, html.var .\$mt\:2xl > * { margin-top: 24px }
-html.var .mt\:3xl, html.var .\$mt\:3xl > * { margin-top: 32px }
-html.var .mt\:4xl, html.var .\$mt\:4xl > * { margin-top: 40px }
-html.var .mt\:5xl, html.var .\$mt\:5xl > * { margin-top: 48px }
-html.var .mt\:6xl, html.var .\$mt\:6xl > * { margin-top: 56px }
-html.var .mt\:7xl, html.var .\$mt\:7xl > * { margin-top: 64px }
-html.var .mt\:8xl, html.var .\$mt\:8xl > * { margin-top: 72px }
-html.var .mt\:9xl, html.var .\$mt\:9xl > * { margin-top: 80px }
-html.var .mt\:10xl, html.var .\$mt\:10xl > * { margin-top: 88px }
-html.var .mt\:11xl, html.var .\$mt\:11xl > * { margin-top: 96px }
-html.var .mt\:12xl, html.var .\$mt\:12xl > * { margin-top: 104px }
+html.var .m { margin: 8px }
+html.var .m\:a { margin: auto }
+html.var .m\:0 { margin: 0 }
+html.var .m\:xs { margin: 4px }
+html.var .m\:sm { margin: 8px }
+html.var .m\:s { margin: 10px }
+html.var .m\:ms { margin: 12px }
+html.var .m\:ls { margin: 14px }
+html.var .m\:md { margin: 16px }
+html.var .m\:lg { margin: 18px }
+html.var .m\:xl { margin: 20px }
+html.var .m\:2xl { margin: 24px }
+html.var .m\:3xl { margin: 32px }
+html.var .m\:4xl { margin: 40px }
+html.var .m\:5xl { margin: 48px }
+html.var .m\:6xl { margin: 56px }
+html.var .m\:7xl { margin: 64px }
+html.var .m\:8xl { margin: 72px }
+html.var .m\:9xl { margin: 80px }
+html.var .m\:10xl { margin: 88px }
+html.var .m\:11xl { margin: 96px }
+html.var .m\:12xl { margin: 104px }
 
-html.var .mr, html.var .\$mr > * { margin-right: 8px }
-html.var .mr\:0, html.var .\$mr\:0 > * { margin-right: 0 }
-html.var .mr\:a, html.var .\$mr\:a > * { margin-right: auto }
-html.var .mr\:xs, html.var .\$mr\:xs > * { margin-right: 4px }
-html.var .mr\:sm, html.var .\$mr\:sm > * { margin-right: 8px }
-html.var .mr\:s, html.var .\$mr\:s > * { margin-right: 10px }
-html.var .mr\:ms, html.var .\$mr\:ms > * { margin-right: 12px }
-html.var .mr\:ls, html.var .\$mr\:ls > * { margin-right: 14px }
-html.var .mr\:md, html.var .\$mr\:md > * { margin-right: 16px }
-html.var .mr\:lg, html.var .\$mr\:lg > * { margin-right: 18px }
-html.var .mr\:xl, html.var .\$mr\:xl > * { margin-right: 20px }
-html.var .mr\:2xl, html.var .\$mr\:2xl > * { margin-right: 24px }
-html.var .mr\:3xl, html.var .\$mr\:3xl > * { margin-right: 32px }
-html.var .mr\:4xl, html.var .\$mr\:4xl > * { margin-right: 40px }
-html.var .mr\:5xl, html.var .\$mr\:5xl > * { margin-right: 48px }
-html.var .mr\:6xl, html.var .\$mr\:6xl > * { margin-right: 56px }
-html.var .mr\:7xl, html.var .\$mr\:7xl > * { margin-right: 64px }
-html.var .mr\:8xl, html.var .\$mr\:8xl > * { margin-right: 72px }
-html.var .mr\:9xl, html.var .\$mr\:9xl > * { margin-right: 80px }
-html.var .mr\:10xl, html.var .\$mr\:10xl > * { margin-right: 88px }
-html.var .mr\:11xl, html.var .\$mr\:11xl > * { margin-right: 96px }
-html.var .mr\:12xl, html.var .\$mr\:12xl > * { margin-right: 104px }
+html.var .mt { margin-top: 8px }
+html.var .mt\:a { margin-top: auto }
+html.var .mt\:0 { margin-top: 0 }
+html.var .mt\:xs { margin-top: 4px }
+html.var .mt\:sm { margin-top: 8px }
+html.var .mt\:s { margin-top: 10px }
+html.var .mt\:ms { margin-top: 12px }
+html.var .mt\:ls { margin-top: 14px }
+html.var .mt\:md { margin-top: 16px }
+html.var .mt\:lg { margin-top: 18px }
+html.var .mt\:xl { margin-top: 20px }
+html.var .mt\:2xl { margin-top: 24px }
+html.var .mt\:3xl { margin-top: 32px }
+html.var .mt\:4xl { margin-top: 40px }
+html.var .mt\:5xl { margin-top: 48px }
+html.var .mt\:6xl { margin-top: 56px }
+html.var .mt\:7xl { margin-top: 64px }
+html.var .mt\:8xl { margin-top: 72px }
+html.var .mt\:9xl { margin-top: 80px }
+html.var .mt\:10xl { margin-top: 88px }
+html.var .mt\:11xl { margin-top: 96px }
+html.var .mt\:12xl { margin-top: 104px }
 
-html.var .mb, html.var .\$mb > * { margin-bottom: 8px }
-html.var .mb\:0, html.var .\$mb\:0 > * { margin-bottom: 0 }
-html.var .mb\:a, html.var .\$mb\:a > * { margin-bottom: auto }
-html.var .mb\:xs, html.var .\$mb\:xs > * { margin-bottom: 4px }
-html.var .mb\:sm, html.var .\$mb\:sm > * { margin-bottom: 8px }
-html.var .mb\:s, html.var .\$mb\:s > * { margin-bottom: 10px }
-html.var .mb\:ms, html.var .\$mb\:ms > * { margin-bottom: 12px }
-html.var .mb\:ls, html.var .\$mb\:ls > * { margin-bottom: 14px }
-html.var .mb\:md, html.var .\$mb\:md > * { margin-bottom: 16px }
-html.var .mb\:lg, html.var .\$mb\:lg > * { margin-bottom: 18px }
-html.var .mb\:xl, html.var .\$mb\:xl > * { margin-bottom: 20px }
-html.var .mb\:2xl, html.var .\$mb\:2xl > * { margin-bottom: 24px }
-html.var .mb\:3xl, html.var .\$mb\:3xl > * { margin-bottom: 32px }
-html.var .mb\:4xl, html.var .\$mb\:4xl > * { margin-bottom: 40px }
-html.var .mb\:5xl, html.var .\$mb\:5xl > * { margin-bottom: 48px }
-html.var .mb\:6xl, html.var .\$mb\:6xl > * { margin-bottom: 56px }
-html.var .mb\:7xl, html.var .\$mb\:7xl > * { margin-bottom: 64px }
-html.var .mb\:8xl, html.var .\$mb\:8xl > * { margin-bottom: 72px }
-html.var .mb\:9xl, html.var .\$mb\:9xl > * { margin-bottom: 80px }
-html.var .mb\:10xl, html.var .\$mb\:10xl > * { margin-bottom: 88px }
-html.var .mb\:11xl, html.var .\$mb\:11xl > * { margin-bottom: 96px }
-html.var .mb\:12xl, html.var .\$mb\:12xl > * { margin-bottom: 104px }
+html.var .mr { margin-right: 8px }
+html.var .mr\:a { margin-right: auto }
+html.var .mr\:0 { margin-right: 0 }
+html.var .mr\:xs { margin-right: 4px }
+html.var .mr\:sm { margin-right: 8px }
+html.var .mr\:s { margin-right: 10px }
+html.var .mr\:ms { margin-right: 12px }
+html.var .mr\:ls { margin-right: 14px }
+html.var .mr\:md { margin-right: 16px }
+html.var .mr\:lg { margin-right: 18px }
+html.var .mr\:xl { margin-right: 20px }
+html.var .mr\:2xl { margin-right: 24px }
+html.var .mr\:3xl { margin-right: 32px }
+html.var .mr\:4xl { margin-right: 40px }
+html.var .mr\:5xl { margin-right: 48px }
+html.var .mr\:6xl { margin-right: 56px }
+html.var .mr\:7xl { margin-right: 64px }
+html.var .mr\:8xl { margin-right: 72px }
+html.var .mr\:9xl { margin-right: 80px }
+html.var .mr\:10xl { margin-right: 88px }
+html.var .mr\:11xl { margin-right: 96px }
+html.var .mr\:12xl { margin-right: 104px }
 
-html.var .ml, html.var .\$ml > * { margin-left: 8px }
-html.var .ml\:0, html.var .\$ml\:0 > * { margin-left: 0 }
-html.var .ml\:a, html.var .\$ml\:a > * { margin-left: auto }
-html.var .ml\:xs, html.var .\$ml\:xs > * { margin-left: 4px }
-html.var .ml\:sm, html.var .\$ml\:sm > * { margin-left: 8px }
-html.var .ml\:s, html.var .\$ml\:s > * { margin-left: 10px }
-html.var .ml\:ms, html.var .\$ml\:ms > * { margin-left: 12px }
-html.var .ml\:ls, html.var .\$ml\:ls > * { margin-left: 14px }
-html.var .ml\:md, html.var .\$ml\:md > * { margin-left: 16px }
-html.var .ml\:lg, html.var .\$ml\:lg > * { margin-left: 18px }
-html.var .ml\:xl, html.var .\$ml\:xl > * { margin-left: 20px }
-html.var .ml\:2xl, html.var .\$ml\:2xl > * { margin-left: 24px }
-html.var .ml\:3xl, html.var .\$ml\:3xl > * { margin-left: 32px }
-html.var .ml\:4xl, html.var .\$ml\:4xl > * { margin-left: 40px }
-html.var .ml\:5xl, html.var .\$ml\:5xl > * { margin-left: 48px }
-html.var .ml\:6xl, html.var .\$ml\:6xl > * { margin-left: 56px }
-html.var .ml\:7xl, html.var .\$ml\:7xl > * { margin-left: 64px }
-html.var .ml\:8xl, html.var .\$ml\:8xl > * { margin-left: 72px }
-html.var .ml\:9xl, html.var .\$ml\:9xl > * { margin-left: 80px }
-html.var .ml\:10xl, html.var .\$ml\:10xl > * { margin-left: 88px }
-html.var .ml\:11xl, html.var .\$ml\:11xl > * { margin-left: 96px }
-html.var .ml\:12xl, html.var .\$ml\:12xl > * { margin-left: 104px }
+html.var .mb { margin-bottom: 8px }
+html.var .mb\:a { margin-bottom: auto }
+html.var .mb\:0 { margin-bottom: 0 }
+html.var .mb\:xs { margin-bottom: 4px }
+html.var .mb\:sm { margin-bottom: 8px }
+html.var .mb\:s { margin-bottom: 10px }
+html.var .mb\:ms { margin-bottom: 12px }
+html.var .mb\:ls { margin-bottom: 14px }
+html.var .mb\:md { margin-bottom: 16px }
+html.var .mb\:lg { margin-bottom: 18px }
+html.var .mb\:xl { margin-bottom: 20px }
+html.var .mb\:2xl { margin-bottom: 24px }
+html.var .mb\:3xl { margin-bottom: 32px }
+html.var .mb\:4xl { margin-bottom: 40px }
+html.var .mb\:5xl { margin-bottom: 48px }
+html.var .mb\:6xl { margin-bottom: 56px }
+html.var .mb\:7xl { margin-bottom: 64px }
+html.var .mb\:8xl { margin-bottom: 72px }
+html.var .mb\:9xl { margin-bottom: 80px }
+html.var .mb\:10xl { margin-bottom: 88px }
+html.var .mb\:11xl { margin-bottom: 96px }
+html.var .mb\:12xl { margin-bottom: 104px }
 
-html.var .mx, html.var .\$mx > * { margin-left: 8px; margin-right: 8px }
-html.var .mx\:0, html.var .\$mx\:0 > * { margin-left: 0; margin-right: 0 }
-html.var .mx\:a, html.var .\$mx\:a > * { margin-left: auto; margin-right: auto }
-html.var .mx\:xs, html.var .\$mx\:xs > * { margin-left: 4px; margin-right: 4px }
-html.var .mx\:sm, html.var .\$mx\:sm > * { margin-left: 8px; margin-right: 8px }
-html.var .mx\:s, html.var .\$mx\:s > * { margin-left: 10px; margin-right: 10px }
-html.var .mx\:ms, html.var .\$mx\:ms > * { margin-left: 12px; margin-right: 12px }
-html.var .mx\:ls, html.var .\$mx\:ls > * { margin-left: 14px; margin-right: 14px }
-html.var .mx\:md, html.var .\$mx\:md > * { margin-left: 16px; margin-right: 16px }
-html.var .mx\:lg, html.var .\$mx\:lg > * { margin-left: 18px; margin-right: 18px }
-html.var .mx\:xl, html.var .\$mx\:xl > * { margin-left: 20px; margin-right: 20px }
-html.var .mx\:2xl, html.var .\$mx\:2xl > * { margin-left: 24px; margin-right: 24px }
-html.var .mx\:3xl, html.var .\$mx\:3xl > * { margin-left: 32px; margin-right: 32px }
-html.var .mx\:4xl, html.var .\$mx\:4xl > * { margin-left: 40px; margin-right: 40px }
-html.var .mx\:5xl, html.var .\$mx\:5xl > * { margin-left: 48px; margin-right: 48px }
-html.var .mx\:6xl, html.var .\$mx\:6xl > * { margin-left: 56px; margin-right: 56px }
-html.var .mx\:7xl, html.var .\$mx\:7xl > * { margin-left: 64px; margin-right: 64px }
-html.var .mx\:8xl, html.var .\$mx\:8xl > * { margin-left: 72px; margin-right: 72px }
-html.var .mx\:9xl, html.var .\$mx\:9xl > * { margin-left: 80px; margin-right: 80px }
-html.var .mx\:10xl, html.var .\$mx\:10xl > * { margin-left: 88px; margin-right: 88px }
-html.var .mx\:11xl, html.var .\$mx\:11xl > * { margin-left: 96px; margin-right: 96px }
-html.var .mx\:12xl, html.var .\$mx\:12xl > * { margin-left: 104px; margin-right: 104px }
+html.var .ml { margin-left: 8px }
+html.var .ml\:a { margin-left: auto }
+html.var .ml\:0 { margin-left: 0 }
+html.var .ml\:xs { margin-left: 4px }
+html.var .ml\:sm { margin-left: 8px }
+html.var .ml\:s { margin-left: 10px }
+html.var .ml\:ms { margin-left: 12px }
+html.var .ml\:ls { margin-left: 14px }
+html.var .ml\:md { margin-left: 16px }
+html.var .ml\:lg { margin-left: 18px }
+html.var .ml\:xl { margin-left: 20px }
+html.var .ml\:2xl { margin-left: 24px }
+html.var .ml\:3xl { margin-left: 32px }
+html.var .ml\:4xl { margin-left: 40px }
+html.var .ml\:5xl { margin-left: 48px }
+html.var .ml\:6xl { margin-left: 56px }
+html.var .ml\:7xl { margin-left: 64px }
+html.var .ml\:8xl { margin-left: 72px }
+html.var .ml\:9xl { margin-left: 80px }
+html.var .ml\:10xl { margin-left: 88px }
+html.var .ml\:11xl { margin-left: 96px }
+html.var .ml\:12xl { margin-left: 104px }
 
-html.var .my, html.var .\$my > * { margin-top: 1em; margin-bottom: 1em }
-html.var .my\:0, html.var .\$my\:0 > * { margin-top: 0; margin-bottom: 0 }
-html.var .my\:a, html.var .\$my\:a > * { margin-top: auto; margin-bottom: auto }
-html.var .my\:xs, html.var .\$my\:xs > * { margin-top: 4px; margin-bottom: 4px }
-html.var .my\:sm, html.var .\$my\:sm > * { margin-top: 8px; margin-bottom: 8px }
-html.var .my\:s, html.var .\$my\:s > * { margin-top: 10px; margin-bottom: 10px }
-html.var .my\:ms, html.var .\$my\:ms > * { margin-top: 12px; margin-bottom: 12px }
-html.var .my\:ls, html.var .\$my\:ls > * { margin-top: 14px; margin-bottom: 14px }
-html.var .my\:md, html.var .\$my\:md > * { margin-top: 16px; margin-bottom: 16px }
-html.var .my\:lg, html.var .\$my\:lg > * { margin-top: 18px; margin-bottom: 18px }
-html.var .my\:xl, html.var .\$my\:xl > * { margin-top: 20px; margin-bottom: 20px }
-html.var .my\:2xl, html.var .\$my\:2xl > * { margin-top: 24px; margin-bottom: 24px }
-html.var .my\:3xl, html.var .\$my\:3xl > * { margin-top: 32px; margin-bottom: 32px }
-html.var .my\:4xl, html.var .\$my\:4xl > * { margin-top: 40px; margin-bottom: 40px }
-html.var .my\:5xl, html.var .\$my\:5xl > * { margin-top: 48px; margin-bottom: 48px }
-html.var .my\:6xl, html.var .\$my\:6xl > * { margin-top: 56px; margin-bottom: 56px }
-html.var .my\:7xl, html.var .\$my\:7xl > * { margin-top: 64px; margin-bottom: 64px }
-html.var .my\:8xl, html.var .\$my\:8xl > * { margin-top: 72px; margin-bottom: 72px }
-html.var .my\:9xl, html.var .\$my\:9xl > * { margin-top: 80px; margin-bottom: 80px }
-html.var .my\:10xl, html.var .\$my\:10xl > * { margin-top: 88px; margin-bottom: 88px }
-html.var .my\:11xl, html.var .\$my\:11xl > * { margin-top: 96px; margin-bottom: 96px }
-html.var .my\:12xl, html.var .\$my\:12xl > * { margin-top: 104px; margin-bottom: 104px }
+html.var .mx { margin-left: 8px; margin-right: 8px }
+html.var .mx\:a { margin-left: auto; margin-right: auto }
+html.var .mx\:0 { margin-left: 0; margin-right: 0 }
+html.var .mx\:xs { margin-left: 4px; margin-right: 4px }
+html.var .mx\:sm { margin-left: 8px; margin-right: 8px }
+html.var .mx\:s { margin-left: 10px; margin-right: 10px }
+html.var .mx\:ms { margin-left: 12px; margin-right: 12px }
+html.var .mx\:ls { margin-left: 14px; margin-right: 14px }
+html.var .mx\:md { margin-left: 16px; margin-right: 16px }
+html.var .mx\:lg { margin-left: 18px; margin-right: 18px }
+html.var .mx\:xl { margin-left: 20px; margin-right: 20px }
+html.var .mx\:2xl { margin-left: 24px; margin-right: 24px }
+html.var .mx\:3xl { margin-left: 32px; margin-right: 32px }
+html.var .mx\:4xl { margin-left: 40px; margin-right: 40px }
+html.var .mx\:5xl { margin-left: 48px; margin-right: 48px }
+html.var .mx\:6xl { margin-left: 56px; margin-right: 56px }
+html.var .mx\:7xl { margin-left: 64px; margin-right: 64px }
+html.var .mx\:8xl { margin-left: 72px; margin-right: 72px }
+html.var .mx\:9xl { margin-left: 80px; margin-right: 80px }
+html.var .mx\:10xl { margin-left: 88px; margin-right: 88px }
+html.var .mx\:11xl { margin-left: 96px; margin-right: 96px }
+html.var .mx\:12xl { margin-left: 104px; margin-right: 104px }
 
-html.var .mt\:n, html.var .\$mt\:n > * { margin-left: -8px }
-html.var .mt\:n\:xs, html.var .\$mt\:n\:xs > * { margin-top: -4px }
-html.var .mt\:n\:sm, html.var .\$mt\:n\:sm > * { margin-top: -8px }
-html.var .mt\:n\:s, html.var .\$mt\:n\:s > * { margin-top: -10px }
-html.var .mt\:n\:ms, html.var .\$mt\:n\:ms > * { margin-top: -12px }
-html.var .mt\:n\:ls, html.var .\$mt\:n\:ls > * { margin-top: -14px }
-html.var .mt\:n\:md, html.var .\$mt\:n\:md > * { margin-top: -16px }
-html.var .mt\:n\:lg, html.var .\$mt\:n\:lg > * { margin-top: -18px }
-html.var .mt\:n\:xl, html.var .\$mt\:n\:xl > * { margin-top: -20px }
-html.var .mt\:n\:2xl, html.var .\$mt\:n\:2xl > * { margin-top: -24px }
-html.var .mt\:n\:3xl, html.var .\$mt\:n\:3xl > * { margin-top: -32px }
-html.var .mt\:n\:4xl, html.var .\$mt\:n\:4xl > * { margin-top: -40px }
-html.var .mt\:n\:5xl, html.var .\$mt\:n\:5xl > * { margin-top: -48px }
-html.var .mt\:n\:6xl, html.var .\$mt\:n\:6xl > * { margin-top: -56px }
-html.var .mt\:n\:7xl, html.var .\$mt\:n\:7xl > * { margin-top: -64px }
-html.var .mt\:n\:8xl, html.var .\$mt\:n\:8xl > * { margin-top: -72px }
-html.var .mt\:n\:9xl, html.var .\$mt\:n\:9xl > * { margin-top: -80px }
-html.var .mt\:n\:10xl, html.var .\$mt\:n\:10xl > * { margin-top: -88px }
-html.var .mt\:n\:11xl, html.var .\$mt\:n\:11xl > * { margin-top: -96px }
-html.var .mt\:n\:12xl, html.var .\$mt\:n\:12xl > * { margin-top: -104px }
+html.var .my { margin-top: 1em; margin-bottom: 1em }
+html.var .my\:a { margin-top: auto; margin-bottom: auto }
+html.var .my\:0 { margin-top: 0; margin-bottom: 0 }
+html.var .my\:xs { margin-top: 4px; margin-bottom: 4px }
+html.var .my\:sm { margin-top: 8px; margin-bottom: 8px }
+html.var .my\:s { margin-top: 10px; margin-bottom: 10px }
+html.var .my\:ms { margin-top: 12px; margin-bottom: 12px }
+html.var .my\:ls { margin-top: 14px; margin-bottom: 14px }
+html.var .my\:md { margin-top: 16px; margin-bottom: 16px }
+html.var .my\:lg { margin-top: 18px; margin-bottom: 18px }
+html.var .my\:xl { margin-top: 20px; margin-bottom: 20px }
+html.var .my\:2xl { margin-top: 24px; margin-bottom: 24px }
+html.var .my\:3xl { margin-top: 32px; margin-bottom: 32px }
+html.var .my\:4xl { margin-top: 40px; margin-bottom: 40px }
+html.var .my\:5xl { margin-top: 48px; margin-bottom: 48px }
+html.var .my\:6xl { margin-top: 56px; margin-bottom: 56px }
+html.var .my\:7xl { margin-top: 64px; margin-bottom: 64px }
+html.var .my\:8xl { margin-top: 72px; margin-bottom: 72px }
+html.var .my\:9xl { margin-top: 80px; margin-bottom: 80px }
+html.var .my\:10xl { margin-top: 88px; margin-bottom: 88px }
+html.var .my\:11xl { margin-top: 96px; margin-bottom: 96px }
+html.var .my\:12xl { margin-top: 104px; margin-bottom: 104px }
 
-html.var .mr\:n, html.var .\$mr\:n > * { margin-left: -8px }
-html.var .mr\:n\:xs, html.var .\$mr\:n\:xs > * { margin-right: -4px }
-html.var .mr\:n\:sm, html.var .\$mr\:n\:sm > * { margin-right: -8px }
-html.var .mr\:n\:s, html.var .\$mr\:n\:s > * { margin-right: -10px }
-html.var .mr\:n\:ms, html.var .\$mr\:n\:ms > * { margin-right: -12px }
-html.var .mr\:n\:ls, html.var .\$mr\:n\:ls > * { margin-right: -14px }
-html.var .mr\:n\:md, html.var .\$mr\:n\:md > * { margin-right: -16px }
-html.var .mr\:n\:lg, html.var .\$mr\:n\:lg > * { margin-right: -18px }
-html.var .mr\:n\:xl, html.var .\$mr\:n\:xl > * { margin-right: -20px }
-html.var .mr\:n\:2xl, html.var .\$mr\:n\:2xl > * { margin-right: -24px }
-html.var .mr\:n\:3xl, html.var .\$mr\:n\:3xl > * { margin-right: -32px }
-html.var .mr\:n\:4xl, html.var .\$mr\:n\:4xl > * { margin-right: -40px }
-html.var .mr\:n\:5xl, html.var .\$mr\:n\:5xl > * { margin-right: -48px }
-html.var .mr\:n\:6xl, html.var .\$mr\:n\:6xl > * { margin-right: -56px }
-html.var .mr\:n\:7xl, html.var .\$mr\:n\:7xl > * { margin-right: -64px }
-html.var .mr\:n\:8xl, html.var .\$mr\:n\:8xl > * { margin-right: -72px }
-html.var .mr\:n\:9xl, html.var .\$mr\:n\:9xl > * { margin-right: -80px }
-html.var .mr\:n\:10xl, html.var .\$mr\:n\:10xl > * { margin-right: -88px }
-html.var .mr\:n\:11xl, html.var .\$mr\:n\:11xl > * { margin-right: -96px }
-html.var .mr\:n\:12xl, html.var .\$mr\:n\:12xl > * { margin-right: -104px }
+html.var .mt\:n { margin-left: -8px }
+html.var .mt\:n\:xs { margin-top: -4px }
+html.var .mt\:n\:sm { margin-top: -8px }
+html.var .mt\:n\:s { margin-top: -10px }
+html.var .mt\:n\:ms { margin-top: -12px }
+html.var .mt\:n\:ls { margin-top: -14px }
+html.var .mt\:n\:md { margin-top: -16px }
+html.var .mt\:n\:lg { margin-top: -18px }
+html.var .mt\:n\:xl { margin-top: -20px }
+html.var .mt\:n\:2xl { margin-top: -24px }
+html.var .mt\:n\:3xl { margin-top: -32px }
+html.var .mt\:n\:4xl { margin-top: -40px }
+html.var .mt\:n\:5xl { margin-top: -48px }
+html.var .mt\:n\:6xl { margin-top: -56px }
+html.var .mt\:n\:7xl { margin-top: -64px }
+html.var .mt\:n\:8xl { margin-top: -72px }
+html.var .mt\:n\:9xl { margin-top: -80px }
+html.var .mt\:n\:10xl { margin-top: -88px }
+html.var .mt\:n\:11xl { margin-top: -96px }
+html.var .mt\:n\:12xl { margin-top: -104px }
 
-html.var .mb\:n, html.var .\$mb\:n > * { margin-left: -8px }
-html.var .mb\:n\:xs, html.var .\$mb\:n\:xs > * { margin-bottom: -4px }
-html.var .mb\:n\:sm, html.var .\$mb\:n\:sm > * { margin-bottom: -8px }
-html.var .mb\:n\:s, html.var .\$mb\:n\:s > * { margin-bottom: -10px }
-html.var .mb\:n\:ms, html.var .\$mb\:n\:ms > * { margin-bottom: -12px }
-html.var .mb\:n\:ls, html.var .\$mb\:n\:ls > * { margin-bottom: -14px }
-html.var .mb\:n\:md, html.var .\$mb\:n\:md > * { margin-bottom: -16px }
-html.var .mb\:n\:lg, html.var .\$mb\:n\:lg > * { margin-bottom: -18px }
-html.var .mb\:n\:xl, html.var .\$mb\:n\:xl > * { margin-bottom: -20px }
-html.var .mb\:n\:2xl, html.var .\$mb\:n\:2xl > * { margin-bottom: -24px }
-html.var .mb\:n\:3xl, html.var .\$mb\:n\:3xl > * { margin-bottom: -32px }
-html.var .mb\:n\:4xl, html.var .\$mb\:n\:4xl > * { margin-bottom: -40px }
-html.var .mb\:n\:5xl, html.var .\$mb\:n\:5xl > * { margin-bottom: -48px }
-html.var .mb\:n\:6xl, html.var .\$mb\:n\:6xl > * { margin-bottom: -56px }
-html.var .mb\:n\:7xl, html.var .\$mb\:n\:7xl > * { margin-bottom: -64px }
-html.var .mb\:n\:8xl, html.var .\$mb\:n\:8xl > * { margin-bottom: -72px }
-html.var .mb\:n\:9xl, html.var .\$mb\:n\:9xl > * { margin-bottom: -80px }
-html.var .mb\:n\:10xl, html.var .\$mb\:n\:10xl > * { margin-bottom: -88px }
-html.var .mb\:n\:11xl, html.var .\$mb\:n\:11xl > * { margin-bottom: -96px }
-html.var .mb\:n\:12xl, html.var .\$mb\:n\:12xl > * { margin-bottom: -104px }
+html.var .mr\:n { margin-left: -8px }
+html.var .mr\:n\:xs { margin-right: -4px }
+html.var .mr\:n\:sm { margin-right: -8px }
+html.var .mr\:n\:s { margin-right: -10px }
+html.var .mr\:n\:ms { margin-right: -12px }
+html.var .mr\:n\:ls { margin-right: -14px }
+html.var .mr\:n\:md { margin-right: -16px }
+html.var .mr\:n\:lg { margin-right: -18px }
+html.var .mr\:n\:xl { margin-right: -20px }
+html.var .mr\:n\:2xl { margin-right: -24px }
+html.var .mr\:n\:3xl { margin-right: -32px }
+html.var .mr\:n\:4xl { margin-right: -40px }
+html.var .mr\:n\:5xl { margin-right: -48px }
+html.var .mr\:n\:6xl { margin-right: -56px }
+html.var .mr\:n\:7xl { margin-right: -64px }
+html.var .mr\:n\:8xl { margin-right: -72px }
+html.var .mr\:n\:9xl { margin-right: -80px }
+html.var .mr\:n\:10xl { margin-right: -88px }
+html.var .mr\:n\:11xl { margin-right: -96px }
+html.var .mr\:n\:12xl { margin-right: -104px }
 
-html.var .ml\:n, html.var .\$ml\:n > * { margin-left: -8px }
-html.var .ml\:n\:xs, html.var .\$ml\:n\:xs > * { margin-left: -4px }
-html.var .ml\:n\:sm, html.var .\$ml\:n\:sm > * { margin-left: -8px }
-html.var .ml\:n\:s, html.var .\$ml\:n\:s > * { margin-left: -10px }
-html.var .ml\:n\:ms, html.var .\$ml\:n\:ms > * { margin-left: -12px }
-html.var .ml\:n\:ls, html.var .\$ml\:n\:ls > * { margin-left: -14px }
-html.var .ml\:n\:md, html.var .\$ml\:n\:md > * { margin-left: -16px }
-html.var .ml\:n\:lg, html.var .\$ml\:n\:lg > * { margin-left: -18px }
-html.var .ml\:n\:xl, html.var .\$ml\:n\:xl > * { margin-left: -20px }
-html.var .ml\:n\:2xl, html.var .\$ml\:n\:2xl > * { margin-left: -24px }
-html.var .ml\:n\:3xl, html.var .\$ml\:n\:3xl > * { margin-left: -32px }
-html.var .ml\:n\:4xl, html.var .\$ml\:n\:4xl > * { margin-left: -40px }
-html.var .ml\:n\:5xl, html.var .\$ml\:n\:5xl > * { margin-left: -48px }
-html.var .ml\:n\:6xl, html.var .\$ml\:n\:6xl > * { margin-left: -56px }
-html.var .ml\:n\:7xl, html.var .\$ml\:n\:7xl > * { margin-left: -64px }
-html.var .ml\:n\:8xl, html.var .\$ml\:n\:8xl > * { margin-left: -72px }
-html.var .ml\:n\:9xl, html.var .\$ml\:n\:9xl > * { margin-left: -80px }
-html.var .ml\:n\:10xl, html.var .\$ml\:n\:10xl > * { margin-left: -88px }
-html.var .ml\:n\:11xl, html.var .\$ml\:n\:11xl > * { margin-left: -96px }
-html.var .ml\:n\:12xl, html.var .\$ml\:n\:12xl > * { margin-left: -104px }
+html.var .mb\:n { margin-left: -8px }
+html.var .mb\:n\:xs { margin-bottom: -4px }
+html.var .mb\:n\:sm { margin-bottom: -8px }
+html.var .mb\:n\:s { margin-bottom: -10px }
+html.var .mb\:n\:ms { margin-bottom: -12px }
+html.var .mb\:n\:ls { margin-bottom: -14px }
+html.var .mb\:n\:md { margin-bottom: -16px }
+html.var .mb\:n\:lg { margin-bottom: -18px }
+html.var .mb\:n\:xl { margin-bottom: -20px }
+html.var .mb\:n\:2xl { margin-bottom: -24px }
+html.var .mb\:n\:3xl { margin-bottom: -32px }
+html.var .mb\:n\:4xl { margin-bottom: -40px }
+html.var .mb\:n\:5xl { margin-bottom: -48px }
+html.var .mb\:n\:6xl { margin-bottom: -56px }
+html.var .mb\:n\:7xl { margin-bottom: -64px }
+html.var .mb\:n\:8xl { margin-bottom: -72px }
+html.var .mb\:n\:9xl { margin-bottom: -80px }
+html.var .mb\:n\:10xl { margin-bottom: -88px }
+html.var .mb\:n\:11xl { margin-bottom: -96px }
+html.var .mb\:n\:12xl { margin-bottom: -104px }
 
-html.var .mx\:n, html.var .\$mx\:n > * { margin-left: -8px; margin-right: -8px }
-html.var .mx\:n\:xs, html.var .\$mx\:n\:xs > * { margin-left: -4px; margin-right: -4px }
-html.var .mx\:n\:sm, html.var .\$mx\:n\:sm > * { margin-left: -8px; margin-right: -8px }
-html.var .mx\:n\:s, html.var .\$mx\:n\:s > * { margin-left: -10px; margin-right: -10px }
-html.var .mx\:n\:ms, html.var .\$mx\:n\:ms > * { margin-left: -12px; margin-right: -12px }
-html.var .mx\:n\:ls, html.var .\$mx\:n\:ls > * { margin-left: -14px; margin-right: -14px }
-html.var .mx\:n\:md, html.var .\$mx\:n\:md > * { margin-left: -16px; margin-right: -16px }
-html.var .mx\:n\:lg, html.var .\$mx\:n\:lg > * { margin-left: -18px; margin-right: -18px }
-html.var .mx\:n\:xl, html.var .\$mx\:n\:xl > * { margin-left: -20px; margin-right: -20px }
-html.var .mx\:n\:2xl, html.var .\$mx\:n\:2xl > * { margin-left: -24px; margin-right: -24px }
-html.var .mx\:n\:3xl, html.var .\$mx\:n\:3xl > * { margin-left: -32px; margin-right: -32px }
-html.var .mx\:n\:4xl, html.var .\$mx\:n\:4xl > * { margin-left: -40px; margin-right: -40px }
-html.var .mx\:n\:5xl, html.var .\$mx\:n\:5xl > * { margin-left: -48px; margin-right: -48px }
-html.var .mx\:n\:6xl, html.var .\$mx\:n\:6xl > * { margin-left: -56px; margin-right: -56px }
-html.var .mx\:n\:7xl, html.var .\$mx\:n\:7xl > * { margin-left: -64px; margin-right: -64px }
-html.var .mx\:n\:8xl, html.var .\$mx\:n\:8xl > * { margin-left: -72px; margin-right: -72px }
-html.var .mx\:n\:9xl, html.var .\$mx\:n\:9xl > * { margin-left: -80px; margin-right: -80px }
-html.var .mx\:n\:10xl, html.var .\$mx\:n\:10xl > * { margin-left: -88px; margin-right: -88px }
-html.var .mx\:n\:11xl, html.var .\$mx\:n\:11xl > * { margin-left: -96px; margin-right: -96px }
-html.var .mx\:n\:12xl, html.var .\$mx\:n\:12xl > * { margin-left: -104px; margin-right: -104px }
+html.var .ml\:n { margin-left: -8px }
+html.var .ml\:n\:xs { margin-left: -4px }
+html.var .ml\:n\:sm { margin-left: -8px }
+html.var .ml\:n\:s { margin-left: -10px }
+html.var .ml\:n\:ms { margin-left: -12px }
+html.var .ml\:n\:ls { margin-left: -14px }
+html.var .ml\:n\:md { margin-left: -16px }
+html.var .ml\:n\:lg { margin-left: -18px }
+html.var .ml\:n\:xl { margin-left: -20px }
+html.var .ml\:n\:2xl { margin-left: -24px }
+html.var .ml\:n\:3xl { margin-left: -32px }
+html.var .ml\:n\:4xl { margin-left: -40px }
+html.var .ml\:n\:5xl { margin-left: -48px }
+html.var .ml\:n\:6xl { margin-left: -56px }
+html.var .ml\:n\:7xl { margin-left: -64px }
+html.var .ml\:n\:8xl { margin-left: -72px }
+html.var .ml\:n\:9xl { margin-left: -80px }
+html.var .ml\:n\:10xl { margin-left: -88px }
+html.var .ml\:n\:11xl { margin-left: -96px }
+html.var .ml\:n\:12xl { margin-left: -104px }
 
-html.var .my\:n, html.var .\$my\:n > * { margin-top: -8px; margin-bottom: -8px }
-html.var .my\:n\:xs, html.var .\$my\:n\:xs > * { margin-top: -4px; margin-bottom: -4px }
-html.var .my\:n\:sm, html.var .\$my\:n\:sm > * { margin-top: -8px; margin-bottom: -8px }
-html.var .my\:n\:s, html.var .\$my\:n\:s > * { margin-top: -10px; margin-bottom: -10px }
-html.var .my\:n\:ms, html.var .\$my\:n\:ms > * { margin-top: -12px; margin-bottom: -12px }
-html.var .my\:n\:ls, html.var .\$my\:n\:ls > * { margin-top: -14px; margin-bottom: -14px }
-html.var .my\:n\:md, html.var .\$my\:n\:md > * { margin-top: -16px; margin-bottom: -16px }
-html.var .my\:n\:lg, html.var .\$my\:n\:lg > * { margin-top: -18px; margin-bottom: -18px }
-html.var .my\:n\:xl, html.var .\$my\:n\:xl > * { margin-top: -20px; margin-bottom: -20px }
-html.var .my\:n\:2xl, html.var .\$my\:n\:2xl > * { margin-top: -24px; margin-bottom: -24px }
-html.var .my\:n\:3xl, html.var .\$my\:n\:3xl > * { margin-top: -32px; margin-bottom: -32px }
-html.var .my\:n\:4xl, html.var .\$my\:n\:4xl > * { margin-top: -40px; margin-bottom: -40px }
-html.var .my\:n\:5xl, html.var .\$my\:n\:5xl > * { margin-top: -48px; margin-bottom: -48px }
-html.var .my\:n\:6xl, html.var .\$my\:n\:6xl > * { margin-top: -56px; margin-bottom: -56px }
-html.var .my\:n\:7xl, html.var .\$my\:n\:7xl > * { margin-top: -64px; margin-bottom: -64px }
-html.var .my\:n\:8xl, html.var .\$my\:n\:8xl > * { margin-top: -72px; margin-bottom: -72px }
-html.var .my\:n\:9xl, html.var .\$my\:n\:9xl > * { margin-top: -80px; margin-bottom: -80px }
-html.var .my\:n\:10xl, html.var .\$my\:n\:10xl > * { margin-top: -88px; margin-bottom: -88px }
-html.var .my\:n\:11xl, html.var .\$my\:n\:11xl > * { margin-top: -96px; margin-bottom: -96px }
-html.var .my\:n\:12xl, html.var .\$my\:n\:12xl > * { margin-top: -104px; margin-bottom: -104px }
+html.var .mx\:n { margin-left: -8px; margin-right: -8px }
+html.var .mx\:n\:xs { margin-left: -4px; margin-right: -4px }
+html.var .mx\:n\:sm { margin-left: -8px; margin-right: -8px }
+html.var .mx\:n\:s { margin-left: -10px; margin-right: -10px }
+html.var .mx\:n\:ms { margin-left: -12px; margin-right: -12px }
+html.var .mx\:n\:ls { margin-left: -14px; margin-right: -14px }
+html.var .mx\:n\:md { margin-left: -16px; margin-right: -16px }
+html.var .mx\:n\:lg { margin-left: -18px; margin-right: -18px }
+html.var .mx\:n\:xl { margin-left: -20px; margin-right: -20px }
+html.var .mx\:n\:2xl { margin-left: -24px; margin-right: -24px }
+html.var .mx\:n\:3xl { margin-left: -32px; margin-right: -32px }
+html.var .mx\:n\:4xl { margin-left: -40px; margin-right: -40px }
+html.var .mx\:n\:5xl { margin-left: -48px; margin-right: -48px }
+html.var .mx\:n\:6xl { margin-left: -56px; margin-right: -56px }
+html.var .mx\:n\:7xl { margin-left: -64px; margin-right: -64px }
+html.var .mx\:n\:8xl { margin-left: -72px; margin-right: -72px }
+html.var .mx\:n\:9xl { margin-left: -80px; margin-right: -80px }
+html.var .mx\:n\:10xl { margin-left: -88px; margin-right: -88px }
+html.var .mx\:n\:11xl { margin-left: -96px; margin-right: -96px }
+html.var .mx\:n\:12xl { margin-left: -104px; margin-right: -104px }
+
+html.var .my\:n { margin-top: -8px; margin-bottom: -8px }
+html.var .my\:n\:xs { margin-top: -4px; margin-bottom: -4px }
+html.var .my\:n\:sm { margin-top: -8px; margin-bottom: -8px }
+html.var .my\:n\:s { margin-top: -10px; margin-bottom: -10px }
+html.var .my\:n\:ms { margin-top: -12px; margin-bottom: -12px }
+html.var .my\:n\:ls { margin-top: -14px; margin-bottom: -14px }
+html.var .my\:n\:md { margin-top: -16px; margin-bottom: -16px }
+html.var .my\:n\:lg { margin-top: -18px; margin-bottom: -18px }
+html.var .my\:n\:xl { margin-top: -20px; margin-bottom: -20px }
+html.var .my\:n\:2xl { margin-top: -24px; margin-bottom: -24px }
+html.var .my\:n\:3xl { margin-top: -32px; margin-bottom: -32px }
+html.var .my\:n\:4xl { margin-top: -40px; margin-bottom: -40px }
+html.var .my\:n\:5xl { margin-top: -48px; margin-bottom: -48px }
+html.var .my\:n\:6xl { margin-top: -56px; margin-bottom: -56px }
+html.var .my\:n\:7xl { margin-top: -64px; margin-bottom: -64px }
+html.var .my\:n\:8xl { margin-top: -72px; margin-bottom: -72px }
+html.var .my\:n\:9xl { margin-top: -80px; margin-bottom: -80px }
+html.var .my\:n\:10xl { margin-top: -88px; margin-bottom: -88px }
+html.var .my\:n\:11xl { margin-top: -96px; margin-bottom: -96px }
+html.var .my\:n\:12xl { margin-top: -104px; margin-bottom: -104px }
